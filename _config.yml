@@ -23,7 +23,7 @@ colors:
   footer: "#6c757d"                     # Background color for footer: use color that contrasts well with white
 rounded_corners: false                  # Enable (default) rounded corners on boxes and buttons
 
-theme:
+themeStyle:
   coloredHeadlineLinks: true
 
 # BUILD SETTINGS
