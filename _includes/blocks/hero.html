@@ -15,10 +15,14 @@
       {{ title }}
     </h1>
     <div class="hero_postTitle">{{ description | markdownify }}</div>
-    <div class="hero_cta">
-      <a class="button" href="/data">Explore</a>
-      <a class="button" href="/about" >About</a>
+
+    {% if cta %}
+    <div class="hero_cta feature-cta">
+      {% for cta in cta %}
+      <a href="{{ cta.href | relative_url }}" class="button {% if cta.isPrimary %}is-primary{% else %}is-outlined{% endif %}">{{ cta.text }}</a>
+      {% endfor %}
     </div>
+    {% endif %}
 
     {% if imageLicense %}
     <div class="feature-img-license">
