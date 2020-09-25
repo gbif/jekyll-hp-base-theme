@@ -1,0 +1,19 @@
+{% if include.structure %}
+  {% for dataBlock in include.structure %}
+    
+    {% comment %} extract the data {% endcomment %}
+    {% assign dataContent = site.data %}
+    {% if dataBlock.data %}
+      {% assign entries = dataBlock.data | split: "." %}
+      {% for entry in entries %}
+        {% assign dataContent = dataContent[entry] %}
+      {% endfor %}
+    {% else %}
+      {% assign dataContent = page %}
+    {% endif %}
+    
+    {% assign blockType = 'blocks/' | append: dataBlock.type | append: '.html' %}
+    {% include {{ blockType }} content=dataContent html=include.html %}
+
+  {% endfor %}
+{% endif %}

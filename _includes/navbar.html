@@ -1,0 +1,92 @@
+{% assign navigation = site.data[page.lang].navigation | default: site.data.navigation %}
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{ '/' | append: page.lang | relative_url }}">
+      <img src="{{ site.logo | relative_url }}" height="28" />
+    </a>
+
+    {% if navigation %}
+      <a
+        role="button"
+        id="navbarBurger"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    {% endif %}
+  </div>
+
+  {% if navigation %}
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      {% for item in navigation %}
+        {% if item.menu %}
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link"> {{ item.text }} </a>
+
+          <div class="navbar-dropdown">
+            {% for subitem in item.menu %}
+              {% if subitem.href %}
+                <a
+                  href="{{ subitem.href | relative_url }}"
+                  class="navbar-item {% if subitem.href == page.url %} active{% endif %}"
+                >
+                  {{ subitem.text }}
+                </a>
+              {% elsif subitem.text contains '---' %}
+                <hr class="navbar-divider" />
+              {% else %}
+                <h6 class="has-text-grey navbar-item">{{ subitem.text }}</h6>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% else %}
+          <a
+            class="navbar-item"
+            href="{{ item.href | relative_url }}"
+          >
+          {{ item.text }}
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if page.lang-ref%}
+      {% assign posts = site.posts | where: "lang-ref", page.lang-ref | sort: 'lang' %}
+      {% if posts.size == 0 %}
+          {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+      {% endif %}
+      {% if posts.size > 1 %}
+
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="buttons">
+            <a class="button is-light">
+              <span class="icon is-small">
+                <i class="fa fa-language"></i>
+              </span>
+            </a>
+
+            <div class="navbar-dropdown is-right">
+              {% for post in posts %}
+              <a class="navbar-item" href="{{ site.base-url }}{{ post.url }}">
+                {{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endif %}
+    
+  </div>
+  {% endif %}
+</nav>

@@ -1,0 +1,11 @@
+
+<div style="position: relative">
+  <div class="dropdown-menu" style="display: inline-block; position: relative;" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+      {% for lang in site.data.languages %}
+      {% assign language = lang[1] %}
+        <a class="dropdown-item" href="{{ site.baseurl }}{{ lang[0] }}">{{ language.icon }} {{ language.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

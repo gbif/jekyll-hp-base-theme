@@ -1,0 +1,36 @@
+{% assign parallax = include.parallax | default: include.content.parallax | default: false %}
+{% assign fullHeight = include.fullHeight | default: include.content.fullHeight | default: false %}
+{% assign background = include.background | default: include.content.background | default: "https://via.placeholder.com/500x300?text=Img%20required" %}
+{% assign preTitle = include.preTitle | default: include.content.preTitle %}
+{% assign title = include.title | default: include.content.title | default: "TITLE IS REQUIRED" %}
+{% assign description = include.description | default: include.content.description %}
+{% assign cta = include.cta | default: include.content.cta %}
+
+<div 
+  class="heroArticleHeader {% if include.parallax %} parallax {% endif %} {% if fullHeight %} full-height {% else %} not-full-height {% endif %}" 
+  style="background-image:url('{{background}}');"
+  >
+  <img src="{{ background }}" alt="{{ include.alt }}"/>
+  <div class="display-table">
+    <div class="display-table-cell__bottom">
+      <div class="heroArticleHeader__content">
+        <h5 class="pre-title">{{preTitle}}</h5>
+        <h3 class="title">
+          <a href="#"
+            ><b
+              >{{ title }}</b
+            ></a
+          >
+        </h3>
+        <div class="post-info">
+          <div>
+            <h6 class="date">on Sep 29, 2017 at 9:48 am</h6>
+          </div>
+        </div>
+        <!-- post-info -->
+      </div>
+      <!-- content-card -->
+    </div>
+    <!-- display-table-cell -->
+  </div>
+</div>

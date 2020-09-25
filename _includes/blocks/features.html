@@ -1,0 +1,14 @@
+<section class="features">
+  {% if include.content.title or include.content.description %}
+  <div class="features-intro">
+    {% include blocks/featureContent.html content=include.content %}
+  </div>
+  {% endif %}
+  <div class="feature-cards has-{{include.content.features.size}}-elements">
+    {% for feature in include.content.features %}
+    <article class="feature">
+      {% include blocks/featureContent.html content=feature %}
+    </article>
+    {% endfor %}
+  </div>
+</section>

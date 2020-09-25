@@ -1,0 +1,26 @@
+.navbar
+  box-shadow: 0px 2px 8px rgba(0,0,0, .1)
+
+.toc__removeOnMobile
+  display: none
+
++tablet
+  .article--toc .columns
+    flex-direction: row-reverse
+  .toc 
+    display: block
+
+.toc
+  @extend .menu
+.toc p
+  @extend .menu-label 
+.toc ul
+  @extend .menu-list
+
++until($navbar-breakpoint)
+  .navbar-end
+    border-top: 1px solid #eee
+    a
+      display: inline-block
+    .button
+      display: none

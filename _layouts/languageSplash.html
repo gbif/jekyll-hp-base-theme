@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% assign preTitle = include.preTitle | default: page.preTitle %}
+{% assign title = include.title | default: page.title %}
+{% assign description = include.description | default: page.description %}
+{% assign background = include.background | default: page.background %}
+{% assign darken = include.darken | default: page.darken %}
+
+{% assign first4 = background | slice: 0, 4 %}
+{% assign firstLetter = background | slice: 0 %}
+{% if first4 == 'http' or firstLetter == '/' %}
+  {% assign isImage = true %}
+{% endif %}
+
+
+<html>
+  {% include head.html %}
+  <body class="language-splash {% if darken %}language-splash--darken{% endif %}"
+    {% if background %}
+    style="background-image: {% if isImage %}
+        url('{{ background }}')
+      {% else %}
+        {{ background }}
+      {% endif %}"
+    {% endif %}
+  >
+    <main class="content">
+      <div class="feature-content">
+        {{ content }}
+        <div class="m-t-2">
+        {% include languageSelector.html %}
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+---
+layout: base
+description: Template for a list of posts, with full width
+remarks: See also page.layout == 'archive' in footer.html
+---
+{% assign posts = site.posts %}
+{% if page.lang %}
+  {% assign posts = site.posts | where: "lang", page.lang %}
+{% endif %}
+
+<div id="archive-filter" class="archive-filter"></div>
+<div class="features">
+  <div class="feature-cards has-{{ posts.size }}-elements">
+    {% for post in posts %}
+      <article class="feature" data-categories="{% for category in post.categories %}{{ category | strip }}|{% endfor %}">
+      {% assign description = post.excerpt | truncatewords: 20  %}
+      {% assign date = post.date | date: "%B %d, %Y"  %}
+      {% assign url = post.url | relative_url  %}
+        {% include blocks/featureContent.html content=post description=description preTitle=date url=url %}
+      </article>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,37 @@
+.language-splash
+  min-height: 100vh
+  padding: 96px 24px 96px 24px
+  text-align: center
+  background-position: center
+  background-size: cover
+  height: 100%
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: #ffffff
+    opacity: 0.3
+  &--darken
+    color: white
+    h1, h2, h3, h4
+      color: white
+    &:after
+      background-color: #123a50
+  main
+    max-width: 600px
+    margin: auto
+    position: relative
+    z-index: 1
+
+.lang-options
+  text-align: center
+  margin-bottom: 12px
+  ul
+    margin: -12px
+  li
+    display: inline-block
+    margin: 12px

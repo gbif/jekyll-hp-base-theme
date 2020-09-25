@@ -1,0 +1,34 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {% if page.layout == 'home' %}
+    <title>{{ site.title }}</title>
+  {% else %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+  {% endif %}
+  
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+
+  <!-- Language versions -->
+  {% if page.layout != 'index' and page.lang-ref %}
+    {% assign posts = site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% if posts.size == 0 %}
+      {% assign posts = site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% endif %}
+    {% if posts.size > 1 %}
+      {% for post in posts %}
+    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ site.base-url }}{{ post.url }}" />
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+
+  <!-- CSS -->
+  <!-- Bulma is included in main.css -->
+  <link rel="stylesheet" href="{{ '/assets/theme/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/theme/css/font-awesome.min.css' | relative_url }}">
+
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS feed" href="{{ '/feed.xml' | absolute_url }}" >
+</head>

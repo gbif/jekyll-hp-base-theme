@@ -1,0 +1,79 @@
+# The home landing page
+
+# Feature cards
+cardExample:
+  title: Sea creepeth
+  description: |
+    abundantly light occurrences <span data-ajax-url="http://api.gbif.org/v1/dataset/search?size=0">54,471</span> years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+  features:
+    - preTitle: Call  # optional
+      title: Call for tenders out     # required
+      description: |      # required
+        Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
+      # img required
+      background: http://api.gbif.org/v1/image/unsafe/fit-in/http%3A%2F%2Fmczbase.mcz.harvard.edu%2Fspecimen_images%2Fentomology%2Fpaleo%2Flarge%2FPALE-33621_syn6_Formicidae.jpg
+      imageLicense: Some *text* goes [something](https://www.gbif.org/)
+      url: /about
+      categories: [cat, dog]
+    - preTitle: Partners  # optional
+      title: Abundantly light green     # required
+      description: |      # required
+        Light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+      background: http://api.gbif.org/v1/image/unsafe/fit-in/http%3A%2F%2Fmczbase.mcz.harvard.edu%2Fspecimen_images%2Fentomology%2Fpaleo%2Flarge%2FPALE-33621_syn6_Formicidae.jpg
+    - preTitle: Partners  # optional
+      title: Partners     # required
+      description: |      # required
+        Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+      # img required
+      background: http://api.gbif.org/v1/image/unsafe/fit-in/http%3A%2F%2Fmczbase.mcz.harvard.edu%2Fspecimen_images%2Fentomology%2Fpaleo%2Flarge%2FPALE-33621_syn6_Formicidae.jpg
+    - preTitle: Publishing  # optional
+      title: Abundantly light green     # required
+      description: |      # required
+        Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
+      # img required
+      background: http://api.gbif.org/v1/image/unsafe/fit-in/http%3A%2F%2Fmczbase.mcz.harvard.edu%2Fspecimen_images%2Fentomology%2Fpaleo%2Flarge%2FPALE-33621_syn6_Formicidae.jpg
+    - preTitle: Partners  # optional
+      title: Partners     # required
+      description: |      # required
+        Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+      background: http://api.gbif.org/v1/image/unsafe/fit-in/http%3A%2F%2Fmczbase.mcz.harvard.edu%2Fspecimen_images%2Fentomology%2Fpaleo%2Flarge%2FPALE-33621_syn6_Formicidae.jpg
+      imageLicense: Some *text* goes [something](https://www.gbif.org/)
+      url: /about
+      cta:                # optional
+      - text: Learn more
+        href: http://example.com
+        isPrimary: true
+      - text: Download
+        href: http://example.com
+
+productExample:
+  align: right
+  preTitle: Publishing  # optional
+  title: Integrated publishing toolkit     # required
+  description: |      # required
+    Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is.
+  # img required
+  background: /assets/img/product-right.png
+splitExample:
+  reverse: true
+  preTitle: Data mobilization  # optional
+  title: Guide to publishing sequence-derived data opens for peer-review     # required
+  description: |      # required
+    Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is.
+  # img required
+  background: http://api.gbif.org/v1/image/unsafe/fit-in/http%3A%2F%2Fmczbase.mcz.harvard.edu%2Fspecimen_images%2Fentomology%2Fpaleo%2Flarge%2FPALE-33621_syn6_Formicidae.jpg
+  imageLicense: Some *text* goes [something](https://www.gbif.org/)
+  url: /about
+bannerExample2:
+  preTitle: Data mobilization  # optional
+  title: Guide to publishing sequence-derived data opens for peer-review     # required
+  description: |      # required
+    Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. 
+    
+    Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is.
+  cta:                # optional
+  - text: Learn more
+    href: http://example.com
+  - text: Download
+    href: http://example.com
+  center: true

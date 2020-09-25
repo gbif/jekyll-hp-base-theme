@@ -1,0 +1,45 @@
+.hero
+  position: relative
+  height: calc(100vh - #{$navbar-height})
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &.parallax
+    background-attachment: fixed
+  &.overlay:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: #123a50
+    opacity: 0.3
+  &.overlay-light:after
+    background-color: #fff
+  &_content
+    color: white
+    text-align: center
+    z-index: 1
+  &_preTitle
+    font-weight: 500
+  &_title
+    font-size: 3.5rem
+    margin-bottom: 1.25rem
+    line-height: 1
+  &_postTitle
+    width: 750px
+    padding: 0 32px
+    max-width: 100%
+    margin: auto
+    margin-bottom: 1.25rem
+    font-size: 120%
+  &_cta
+    .button
+      margin: 0 6px
+
+

@@ -1,0 +1,25 @@
+<div class="hero is-fullheight-with-navbar heroArticleHeader" {% if include.parallax %} style="background-image:url('{{include.background}}');" {% endif %}>
+  <img src="{{ include.background }}" alt="{{ include.alt }}" {% if include.parallax %} style="visibility: hidden" {% endif %}/>
+  <div class="display-table">
+    <div class="display-table-cell__bottom">
+      <div class="heroArticleHeader__content">
+        <h5 class="pre-title">Article</h5>
+        <h3 class="title">
+          <a href="#"
+            ><b
+              >{{ page.title }}</b
+            ></a
+          >
+        </h3>
+        <div class="post-info">
+          <div>
+            <h6 class="date">on Sep 29, 2017 at 9:48 am</h6>
+          </div>
+        </div>
+        <!-- post-info -->
+      </div>
+      <!-- content-card -->
+    </div>
+    <!-- display-table-cell -->
+  </div>
+</div>

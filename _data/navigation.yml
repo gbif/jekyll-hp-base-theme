@@ -1,0 +1,18 @@
+# Links listed below will be included in your site's navbar (navigation at the top)
+
+- text: About
+  href: /about/
+- text: Data
+  href: /data/
+- text: Activities
+  menu: # Dropdown menu (one level deep only)
+  - text: Publishing
+    href: /there-is-no-page-for-this-permalink/
+  - text: Community building
+    href: /about/
+  - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
+  - text: "Tools" # Title for block of menu items
+  - text: Report findings
+    href: https://www.inaturalist.org/
+- text: News
+  href: /news/

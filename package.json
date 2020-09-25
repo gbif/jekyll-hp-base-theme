@@ -1,0 +1,30 @@
+{
+  "name": "gbif-ssg-theme-algae",
+  "version": "1.0.0",
+  "description": "Jekyll theme for small websites hosted by GBIF.",
+  "author": "GBIF Secretariat <informatics@gbif.org>",
+  "private": true,
+  "license": "Apache 2.0",
+  "homepage": "https://github.com/gbif/ssg-theme-algae",
+  "keywords": [
+    "jekyll",
+    "theme",
+    "gbif"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbif/ssg-theme-algae.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gbif/ssg-theme-algae/issues"
+  },
+  "scripts": {
+    "copy:bulma": "cp -r node_modules/bulma/* _sass/bulma",
+    "copy:font-awesome": "cp node_modules/font-awesome/css/font-awesome.min.css assets/theme/css/font-awesome.min.css && cp -r node_modules/font-awesome/fonts/* assets/theme/fonts",
+    "copy:all": "mkdir -p _sass/bulma && mkdir -p assets/theme/css && mkdir -p assets/theme/fonts && mkdir -p assets/theme/js && npm run copy:bulma && npm run copy:font-awesome"
+  },
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "font-awesome": "^4.7.0"
+  }
+}

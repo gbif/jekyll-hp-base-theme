@@ -1,0 +1,148 @@
+.navbar-brand
+  background: $navbar-brand-background-color
+
+.ajax-is-loading
+  color: transparent
+  background: #00000011
+
+.m-t-2
+  margin-top: 2rem!important
+
+.display-table
+  display: table
+  height: 101%
+  width: 100%
+
+.display-table-cell
+  display: table-cell
+  vertical-align: middle
+
+.display-table-cell__bottom
+  display: table-cell
+  vertical-align: bottom
+
+.heroArticleHeader
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
+  max-height: calc(100vh - #{$navbar-height})
+  .display-table
+    top: 0
+    bottom: 0
+  img 
+    display: block
+  &.not-full-height
+    img
+      visibility: hidden
+    .display-table
+      position: absolute
+  &.full-height
+    height: calc(100vh - #{$navbar-height})
+  &.parallax
+    background-attachment: fixed
+  &__content
+    text-align: center
+    background: white
+    max-width: 45rem
+    margin: auto
+    padding: 24px 32px
+    h3 > a
+      color: inherit
+
++from(700px)
+  .heroArticleHeader
+    img
+      visibility: hidden
+    .display-table
+      position: absolute
+
+.article
+  margin: 2rem auto 4rem auto
+  max-width: 45rem
+  &--toc
+    max-width: 70rem
+  .content
+    margin: 0 12px
+
++from(700px)
+  .article
+    margin: 4rem auto 6rem auto
+
+
+.imageHeader
+  position: relative
+  padding: 5rem 0
+  margin: 5rem 0 3rem 0
+  text-align: center
+  h2
+    position: relative
+    z-index: 2
+    color: white
+    font-size: 3rem
+    margin: 0!important
+  div
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    background-attachment: fixed
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin-left: -2000px
+    margin-right: -2000px
+    z-index: 1
+  &__overlay
+    background: #123a50//$primary
+    opacity: 0.5
+
+
+// footer
+.footer-groups
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+
+.footer-column
+  flex: 0 1 250px
+  margin: 24px
+
+.footer-column
+  @extend .menu
+.footer-column-name
+  @extend .menu-label 
+.footer-links
+  @extend .menu-list
+  a
+    padding: 0.25em 0
+
+.footer-footer
+  margin-top: 24px
+  text-align: center
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  >div
+    margin: 0 24px
+
+.footer-online-list
+  margin-top: 12px
+  li
+    display: inline-block
+    font-size: 0.8rem
+    a
+      color: inherit
+
+
+.archive-filter
+  display: flex
+  justify-content: center
+  background: white
+  border-bottom: 1px solid #00000014
+  >div
+    padding: 1em
