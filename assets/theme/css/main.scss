@@ -50,4 +50,4 @@ $navbar-brand-background-color: none !default;
 // Variable overrides
 // 
 // Need to be loaded first, see https://bulma.io/documentation/customize/variables/
-@import "theme/_main";// Overrides for Bulma variables
+@import "_main";// Overrides for Bulma variables
