@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Antaeo Nereis mollibat nocebant nunc amantem longi
 description: Lorem markdownum spatium limes indefessus neque at orat aestuat
 permalink: /about

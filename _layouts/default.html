@@ -1,12 +1,10 @@
 ---
 layout: base
 description: Default template for pages and posts, with contained width
+structure:
+  - type: articleHeader_fullHeight
+  - type: markdown
 ---
 
-<div class="row">
-  <div class="col-md-10 col-lg-8 mx-auto">
-
-    {{ content }}
-
-  </div>
-</div>
+{% assign structure = page.structure | default: layout.structure %}
+{% include structure.html structure=structure %}

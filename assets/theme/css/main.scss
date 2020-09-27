@@ -47,6 +47,14 @@ h1, h2, h3, h4, h5, h6 {
 
 $navbar-brand-background-color: none !default;
 
+{% if site.themeStyle.colors.primary %}
+  $primary: {{ site.themeStyle.colors.primary }};
+{% endif %}
+
+{% if site.themeStyle.colors.primary %}
+  $link: {{ site.themeStyle.colors.links }};
+{% endif %}
+
 // Variable overrides
 // 
 // Need to be loaded first, see https://bulma.io/documentation/customize/variables/

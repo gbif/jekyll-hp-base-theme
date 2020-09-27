@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Three georeferencing documents released for GBIF community review
 description: Towards developing a theme for research project websites
 permalink: /article2
