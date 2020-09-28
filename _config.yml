@@ -42,7 +42,7 @@ exclude:
   - LICENSE
   - package-lock.json
   - package.json
-  - ssg-theme-algae.gemspec
+  - jekyll-theme-algae.gemspec
 
 # FRONTMATTER DEFAULTS
 defaults:

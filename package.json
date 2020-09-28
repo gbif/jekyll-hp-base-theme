@@ -1,11 +1,11 @@
 {
-  "name": "gbif-ssg-theme-algae",
+  "name": "gbif-jekyll-theme-algae",
   "version": "1.0.0",
   "description": "Jekyll theme for small websites hosted by GBIF.",
   "author": "GBIF Secretariat <informatics@gbif.org>",
   "private": true,
   "license": "Apache 2.0",
-  "homepage": "https://github.com/gbif/ssg-theme-algae",
+  "homepage": "https://github.com/gbif/jekyll-theme-algae",
   "keywords": [
     "jekyll",
     "theme",
@@ -13,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gbif/ssg-theme-algae.git"
+    "url": "https://github.com/gbif/jekyll-theme-algae.git"
   },
   "bugs": {
-    "url": "https://github.com/gbif/ssg-theme-algae/issues"
+    "url": "https://github.com/gbif/jekyll-theme-algae/issues"
   },
   "scripts": {
     "copy:bulma": "cp -r node_modules/bulma/* _sass/bulma",

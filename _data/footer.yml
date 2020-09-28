@@ -14,12 +14,12 @@ columns:
 
   - name: Code
     description: | # E.g. funding acknowledgement. Can be Markdown
-      This project is open source. See [`_data/footer.yml`](https://github.com/gbif/ssg-theme-algae/blob/master/_data/footer.yml) to customize the footer.
+      This project is open source. See [`_data/footer.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/footer.yml) to customize the footer.
     links:
   
   - name: Contact
     description: | # E.g. funding acknowledgement. Can be Markdown
-      Social icons links defined in [`_config.yml`](https://github.com/gbif/ssg-theme-algae/blob/master/_config.yml)
+      Social icons links defined in [`_config.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_config.yml)
       * Street name
       * 1234 postal code
       * Country
