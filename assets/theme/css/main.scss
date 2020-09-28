@@ -37,7 +37,7 @@ $custom_rounded: "{{ site.rounded_corners }}";
   $enable-rounded: false;
 }
 
-{% if site.theme.coloredHeadlineLinks == false %}
+{% if site.algae.style.coloredHeadlineLinks == false %}
 h1, h2, h3, h4, h5, h6 {
   a {
     color: inherit;
@@ -45,9 +45,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 {% endif %}
 
-$navbar-brand-background-color: none !default;
+$navbar-brand-background-color: white !default;
 
-// Variable overrides
-// 
-// Need to be loaded first, see https://bulma.io/documentation/customize/variables/
-@import "theme/_main";// Overrides for Bulma variables
+{% if site.algae.style.colors.primary %}
+  $primary: {{ site.algae.style.colors.primary }};
+{% endif %}
+
+{% if site.algae.style.colors.links %}
+  $link: {{ site.algae.style.colors.links }};
+{% endif %}
+
+{% if site.algae.style.square == true %}
+  $isSquare: true;
+  $radius-small: 0;
+  $radius: 0;
+  $radius-large: 0; 
+{% endif %}
+
+
+
+{% if jekyll.environment != "production" and site.algae.hideHelper != true %}
+  $hasThemeFeedback: true;
+{% endif %}
+$hasThemeFeedback: false !default;
+
+@import "_main";

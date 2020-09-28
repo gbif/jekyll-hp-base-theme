@@ -2,6 +2,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  {% comment %}
+  Theme feedback is comments in the interface about how to best use the theme
+  {% endcomment %}
+  {% if jekyll.environment != "production" %}
+  <script>
+    var themeFeedbackEnabled = true;
+    var themeFeedback = [];
+  </script>
+  {% endif %}
+
   {% if page.layout == 'home' %}
     <title>{{ site.title }}</title>
   {% else %}

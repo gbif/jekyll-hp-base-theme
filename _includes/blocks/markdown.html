@@ -1,6 +1,10 @@
 {% assign toc = page.toc %}
 {% assign mobileToc = page.mobileToc %}
-{% assign html = include.html %}
+{% assign html = include.html | default: content %}
+
+{% comment %}
+{% include blocks/prose.html content=html %}
+{% endcomment %}
 
 {% if html %}
 <div class="container">

@@ -1,22 +1,42 @@
 {% assign parallax = include.parallax | default: include.content.parallax | default: false %}
 {% assign fullHeight = include.fullHeight | default: include.content.fullHeight | default: false %}
-{% assign background = include.background | default: include.content.background | default: "https://via.placeholder.com/500x300?text=Img%20required" %}
+{% assign background = include.background | default: include.content.background %}
 {% assign preTitle = include.preTitle | default: include.content.preTitle %}
 {% assign title = include.title | default: include.content.title | default: "TITLE IS REQUIRED" %}
 {% assign description = include.description | default: include.content.description %}
 {% assign cta = include.cta | default: include.content.cta %}
+{% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
+
+{% unless background or jekyll.environment == "production" %}
+<script>
+themeFeedback.push({title: "Missing background", description: "You haven't configured a background. To do so add <code>background: /some-image-name.jpg</code> in the frontmatter of this page."})
+</script>
+{% endunless %}
+{% assign background = background | default: "https://via.placeholder.com/500x300?text=Img%20required" %}
 
 <div class="hero {% if parallax %} parallax {% endif %} {% if fullHeight %} full-height {% else %} not-full-height {% endif %} overlay" 
     style="background-image:url('{{ background }}');">
   <div class="hero_content">
     <div class="hero_preTitle">{{ preTitle }}</div>
-    <h2 class="hero_title">
+    <h1 class="hero_title">
       {{ title }}
-    </h2>
+    </h1>
     <div class="hero_postTitle">{{ description | markdownify }}</div>
-    <div class="hero_cta">
-      <a class="button" href="/data">Explore</a>
-      <a class="button" href="/about" >About</a>
+
+    {% if cta %}
+    <div class="hero_cta feature-cta">
+      {% for cta in cta %}
+      <a href="{{ cta.href | relative_url }}" class="button {% if cta.isPrimary %}is-primary{% else %}is-outlined{% endif %}">{{ cta.text }}</a>
+      {% endfor %}
     </div>
+    {% endif %}
+
+    {% if imageLicense %}
+    <div class="feature-img-license">
+      <div class="feature-img-license-c">© </div>
+      <div class="feature-img-license-text">{{ imageLicense | markdownify }}</div>
+    </div>
+    {% endif %}
+
   </div>
 </div>

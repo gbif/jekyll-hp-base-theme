@@ -31,13 +31,18 @@ $card-double-size: ($card-width * 2 + $card-gap * 2)
   opacity: 0.5
   font-size: 12px
   color: white
+  &:hover
+    opacity: 1
+    .feature-img-license-text
+      display: block
   a
     color: inherit
     text-decoration: underline
   .feature-img-license-c
-    text-shadow: 0 0 3px #000000
+    background: rgba(0,0,0,.5)
   .feature-img-license-text
     display: none
+    background: rgba(0,0,0,.5)
   >div
     line-height: 1em
     padding: 3px

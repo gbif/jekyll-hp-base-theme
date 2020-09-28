@@ -1,0 +1,23 @@
+---
+layout: gbifData
+description: Default template for occurrence search
+---
+
+<script>
+  var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
+  var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : undefined;
+  ReactDOM.render(
+    React.createElement(
+      gbifReactComponents.OccurrenceSearch,
+      { style: { height: 'calc(100vh - 4.25rem)' }, theme: userTheme, config: userConfig }
+    ),
+    document.getElementById('root')
+  );
+
+  if (typeof userTheme === 'undefined') {
+    console.warn('No theme defined - using default styling');
+  }
+  if (typeof userConfig === 'undefined') {
+    console.warn('No config provided - all data will be shown');
+  }
+</script>

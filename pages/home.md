@@ -4,6 +4,7 @@ title: Lorem ipsum dolor sit amet
 description: Lesser saw seas own have can’t kind Also to every own yielding there stars one itself lights seed yielding dominion lesser from lesser were divide be their spirit one behold a they’re grass called open.
 background: /assets/img/chuttersnap-146799-unsplash.jpg
 fullHeightx: true
+imageLicense: something goes [here](/about)
 permalink: /
 structure:
   - type: hero

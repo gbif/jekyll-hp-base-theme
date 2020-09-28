@@ -1,15 +1,11 @@
 ---
-layout: base
+layout: default
 description: Template for homepage
 remark: See also page.layout == 'home' in head.html and jumbotron.html
 structure:
   - type: hero
-  - data: home.cardExample
-    type: features
-  - data: home.bannerExample1
-    type: splitBanner
-  - data: home.bannerExample2
-    type: textBanner
+  - type: markdown
+  - type: latestPosts
 ---
 
 {% assign structure = page.structure | default: layout.structure %}

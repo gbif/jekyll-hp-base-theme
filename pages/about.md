@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Antaeo Nereis mollibat nocebant nunc amantem longi
 description: Lorem markdownum spatium limes indefessus neque at orat aestuat
 permalink: /about
@@ -8,6 +7,7 @@ background: "https://api.gbif.org/v1/image/unsafe/1400x1400/http:%2F%2Fimages.ct
 parallax: true
 toc: false
 mobileToc: false
+layout: page
 ---
 
 ## Procris quippe mentior urbes ubi
