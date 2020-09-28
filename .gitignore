@@ -1,6 +1,7 @@
 *.gem
 .bundle
 .sass-cache
+.jekyll-cache/
 _site
 Gemfile.lock
 
@@ -9,3 +10,4 @@ node_modules
 
 # Mac OS X
 .DS_Store
+

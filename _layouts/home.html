@@ -10,7 +10,7 @@ structure:
 
 {% assign structure = page.structure | default: layout.structure %}
 {% include structure.html structure=structure %}
-
+{% comment %}
 {% assign twitter_feed = false %} {% if site.tweets_on_home and
 site.twitter_username %} {% assign twitter_feed = true %} {% endif %}
 
@@ -51,3 +51,4 @@ site.twitter_username %} {% assign twitter_feed = true %} {% endif %}
     {% endif %}
   </div>
 </div>
+{% endcomment %}

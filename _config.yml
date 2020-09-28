@@ -1,8 +1,8 @@
 # SITE SETTINGS
-title: Algae theme                      # Title in top navigation bar (navbar) and <head>
-description: Jekyll theme for biodiversity websites # Site description in <head>
+title: Tecala
+description: Explore the biodiversity of Tecala
 author: GBIF Secretariat                # Used for copyright statement in footer
-# url: "https://tecala.gbif.org"        # No slash at the end - Only required if your site is in a subdomain e.g. https://username.github.io
+url: "https://algae-theme.netlify.com"        # No slash at the end - Only required if your site is in a subdomain e.g. https://username.github.io
 # baseurl: "/tecala"                    # Only required if your site is in a subdirectory e.g. https://username.github.io/sitename
                                         # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
                                         # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/about/#links
@@ -17,17 +17,17 @@ github_username: gbif                   # Social icon in footer
 tweets_on_home: true                    # Show Twitter feed of twitter_username on homepage
 
 algae:
-  # logo: /assets/img/tecala_logo.png     # Logo in navbar, will be displayed with 28px height
+  logo: /assets/img/tecala_logo.png     # Logo in navbar, will be displayed with 28px height
   logoAndTitle: false
   hideHelper: false
   archive_permalink: /news/             # Permalink of page using archive.html layout, required when using post categories
   latestPostLimit: 3                    # Show x number of latest posts when showing latest posts. Defaults to 3
   style:
-    square: false
+    square: true
     colors:
-      primary: "#3880ec"
-      links: "#3880ec"
-    coloredHeadlineLinks: false
+      primary: "#e86533"
+      links: "#e86533"
+    coloredHeadlineLinks: true
 
 # BUILD SETTINGS
 markdown: kramdown
