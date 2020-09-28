@@ -1,11 +1,18 @@
 {% assign parallax = include.parallax | default: include.content.parallax | default: false %}
 {% assign fullHeight = include.fullHeight | default: include.content.fullHeight | default: false %}
-{% assign background = include.background | default: include.content.background | default: "https://via.placeholder.com/500x300?text=Img%20required" %}
+{% assign background = include.background | default: include.content.background %}
 {% assign preTitle = include.preTitle | default: include.content.preTitle %}
 {% assign title = include.title | default: include.content.title | default: "TITLE IS REQUIRED" %}
 {% assign description = include.description | default: include.content.description %}
 {% assign cta = include.cta | default: include.content.cta %}
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
+
+{% unless background or jekyll.environment == "production" %}
+<script>
+themeFeedback.push({title: "Missing background", description: "You haven't configured a background. To do so add <code>background: /some-image-name.jpg</code> in the frontmatter of this page."})
+</script>
+{% endunless %}
+{% assign background = background | default: "https://via.placeholder.com/500x300?text=Img%20required" %}
 
 <div class="hero {% if parallax %} parallax {% endif %} {% if fullHeight %} full-height {% else %} not-full-height {% endif %} overlay" 
     style="background-image:url('{{ background }}');">

@@ -1,0 +1,22 @@
+.feedbackButton
+  display: none
+  
+@if $hasThemeFeedback == true
+  .feedbackButton
+    display: block
+    position: fixed
+    background: tomato
+    color: white
+    right: 24px
+    bottom: 0
+    z-index: 10000
+    button
+      background: none
+      border: none
+      color: inherit
+  .feedbackCounter
+    margin: 0 6px
+    padding: 0 3px
+    background: #00000044
+    border-radius: 10px
+    font-size: 85%

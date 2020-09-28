@@ -54,7 +54,7 @@
   {% if categories %}
   <div class="feature-categories tags">
     {% for category in categories %}
-      <a class="tag is-light" href="{{ site.archive_permalink | relative_url }}?category={{ category | strip | url_encode }}">{{ category }}</a>
+      <a class="tag is-light" href="{{ site.algae.archive_permalink | relative_url }}?category={{ category | strip | url_encode }}">{{ category }}</a>
     {% endfor %}
   </div>
   {% endif %}

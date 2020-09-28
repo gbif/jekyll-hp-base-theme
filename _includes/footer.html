@@ -116,8 +116,8 @@
     var filterElement = document.getElementById('archive-filter');
     if (filterElement) {
       filterElement.innerHTML = '<div class="tags has-addons">' + 
-        '<a href="{{ site.archive_permalink | relative_url }}" class="tag is-medium">' + category + '</a>' + 
-        '<a href="{{ site.archive_permalink | relative_url }}" class="tag is-medium is-delete"></a>' +
+        '<a href="{{ site.algae.archive_permalink | relative_url }}" class="tag is-medium">' + category + '</a>' + 
+        '<a href="{{ site.algae.archive_permalink | relative_url }}" class="tag is-medium is-delete"></a>' +
       '</div>'
     }
   }

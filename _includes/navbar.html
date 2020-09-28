@@ -1,9 +1,28 @@
 {% assign navigation = site.data[page.lang].navigation | default: site.data.navigation %}
 
+{% unless navigation or jekyll.environment == "production" %}
+<script>
+themeFeedback.push({title: "Missing navigation", description: "You haven't configured a navigation.", "link": "/feedback"})
+</script>
+{% endunless %}
+
+{% unless site.algae.logo or jekyll.environment == "production" %}
+<script>
+themeFeedback.push({title: "Missing logo", description: "You haven't configured a site logo. The site name will be used instead. To add a logo you need to add <code>site.algae.logo</code> to <code>_config.yml</code>."})
+</script>
+{% endunless %}
+
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="{{ '/' | append: page.lang | relative_url }}">
-      <img src="{{ site.logo | relative_url }}" height="28" />
+      {% if site.algae.logo %}
+        <img src="{{ site.algae.logo | relative_url }}" height="28" />
+      {% if site.title and site.algae.logoAndTitle %}
+        <span class="navbar_logo-text">{{ site.title }}</span>
+      {% endif %}
+      {% else %}
+        <span class="navbar_logo-text">{{ site.title }}</span>
+      {% endif %}
     </a>
 
     {% if navigation %}

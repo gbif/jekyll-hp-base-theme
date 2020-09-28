@@ -81,3 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+
+{% if jekyll.environment != "production" and site.algae.hideHelper != true %}
+  {% include js/themeFeedback.js %}
+{% endif %}

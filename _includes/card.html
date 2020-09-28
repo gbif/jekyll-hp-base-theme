@@ -23,10 +23,10 @@
     </div>
   </div>
 
-  {% if post.categories and site.archive_permalink %}
+  {% if post.categories and site.algae.archive_permalink %}
     <div class="card-footer">
       {% for category in post.categories %}
-        <a class="badge badge-pill" href="{{ site.archive_permalink | relative_url }}?category={{ category | url_encode }}">{{ category }}</a>
+        <a class="badge badge-pill" href="{{ site.algae.archive_permalink | relative_url }}?category={{ category | url_encode }}">{{ category }}</a>
       {% endfor %}
     </div>
   {% endif %}
