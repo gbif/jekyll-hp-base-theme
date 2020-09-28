@@ -1,6 +1,6 @@
 # SITE SETTINGS
-title: Tecala
-description: Explore the biodiversity of Tecala
+title: Algae
+description: A jekyll theme for GBIFs hosted portals
 author: GBIF Secretariat                # Used for copyright statement in footer
 url: "https://algae-theme.netlify.com"        # No slash at the end - Only required if your site is in a subdomain e.g. https://username.github.io
 # baseurl: "/tecala"                    # Only required if your site is in a subdirectory e.g. https://username.github.io/sitename
@@ -17,17 +17,17 @@ github_username: gbif                   # Social icon in footer
 tweets_on_home: true                    # Show Twitter feed of twitter_username on homepage
 
 algae:
-  logo: /assets/img/tecala_logo.png     # Logo in navbar, will be displayed with 28px height
+  # logo: /assets/img/tecala_logo.png     # Logo in navbar, will be displayed with 28px height
   logoAndTitle: false
   hideHelper: false
-  archive_permalink: /news/             # Permalink of page using archive.html layout, required when using post categories
+  archive_permalink: /posts/             # Permalink of page using archive.html layout, required when using post categories
   latestPostLimit: 3                    # Show x number of latest posts when showing latest posts. Defaults to 3
   style:
     square: true
     colors:
-      primary: "#e86533"
-      links: "#e86533"
-    coloredHeadlineLinks: true
+      primary: "#4787fb"
+      links: "#4787fb"
+    coloredHeadlineLinks: false
 
 # BUILD SETTINGS
 markdown: kramdown

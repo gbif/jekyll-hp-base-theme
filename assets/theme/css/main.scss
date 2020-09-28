@@ -62,8 +62,6 @@ $navbar-brand-background-color: white !default;
   $radius-large: 0; 
 {% endif %}
 
-
-
 {% if jekyll.environment != "production" and site.algae.hideHelper != true %}
   $hasThemeFeedback: true;
 {% endif %}

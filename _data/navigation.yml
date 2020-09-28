@@ -7,12 +7,12 @@
 - text: Activities
   menu: # Dropdown menu (one level deep only)
   - text: Publishing
-    href: /there-is-no-page-for-this-permalink/
+    href: /with-toc
   - text: Community building
-    href: /about/
+    href: /with-parallax
   - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
   - text: "Tools" # Title for block of menu items
-  - text: Report findings
+  - text: Report observations
     href: https://www.inaturalist.org/
 - text: News
-  href: /news/
+  href: /posts/

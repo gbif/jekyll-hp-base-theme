@@ -7,7 +7,7 @@
 {% assign cta = include.cta | default: include.content.cta %}
 
 <div 
-  class="heroArticleHeader {% if include.parallax %} parallax {% endif %} {% if fullHeight %} full-height {% else %} not-full-height {% endif %}" 
+  class="heroArticleHeader {% if parallax %} parallax {% endif %} {% if fullHeight %} full-height {% else %} not-full-height {% endif %}" 
   style="background-image:url('{{background}}');"
   >
   <img src="{{ background }}" alt="{{ include.alt }}"/>

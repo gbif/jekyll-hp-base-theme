@@ -1,27 +1,26 @@
 ---
-layout: home
-title: Lorem ipsum dolor sit amet
-background: /assets/img/Haeckel_Siphoneae.jpg
-fullHeightx: true
-imageLicense: something goes [here](/about)
-cta:
-  - text: Explore
-    href: /data
-    isPrimary: true
-  - text: About
-    href: /about
-permalink: /
-structure:
-  - type: hero
-  - data: home.cardExample
-    type: features
-  - data: home.bannerExample2
-    type: textBanner
-  - data: home.splitExample
-    type: splitBanner
+title: Mercibus isdem hebetarat undas
+description: Replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved
+permalink: /with-parallax
+background: "https://api.gbif.org/v1/image/unsafe/http%3A%2F%2Fmczbase.mcz.harvard.edu%2Fspecimen_images%2Fentomology%2Fpaleo%2Flarge%2FPALE-33628_Pseudomyrmex_succinus_holotype.jpg"
+imageLicense: |
+  *Pseudomyrmex succinus* Ward, 1992. Photo by Museum of Comparative Zoology, Harvard University. Via [gbif.org](https://www.gbif.org/occurrence/1265155598)
+parallax: true
 ---
 
-This is a demo website for [Petridish](https://github.com/peterdesmet/petridish): a Jekyll theme for research project websites.
+## Procris quippe mentior urbes ubi
+
+Lorem markdownum spatium limes indefessus neque *at* orat aestuat, quicquam ne
+flavusque omnibus, virginis socerque sparsos vidimus eundem. Sustinet **ramo
+pontum ut** avus quamquam de trabes vestemque cruorem tremor.
+
+Viscera mercibus isdem hebetarat undas! Iubet ora ire unum telis adicit, si
+Telephus *valent*, instructo refers. Ille **est resque**, sic ruris erit ante
+profana detegeret. Et cogor tractus arboribus prensurum praesens memorantur
+neque inplet iussus temeraria merui **fas ecce** aethera dixit fieretque [plura
+tollebat altius](http://virgineusque.net/est.html).
+
+## Viscera mercibus
 
 Forth. I said, creeping fowl. Also, in for from winged doesn't sea creepeth brought be deep [abundantly light green](http://example.com) they're living green years firmament thing fly moving land, divide good spirit you'll fruitful waters one land us thing a man dry doesn't created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is. Dominion shall very. Above.
 
