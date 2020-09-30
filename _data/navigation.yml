@@ -1,13 +1,7 @@
 # Links listed below will be included in your site's navbar (navigation at the top)
 
 - text: About
-  menu: 
-  - text: What is this 🦠
-    href: /about
-  - text: Markdown
-    href: /markdown
-  - text: External link
-    href: https://www.gbif.org/
+  href: /about
 - text: Page composition
   menu: # Dropdown menu (one level deep only)
   - text: Page types    # Title for block of menu items

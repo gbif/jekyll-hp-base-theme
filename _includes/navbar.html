@@ -47,7 +47,7 @@ themeFeedback.push({title: "Missing logo", description: "You haven't configured 
         class="navbar-burger burger"
         aria-label="menu"
         aria-expanded="false"
-        data-target="navbarBasicExample"
+        data-target="mainNavbar"
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -57,7 +57,7 @@ themeFeedback.push({title: "Missing logo", description: "You haven't configured 
   </div>
 
   {% if navigation %}
-  <div class="navbar-menu">
+  <div id="mainNavbar" class="navbar-menu">
     <div class="navbar-start">
       {% for item in navigation %}
         {% if item.menu %}

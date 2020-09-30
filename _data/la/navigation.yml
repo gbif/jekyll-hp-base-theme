@@ -1,0 +1,6 @@
+# Links listed below will be included in your site's navbar (navigation at the top)
+
+- text: Lorem
+  href: https://www.gbif.org/
+- text: Ipsum
+  href: https://www.gbif.org/
