@@ -1,5 +1,15 @@
 {% assign navigation = site.data[page.lang].navigation | default: site.data.navigation %}
 
+{% assign navbar = page.navbar | default: site.algae.navbar %}
+
+{% assign floating = navbar.floating | default: false %}
+{% assign color = navbar.color %}
+{% assign hasWhiteText = navbar.hasWhiteText | default: false %}
+
+{%- capture homeLang -%}
+  {%- if site.algae.rootLang != page.lang -%}{{ page.lang }}{%- endif -%}
+{%- endcapture -%}
+
 {% unless navigation or jekyll.environment == "production" %}
 <script>
 themeFeedback.push({title: "Missing navigation", description: "You haven't configured a navigation.", "link": "/feedback"})
@@ -12,16 +22,21 @@ themeFeedback.push({title: "Missing logo", description: "You haven't configured 
 </script>
 {% endunless %}
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar 
+  {% if floating %} navbar--floating{% endif %} 
+  {% if hasWhiteText %} navbar--hasWhiteText{% endif %} 
+  " 
+  {% if color %}style="background-color: {{ color }}"{% endif %}
+  role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="{{ '/' | append: page.lang | relative_url }}">
+    <a class="navbar-item" href="{{ '/' | append: homeLang | relative_url }}">
       {% if site.algae.logo %}
         <img src="{{ site.algae.logo | relative_url }}" height="28" />
       {% if site.title and site.algae.logoAndTitle %}
         <span class="navbar_logo-text">{{ site.title }}</span>
       {% endif %}
       {% else %}
-        <span class="navbar_logo-text">{{ site.title }}</span>
+        <span class="navbar-item navbar_logo-text">{{ site.title }}</span>
       {% endif %}
     </a>
 
@@ -42,11 +57,11 @@ themeFeedback.push({title: "Missing logo", description: "You haven't configured 
   </div>
 
   {% if navigation %}
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div class="navbar-menu">
     <div class="navbar-start">
       {% for item in navigation %}
         {% if item.menu %}
-        <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-top-item navbar-item has-dropdown is-hoverable">
           <a class="navbar-link"> {{ item.text }} </a>
 
           <div class="navbar-dropdown">
@@ -68,7 +83,7 @@ themeFeedback.push({title: "Missing logo", description: "You haven't configured 
         </div>
         {% else %}
           <a
-            class="navbar-item"
+            class="navbar-top-item navbar-item"
             href="{{ item.href | relative_url }}"
           >
           {{ item.text }}
@@ -88,6 +103,7 @@ themeFeedback.push({title: "Missing logo", description: "You haven't configured 
         <div class="navbar-item has-dropdown is-hoverable">
           <div class="buttons">
             <a class="button is-light">
+              <span>{{ site.data.languages[page.lang].label }}</span>
               <span class="icon is-small">
                 <i class="fa fa-language"></i>
               </span>

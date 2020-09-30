@@ -1,0 +1,15 @@
+{% assign background = include.background | default: include.content.background %}
+{% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
+{% assign href = include.href | default: include.content.href %}
+
+{% if background %}
+<div class="feature-img" style="background-image: url('{{ background }}')">
+  {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}
+  {% if imageLicense %}
+  <div class="feature-img-license">
+     <div class="feature-img-license-c">© </div>
+     <div class="feature-img-license-text">{{ imageLicense | markdownify }}</div>
+  </div>
+  {% endif %}
+</div>
+{% endif %}

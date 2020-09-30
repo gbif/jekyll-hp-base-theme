@@ -1,0 +1,26 @@
+{% assign background = include.background | default: include.content.background %}
+{% assign preTitle = include.preTitle | default: include.content.preTitle %}
+{% assign title = include.title | default: include.content.title | default: "TITLE IS REQUIRED" %}
+{% assign description = include.description | default: include.content.description %}
+{% assign cta = include.cta | default: include.content.cta %}
+{% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
+{% assign center = true %}
+{% assign toc = include.toc | default: include.content.toc %}
+
+{% unless background or jekyll.environment == "production" %}
+<script>
+themeFeedback.push({title: "Missing background", description: "You haven't configured a background. To do so add <code>background: /some-image-name.jpg</code> in the frontmatter of this page."})
+</script>
+{% endunless %}
+
+<section class="postHeader {% if toc %} postHeader--withToc{% endif %}">
+  {% include blocks/feature.html 
+  background=background 
+  imageLicense=imageLicense 
+  preTitle=preTitle 
+  title=title 
+  description=description 
+  cta=cta 
+  center=center
+  %}
+</section>

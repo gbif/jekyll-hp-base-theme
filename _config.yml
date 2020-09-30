@@ -17,6 +17,7 @@ github_username: gbif                   # Social icon in footer
 tweets_on_home: true                    # Show Twitter feed of twitter_username on homepage
 
 algae:
+  rootLang: en
   # logo: /assets/img/tecala_logo.png     # Logo in navbar, will be displayed with 28px height
   logoAndTitle: false
   hideHelper: false
@@ -28,6 +29,11 @@ algae:
       primary: "#4787fb"
       links: "#4787fb"
     coloredHeadlineLinks: false
+  navbar:
+    # brandBackground: yellow
+    # floating: true
+    # color: "#00000088"
+    # hasWhiteText: true
 
 # BUILD SETTINGS
 markdown: kramdown
@@ -48,15 +54,21 @@ exclude:
 defaults:
   -
     scope:
-      path: "en"
+      path: ""
     values:
       lang: en
+  -
+    scope:
+      path: "la"
+    values:
+      lang: la
   -
     scope:
       path: ""
       type: "posts"
     values:
       permalink: "/post/:year/:slug/"   # Use /post/yyyy/{filename}/ as permalink for all posts
+      layout: "post"
   -
     scope:
       path: ""

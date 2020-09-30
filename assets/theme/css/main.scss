@@ -45,8 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 {% endif %}
 
-$navbar-brand-background-color: white !default;
-
 {% if site.algae.style.colors.primary %}
   $primary: {{ site.algae.style.colors.primary }};
 {% endif %}
@@ -61,6 +59,11 @@ $navbar-brand-background-color: white !default;
   $radius: 0;
   $radius-large: 0; 
 {% endif %}
+
+{% if site.algae.navbar.brandBackground %}
+  $navbar-brand-background-color: {{ site.algae.navbar.brandBackground }} !default;
+{% endif %}
+$navbar-brand-background-color: false !default;
 
 {% if jekyll.environment != "production" and site.algae.hideHelper != true %}
   $hasThemeFeedback: true;

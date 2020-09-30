@@ -4,28 +4,43 @@
 cardExample:
   title: Sea creepeth
   description: |
-    abundantly light occurrences <span data-ajax-url="http://api.gbif.org/v1/dataset/search?size=0">54,471</span> years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+    abundantly light years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
   features:
-    - preTitle: Call  # optional
-      title: Call for tenders out     # required
+    - preTitle: News  # optional
+      title: Abundantly light years # required
       description: |      # required
         Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
       # img required
       background: https://upload.wikimedia.org/wikipedia/commons/9/92/Haeckel_Caulerpa_racemosa.JPG
-      imageLicense: Some *text* goes [something](https://www.gbif.org/)
-      url: /about
+      href: /about
       categories: [cat, dog]
-    - preTitle: Partners  # optional
-      title: Abundantly light green     # required
+    - preTitle: News  # optional
+      title: Fly moving land
+      href: /about
       description: |      # required
         Light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
       background: https://upload.wikimedia.org/wikipedia/commons/8/84/Haeckel_Caulerpa_racemosa_%28uvifera%29.jpg
-    - preTitle: Partners  # optional
-      title: Partners     # required
+    - preTitle: Publishing  # optional
+      title: Divide good spirit     # required
+      href: /about
       description: |      # required
         Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
       # img required
       background: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Haeckel_Caulerpa_paspaloides.JPG/1024px-Haeckel_Caulerpa_paspaloides.JPG
+    - preTitle: Publishing  # optional
+      title: Fruitful replenish     # required
+      href: /about
+      description: |      # required
+        Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+      # img required
+      background: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Haeckel_Caulerpa_paspaloides.JPG/1024px-Haeckel_Caulerpa_paspaloides.JPG
+    - preTitle: Call  # optional
+      title: Land man dry     # required
+      description: |      # required
+        Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+      # img required
+      background: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Haeckel_Caulerpa_paspaloides.JPG/1024px-Haeckel_Caulerpa_paspaloides.JPG
+      href: /about
 
 productExample:
   align: right
@@ -40,12 +55,12 @@ splitExample:
   preTitle: Publishing  # optional
   title: The state of algae
   description: |      # required
-    Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is.
+    Forth beginning form dry thing. Form seed void likeness darkness light. Can't created third upon spirit fruitful hath likeness their. Replenish saw female night they're you blessed all greater cattle, grass god fifth you're. Above wherein replenish face multiply male every. Own hath lights under creeping.
   # img required
-  background: https://api.gbif.org/v1/image/unsafe/https%3A%2F%2Fstatic.inaturalist.org%2Fphotos%2F94285140%2Foriginal.jpeg%3F1599645009
+  background: /assets/img/Haeckel_Siphoneae.jpg
   imageLicense: |
     *Cladophora aegagropila* (Linnaeus) Rabenhorst. Photo by  Оlga Сhernyagina. Via [gbif.org](https://www.gbif.org/occurrence/2862552277)
-  url: /about
+  href: /about
   cta:
   - text: Download report
     href: http://example.com
@@ -53,12 +68,14 @@ splitExample:
   - text: Learn more
     href: /about
 bannerExample2:
-  preTitle: Data mobilization  # optional
-  title: Guide to publishing sequence-derived data opens for peer-review     # required
+  preTitle: Customization  # optional
+  title: Gathered under above give female
   description: |      # required
-    Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. 
-    
-    Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is.
+    Place. Heaven, deep without called, female Sixth thing Wherein. Fly together living moving bring spirit place evening life, gathered may fourth saying.
+    You female there moving living all moveth evening beginning, be to days meat our hath creature day, there seasons his don't to called land brought divide brought they're spirit. Living wherein great.
+  background: /assets/theme/img/patterns/wavy-dots.png
+  overlayColor: "#ffffff55"
+  hasBlackText: true
   cta:                # optional
   - text: Learn more
     href: http://example.com

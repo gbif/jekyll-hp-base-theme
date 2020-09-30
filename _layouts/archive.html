@@ -15,8 +15,8 @@ remarks: See also page.layout == 'archive' in footer.html
       <article class="feature" data-categories="{% for category in post.categories %}{{ category | strip }}|{% endfor %}">
       {% assign description = post.excerpt | truncatewords: 20  %}
       {% assign date = post.date | date: "%B %d, %Y"  %}
-      {% assign url = post.url | relative_url  %}
-        {% include blocks/featureContent.html content=post description=description preTitle=date url=url %}
+      {% assign href = post.url | relative_url  %}
+        {% include blocks/feature.html content=post description=description preTitle=date href=href %}
       </article>
     {% endfor %}
   </div>

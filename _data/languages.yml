@@ -1,6 +1,5 @@
 en:
   label: English
-  icon: 🇺🇸 # optional
-da:
-  label: Dansk
-  icon: 🇩🇰 # optional
+  icon:  # optional
+la:
+  label: Latin

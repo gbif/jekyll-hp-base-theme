@@ -1,10 +1,35 @@
-$navbar-brand-ink: findColorInvert($navbar-brand-background-color) !default
-
-.navbar_logo-text
-  color: $navbar-brand-ink
+@if $navbar-brand-background-color
+  $navbar-brand-ink: findColorInvert($navbar-brand-background-color) !default
+  .navbar_logo-text
+    color: $navbar-brand-ink!important
+  .navbar-brand a.navbar-item, .navbar-brand a.navbar-item:hover
+    background: $navbar-brand-background-color!important
 
 .navbar
   box-shadow: 0px 2px 8px rgba(0,0,0, .1)
+  &--floating
+    position: absolute
+    width: 100%
+  &--hasWhiteText
+    .navbar_logo-text
+      color: white
+    .navbar-start
+      .navbar-link:not(.is-arrowless)::after
+        border-color: white
+      >.navbar-item, .navbar-link
+        color: white
+      .has-dropdown 
+        color: white
+
+@media screen and (min-width: 1024px)
+  .navbar--hasWhiteText
+    //a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link
+    .navbar-top-item:hover
+      background-color: #00000033!important
+      >a
+        background-color: transparent!important
+      
+
 
 .toc__removeOnMobile
   display: none

@@ -1,19 +1,19 @@
 ---
 layout: home
 klass: home
-title: A Jekyll theme called Algae
-description: Fruitful replenish said dominion a sixth own it tree, hath moved third
+title: Latin Lorem ipsum dolor sit amet
+description: Lorem ipsum dolor sit amet
 background: /assets/img/Haeckel_Siphoneae.jpg
-imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
+fullHeightx: true
+imageLicense: something goes [here](/about)
 lang-ref: home
-hasTextShadow: true
 cta:
   - text: Explore
     href: /data
     isPrimary: true
   - text: About
     href: /about
-permalink: /
+permalink: /la
 structure:
   - type: floating-hero
   - data: home.cardExample

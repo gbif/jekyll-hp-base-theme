@@ -19,7 +19,7 @@ themeFeedback.push({title: "Number of latest posts", description: "You haven't c
       {% assign description = post.excerpt | truncatewords: 20  %}
       {% assign date = post.date | date: "%B %d, %Y"  %}
       {% assign url = post.url | relative_url  %}
-        {% include blocks/featureContent.html content=post description=description preTitle=date url=url %}
+        {% include blocks/feature.html content=post description=description preTitle=date url=url %}
       </article>
     {% endfor %}
   </div>

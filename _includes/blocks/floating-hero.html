@@ -1,0 +1,105 @@
+{% assign parallax = include.parallax | default: include.content.parallax | default: false %}
+{% assign fullHeight = include.fullHeight | default: include.content.fullHeight | default: false %}
+{% assign background = include.background | default: include.content.background %}
+{% assign preTitle = include.preTitle | default: include.content.preTitle %}
+{% assign title = include.title | default: include.content.title | default: "TITLE IS REQUIRED" %}
+{% assign description = include.description | default: include.content.description %}
+{% assign cta = include.cta | default: include.content.cta %}
+{% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
+{% assign hasBlackText = include.hasBlackText | default: include.content.hasBlackText | default: false %}
+{% assign overlayColor = include.overlayColor | default: include.content.overlayColor | default: "#00000055" %}
+{% assign hasTextShadow = include.hasTextShadow | default: include.content.hasTextShadow | default: false %}
+{% assign height = include.height | default: include.content.height | default: "100vh" %}
+{% assign floatingNavbar = page.navbar.floating | default: site.algae.navbar.floating | default: false %}
+
+
+{%- capture calcHeight -%}
+  {% if floatingNavbar %}
+    calc({{ height }})
+  {% else %}
+    calc({{ height }} - var(--navbar-height))
+  {% endif %}
+{%- endcapture -%}
+
+
+{% unless background or jekyll.environment == "production" %}
+<script>
+themeFeedback.push({title: "Missing background", description: "You haven't configured a background. To do so add <code>background: /some-image-name.jpg</code> in the frontmatter of this page."})
+</script>
+{% endunless %}
+{% assign background = background | default: "https://via.placeholder.com/500x300?text=Img%20required" %}
+
+
+<section class="floatingHero
+  {% if parallax %} parallax {% endif %} 
+  {% if hasBlackText %}{% else %} hasWhiteText {% endif %} 
+  {% if hasTextShadow %} hasTextShadow {% endif %} 
+  {% if fullHeight %} full-height {% else %} not-full-height {% endif %} 
+  overlay" 
+    style="{% if overlayColor %} color: {{ overlayColor }}; {% endif %} 
+    {% if height %} height: auto; min-height: {{ calcHeight }}; {% endif %} ">
+  {% include blocks/feature.html content=include.content %}
+</section>
+
+{% comment %}
+<div class="floatingHero 
+  {% if parallax %} parallax {% endif %} 
+  {% if hasBlackText %}{% else %} hasWhiteText {% endif %} 
+  {% if hasTextShadow %} hasTextShadow {% endif %} 
+  {% if fullHeight %} full-height {% else %} not-full-height {% endif %} 
+  overlay" 
+    style="background-image:url('{{ background }}'); 
+    {% if overlayColor %} color: {{ overlayColor }}; {% endif %} 
+    {% if height %} height: calc({{ height }} - 4.25rem); height: {{ calcHeight }}; {% endif %} "
+    data-overlay="#ff0000">
+  <div class="feature-content">
+    
+    <div class="feature-text">
+      {% if url %}<a href="{{ url }}" class="feature-overlay"></a>{% endif %}
+      {% if preTitle %}
+      <div class="feature-pre-title">{{ preTitle }}</div>
+      {% endif %}
+
+      {% if title %}
+      <h3 class="feature-title">
+        {% if url %}
+        <a href="{{ url }}">{{ title }}</a>
+        {% else %}
+        {{ title }}
+        {% endif %}
+      </h3>
+      {% endif %}
+    </div>
+    
+    {% if description %}
+    <div class="feature-description">
+      {{ description | markdownify }}
+    </div>
+    {% endif %}
+
+    {% if cta %}
+    <div class="feature-cta">
+      {% for cta in cta %}
+      <a href="{{ cta.href | relative_url }}" class="button {% if cta.isPrimary %}is-primary{% else %}is-outlined{% endif %}">{{ cta.text }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if categories %}
+    <div class="feature-categories tags">
+      {% for category in categories %}
+        <a class="tag is-light" href="{{ site.algae.archive_permalink | relative_url }}?category={{ category | strip | url_encode }}">{{ category }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if imageLicense %}
+    <div class="feature-img-license">
+      <div class="feature-img-license-c">© </div>
+      <div class="feature-img-license-text">{{ imageLicense | markdownify }}</div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+{% endcomment %}

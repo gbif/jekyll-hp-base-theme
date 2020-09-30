@@ -12,17 +12,12 @@ $card-double-size: ($card-width * 2 + $card-gap * 2)
   position: relative
 .feature-img
   background-position: center
-  background-repeat: no-repeat
+  background-repeat: repeat
   background-size: cover
   position: relative
-  &:hover
-    .feature-img-license
-      background: rgba(0,0,0,.5)
-      opacity: 1
-    .feature-img-license-text
-      display: block
 .feature-img-license
   position: absolute
+  z-index: 10
   bottom: 0
   left: 0
   right: 0
@@ -51,13 +46,13 @@ $card-double-size: ($card-width * 2 + $card-gap * 2)
   &--centered
     text-align: center
 .feature-pre-title
-  margin-bottom: .5em
   font-weight: 500
   font-size: 90%
 .feature-cta
   margin-top: 2rem
 .feature-categories
   margin-top: 1em
+  display: inline-block
 
 .features
   background: #edf3f3
@@ -101,7 +96,7 @@ section
   .feature-title
     margin-top: 0!important
 
-.feature--double-width
+@mixin featureDoubleWidth
   display: flex
   flex: 0 0 $card-double-size
   .feature-img
@@ -112,14 +107,23 @@ section
   >div
     flex: 0 0 50%
 
-.feature-cards
-  .feature:nth-child(odd):last-of-type:not(:nth-child(3n))
-    @extend .feature--double-width
+.feature--double-width
+  @include featureDoubleWidth;
 
-.feature-cards.has-4-elements, .feature-cards.has-2-elements
-  .feature:nth-child(1), .feature:nth-child(4)
-    @extend .feature--double-width
 
+@media screen and (min-width: 1211px)
+  .feature-cards
+    .feature:nth-child(odd):last-of-type:not(:nth-child(3n))
+      @include featureDoubleWidth;
+  .feature-cards.has-4-elements
+    .feature:nth-child(1), .feature:nth-child(4)
+      @include featureDoubleWidth;
+
+@media screen and (min-width: 710px + $container-offset) and (max-width: 1210px)
+  .feature-cards
+    .feature:last-of-type:nth-child(3n), .feature:last-of-type:nth-child(5n)
+      @include featureDoubleWidth;
+  
 @media screen and (max-width: 710px + $container-offset)
   .feature--double-width
     flex-direction: column
@@ -161,6 +165,7 @@ section
   .feature-img
     background-size: contain
     background-color: #edf3f3
+    background-repeat: no-repeat
   &--align-bottom .feature-img
     background-position: bottom
   &--align-left .feature-img
@@ -169,10 +174,3 @@ section
     background-position: right
   &--align-top .feature-img
     background-position: top
-
-.textBanner
-  >div
-    max-width: 45rem
-    padding: 5rem 1rem
-    margin: 0 auto
-    font-size: 120%

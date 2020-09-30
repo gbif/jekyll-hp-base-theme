@@ -1,18 +1,29 @@
 # Links listed below will be included in your site's navbar (navigation at the top)
 
 - text: About
-  href: /about/
+  menu: 
+  - text: What is this 🦠
+    href: /about
+  - text: Markdown
+    href: /markdown
+  - text: External link
+    href: https://www.gbif.org/
+- text: Page composition
+  menu: # Dropdown menu (one level deep only)
+  - text: Page types    # Title for block of menu items
+  - text: Floating hero  # Name in the menu
+    href: /floating-hero # Where should the link take the user
+  - text: Box hero
+    href: /box-hero
+  - text: Post example
+    href: /post-example
+  - text: Text only
+    href: /text-only
+  - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
+  - text: "Composition"
+  - text: Compose your own pages
+    href: /compose-your-own-pages
 - text: Data
   href: /data/
-- text: Activities
-  menu: # Dropdown menu (one level deep only)
-  - text: Publishing
-    href: /with-toc
-  - text: Community building
-    href: /with-parallax
-  - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
-  - text: "Tools" # Title for block of menu items
-  - text: Report observations
-    href: https://www.inaturalist.org/
 - text: News
   href: /posts/

@@ -1,0 +1,57 @@
+.floatingHero
+  position: relative
+  height: auto
+  min-height: calc(100vh - #{$navbar-height})
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  .feature-img
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      // good ideas to do this from https://stackoverflow.com/questions/27529374/css-add-color-with-a-data-attribute-attrdata-color-color
+      background-color: currentColor
+  .feature-content
+    z-index: 1
+    position: relative
+    color: $black
+  &.hasTextShadow 
+    .feature-pre-title, .feature-title, .feature-description
+      text-shadow: 0 0 12px #ffffff88
+    &.hasWhiteText
+      .feature-pre-title, .feature-title, .feature-description
+        text-shadow: 0 0 12px #00000033
+  &.hasWhiteText .feature-content, &.hasWhiteText .feature-title
+    color: white
+  .feature-content
+    text-align: center
+    z-index: 1
+    max-width: 100%
+  .feature-pre-title
+    font-weight: 500
+  .feature-title
+    font-size: 3.5rem
+    margin-bottom: 1.25rem
+    line-height: 1
+    font-weight: 900
+    margin-top: 0!important
+  .feature-description
+    width: 750px
+    padding: 0 32px
+    max-width: 100%
+    margin: auto
+    margin-bottom: 1.25rem
+    font-size: 120%
+  .feature_cta
+    .button
+      margin: 0 6px

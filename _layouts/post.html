@@ -1,0 +1,10 @@
+---
+layout: default
+description: Default template for posts, with contained width
+structure:
+  - type: post-header
+  - type: markdown
+---
+
+{% assign structure = page.structure | default: layout.structure %}
+{% include structure.html structure=structure %}
