@@ -2,6 +2,8 @@
 title: Welcome to Jekyll
 date: 2019-05-18 17:27:15 +0200
 categories: [Shared category, 👩‍🔬 Emoji category, "Special /?{:å characters", " Whitespace before and after "]
+background: https://upload.wikimedia.org/wikipedia/commons/8/84/Haeckel_Caulerpa_racemosa_%28uvifera%29.jpg
+imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
