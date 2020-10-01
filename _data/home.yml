@@ -75,7 +75,7 @@ bannerExample2:
     You female there moving living all moveth evening beginning, be to days meat our hath creature day, there seasons his don't to called land brought divide brought they're spirit. Living wherein great.
   background: /assets/theme/img/patterns/wavy-dots.png
   overlayColor: "#ffffff55"
-  hasBlackText: true
+  hasWhiteText: false
   cta:                # optional
   - text: Learn more
     href: http://example.com
