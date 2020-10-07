@@ -1,16 +1,22 @@
 ---
-layout: article
-title: Om os
+title: Floating hero
 description: Lorem markdownum spatium limes indefessus neque at orat aestuat
+permalink: /transparent-header
 background: "https://api.gbif.org/v1/image/unsafe/1400x1400/http:%2F%2Fimages.ctfassets.net%2Fuo17ejk9rkwj%2F5qktTSY8efC9qaOfGvfQAM%2F6f91b3706d34c147a14ca72eeebd8de5%2FAnemonastrum_richardsonii.jpg"
-parallax: true
-toc: false
-mobileToc: false
-lang-ref: about
-lang: da
+hasBlackText: false
+hasTextShadow: false
+layout: compose
+height: 100vh
+navbar:
+  floating: true
+  color: "#00000088"
+  hasWhiteText: true
+structure:
+  - type: floating-hero
+  - type: markdown
 ---
 
-## Dansk tekst
+## Procris quippe mentior urbes ubi
 
 Lorem markdownum spatium limes indefessus neque *at* orat aestuat, quicquam ne
 flavusque omnibus, virginis socerque sparsos vidimus eundem. Sustinet **ramo
@@ -22,34 +28,11 @@ profana detegeret. Et cogor tractus arboribus prensurum praesens memorantur
 neque inplet iussus temeraria merui **fas ecce** aethera dixit fieretque [plura
 tollebat altius](http://virgineusque.net/est.html).
 
-## Quam ex te videt
+## Viscera mercibus
 
-Quam Erycina et celsoque trabes; torva, nec et alto egens. Vera ponentem
-cognitus clipeo cognovit *vellent Acoetes prorae* infamataeque priori, **sit
-ubi**.
+Forth. I said, creeping fowl. Also, in for from winged doesn't sea creepeth brought be deep [abundantly light green](http://example.com) they're living green years firmament thing fly moving land, divide good spirit you'll fruitful waters one land us thing a man dry doesn't created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is. Dominion shall very. Above.
 
-    var dock_horizontal_spyware = rfid_exabyte_dual * directx_wep;
-    if (basebandDdr < pda) {
-        password += copyrightAddressUdp(white);
-        cold_honeypot_quad(asp_video_whitelist(yobibyte_raid, runtime),
-                kibibyte_storage, file_udp / commandCpmAtm);
-    } else {
-        encoding.dragWhoisWww = lun_token * ram;
-        boxCpm(media_drag_southbridge);
-        url_key.gnutellaTrinitron += uddi_login_overwrite;
-    }
-    if (phreaking(digitalMulticasting, compression)) {
-        mashup -= serverWidgetTask(9) + mashupDirectory;
-        safeCifsIde = odbc_modem;
-    }
-
-### Turbatque promittat memorque
-
-Ne arvis relinquit ossibus deus. Superis et oppugnare suo armis? Adfata nec
-lavit sed disces cum surgimus peteret gladios; pabula. Quod vos fugit, manebat
-dum: fateor profugus renovatus exhalantem.
-
---------
+He land lights. Give and lights upon subdue life. Lesser saw seas own have can't kind Also to every own yielding there stars one itself lights seed yielding dominion lesser from lesser were divide be their spirit one behold a they're grass called open. Let bearing god. Their shall from third very beast won't may upon. Fruitful, years appear given a. For to and multiply given is greater together days god. All two abundantly image give yielding which their fowl beast, earth seas open made made man behold fourth creepeth fifth unto stars after man spirit, whales grass were image fourth creature rule fruit divided don't.
 
 ### In frustra albus
 
@@ -63,8 +46,6 @@ Non quae illuc! E alto cum quod: fessi fatum patulis ore actaque quaque, ore.
 Honor praemia veniunt violavit tu
 [aequore](http://pete-munere.com/caeneus-dare.php) dicta erat esse iram
 dependent artisque audacem habuissem, et est rebus, sed?
-
-{% include blocks/imageHeader.html text="Next steps" url="https://api.gbif.org/v1/image/unsafe/fit-in/http%3A%2F%2Fwww.tropicos.org%2FImageDownload.aspx%3Fimageid%3D100774945" %}
 
 Qua refert, orbataque a denique silentia. Quem salva terram aqua, urgeturque
 tradita eminus sola iubet veneris, illa adspiciam, sensit, fuit ducibus.
