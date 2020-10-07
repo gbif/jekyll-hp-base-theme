@@ -2,9 +2,14 @@
 
 # Feature cards
 cardExample:
-  title: Sea creepeth
+  title: Base filter
   description: |
-    abundantly light years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+    The data on this site is filtered to only include records with
+    ```
+    Basis of record: Preserved specimen, material sample
+    has coordinate: true
+    has image: true
+    ```
   features:
     - preTitle: News  # optional
       title: Abundantly light years # required

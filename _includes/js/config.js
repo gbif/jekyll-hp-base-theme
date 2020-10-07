@@ -14,13 +14,9 @@ var leaf2 = "POLYGON((-20.4895 34.12999,41.56128 45.72536,80.97473 80.29422,-8.4
 var siteConfig = {
   rootPredicate: {
     type: 'and', predicates: [
-      { key: 'mediaTypes', type: "equals", value: 'StillImage'},
-      { 
-        type: 'or', predicates: [
-          { type: 'within', key: 'scoordinates', value: leaf1 },
-          { type: 'within', key: 'scoordinates', value: leaf2 }
-        ]
-      }
+      { key: 'mediaTypes', type: 'equals', value: 'StillImage'},
+      { key :'hasCoordinate', type: 'equals', value: true},
+      { key :'basisOfRecord', type: 'in', values: ['PRESERVED_SPECIMEN', 'MATERIAL_SAMPLE']},
     ]
   }
 };
