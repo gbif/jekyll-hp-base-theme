@@ -71,7 +71,7 @@ $card-double-size: ($card-width * 2 + $card-gap * 2)
   flex-wrap: wrap
   justify-content: center
   margin: -($card-gap) auto
-  padding: 0
+  padding: 0 12px
 
 section
   &.features, &.splitBanner, &.textBanner
@@ -79,6 +79,7 @@ section
 
 .feature
   flex: 0 0 $card-width
+  max-width: 100%
   margin: $card-gap
   overflow: hidden
   box-shadow: 0px 0px 5px rgba(0,0,0,.1)
@@ -153,6 +154,8 @@ section
 +until($desktop)
   .splitBanner
     flex-direction: column
+    .feature-content
+      padding: 1rem
     >div
       flex: 0 0 100%
     .feature-img
