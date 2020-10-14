@@ -2,7 +2,7 @@
 title: Welcome to Jekyll
 date: 2019-05-18 17:27:15 +0200
 categories: [Shared category, 👩‍🔬 Emoji category, "Special /?{:å characters", " Whitespace before and after "]
-background: https://upload.wikimedia.org/wikipedia/commons/8/84/Haeckel_Caulerpa_racemosa_%28uvifera%29.jpg
+background: https://api.gbif.org/v1/image/unsafe/500x/https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F84%2FHaeckel_Caulerpa_racemosa_%2528uvifera%2529.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 ---
 
