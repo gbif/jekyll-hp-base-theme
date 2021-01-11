@@ -89,7 +89,7 @@
   var currentLocale = '{{ locale }}';
 </script>
 
-<script src="{{ '/assets/theme/js/script.js' | relative_url }}"></script>
+<script src="{{ '/assets/theme/js/script.js' | relative_url }}?v={{ site.time | date:'%s' }}"></script>
 
 {% if page.layout == 'archive' %}
 <script>
