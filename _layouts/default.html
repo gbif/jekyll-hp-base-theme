@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html>
+---
+layout: base
+description: Default template for pages and posts, with contained width
+structure:
+  - type: markdown
+---
 
-  {% include head.html %}
-
-  <body class="{% if page.klass %}{{ page.klass }}{% endif %}">
-    {% include navbar.html %}
-
-    <main>
-
-      <div>
-          
-        {{ content | replace: '<table', '<table class="table"' }}
-
-      </div>
-    </main>
-
-    {% include footer.html %}
-  </body>
-</html>
+{% assign structure = page.structure | default: layout.structure %}
+{% include structure.html structure=structure %}
