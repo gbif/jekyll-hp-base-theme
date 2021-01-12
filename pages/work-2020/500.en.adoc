@@ -1,0 +1,88 @@
+== Priority 3: Fill Data Gaps
+
+****
+Prioritize and promote mobilization of new data resources which combine with existing resources to maximize the coverage, completeness and resolution of GBIF data, particularly with respect to taxonomy, geography and time.
+****
+
+=== Activity 3a: Identify priority gaps
+
+==== Tasks
+[lowerroman]
+. Organize and integrate requirements identified by fitness-for-use groups
+. Establish open mechanism for researchers and users to document specific data needs
+. Develop assessments and visualizations of strengths and weaknesses of GBIF data in key dimensions (taxonomic, geographic, environmental, temporal)
+. Maintain well-publicized GBIF priorities for data publishing, incorporating needs of IPBES and other networks
+. Provide Governing Board with annual review and progress assessment for digitization of major natural history collections
+. Provide GBIF Participants with actionable priorities and targets for content mobilization
+
+==== 2019 Progress
+
+During 2019 the Secretariat is developing actionable guidance for nodes, publishers and funders on addressing priority gaps through mobilization targets and strategies based on spatial, temporal, taxonomic and thematic dimensions of biodiversity data. This guidance document will indicate best practices on how to prioritize mobilization to develop national priorities and how to integrate those priorities into a mobilization strategy. The guide content undergoes assessments that can be updated upon knowledge gained for the GBIF communities in activities such as the global node events.
+
+The Secretariat performed https://data-blog.gbif.org[data analyses] building on the input from the 2016 Ebbe-Nielsen Challenge. It further examined possible approaches of ‘hunger-mapping’ to the prioritization of data gaps, as well as analysing the availability and coverage of regional and national checklists of taxa that could support this approach, and the possibility of making use of ES50 maps as a measure of species richness.
+
+===== 2019 Participant contributions
+
+* *Argentina*: We started working with the environment secretary to publish the national biodiversity inventory and national species lists. On the other hand, it is expected to feed the national portal with these national listings.
+
+* *Australia*: Recommend that the community works collaboratively to define targets around coverage and extent of our data products (e.g. temporal/ spatial and taxa). This will help define the level of effort required for data publishers to met these gaps. Also define level of use from Occurrence to Abundance to True Absence.
+
+* *Benin*: Many data gaps are being identified and will be filled in the framework of the master program in biodiversity informatics
+
+* *Colombia*: Santander BIO and Boyacá BIO. two projects to promote knowledge, conservation, management and sustainable use of biodiversity in these territories. With the joint work of several research institutes and organizations these projects made a large amount of data available through the SiB Colombia in regions of the this departments previously difficult to access. In this way it has been possible to fill data gaps in Colombia through these regional initiatives. Santander BIO and Boyacá BIO Datasets:
+https://www.gbif.org/dataset/search?q=Santander%20BIO
+https://www.gbif.org/dataset/search?q=Boyac%C3%A1%20BIO
+
+* *iDigBio*: iDigBio hosted an Invertebrate Collections Digitization workshop in February 2019. Participants discussed best practices and considered ways to improve on existing methods to improve efficiency and speed of data mobilization. iDigBio hosted a Digital Future of Entomology symposium at the 2019 Eastern Branch EntSoc meeting. Attendees learned exactly what digitization means and discussed current and future prospects of digitization in entomology.
+
+* *Integrated Taxonomic Information System*: ITIS has developed numerous taxonomies to close know taxonomic gaps and has provided them to the global community as part of ITIS' commitment to names infrastructure.
+
+* *Japan*: Research program on gap analysis for endangered species to be continued.
+
+* *Netherlands*: The NLBIF call 2018/2019 has funded a project to share data from the Ukrainian UkrBin database with GBIF.
+
+* *Norway*: GBIF Norway was during 2019 an active partner of Nordic crop wild relative projects and international agrobiodiversity processes to represent and promote implementation of GBIF infrastructure technology and solutions (see also activity 3a, 4a, and 5b).
+
+* *Spain*: We have mobilized data from public administrations and marine data.
+
+* *Sweden*: By developing standards for new data types GBIF-Sweden has been able to reach out to previously less well covered data providers.
+
+==== 2020 Work items
+
+*	Continue work on items initiated in late 2019, with an emphasis on developing actionable guidance for data publishers and nodes, integration of user needs into prioritization for data mobilization, and data search analysis.
+*	Continue to improve visualizations of GBIF-mediated data that identify gaps by engaging in interactive community consultations. This work is a candidate for curated discussion through the alliance for biodiversity knowledge prior to implementation on GBIF.org.  
+
+===== 2020 Participant plans
+
+* *Argentina*: Continue with the publication of the national inventory of biodiversity and national lists of species. On the other hand, it is expected to feed the national portal with these national listings.
+
+* *Benin*: Many data gaps are being identified and will be filled in the framework of the master program in biodiversity informatics.
+
+* *Canadensys*: In coordination with CBIF, the official Canadian node, it would be great to start a hunger-mapping project in order to identify the gas in Canada and to find solution to resolve those gaps.
+
+* *iDigBio*: iDigBio will continue its work to expand knowledge of what is contained within collections so that it is easier to determine the remaining volume of work.
+
+* *International Centre for Integrated Mountain Development*: Advancing Biodiversity Informatics Capacities in the HKH- Regional Workshop (define data gap map for Asia): explore possibilities of collaboration with GBIF, relevant institutions in HKH regional member countries, and Asian Node.
+
+* *Japan*: Gap analyses to be carried out in some model collections.
+
+* *Naturalis Biodiversity Center*: Work on large scale digitization plans will continue in DiSSCo-linked projects.
+
+* *Norway*: GBIF Norway and GBIF Portugal intend to represent GBIF in the agrobiodiversity community during 2020 with several new project proposals under development.
+
+* *Spain*: We will start mobilizing data from private sector in collaboration with Nodes from Norway, Portugal and Colombia. Define priorities for content mobilization in coordination with GBIF Secretariat and Ministry of Environment.
+
+* *Sweden*: Among the collaborating institutions of the Swedish Biodiversity Data Infrastructure work will continue to develop and adapt systems for accepting and presenting new data types.
+
+* *United States*: Work with the Global Ocean Observing System and GEO BON to identify priority datasets related to Essential Ocean and Essential Biodiversity Variables.
+
+* *Zimbabwe*: Citizen science will be a focus.
+
+
+==== Rationale
+
+GBIF has a range of tools, including fitness-for-use groups, other community consultations, feedback channels, direct communication with authors of scientific studies, and societal demands, to identify and collect data needs. The Ebbe Nielsen Challenge for 2016 focuses specifically on tools and algorithms to identify significant gaps. These gaps may relate to different facets of the data, including geography, taxonomy, time periods, and coverage of particular ecosystems or land units. Addressing these gaps may require focus on gaining additional occurrence records, targeting data areas missing from published records, or getting additional metadata elements. By consolidating and prioritizing demands for data content, in the context of already accessible data and knowledge of resources which are not yet available as open data, GBIF will be positioned to inform collection and data holders, funding institutions and political decision makers of the most worthwhile and cost-effective ways to extend the available knowledge base.
+
+==== Approach
+
+The GBIF Secretariat will harmonize and document data mobilization demands from different sources. Simple tools are required to support needs capture, including informative documentation and justification for such demands. Automated assessment and reporting of gaps will be included where this proves possible and valuable. This combined information can support transparent decision making and target setting for gap-filling efforts, allowing all interested actors to step in at appropriate levels. GBIF will coordinate with efforts through the Intergovernmental Platform on Biodiversity and Ecosystem Services (IPBES) to identify and address significant knowledge and data gaps, including outreach and funding strategies for gap-filling . A thorough, regularly updated overview of data coverage in gbif.org both makes it easier to identify gaps, and to monitor progress and efficiency of mobilization efforts over time. GBIF should offer (e.g. annually) a brief report of significant gaps which need to be addressed. Such a report may be valuable to Participants and funding bodies to stimulate and evaluate digitization and mobilization options.

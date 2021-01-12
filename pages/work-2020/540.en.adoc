@@ -1,0 +1,40 @@
+=== Activity 3e: Liaise with journals
+
+==== Tasks
+[lowerroman]
+. Develop scalable approach to support research journals and data journals in publishing to GBIF network
+. Produce relevant support materials to justify benefits and explain processes to publish primary data
+. Integrate support for data journals into hosted IPT infrastructures and data rescue processes
+
+==== 2019 Progress
+
+In 2019, the focus is on the development of standard workflows and simple recommendations that support and eventually mandate the process of depositing supplementary primary biodiversity data, both to aid submitting authors and publishing houses. By the end of 2019, a first version of an information page on GBIF.org will be available for journal publishers to reference when recommending GBIF as a data repository, outlining the data publication process for authors, and pointing at simple data spreadsheet templates. The option of offering hosted IPT installations for journal publishers for this purpose is under evaluation. 
+
+===== 2019 Participant contributions
+
+* *Canadensys*: Canadensys publishes on its IPT data, such as specimens consulted for taxonomic revisions and georeferenced observations used in other research, using DOIs that are included in peer reviewed publications.
+
+* *Colombia*: Continued support to Biota Colombiana with the data paper model, a national scientific journal. http://revistas.humboldt.org.co/index.php/biota
+
+* *iDigBio*: iDigBio began developing comprehensive citation guidance for data obtained from its portal. The draft citation guidance is available on the Data menu in the Beta Portal.
+
+* *South Africa*: SANBI-GBIF will integrate data paper publication within Bothalia - African Biodiversity and Conservation Journal
+
+==== 2020 Work items
+
+*	Work with journals to make it easier for article authors to deposit supplementary data in formats suitable for GBIF publication.
+*	Establish model guidelines for data deposition and citation and develop compliance criteria for distribution to publishers. Build on recent developments of COPDESS and Research Data Alliance with GBIF-specific guidance. Develop additional communication materials to describe the benefits of DOI-citation best practices and work with journals on implementation.
+
+===== 2020 Participant plans
+
+* *Canadensys*: We will continue to use DOIs to link datasets and to keep track with the publications using data published on Canadensys.
+
+* *iDigBio*: iDigBio will continue to refine its citation guidance in response to feedback.
+
+==== Rationale
+
+Journals are the traditional established avenues for scientific communication. They not only disseminate research findings and other scholarly communications but are increasingly helping to disseminate research data. These data may be provided as supplementary materials or deposited in biodiversity data repositories as a precondition for publication of the paper. However, such data publishing data does not necessarily facilitate its integration with other related data or make the data discoverable and reusable. In order to benefit from data disseminated through journals, the Secretariat will lead or coordinate activity to engage directly with publishing houses, journal editors and authors to promote GBIF-compatible approaches to publication and the use of GBIF-operated repositories as accepted or preferred destinations for supporting data.
+
+==== Approach
+
+GBIF Secretariat will engage with relevant journals in developing and promoting best practices and publishing workflows that reduce the effort required to publish data to GBIF. The aim will be to publish data once but be able to cite it as supporting data for a journal paper and where appropriate produce a data paper as an additional product. The Secretariat will use its experience with Pensoft Publishing where a workflow and a dedicated data paper publishing tool is established.

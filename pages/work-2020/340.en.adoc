@@ -1,0 +1,97 @@
+=== Activity 1e: Expand national participation
+
+==== Tasks
+[lowerroman]
+. Ensure GBIF.org interface and key content supported in relevant languages
+. Improve coordination and mechanisms for engaging new countries
+. Provide Governing Board with annual review and progress assessment for GBIF status and engagement in all countries
+
+==== 2019 Progress
+
+The internationalization of the GBIF.org user interface and core content elements, in the six UN languages as well as selected additional languages, is expected to be complete by the end of 2019.
+
+Technical adjustments have been made to GBIF.org to accommodate right-to-left script needed for Arabic and other languages. A volunteer Arabic-speaking network is being developed. Translations of GBIF.org into Russian and Chinese (both simplified and traditional) are far progressed and are being launched later in 2019, adding to the existing interfaces and core content in English, French, Spanish, Portuguese and Japanese. 
+
+Three 2019 regional meetings within the BID program are providing opportunities to strengthen and expand national participation in the Caribbean, Pacific and sub-Saharan Africa. The Caribbean meeting in Trinidad and Tobago was attended by over 40 participants from across the Latin American and Caribbean region, including a strong delegation from the host country coming from various institution and decision-making bodies. Strong attendance is expected in the other regional meetings later in 2019. 
+
+The main outputs of the meetings are regional statements on regional priorities (e.g. from the Caribbean), and roadmaps for ensuring long term sustainability of biodiversity data sharing. The final day of the event focuses on node management training including the benefits of GBIF participation and being part of the GBIF nodes community. 
+
+During 2019, Angola and Belarus joined the community as Associate Participants, and Chile returned to Voting Participant status after a period as an Associate Participant. Brazil communicated its intention to become a Voting Participant. Israel, Indonesia and India dropped to observer status after passing the maximum period as Associate Participants. Argentina, Ghana, Kenya, Uganda and the United Kingdom moved from Voting to Associate status on 1 January 2019 due to non-payment of their contributions for two consecutive years. A complete and updated progress assessment of the GBIF status and engagement in all countries is being presented at the GB26 meeting in the Netherlands.
+
+===== 2019 Participant contributions
+
+* *Argentina*: Argentina participates actively in the translation of GBIF content. Support is provided, as a regional representative, to all countries that do not have a node yet, but are interested in joining GBIF.
+
+* *Benin*: We are invited to attend workshops organized by partners to make presentations on GBIF, how to publish data, how to register on GBIF site and the usefulness of data uses.
+
+* *France*: Help for French translations: GBIF.org, workshop materials. Co-organized with Norway and the NSG chairs, invitation of the project leader of a Balkan project and few observers of Balkan and eastern countries to the EU nodes meeting in Oslo, Norway (May 2019).
+
+* *Germany*: [National and International] German GBIF Node institutions are participating in numerous international collaborations and are constantly promoting participation in countries that have not yet joined GBIF. 
+
+* *iDigBio*: The iDigBio Node Manager currently serves as the Regional Representative for participant nodes in North America.iDigBio has a leadership role with the Biodiversity Collections Network (BCoN), which aims to expand the efforts of the NSF Advancing Digitization of Biodiversity Collections (ADBC) program. iDigBio will be hosting the annual ADBC Summit in October 2019, which brings together representatives from NSF’s Advancing Digitization of Biodiversity Collections (ADBC) program.
+
+* *Japan*: Several new organization started to provide data to JBIF (currently 100 organizations).
+
+* *Mexico*: The SNIB (Sistema Nacional de Información sobre Biodiversidad) process was published on the portal snib.mx, the summary process and phases diagram from the collection of specimen information to its publication on a web page. Include 8 documents describing subprocesses inside general process SNIB.
+
+* *Netherlands*: NLBIF facilitated the contribution of all data from observation.org, the largest citizen science portal of the Netherlands, with more than 26 million records. NLBIF has funded a project aimed at connecting the Ukrainian UkrBin data http://www.ukrbin.com to GBIF and further improve the engagement of citizen scientists in Ukraine. The NLBIF node manager has presented the requirements of becoming a GBIF participant at an online conference meeting in Ukraine.
+
+* *Norway*: GBIF Norway funded and organized the 2019 European GBIF Nodes meeting in Oslo in May 2019 and provided funding for inviting observers from Armenia and Belarus, and co-funding together with GIZ for an observer from Croatia to join the European Nodes meeting.
+
+* *South Africa*: The ABC project follows an incentivised approach for data mobilization. As a final outcome of the project, a prize-giving ceremony will be conducted in February 2019 based on a number of criteria. This approach will demonstrating the use and application of data which has been mobilized, for aspects of societal need and/or policy relevance.Through SANBI-GBIF, new countries in Africa will be identified to further the biodiversity informatics agenda in support of science and sustainable development. National networks will be developed in the region through the implementation of further BIMFs and GBIF advocacy will be conducted.
+
+* *Spain*: We have helped translating gbif.org and https://www.biodiversityinformatics.org/ to Spanish. We have run data mobilization onsite and online training activities with national and international participants to engage new participants. 
+
+* *Sweden*: GBIF-Sweden has shown interest in supporting presumptive new participants in the community.
+
+* *Zimbabwe*: Data holding institutions were identified.
+
+==== 2020 Work items
+
+*	The GBIF Secretariat will continue to identify funding opportunities for regional engagement, including inviting observers to regional node meetings. If budget allows, it will create a specific funding priority area alongside the 2020 CESP call for GBIF regional outreach activities, as outlined in regional participation strategies developed across the network.
+*	The Secretariat will develop and implement engagement, data-mobilization and capacity-enhancement plans for greater participation in all global regions, with an emphasis on the underrepresented areas. This effort will be aided by capacity enhancement workshops, including through a second phase of BID and other supplementary funding that becomes available.
+*	The internationalization of GBIF.org user interface, content and guidance materials will continue. Assuming the 2019 commitment for six UN languages is complete, this work will focus on maintenance and updates and will allow the addition of more languages on demand, and translating a wider set of content and materials, funded through both specific projects and volunteer efforts.
+* Engagement, data mobilization and capacity enhancement campaign for Arabic-speaking region (€20,000, if funds allow).
+
+===== 2020 Participant plans
+
+* *Argentina*: Argentina participates actively in the translation of GBIF content. Support is provided, as a regional representative, to all countries that do not have a node yet, but are interested in joining GBIF
+
+* *Benin*: Data publication, Registration of data publishers, data uses
+
+* *Canadensys*: Carole is deputy regional representative for the North American region and will continue to be involved in both the region and, if possible, in the BID program, as mentor.
+
+* *France*: Translations to be continued
+
+* *Germany*: Continued promotion of GBIF in national and international initiatives. 
+
+* *iDigBio*: iDigBio is willing to continue offering its Node Manager as the Regional Representative if re-elected. iDigBio will continue its participation and involvement with BCoN. iDigBio is planning a 2020 Biodiversity Summit, which will be a collaborative meeting of the ADBC community, GBIF governing board, TDWG, and the National Museum of Natural History (Smithsonian). The meeting will feature the evolution and accomplishments of specimen-based science and the impact of digitization. This international event will be an excellent opportunity to highlight to a global audience the excellent work that our ADBC community is doing on behalf of U.S. collections.
+
+* *International Centre for Integrated Mountain Development*: Sensitize data holders and data providers in ICIMOD's eight regional member countries in the Hindu Kush Himlayan region about the importance of data publishing,  and use of HKH-BIF regional platform for data publishing or use of available in-country platforms such as in India and China. 
+
+* *Japan*: Provide meeting occasions to enroll more organizations.
+
+* *Mexico*: Prepare documents about National Catalogue of species.
+
+* *Netherlands*: Continue same work programme.
+
+* *Norway*: The BioDATA project managed by GBIF Norway contributes to promoting expanded GBIF country membership in the former Soviet Union region (including strategic partners from Belarus, Tajikistan, Armenia, and Ukraine). In addition to the primary goal of providing academic training (Activity 1b), BioDATA aims to build capacity needed for establishing national GBIF Participant Nodes (Activity 1c and 1e).
+
+* *South Africa*: A service provider has been secured and SANBI-GBIF will consider the ideal strategic approach to support expanding participation, and will engage with the GBIF Secretariat to ensure coordination.  
+
+* *Spain*: Translation of gbif.org to be continued. Explore ways to expand participation in North African countries in collaboration with Ministry of Science.
+
+* *Sweden*: GBIF-Sweden will primarily be engaged in the Living Atlases Community as a means to contribute to the expansion of the global network of GBIF.
+
+* *United States*: Planned collaboration with US marine community participants on a workshop to foster uptake of Darwin Core in marine biological data communities, draft controlled vocabularies for this community, and assess overlap with other ocean observing standards like NetCDF and Climate and Forecast.
+
+* *Zimbabwe*: Identification of more data holding institutions.
+
+
+==== Rationale
+
+GBIF’s national membership has remained largely static in recent years. Active participation in the network is confined to a limited number of regions, with the most dynamic activity in node collaboration and data publication focused in Western Europe, North America, Latin America, Oceania, increasingly sub-Saharan Africa and limited parts of Asia. Thus, significant parts of the world have little or no direct involvement in GBIF’s activities, which poses a risk to the long-term credibility of GBIF as a global collaborative network. Secretariat staff and existing Participants constantly engage potential new members through ad hoc contacts, but the situation calls for a more strategic approach to expand membership.
+
+==== Approach
+
+The Secretariat will compile and maintain an up-to-date register of the status of GBIF engagement and relevant contacts in all countries, providing the Governing Board with an annual review that analyses progress and remaining gaps in membership across each region. Following the development of a coordinated engagement plan for each region, Participants and regional groups with strong contacts to relevant agencies in other governments may take the lead in engagement. The Secretariat will continue to develop strategic engagement through the CBD and other intergovernmental networks, as well as through the BID programme and other capacity-related activities. Adapting the GBIF.org interface to support key content in multiple languages will seek to address language barriers to national expansion, with targeted translation carried out both through external contracts and in-kind services provided by Participants.

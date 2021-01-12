@@ -1,0 +1,79 @@
+=== Activity 3b: Expand data streams
+
+==== Tasks
+[lowerroman]
+. Promote use of sampling event data model for ecological and monitoring datasets
+. Partner with BHL and others to support integration of species occurrence records based on literature
+. Work with bioinformatics initiatives and databases to form robust bidirectional linkages with molecular data
+. Explore opportunities to integrate species-level data from remote sensing
+
+==== 2019 Progress
+
+2019 saw the continued growth of occurrence data on GBIF.org. Major new data types available are occurrence records derived from single sequence and metagenomic datasets of fungi and bacteria. GBIF is also ingesting occurrence data arising from barcode sequences deposited in the Barcode of Life Database (BOLD). GBIF presented at the Living Norway symposium targeting ecological datasets and is investigating protocols for sampling event data. GBIF is proactively investigating new data streams through outreach seminars at major events.
+
+===== 2019 Participant contributions
+
+* *Argentina*: With the work with the environmental secretary we're going to promote use of sampling event data model for ecological and monitoring datasets. 
+
+* *Australia*: The Atlas went through a process of business analysis on species level and specimen level trait data, assessing availability and the use of standards and ontologies. The analysis also documented potential use cases for the use of traits in Atlas.
+
+* *Biodiversity Heritage Library*: Implemented the addition of already transcribed materials to BHL.
+
+* *Colombia*: Training Workshop with the National Institute of Health to publishing data relating to vectors and hosts of human diseases. The workshop took place on 20 September 2018 at National Institute of Health, Bogotá. A total of 10 participants attended the workshop. https://sibcolombia.net/taller-sirap/ https://sibcolombia.net/taller-ins/
+
+* *Germany*: As part of GFBio (German Federation for Biological Data, www.gfbio.org): establishment of workflows and software infrastructure for archiving and publishing data sets from national biodiversity research projects. GFBio includes the provision of observation and collection data to GBIF via the established GBIF-D data centres and BioCASe/ABCD interfaces. 
+The German Botanical Node hosts the technical secretariat of the Global Genome Biodiversity Network. 90 Biobanks provide more than 1.6 million standardized DNA and 370,000 tissue sample data. Most of the linked specimen data records are also published in GBIF.  MetBaN (https://github.com/sproft/MetBaN/tree/v0.1.0) is a bioinformatic pipeline which implements a modular and flexible species delimitation approach by streamlining metabarcoding and phylogenetic software packages. MetBaN is developed at the Botanical Node. 
+
+* *iDigBio*: iDigBio sponsored a Phenology Deep Learning workshop in January 2019. This workshop focused on exploring such technologies as deep convolutional neural networks (CNN), data protocols and standards for linking trait data to specimen records, tracking phenological synchronization across phyla, and tools for trait measurement and analysis. iDigBio sponsored an Imaging and Digitization Workshop for Amateur Paleontologists workshop in July 2019.
+
+* *International Centre for Integrated Mountain Development*: Provided technical support to Department of Plant Resources to publish occurrence data of endemic flora of Nepal via HKH-BIF platform (http://rds.icimod.org:8080/hkh-bif/resource?r=endemic_flora_of_nepal_kath)
+
+* *Naturalis Biodiversity Center*: DiSSCo is discussing with other RIs, Plazi and in RDA how to serve expanded collections data with improved provenance and all data derived from specimen linked back to the specimen.
+
+* *Norway*: Based on the recommendations and guidelines from the GBIF CESP Bireme report (developed by the GBIF Nodes of Belgium, France, Ireland, Norway, Portugal and Species2000), GBIF Norway has engaged with the Agency of Environment in Norway to promote the use of the GBIF data streams in EU-directive biodiversity information reporting. The Norwegian Environment Agency are positive to engage with the European Environment Agency (EEA) to explore Bireme recommendations further. The need for adjustments to the data standards and data models (see Activity 2a) should be expected.
+
+* *South Africa*: Citizen Science community and records catalysed and available through iNaturalist.
+
+* *Sweden*: Increasing the exactness of metadata and sample-based data is highly prioritized with GBIF-Sweden, as is that of integrating procaryote and sequence data.
+
+
+
+==== 2020 Work items
+
+*	Enhance the data exchange standards for sampling-event data, collaborating with partners that generate data to provide sources for filling current gaps. This work aims to establish partnerships with long-term monitoring communities. 
+*	Improve linkages between records originating from museums and BOLD in order to link information that is currently treated as two occurrences.
+*	Carrying over the proposed 2019 work item, mobilize data on vectors and hosts of human diseases. Establish an expert group (€25,000) to identify priority needs for biodiversity data supporting disease research, critical gaps in availability of such data in GBIF.org, and potential sources of data to fill these gaps. The campaign will use this analysis to engage directly with relevant data holders, support data publication through GBIF and inform data mobilization priorities for use by nodes, publishers and funders (see Activity 3a).
+*	Continue linking and integration of sequence-based data streams.
+
+==== 2020 Participant plans
+
+* *Andorra*: We plan to review the literature, especially old contributions, on biodiversity related with Andorra in order to digitize data useful to add to the GBIF database.
+
+* *Argentina*: Continue with the promotion of the use of sampling event data model for ecological and monitoring datasets.
+
+* *Biodiversity Heritage Library*: Review options for transcribing from within BHL.
+
+* *Germany*: “GFBio activities continue with the aim of ensuring the sustainability of the infrastructure.
+MetBan will be fully operable. In consultation with GGBN network partners, advance the integration of GGBN and GBIF with respect to DNA and tissue samples. 
+
+* *Japan*: Seek data to be used in education (high school biology). 
+
+* *Naturalis Biodiversity Center*: DiSSCo will provide a demonstrator how to deliver expanded collections data using a Digital Object infrastructure.
+
+* *Norway*: Dependent on continued stable research infrastructure funding for GBIF activities in Norway, GBIF Norway will mobilize and implement new data streams for genome, environmental DNA, and ecological data from Norwegian data publishers in GBIF (see also Activity 2a).
+
+* *South Africa*: iNaturalist platform being put in place for Southern Africa by SANBI-GBIF.  Also a Node of IBOL is being developed, by the South African community, with a catalytic meeting at the annual BIM-FBIP Forum.  This will facilitate the mobilization of molecular data.
+
+* *Sweden*: GBIF-Sweden seeks to expand activities within the above mentioned fields of work in 2020.
+
+* *United States*: BISON project will focus on occurrence datasets for human and wildlife disease vector/host species as well as update native insect datasets. BISON also working to publish forest inventory and bird banding data. Additionally, GBIF node manager through workshops and at national conferences will work to expand marine data accessibility and broad scale ecosystem datasets like NEON and LTER. Will also focus on eDNA.
+
+==== Rationale
+
+GBIF serves as an integration point for any source of evidence of the recorded occurrence of species in time and space. A primary role for the GBIF infrastructure is to serve as a comprehensive single point of access for discovery, access, use and curation of all such evidence. Several classes of data are already well-supported within the GBIF network.
+
+These include collections data, observations from field research, and many categories of citizen science data. However, there are other new and developing streams of data which should be accommodated if GBIF is to serve as the platform for supporting comprehensive data assessment and modelling (e.g. for GEO BON Essential Biodiversity Variables, IPBES assessments, Red List assessments, etc.). These include efforts to mine historical data records from literature, genomics activities and particularly barcode-driven surveys, and potentially species-level data from remote-sensing systems. More work is also still needed to engage with the full spread of research activities delivering sampling event data of various kinds. GBIF needs to ensure that it provides simple, effective and beneficial ways for researchers to share these and other streams of Darwin Core compatible data.
+
+==== Approach
+
+Existing GBIF models include support for occurrence records and for sampling-event datasets which organize occurrence records as sets of observations deriving from a single field sample (which make provision for GBIF to accommodate “absence data” from surveys which did not record a particular species despite searching). These approaches are core to all potential streams of data to be added. GBIF therefore needs to ensure that existing tools and documentation are clear and usable for relevant research communities and that GBIF sufficiently understands existing data management by these communities to avoid proposing unnecessary additional work. During 2016, GBIF is coordinating a consultation which builds on past engagements with genomics activities such as the Global Genome Biodiversity Network. Recommendations from this consultation are expected to guide improvements in GBIF tools, documentation and communications to support publishing of molecular data in formats which can be integrated within GBIF. Several projects are working on automated or human mining of data records from literature. GBIF needs to learn from these initiatives and ensure that its tools support integration in a simple way. GBIF should also seek exemplar projects for bringing occurrence records from remote sensing into the network.

@@ -1,0 +1,47 @@
+=== Activity 5b: Document needs
+
+==== Tasks
+. Prioritize areas for fitness-for-use assessments
+. Support fitness-for-use groups
+
+==== 2019 Progress
+
+Continued consideration of recommendations from the Data Fitness for Use reports 2016/2017 (agrobiodiversity, invasive and alien species) in user interface and data processing changes. Some of the recommendations were implemented already, particularly around the incorporation of (to date) 122 GRIIS checklists on introduced and invasive species for countries and territories; other recommendations are still valid as possible future options, some pending structural changes (e.g. the taxonomic backbone offering more flexible ranks).
+
+===== 2019 Participant contributions
+
+* *Canadensys*: Answering the needs from our users and data holders, we have developed documentation for the Canadensys Explorer based on ALA framework, and for data-cleaning. We have also worked on translation of the GBIF website and some documentation for both GBIF and ALA.
+
+* *iDigBio*: iDigBio representatives participated in the Harnessing Natural History Collections Data workshop that led to the report released in April 2019. The report is entitled “Extending U.S. Biodiversity Collections to Promote Research and Education” and articulates a national vision to leverage digital data from biodiversity collections for novel and innovative uses.
+An iDigBio representative was appointed to the National Academies of Sciences, Engineering and Medicine committee investigating the value and future of biological collections. The committee will review how National Science Foundation-supported collections of organisms are used in research and education and how to maintain them so that they continue to benefit science and society in the future.
+
+* *Japan*: Documents and administrative process reviewed and refined to increase user-friendliness and efficiency.
+
+* *Norway*: GBIF Norway maintained follow-up activities (with focus on Nordic and European crop wild relative communities) based on the recommendations from the 2016 fitness for use task group reports (see also activity 3a).
+
+* *United States*: Contributed feedback through GitHub and feedback mechanisms on the website to help identify needs of the communities we work with.
+
+==== 2020 Work items
+
+*	Explore the creation of lightweight, customized website landing pages to address thematic interests on GBIF.org. The pages will increase flexibility to include curated, more informative clustered information, ensuring that users have access to both broad search results and prioritized views of data and information.
+*	Continue to implement recommendations of past expert user groups. In particular, build on the incorporation of GRIIS checklists to support richer, more targeted information on invasive and alien species, e.g. by highlighting documented occurrences with a relevant IAS status by country. Explore best options to identify and alert users of new occurrences of potential invasive species. In addition, review and address the most feasible and valuable recommendations of the agrobiodiversity group, (see 5c below) with support of continued community involvement. 
+
+===== 2020 Participant plans
+
+* *Canadensys*: We will continue helping in the different translation project when needed, as well as creating documentation answering the needs of our users.
+
+* *iDigBio*: iDigBio has several workshops, webinars, symposia, and other events planned.
+
+* *Japan*: Periodical review of documents and administrative process.
+
+* *Netherlands*: The NLBIF node manager as Open Biodiversity Data Ambassador will document user needs for GBIF data wherever relevant. 
+
+* *Norway*: Dependent on continued and stable national funding for 2020, the wider Norwegian GBIF community will capture, document and improve the GBIF fitness for use in academic and applied research on ecological monitoring using the sampling event data model (see also activity 2a).
+
+==== Rationale
+
+GBIF data are aggregated from many sources and are consequently heterogeneous, varying in fitness for various uses. During 2015–2016, GBIF established three task groups on data fitness-for-use, in agrobiodiversity research, in distribution modelling and in research on invasive alien species, to document how these communities use GBIF data and to understand their data quality demands. The resulting reports inform data mobilization, data processing and improvements to GBIF.org. During 2020, GBIF will expand this work to incorporate more key areas of use, provisionally focusing on: 1) Phylogenetic and (continuation from 2016 work) DNA evidence for names and occurrences, 2) human health and vectored diseases and 3) marine biodiversity. Depending on resources, these groups will operate through a combination of face-to-face meetings and online or remote collaboration.
+
+==== Approach
+
+The DNA work will continue through online meetings and e-mails. Human health and vectored disease fitness for use group will be formed and will operate using the basic model with two in-person meetings. Work on fitness for use in marine research will continue depending on the availability of marine data from OBIS. Participants are encouraged to organize working groups in additional areas to review the state of GBIF data relevant to particular domains and themes and to provide recommendations on critical gaps, improvements in recommended metadata or data elements, minimum criteria for usable data, etc. The GBIF Secretariat will compile these recommendations and, where possible, develop query profiles to support rapid access and monitor progress by the network in delivering data suited for the needs of these domains.

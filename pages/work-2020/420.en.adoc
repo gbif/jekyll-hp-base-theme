@@ -1,0 +1,87 @@
+=== Activity 2c: Catalogue collections
+
+==== Tasks
+[lowerroman]
+. Partner with other biodiversity informatics initiatives to deliver a single, comprehensive catalogue of the world’s natural history collections
+. Use collection metadata as a first stage in content mobilization from natural history collections, including identification or development and adoption of necessary data standards
+
+==== 2019 Progress
+
+In 2019 the https://gbif.org/grscicoll[Global Registry of Scientific Collections database] (GRSciColl) was migrated to a public website managed by GBIF and editing capabilities provided through the enhanced, and open, registry administration console. The migration and resurrection of GRSciCol identified that there are several other catalogues (CETAF, IndexHerbariorum) that need consideration; GRSciCol needs to evolve to synchronize with authoritative catalogues such as Index Herbarium and collection management systems directly. Therefore, GBIF continues involvement in the TDWG task group on the development of a collections description data standard (TDWG CD). This work continues with community consultation under SYNTHESYS+ and the alliance for biodiversity knowledge to plan future work. 
+
+Identifiers have been used over the years by the community and are referenced in 42 million records. These identifiers now resolve again, e.g. http://biocol.org/urn:lsid:biocol.org:col:34994.
+
+===== 2019 Participant contributions
+
+* *Argentina*: Since 2003 Argentina have a catalogue of institutions and collections and keeps growing.
+
+* *Benin*: Three metadata have been published in the framework of our joint CESP project with GBIF France
+
+1. Inventaire et dénombrement des oiseaux du Parc Naturel Communautaire de la Vallée du Sitatunga (Sud Bénin)
+https://www.gbif.org/dataset/3194e21c-447a-410d-bb09-31398482de1f
+2. List of plant species of forest formation in Benin 
+https://www.gbif.org/dataset/d882e391-10f9-43f6-b0f9-29636396ba9e
+3. Inventory of plant species produced in CERF nurseries
+https://www.gbif.org/dataset/f7598557-adb5-4827-9c28-8025da802dc4 
+
+* *Canada*: CBIF staff contribute to the Collections Description standard.
+
+* *Canadensys*: Metadata on Canadian collections are relatively up to date on the Canadensys website (through the IPT and the ALA framework)
+
+* *iDigBio*: Several iDigBio staff are involved with the Natural Collections Description (NCD) group.
+iDigBio maintains a comprehensive list of known biodiversity collections in the United States.
+
+* *Japan*: Preliminary questionnaire provided to data providers for future stock of data.
+
+* *Mexico*: “Colecciones Biológicas científicas Mexicanas” http://www.biodiversidad.gob.mx/especies/colecciones/ is a web portal with 747 metadata of scientific Mexican collections in 237 national institutions. The collection metadata was developed with standard international Natural Collections Description (NCD).
+
+* *Naturalis Biodiversity Center*: Naturalis led the development of the DiSSCo Prepare proposal which includes preparations towards a catalogue of the European collections. As part of a project financed by the Dutch research council (NWO, ALWIN.005), Naturalis together with NLBIF, and the foundation for Dutch Natural History Collections has created a collections dashboard for the Netherlands. This dashboard is the first online representation of the natural history collections in the Netherlands that are digitized as well as not yet digitized. The dashboard will be published in the country page of DiSSCo.eu and NLBIF.nl.
+
+* *Netherlands*: NLBIF is part of TDWG NCD that furthers the CD (Collection Description) standard https://www.tdwg.org/community/cd/ to describe natural history collections. A preliminary standard has been implemented in a dashboard that shows the Dutch national collection as part of the NLBIF activities under DiSSCo-NL.
+
+* *Spain*: We maintain, improve and keep updated the Spanish registry of biodiversity collections and databases that currently hosts 230 institutions and 471 collections/databases. This metadata repository is a first step for data mobilization and it as available at https://www.gbif.es/registro-instituciones/.
+
+* *Sweden*: In collaboration between The Swedish Museum of Natural History GBIF-Sweden runs the development of a web-based collection management system (DINA web). 
+
+* *Switzerland*: Contribution to the report of the Swiss Academy of Sciences: National significance of natural history collections in Switzerland.
+
+* *United States*: Continued significant investment and contribution from ABCD, iDigBio including hosting an annual conference and working directly with collection managers.
+
+==== 2020 Work items
+
+*	Based on community consultation, build mechanism to synchronize Global Registry of Scientific Collections (GRSciColl) with other catalogues.
+*	Improve linkages between collections, institutions and occurrences (or specimen) objects indexed by GBIF.
+*	Develop the user interfaces and services necessary to support a collection catalogue system.
+*	Work with the community to ensure the content is fit for use, and promote community editing of the registered content.
+
+===== 2020 Participant plans
+
+* *Argentina*: Keep working with our catalogue and collaborate with the GRBio / GRSciColl initiative presented at GBIF.
+
+* *Canada*: CBIF will continue to contribute to the Collections Description standard.
+
+* *Canadensys*: If needed, we can help review and update information about Canadian Collections on the Global Register of Biodiversity Collections (GRBio)/Global Register of Scientific Collections (GRSciColl) dataset. We will maintain the collections' metadata up-to-date on Canadensys.
+
+* *iDigBio*: iDigBio will continue to support the Natural Collections Description (NCD) group. iDigBio will continue maintaining its list of U.S. collections. Ultimately, iDigBio’s goal is to integrate this list with the result from the GBIF/GRBio/GRSciColl collaboration.
+
+* *Japan*: Evaluation of questionnaire to know/analyses the status. 
+
+* *Naturalis Biodiversity Center*: Naturalis is planning to establish a proto-version of the future DiSSCo collections catalogue and is investigating to use GBIF as one of the authoritative sources of data. For the catalogue a minimum information specification for collections (MICS) needs to be developed in conjunction with work on the TDWG CD standard and based on the work already done in ICEDIG.
+
+* *South Africa*: The Natural Science Collections Facility, Funded by the Department of Science and Technology plays a key role in the development of catalogues for collections.
+
+* *Sweden*: Expanding DINA web to cover not only biological objects (including sequence data) but also palaeontology and geology will continue in 2019.
+
+* *Switzerland*: Update of Swiss GRSciColl records. Promotion and support of collection metadata acquisition.
+
+* *United States*: ABCD, iDigBio to continue work in advancing and facilitating sharing of catalogue collections.
+
+==== Rationale
+
+Natural history collections are the largest source of data on biodiversity outside nature itself. Collectively the worlds natural history collections number about 3 billion specimens and document over 300 years of active human exploration of biodiversity on earth. In addition the fossil remains provide us with glimpses into the very far past before humans existed. The collections and their ancillary materials (images, collectors’ notes, sequences, measurements, etc.), contain colossal amounts of data that should be digitized and shared. Only about 10% of the world’s collections have been digitized and only a portion of digitized collections are shared publicly through the internet. A large number of current GBIF publishers comprise natural history museums and herbaria. The Secretariat will work with Participants to deliver the most comprehensive catalogue possible of collections, including metadata to publicize undigitized collections as a first step towards their digitization and mobilization.
+
+==== Approach
+
+GBIF will collaborate with existing biodiversity collection registries such as GRBio to develop a rich collections catalogue to facilitate the discovery and use of the world’s collections.
+
+Collections will be guided and facilitated to publish metadata-only datasets by drawing on the recommendations of the GBIF task force on accelerating the discovery of bio-collections data. The generation of a collection catalogue through metadata assessments will help establish roadmaps for further digitization of the collections.

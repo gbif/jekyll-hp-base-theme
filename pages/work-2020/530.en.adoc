@@ -1,0 +1,52 @@
+=== Activity 3d: Rescue datasets
+
+==== Tasks
+[lowerroman]
+. Develop tools for reporting potential data sources for integration into GBIF
+. Develop support materials (including accreditation) for collaborative data preparation and mapping datasets in GBIF
+. Develop site and support mechanisms for users to adopt and map datasets
+. Review and update definitions of data publisher within GBIF to reflect collaborative data publishing
+. Develop partnerships with data journals to support data papers for rescued datasets
+
+==== 2019 Progress
+
+Explored metadata-only dataset publication of the datasets proposed through https://www.gbif.org/suggest-dataset. Currently developing categorization of datasets to improve implementation of the ‘Suggest a dataset’ tool in GitHub. 
+
+===== 2019 Participant contributions
+
+* *Canadensys*: We have accepted to take care of orphan datasets from Canadian institutions currently published through outdated protocols (DiGIR, TaPIR) by CBIF. We are waiting for CBIF approval to start the ingestion process.
+
+* *Colombia*: Rescue of data dataset from Biota Colombiana Journal. Dataset before the implementation of data paper model. All datasets published through https://ipt.biodiversidad.co/iavh/
+
+* *Integrated Taxonomic Information System*: ITIS' taxonomic workbench development will provide the biodiversity community with a tool that provides a stable and long-term solution for updating and maintaining taxonomic information.
+
+* *International Centre for Integrated Mountain Development*: Migrated 14 checklist data to HKH-BIF. Our IPT registered earlier in 2012 became   dormant so had to be reinstalled and re-registered. So we had to move our earlier published datasets into this current HKH-BIF platform. 
+
+* *Sweden*: As in Work Programme item 3c.
+
+* *United States*: Several projects--including iDigBio, VertNET, BISON--working with researchers to rescue, QA/QC and provide access to U.S.-originating datasets.
+
+==== 2020 Work items
+
+*	Continue to implement workflow for prioritizing and drawing upon potential data sources reported through the ‘dataset catcher’ tool, including involvement of nodes, mentors and crowdsourced solutions.
+*	Roll out a workflow for ‘Suggest a dataset’ processing.
+
+===== 2020 Participant plans
+
+* *Canadensys*: We will temporarily host the CBIF orphaned datasets until CBIF is ready to host them again. 
+
+* *Integrated Taxonomic Information System*: In 2020 ITIS plans to release its taxonomic workbench that will provide the biodiversity community with a tool that provides a stable and long-term solution for updating and maintaining taxonomic information.
+
+* *Netherlands*: Once the NLBIF website is renewed it will be used to further promote the vision and mission of GBIF and NLBIF, including the rescue of datasets.
+
+* *Sweden*: As in Work Programme item 3c.
+
+* *United States*: BISON will focus on rescuing amphibian data. 
+
+==== Rationale
+
+Many researchers hold potentially valuable data which are not yet in a suitable digital format for integration into GBIF. Historical publications are a similar source of valuable data which remain inaccessible. This offers an opportunity to establish a community platform to capture information on such datasets where the researcher or owner lacks the time or capability to make the data available as a GBIF-compatible dataset, and to enable interested individuals to volunteer time to collaborate with the owner to publish a dataset, potentially in conjunction with a data paper credited to all parties. Such a model may address a key bottleneck in bringing valuable data online.
+
+==== Approach
+
+The GBIF Secretariat, or an interested Participant, should develop a test environment to explore this model. The model should support identification of basic information on datasets which may be rescued, including details of ownership, etc. Volunteers may be required to undergo some training or demonstrate some knowledge of GBIF data publishing and the taxa concerned prior to adopting a dataset for mobilization. Mobilization should be include consultation or partnership with the owner and should deliver quality metadata and a valid mapping of the original information. Opportunities should be explored for publication of resulting datasets as data papers as an incentive to all parties.

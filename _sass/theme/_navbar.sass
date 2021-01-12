@@ -45,12 +45,42 @@
   .toc 
     display: block
 
+.article
+  h2
+    margin-top: 1.1428em
+  h3
+    margin-top: 1.3333em
+  p
+    margin-bottom: 1em
+
+.sect2
+  margin-top: 20px
+
 .toc
   @extend .menu
-.toc p
+  user-select: none
+  position: sticky
+  top: 0
+  padding: 0 0 0 24px
+  max-height: 100vh
+  overflow: auto
+  ul li ul
+    border-left: none
+  a
+    border-left: 3px solid transparent
+    &.visible
+      border-left: 3px solid deepskyblue
+      // color: #111
+.toc_header
   @extend .menu-label 
+  position: sticky
+  top: 0
+  background: white
+  padding: 12px 0
 .toc ul
   @extend .menu-list
+  font-size: 12px
+  margin-right: 0!important
 
 +until($navbar-breakpoint)
   .navbar-end

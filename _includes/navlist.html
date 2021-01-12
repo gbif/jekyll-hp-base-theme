@@ -1,0 +1,17 @@
+{% assign tree = include.tree %}
+<ul class="menu-list">
+  {% for item in tree %}
+    {% if item.sectiontitle %}
+      <li>
+        <a class="navbar-link"> {{ item.sectiontitle }} </a>
+        {% include navlist.html tree=item.section %}
+      </li>
+    {% else %}
+    <li>
+      <a class="{% if item.path == page.url %} active{% endif %}" href="{{ item.path | relative_url }}">
+        {{ item.title }}
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

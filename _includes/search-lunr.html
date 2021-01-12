@@ -1,0 +1,147 @@
+{% include searchTemplate.html %}
+<script>
+  (function () {
+    var cache = {};
+
+    this.tmpl = function tmpl(str, data) {
+      // Figure out if we're getting a template, or if we need to
+      // load the template - and be sure to cache the result.
+      var fn = !/\W/.test(str)
+        ? (cache[str] =
+            cache[str] || tmpl(document.getElementById(str).innerHTML))
+        : // Generate a reusable function that will serve as a template
+          // generator (and which will be cached).
+          new Function(
+            'obj',
+            'var p=[],print=function(){p.push.apply(p,arguments);};' +
+              // Introduce the data as local variables using with(){}
+              "with(obj){p.push('" +
+              // Convert the template into pure JavaScript
+              str
+                .replace(/[\r\t\n]/g, ' ')
+                .split('<%')
+                .join('\t')
+                .replace(/((^|%>)[^\t]*)'/g, '$1\r')
+                .replace(/\t=(.*?)%>/g, "',$1,'")
+                .split('\t')
+                .join("');")
+                .split('%>')
+                .join("p.push('")
+                .split('\r')
+                .join("\\'") +
+              "');}return p.join('');"
+          );
+
+      // Provide some basic currying to the user
+      return data ? fn(data) : fn;
+    };
+  })();
+
+  // generate index for search
+  var idx = lunr(function () {
+    this.ref('id');
+    this.field('title');
+    this.field('body');
+
+    documents.forEach(function (doc) {
+      this.add(doc);
+    }, this);
+  });
+
+  //funtion called from search box
+  
+  var unfilteredResults = document.getElementById('lunrsearchresults').innerHTML;
+
+  function lunr_search(term) {
+    history.replaceState(null, '', '?q=' + encodeURIComponent(term));
+    performSearch(term);
+    return false;
+  }
+
+  function performSearch(term) {
+    if (!term || term === '') {
+      document.getElementById('lunrsearchresults').innerHTML = unfilteredResults;
+      return false;
+    }
+    document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
+    if (term) {
+      document.getElementById('lunrsearchresults').innerHTML =
+        //"<p>Search results for '" +
+        //term +
+        //"'</p>" +
+        document.getElementById('lunrsearchresults').innerHTML;
+      //put results on the screen.
+      var results = idx.search(term);
+      if (results.length > 0) {
+        //console.log(idx.search(term));
+        //if results
+        for (var i = 0; i < results.length; i++) {
+          // more statements
+          var ref = results[i]['ref'];
+          var url = documents[ref]['url'];
+          var title = documents[ref]['title'];
+          // var body = documents[ref]['body'].substring(0, 160) + '...';
+          var excerpt = documents[ref]['excerpt'];
+          var color = title.length % 5;
+          var dataObject = {
+            ref: ref,
+            url: url,
+            title: title,
+            excerpt: excerpt,
+            color: color
+          };
+
+          document.querySelectorAll('#lunrsearchresults')[0].innerHTML =
+            document.querySelectorAll('#lunrsearchresults')[0].innerHTML + tmpl("post_tmpl", dataObject);
+        }
+      } else {
+        document.querySelectorAll('#lunrsearchresults')[0].innerHTML =
+          "<div class='lunrsearchresult'>No results found...</div>";
+      }
+    }
+
+    //show filter in top
+    var filterElement = document.getElementById('archive-filter');
+    if (filterElement) {
+      filterElement.innerHTML = '<div class="tags has-addons">' + 
+        '<a href="{{ site.algae.archive_permalink | relative_url }}" class="tag is-medium">"' + term + '"</a>' + 
+        '<a href="{{ site.algae.archive_permalink | relative_url }}" class="tag is-medium is-delete"></a>' +
+      '</div>'
+    }
+
+    return false;
+  }
+
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const queryParam = urlSearchParams.get('q');
+  if (typeof queryParam === 'string' && queryParam !== '') {
+    performSearch(queryParam);
+    document.getElementById('lunrsearch').value = queryParam;
+  }
+
+</script>
+<!--style>
+  #lunrsearchresults {
+    padding-top: 0.2rem;
+  }
+  .lunrsearchresult {
+    padding-bottom: 1rem;
+  }
+  .lunrsearchresult .title {
+    color: #d9230f;
+  }
+  .lunrsearchresult .url {
+    color: silver;
+  }
+  .lunrsearchresult a {
+    display: block;
+    color: #777;
+  }
+  .lunrsearchresult a:hover,
+  .lunrsearchresult a:focus {
+    text-decoration: none;
+  }
+  .lunrsearchresult a:hover .title {
+    text-decoration: underline;
+  }
+</style-->

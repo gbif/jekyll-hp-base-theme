@@ -1,18 +1,26 @@
 ---
-layout: default
+layout: base
 description: Template for a list of posts, with full width
 remarks: See also page.layout == 'archive' in footer.html
 ---
+
 {% assign posts = site.posts %}
 {% if page.lang %}
   {% assign posts = site.posts | where: "lang", page.lang %}
 {% endif %}
 
+
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+  <div class="searchContainer">
+    <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search via Lunr.js" />
+  </div>
+</form>
+
 <div id="archive-filter" class="archive-filter"></div>
 <div class="features">
-  <div class="feature-cards has-{{ posts.size }}-elements">
+  <div id="lunrsearchresults" class="feature-cards has-{{ posts.size }}-elements">
     {% for post in posts %}
-      <article class="feature" data-categories="{% for category in post.categories %}{{ category | strip }}|{% endfor %}">
+      <article class="feature" data-categories="{% for category in post.tags %}{{ category | strip }}|{% endfor %}">
       {% assign description = post.excerpt | strip_html | truncatewords: 20  %}
       {% assign date = post.date | date: "%B %d, %Y"  %}
       {% assign href = post.url | relative_url  %}
@@ -21,3 +29,6 @@ remarks: See also page.layout == 'archive' in footer.html
     {% endfor %}
   </div>
 </div>
+
+<script src="/assets/theme/js/search.js"></script>
+{% include search-lunr.html %}

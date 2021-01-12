@@ -1,0 +1,89 @@
+=== Activity 4b: Assess data quality
+
+==== Tasks
+[lowerroman]
+. Develop extensible data validation tools framework in partnership with ALA, TDWG and other networks (e.g. Symbiota, iDigBio, VertNet)
+. Integrate consistent data validation tools in GBIF.org, national/regional portals, IPT and elsewhere
+. Improve presentation and reporting of data validation results
+. Develop regular data set reports for data publishers and nodes
+
+==== 2019 Progress
+
+Performed data analysis on implicit geographic data accuracy/patchiness within datasets (gridded data, centroids), documented in the GBIF data blog, estimating the size of impact on further analyses (EBV, species distribution). Tagging of indexed datasets to support further automated data processing.
+
+Exploring of suitable measures to indicate metadata completeness and appropriate content, focused on the contribution from the BID data mobilization.
+
+===== 2019 Participant contributions
+
+* *Argentina*: Training workshops in different areas of the country for data providers. Permanent help desk in the publication and data quality.
+
+* *Australia*: ALA and GBIF ran a combined workshop in Canberra in February to analyse the potential areas of collaboration and alignment of tools and code bases.
+
+* *Benin*: The node of GBIF Benin is more and more capacitated and assure adequate quality to data through cleaning process before data publication.
+
+* *Canada*: CBIF staff contributed to the work of the TDWG Biodiversity Data Quality Interest Group on data quality standards and controlled vocabularies. 
+
+* *Canadensys*: All datasets published on Canadensys are verified prior to publication using the GBIF Validator Tool. We also invite data holders to use that tool before submitting dataset to Canadensys. For already published dataset, we invite data holders to use the metrics linked to their resources in order to enhance data quality for their next publication.
+
+* *Colombia*: Open Refine Scripts SiB Colombia is working in a set of scripts in OpenRefine for data quality management of primary biodiversity data. Some of these scripts are being used now by the Node Staff in the process of accompaniment that is done with the publishers, assessing the quality and generating quality reports for each dataset before them will be published through the IPT. The Colombian Node is making improvements on these scripts and developing new scripts to consolidate a toolkit in OpenRefine available for all the GBIF and informatics biodiversity community. An article about this work is also being built to be published in 2018–2019. OpenRefine scripts Repository: https://github.com/SIB-Colombia/data-quality-open-refine.
+
+* *France*: GBIF France contributes to harmonies and put in place a better national data workflow.
+
+* *iDigBio*: iDigBio staff are participating in the TDWG Data Quality Interest Group. iDigBio hosted a Collecting Metrics of Success symposium at SPNHC 2019. This symposium discussed the current metrics being collected, what metrics are needed, and who needs them. In addition, the symposium began a conversation about metrics the community could amass collectively, across collections and across the world.
+
+* *International Centre for Integrated Mountain Development*: Supported TUTH – data publisher from Nepal to validate occurrence datasets for publishing compiled under BIFA project – “Mobilizing occurrence data of alien and endemic plant species of Nepal” 
+(Data published through TaiBIF- http://ipt.taibif.tw/manage/resource.do?r=bifa3_25).
+
+* *Japan*: As a result of assessment, some amount of data duplication was detected.
+
+* *Norway*: GBIF Norway helpdesk assists Norwegian data publishers with assessment of data quality before and after data publication. And a very active network of enthusiasts and professionals in Norway provide rapid feedback and suggestions to fixing data quality issues on Norwegian datasets (see also Activity 1d).
+
+* *Spain*: GBIF Spain organized online data quality workshop for 28 people including international participation. We received nearly 100 inscription forms. We run data quality tests before publishing datasets through GBIF. Working on including new data validations in our tool “Darwin Test” to check more Darwin Core fields.
+
+* *Sweden*: Employing data validation tools developed nationally at one partner institution of the Swedish Biodiversity data Infrastructure, GBIF-Sweden takes responsibility for data provided by Swedish owners.
+
+* *Switzerland*: Participation in a project to establish a registry of Swiss collectors for validation purposes.
+
+==== 2020 Work items
+
+*	Review, consolidate and update existing documentation for data publishers. In particular, provide clear guidance on minimum requirements for published data.
+*	Develop metrics to track the completeness of core data elements and the degree to which supplied content is appropriate.
+*	Supply clear indicator measures for the completeness and usability of data as part of GBIF.org dataset pages, based on examples such as the GEOLabel data branding model.
+*	Extend data-quality assessment to include aspects only detectable above the level of individual records.
+*	Assess the patchiness of indexed data (geographical clustering, misleading accuracy or precision of coordinates), including evaluation of the apparent causes of data patchiness and include measures of data patchiness in the data index, at both dataset and record level in the data index.
+*	Ensure that users of data are able to identify datasets or records that do not fulfil their criteria for geo-accuracy, whether they are accessing data through facets in the GBIF.org, via the API or in downloads.
+
+===== 2020 Participant plans
+
+* *Argentina*: Training workshops in different areas of the country for data providers. Permanent help desk in the publication and data quality. Develop regular data set reports for data publishers and nodes.
+
+* *Australia*: GBIF work plan participation response GBIF work plan participation response 100% 10 SDG 2 of 2 Context:
+AA5 Continuing to collaborate with the SDG community and implement platform-based solutions to improve the value, applicability and accessibility of citizen science data for SDG's. Further review work is scheduled for this year as part of ALA infrastructure refresh., Focus areas will be data registries and occurrence data processing and data quality.Screen reader support enabled. Further review work is scheduled for this year as part of ALA infrastructure refresh. Focus areas will be data registries and occurrence data processing and data quality. Anonymous Wombat has joined the document.
+
+* *Canada*: CBIF staff will continue to contribute to the work of the TDWG Biodiversity Data Quality Interest Group on data quality standards and controlled vocabularies.
+
+* *Canadensys*: We will continue with the same protocol.
+
+* *iDigBio*: iDigBio has a vision of integrating with other data validation tools. iDigBio will continue its participation with TDWG.
+
+* *International Centre for Integrated Mountain Development*: Continue providing technical services to data publishers in the HKH countries as required- in relation to data publishing in HKH-BIF.
+
+* *Japan*: Continued assessment of data duplication and missing data.
+
+* *Mexico*: To be continued Mexican node assessment of data duplication and development tools for review data of occurrences. 
+
+* *Netherlands*: NLBIF will start looking into implementation of the Living Atlas platform and within that scope also look into data quality. 
+
+* *Spain*: Enable Darwin Test software to validate checklist datasets and sampling event data datasets.
+
+* *Sweden*: Additional metadata will be covered in the above mentioned system for data validation.
+
+* *Switzerland*: Engage collection holding institutions to complete the Swiss collector's registry.
+
+==== Rationale
+
+Assessing data quality includes applying data validation tools to capture and monitor suspected and confirmed errors and ambiguities in data, highlighting useful areas for additional information (metadata and qualifiers) that would improve usability and enhance processing options, and documenting completeness and standardization of information both within a dataset and within aggregated data. A number of validation tools exist in the wider community, and should be brought together to mutually profit from investments and to more efficiently plan future distributed development efforts. This will benefit data publication frameworks as well as individual data holders, giving concrete feedback on best gains in data management.
+
+==== Approach
+
+Consolidation requires an overview of existing data validation tools, their goals and application areas, building on existing community work to produce an annotated tools catalogue (including work by TDWG and the GEO BON “Bon in a Box”). To make best use of development resources, GBIF will support collaboration between networks to bring those developments together and harmonize efforts, so that further development can more efficiently concentrate on new priority areas. Consistent tests and reports will both inform users of the suitability of data for their use, provide feedback to publishers on their holdings, provide a measure for the overall state of the network, and help to prioritize improvement options. Ideally, the most common reporting measures and formats are agreed and unified to a degree that allows publishers an easy cross-walk between and integration of data quality reports supplied by different services and aggregators.

@@ -1,0 +1,112 @@
+=== Activity 1c: Equip Participant nodes
+
+==== Tasks
+
+[lowerroman]
+. Perform ongoing nodes capacity self-assessment
+. Build reusable national/regional platform tools centred on ALA software
+. Develop online collaboration through GBIF.org helpdesk to assist and mentor node managers
+. Explore alternative options for lightweight national portal solutions, e.g. CKAN
+
+==== 2019 Progress 
+
+Based on discussions alongside the GB25 meeting in Ireland in 2018, the Kilkenny Accord developed a roadmap towards an open governance and funding model for the Living Atlas community. GBIFS established and has overseen contracts with an Administrative and Technical coordinator to support the community (€40,000) in 2019. GBIFS assisted in the ALA Advanced Workshop in Paris to help adopters move towards Spatial Portal capabilities. The Secretariat informatics team held a technical meeting with the ALA at Canberra in March to explore possibilities to collaborate, with the Registry/Collectory and a hosted data indexing process identified as an opportunity to reduce the costs of operation for Australia and show the value proposition of GBIF.
+
+In 2019 the Secretariat started exploring the potential for a lightweight portal solution that has been requested by several participants to lower the technical threshold. A concept of the simple hosted solution (static site generator and occurrence search) has been demonstrated to the Science Committee and Nodes Steering Group, and a visual design is in development for GB26. A showcase portal containing data generated through projects funded by the BID programme in Africa, Caribbean and the Pacific has been chosen as the initial project in 2019.
+
+The informatics team opened the https://registry.gbif.org[GBIF Registry administration] and piloted editing by external users (starting with GBIF Norway node staff). The administration console provides editing and registration capabilities of the core entities (institutions, datasets, etc.) and also provides oversight and control of the dataset crawling infrastructure and diagnostics. This is part of a strategy to progress towards becoming a more open platform for others to use by lowering the technical threshold through enabling infrastructure.
+
+A global nodes meeting and training event is taking place in conjunction with GB26 in Leiden, Netherlands in October (see 1b above). The training is a two-day course focused on the functional capacities involved in node development: positioning a node in the broader landscape, identifying key stakeholders, developing strategic and implementation plans and running effective training workshops. The online materials are being made public by the end of the 2019.
+
+The GBIF network has initiated a programme creating a new role, the Biodiversity Open Data Ambassador, aimed at supporting a corps of experts who promote free and open access to biodiversity data. During its initial development phase without significant promotion, 42 professionals from 19 countries, representing each of GBIF’s six regions, volunteered to become Biodiversity Open Data Ambassadors. The programme is intended to recognize and support the active role that ambassadors have alongside the network’s node managers and staff, formal delegates, committee members and Secretariat staff. The GBIF Secretariat continues to develop resources to help ambassadors’ efforts, including presentation slides, talking points, posters, and support materials in both digital and print formats.
+
+===== 2019 Participant contributions
+
+* *Andorra*: On February 2018, Atlas Living Andorra was launch and presented to media. The ALA-Andorra was undertaken by a company specialized in informatics systems and the assistance of our colleagues of the Spanish Node.
+
+* *Argentina*: Capacity self-assessment ready, mentor to new nodes.
+
+* *Australia*: The Atlas assisted in the recruitment of two Living Atlas Coordinator positions with GBIF's funding; a Technical and Administrative position. These positions will help develop the community further by organizing the governance arrangements around the Atlas tools and improving support and documentation for nodes attempting to use the Atlas tools for their biodiversity informatics portals.
+
+* *Benin*: In the framework of our master program, courses are being registered and will be provided to JRS Biodiversity Foundation, our donor. It will be then popularized and disseminated to be available for the general public.
+
+* *Canada*: CBIF is reviewing use cases and considering options for a new Canadian biodiversity portal. We participated in the workshop “Living Atlases workshop (CESP) 2019” held in Paris, France in April. CBIF participates in the Biodiversity Open Data Ambassador and has included GBIF materials in talks at conferences/meetings on biodiversity informatics topics. 
+
+* *Canadensys*: Our node manager (Carole Sinou) is involved as a trainer in the BID and Global Nodes Training. The Canadensys team is also involved in the Living Atlases Community and Carole is part of the interim steering group. Anne Bruneau (HoD) and Carole will participate in the GB26 and Biodiversity_Next conference.
+
+* *Colombia*: Ventanas departamentales / Regional windows: Starting from a need for regionalization of SiB Colombia that has been latent for some time, during the first quarter of 2019 the first instance to explore biodiversity at departmental level in the country was launched. The first department is Santander. This window is a tool for exploring the data and information available about a specific department and sow the seed to develop a very useful tool for decision-making and territorial management at the regional level, through appropriation, awareness and empowerment.Data repatriation: from September 2018, the SiB Colombia has been working in the data repatriation process to the national data portal. In the first quarter of 2019, we repatriate 3,773,350 occurrences from eBird, iNaturalist, Xeno-canto and GBIF.org (https://sibcolombia.net/integracion-datos-2018/). In the  third quarter we hope to support the hosting of a strategic GBIF dataset from CIAT - A global database for the distributions of crop wild relatives. https://doi.org/10.15468/jyrthk Participation in CESP: Increasing capacities to develop National Species Checklists in the Latin America and the Caribbean Region. 
+
+* *France*: GBIF France helped to develop a portal based on the ALA software for GBIF Togo. 
+GBIF France coordinated the CESP project : “International Living Atlases workshop: how to improve data use with Atlas of Living Australia modules” and co-organized with ALA the Paris workshop in April 2019. GBIF France will supply mentor for workshops organized by GBIF under BID and GNM on managing a GBIF participant node.
+
+* *iDigBio*: iDigBio has been participating in the monthly GBIF webinars when feasible. If live participation was not possible, the recordings have been utilized. iDigBio will be participating in the Node Training at GB26.
+
+* *International Centre for Integrated Mountain Development*: Joint organization of 2018 Global Biodiversity Information Facility (GBIF) Asia Regional Nodes Meeting in Kathmandu on 17–18 September 2018 (https://www.gbif.org/event/EEvUGytWxw48WQgkAwCkg/2018-gbif-asia-regional-nodes-meeting). Reactivated HKH-BIF (re-registration with GBIF). Participated in GBIF Network Webinar#1: Understood some elements of sequenced based data mobilization, and received introduction on Biodiversity Information for Development and BIFA.
+
+* *Japan*: Continuous improvement of S-Net system (domestic website for searching natural history specimens).
+
+* *Mexico*: Develop websites Enciclovida (http://enciclovida.mx), SNIB's geoportal (http://geoportal.conabio.gob.mx/) and SNIB (http://www.snib.mx)
+
+* *Netherlands*: NLBIF made a financial contribution to the Living Atlases project and started to look into implementation of Living Atlases for NL. The NLBIF node manager has joined the Open Data Ambassador Programme.
+
+* *Norway*: GBIF Norway contributes as mentor to the regional GBIF network meeting in the Pacific in August 2019.
+
+* *Spain*: We have contributed to translations of training modules on managing a GBIF Participant Node, and we have hosted the online activities for these workshops. We have been mentors in the training activities on managing a GBIF Participant Node carried out in Trinidad. We will be mentors in the Global Nodes Meeting training in Leiden. We have been supporting GBIF Zimbabwe in establishing its GBIF Node. We have supported the development of the Living Atlases (LA) community. We are part of the LA interim committee and we have been active with the LA communication and outreach, promoting LA in different forums and conferences. We have supported and assisted new LA coordinators that will be helping the nodes that intent to use the Atlas tools. We have worked together with Nodes from UK, Australia, France, Sweden, Portugal and Canadensys to create video tutorials and online exercises for LA users around the world. We have supported other data managers of other Living Atlases installations.
+
+* *Sweden*: Reiterated capacity self-assessments have been made and the result added to the European nodes regional report (and we do well!). Additional ALA platform tools are being developed and offered to the Living Atlases Community. Apart from data publication (see below) the latter is probably the most significant contribution from GBIF-Sweden to the global biodiversity informatics  community.
+
+* *South Africa*: SANBI-GBIF will consider mechanisms to engage the scientific community around the new and evolving concept of the GBIF Open Science Ambassador Concept. Here the Node will take forward the initial advocacy actions with the marine science community, conducted at the South African Marine Science Symposium. SANBI-GBIF has highlighted research aimed at developing the field of biodiversity informatics in South Africa through the use of primary data (big data –more than 2 million records) and informatics tools (niche models) to address key biodiversity challenges (food security and climate change). This demonstrates the use and relevance of GBIF mobilized data across the value chain. Showcase examples for Southern Africa will be derived.
+
+* *United States*: Continued collaboration with iDigBio building nodes capacity and cooperation.
+
+* *Zimbabwe*: Purchased and installed server for hosting data for GBIF Zimbabwe.
+
+
+==== 2020 Work items
+
+*	Support for 2020 Regional Nodes Meetings (€60,000). The Secretariat will investigate possible synergies with BID phase 2 regional meetings, as well as with a BIFA workshop in Asia.
+*	The Secretariat will continue enhancing guidance documentation for nodes. This guidance will incorporate priorities in data mobilization, gap filling, private-sector engagement and products from CESP projects.
+*	The Secretariat will design and implement user interfaces and services necessary to support simple hosted portals. The initial deployment will be of the BID programme portal followed by exploration of country portals and an exemplar virtual natural history collection. Discussions will determine whether such services should be restricted to Voting Participant countries and/or institutions that contribute a fee to create institutional portals.
+*	Continue conversations to align codebases and infrastructure with ALA, iDigBio, DiSSCo and other potential partners. The alliance for biodiversity knowledge will be used as a platform for some of these interactions.
+*	Support further development of the Living Atlases community (minimum €30,000).
+*	Consolidate Biodiversity Open Data Ambassador programme with issuing of digital badges, listing ambassadors on country pages and capturing feedback on promotion of GBIF at events.
+
+===== 2020 Participant plans
+
+* *Andorra*: We will attend to improve Capacities and Tools of ALA-Andorra
+
+* *Argentina*: Mentor to new nodes
+
+* *Australia*: Continued support for the Living Atlases Community, providing support and guidance to the Living Atlas coordinators.
+
+* *Benin*: In the framework of our master program, courses are being registered and will be provided to JRS Biodiversity Foundation, our donor. It will be then popularized and disseminated to be available for the general public.
+
+* *Canada*: CBIF will contribute to discussions/evaluations about lightweight national portals and potentially collaborate with GBIF to further develop/support/sustain an option that would be suitable for Canada and other countries.
+
+* *Canadensys*: We will continue to be involved as much as we can in the different initiatives developed by GBIF. It is important to give back to the community as much as we can.
+
+* *Colombia*: Ventanas departamentales / Regional windows: During the first quarter of 2020 will be released the version 1.1. The second department will be Boyacá. This window is a tool for exploring the data and information available about a specific department and sow the seed to develop a very useful tool for decision-making and territorial management at the regional level, through appropriation, awareness and empowerment. Data repatriation: Data repatriation of new occurrences between January – December 2019.
+
+* *France*: GBIF France will continue to participate in the activities of the Living Atlases Community. 
+
+* *iDigBio*: iDigBio finds the monthly GBIF webinars valuable and plans to continue attending. iDigBio is currently in a sustainability planning process. As part of these efforts, iDigBio will consider capacity self-assessment as an information tool. In addition, iDigBio plans to evaluate Living Atlases as a potential long-term portal infrastructure. Lastly, iDigBio will consider taking advantage of the node mentorship program. 
+
+* *Japan*: Continuous improvement of S-Net system (domestic website for searching natural history specimens).
+
+* *Mexico*: “Continue to update data occurrences in published datasets. Continue to gather new occurrences for publish in Mexican node"
+
+* *Norway*: As part of the BioDATA project, GBIF Norway will provide node mentoring services to partner countries who make progress towards joining GBIF as new members (see also Activity 1e).
+
+* *Spain*: We will keep on supporting the Living Atlases community: support coordinators to find a model of governance for the community; assist other data managers of the different Atlas around the world. We will work to develop online exercises on different modules of the Atlas to continue improving LA documentation for users.
+
+* *Sweden*: Continued development and addition of ALA tools will be shared through the new Swedish “Bioatlas” and by sharing code at GitHub. Support to other nodes employing techniques where we may be of help will continue/increase.
+
+* *South Africa*: SANBI-GBIF will highlight the role of GBIF and engage the scientific community at the annual Biodiversity Information Management and Foundational Biodiversity Information Programme Forum, on the Biodiversity Open Ambassador programme 
+
+==== Rationale
+
+By coordinating national, regional and thematic networks, Participant nodes play an essential role in helping GBIF engage the broadest possible community of institutions, initiatives and individuals engaged in biodiversity informatics. GBIF must provide learning materials and tools to support nodes efficiently as they work to mobilize biodiversity data, promote the reuse of available data and support users by improving data management and quality. Preferred approaches enable any one node to invest in developing tools and capacity that others can easily leverage for the benefit of the whole community. The skills and experience of the node managers and other team members are recognized as uniquely valuable in helping new Participants establish their nodes and allowing the community to develop together.
+
+==== Approach
+
+GBIF promotes capacity self-assessment as a tool to help nodes with planning and tracking progress at all stages in the development of national biodiversity information facilities. The results of these assessments can also identify important capacity needs to address with learning materials, tools and collaborative projects. The reuse and adaptation of the Atlas of Living Australia’s open-source software tools by a growing community of nodes between 2013 and 2016 is an example of successful collaboration based on the mutual needs of the countries involved. Additional support for this international partnership will allow still more nodes to benefit from the collective resources and expertise to build websites that provide biodiversity data and services to a range of national and regional user communities. The nodes’ teams will also engage in collaborative helpdesk activities to enable them to share knowledge across the scientific and technical domains handled by the nodes.

@@ -1,0 +1,109 @@
+=== Activity 3c: Engage data holders
+
+==== Tasks
+[lowerroman]
+. Engage with natural history collections not yet publishing to GBIF
+. Work with national citizen science groups
+. Promote national policies and platforms to enable publishing of environmental impact and monitoring data
+. Promote importance of data sharing to funding bodies, licensing authorities and industry bodies
+. Address the tropical data gap
+
+==== 2019 Progress
+
+The Secretariat has signed a Memorandum of Cooperation (MoC) with IUCN to further collaborations. The purpose of the MoC is to strengthen technical and institutional collaboration between GBIF and IUCN with a view to improving the visibility, timeliness and usefulness of data and information exchanged between the two networks, thus adding value to their respective products and services. The immediate objectives are to build upon past close work on red-listed and invasive species in data sharing, visualization and indicator development.
+
+Contributions of the citizen science community to the https://data-blog.gbif.org/post/gbif-citizen-science/[publication] of primary occurrence data are analysed through an algorithm-assisted process, tagging datasets for further processing and metrics generation. An update to the citizen science study from 2016 is given in the https://data-blog.gbif.org/post/gbif-citizen-science-data[GBIF data blog].
+
+===== 2019 Participant contributions
+
+* *Andorra*: One of the main tasks of GBIF-Andorra is to make to know to our Andorran partners the sense and the need of GBIF network for promoving the use of ALA-Andorra. At the same time, we are encouraging people to participate in citizen science projects related to biodiversity.
+
+* *Argentina*: Argentina promotes the realization of the City Nature Challenge at the national level and the iNaturalist application to be used in different projects. In addition, we participate as a founding member of the Iberian American Network of Citizen and Participatory Science (RICAP). Also we're promoting the CC with workshops, talks and activities for scientists and public in general.
+
+* *Australia*: Uptake of the BioCollect platform has continued to grow and consolidate across Australia in citizen science data collection as well as professional ecology and state & local government sectors. WA state government is using BioCollect as a project-based mechanism for sharing proponent data from planning and development applications. The Atlas is commencing a project to parse and harvest biodiversity occurrence data from those projects. 
+An instance of BioCollect has been established in Queensland to support project-based state government program delivery and data collection and sharing for environmental intervention activities within the terrestrial watershed to the Great Barrier Reef. 
+
+* *Benin*: 17 data publishers are registered on GBIF site and will be more and more active in publishing their data.
+
+* *Canadensys*: Not directly in link with the items in the work program, but the workshops developed during the CESP program were intended to reach and engage data holders from Canada and the United States. Participation during more general events in Montréal have also helped engage citizens.
+
+* *Colombia*: “Work with the Colombian community of iNaturalist supporting the City Natua Challenge 2019 in Bogotá and Medellín.
+https://sibcolombia.net/reto-naturalista-urbano-2019/
+https://www.inaturalist.org/blog/25956-colombia-inaturalist-world
+To June, 119 national organizations as data publishers through GBIF Colombia.
+
+* *Consortium of European Taxonomic Facilities*: The helpdesk offered by the BioCASe secretariat (which also functions as CETAF's participant node for GBIF) is consulting and assisting potential new data providers in the process of sharing their collection and observation data with GBIF. This explicitly includes providers from countries not yet participating in GBIF, such as Italy and Albania.
+
+* *France*: “Data publishing support to TOTAL Company Contribution to two CESP projects:
+- “OpenPSD - Engage and promote the private sector in open biodiversity data publication”, lead by GBIF Spain
+- “To use the CBD’s CHM infrastructure and network in order to strengthen biodiversity data acquisition and data sharing”, lead by the French Head of CHM  focal point (Denis Duclos, DREI, MNHN, Paris). 
+
+* *Germany*: “A Workshop for German herbaria focusing on digitization and data infrastructure was organized by the German Botanical Node. The Mycological Node organized training workshops for users of the Diversity Workbench software. 
+
+* *iDigBio*: Data mobilization is a core activity of iDigBio, including reaching out to collections.
+
+* *Japan*: Expanded through hosted meetings.
+
+* *Mexico*: Increase data publishing to be continued, approximately 500, 000 more occurrences records. 
+
+* *Naturalis Biodiversity Center*: DiSSCo applied to be come an other associate participant so it can engage its data holders to supply data to GBIF As part of a project financed by the Dutch research council (NWO, ALWIN.005), Naturalis together with NLBIF, and the Foundation for Dutch Natural History Collections have facilitated the signing of a declaration to work together on a Netherlands biodiversity information infrastructure. This declaration is signed by all members of the DiSSCo/NL consortium and the Foundation for Dutch Natural History Collections. The DiSSCo/NL consortium will be coordinated by NLBIF.
+
+* *Netherlands*: NLBIF, as DiSSCo-NL NTF lead has engaged with all Natural History Museums in the Netherlands to develop a National Collection Dashboard. In a follow up DiSSCo-NL partners will be supported to contribute their digitized collections to GBIF.
+
+* *South Africa*: SANBI-GBIF and the Systematics Division will implement the 2019 National Biodiversity Information Management and Foundational Biodiversity Information Management Forum (BIMF-FBIP Forum).SANBI-GBIF 2019 Training event will be conducted alongside the BIMF-FBIP Forum. SANBI-GBIF will conduct a national training event, which will also include regional representation, as well as trainers which form part of the GBIF mentors network. This will support the development of communities of practice in data management nationally and regionally and aligns with the objective to develop the Centre for Biodiversity Information Management.
+
+* *Sweden*: GBIF-Sweden keeps searching for and approaching new potential data providers.
+
+* *Switzerland*: Collaboration with the Laboratory of Applied Microbiology, University of Applied Sciences of Southern Switzerland (SUPSI) and the Vector Biology and Control Group, Swiss Tropical and Public Health Institute (SwissTPH) in order to mobilize and share the data of cantonal and federal surveillance programs on invasive alien mosquitoes.
+
+* *Zimbabwe*: First meeting held in January 2019.
+
+
+==== 2020 Work items
+
+*	Continue work with DiSSCo project team to maximize opportunities for mobilizing collections data from European institutions, including in countries not yet participating in GBIF.
+*	Work with iNaturalist, iDigBio and nodes community to maximize opportunities for public engagement in GBIF data mobilization.
+*	Develop private-sector data mobilization guidance and training. Promote revised guidance on mobilizing EIA data and run training programme for private sector consultants at IAIA conference in Spain 2020, and incorporate guidance from CESP project in nodes guidance package. 
+
+===== 2020 Participant plans
+
+* *Andorra*: In the near future, we will work to add the biodiversity information from citizen science in the GBIF database. The data from the Ornitho project is an example we are working at this moment (https://www.ornitho.ad/)
+
+* *Argentina*: Keep promoting the CNC and participate at the ECSA in Trieste with a researcher and member of the RICAP. Keep promoting the CC.
+
+* *Australia*: Continuing work to promote and support use of the BioCollect platform across multiple communities. Continuing to work with the international citizen science and standards communities on a global standard for project-based data exchange. This work is progressing steadily and ALA is playing a key role in it. Preparing for a major UI refresh of BioCollect. Improving APIs for data and metadata exchange as well as external platforms interaction with BioCollect such as external mobile apps for data collection and external data consumer platforms. The Atlas's engagement with the federal Department of Environment and Energy (DoEE) via the MERIT application is yielding increasingly hi-resolution and accurate rich data about Australian government investments in environmental interventions and outcomes. Working with DoEE it is planned for biodiversity data embedded in these data sources to be mined to augment existing occurrence data streams.
+
+* *Canadensys*: We will continue to reach new data holders and work with the one that already have published data on Canadensys or other platform.
+
+* *Consortium of European Taxonomic Facilities*: BioCASe helpdesk will continue to assist data providers with data publication.
+
+* *France*: Promotion of data publishing and activities of the CESP projects to be continued.
+
+* *iDigBio*: iDigBio will continue its data mobilization efforts, with a vision of mobilizing ALL collections data in the United States.
+
+* *International Centre for Integrated Mountain Development*: Publish ICIMOD programme based biodiversity data from different landscape initiatives Proposal development support to partners in the HKH regional member countries- BIFA/ GBIF-YRA  
+Explore funds to support students in the Central Department of Botany to mobilize university herbarium based dataset **Subject to fund availability.
+
+* *Japan*: To be expanded through meetings.
+
+* *Naturalis Biodiversity Center*: DiSSCo will engage with natural history collections in DiSSCo not yet publishing to GBIF to supply data to GBIF.
+
+* *Norway*: As part of the GBIF CESP OpenPSD project (developed by GBIF Nodes in Spain, Portugal, Norway, Colombia and France) we will engage new data holders in the private sector (see also Activity 1g).
+
+* *South Africa*: SANBI-GBIF and the Systematics Division will implement the 2020 National Biodiversity Information Management and Foundational Biodiversity Information Management Forum (BIMF-FBIP Forum).SANBI-GBIF 2019 Training event will be conducted alongside the BIMF-FBIP Forum. 
+
+* *Spain*: We plan to replicate the LichenCity project in 2020 in different Spanish cities. Organize workshops on data mobilization and data use for specific stakeholders such us private sector, and public administrations. We plan to mobilize data from the private sector.
+
+* *Sweden*: By approaching citizen science groups, researchers and management practitioners substantially more data and data types are going to be published in the coming years.
+
+* *Switzerland*: Ensure data publishing for all major collection-holding institutions of Switzerland. Continuation of efforts towards a partnership with collection holding and research institutions active in DNA sequencing (linkage of sequence data, DNA-samples and reference specimens). Collaboration with national biodiversity data centres in order to capture and use species trait data.
+
+* *Zimbabwe*: Capacity enhancement workshops e.g. Darwin core standards, data quality tools and IPT.
+
+==== Rationale
+
+GBIF has tools and support mechanisms in place to enable publication of several categories of biodiversity data. The key requirement is for increased engagement with, and support for, the communities of institutions and individuals who hold these data. Such engagement is normally most effective at the national level, although international networks also have an important role to play.
+
+==== Approach
+
+The primary need is for national Participants to engage with the broadest possible spread of data holders within their countries, for organizational Participants to share relevant data and for the whole GBIF network to promote the importance and value of sharing data. The GBIF Secretariat will focus on enhancement to documentation and tools and on highlighting priorities for complementing existing data and addressing gaps. Data holders should be encouraged and assisted in sharing data in the richest form appropriate for the data in question (sampling event data where relevant elements are available, occurrence data for other spatially explicit data, checklists otherwise) and with the most open data licences possible. As well as natural history collections, Participants should identify opportunities to build partnerships with citizen science groups and promote the value of open access to data from environmental impact assessments and monitoring. GBIF should argue the case for open data as part of the policy for funding agencies, research councils, industry bodies, licensing authorities, development banks and other stakeholder groups.

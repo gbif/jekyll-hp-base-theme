@@ -1,0 +1,223 @@
+== GBIF Annual Work Programme 2020
+
+Information on activities planned for 2020 is included under each of the Activity sections included in the <<_gbif_implementation_plan_2017_2021>>.
+
+For convenience, this information has also been <<Overview of 2020 Work Items>> collated as an <<overview_of_2020_work_items>> of the items for which approval is sought from the Governing Board at GB26.
+
+=== Financial situation
+
+The Secretariat estimates a carry-over of €992,558 at the beginning of 2020. This amount is smaller than the carry-over from 2018 (€1,556,714) due primarily to Governing Board requested increase spending in 2019 on external contracts and workshops (€719,000) in the work programme. Given the level of capital held by GBIF and the uncertainty of contributions, the 2020 budget includes a smaller allocation (€413,000) for contracted activities in the work programme expenditure (i.e. non-salary costs allocated to calls, workshops, contracts, etc.) than proposed for 2019 at GB25, and €300,000 less than the actual 2019 spend after budget revisions. Staffing levels do not change in the 2020 budget. The planned expenditure for 2020 is €471,806 greater than the income projected in the budget. This is considered to represent a responsible balance between advancing GBIF’s mission and reserving some funds against future risks (€520,752 net capital forecast for the end of 2020).
+
+This budget narrative also includes a second scenario that considers a brighter financial situation. It outlines priority areas of spending on contracted and workshop activities that would be submitted in subsequent 2020 budget revisions, should conditions allow. 
+
+Scenario 2 differs from the submitted budget in the following ways.  It also assumes an additional €300,000 in external funds or increased contributions from voting participants. This budget includes €660,000 for contracted and workshop activities in the work programme expenditures. The planned expenditure under scenario 2 for 2020 is €397,940 greater than the income projected in the budget. This is also considered to represent a responsible balance between advancing GBIF’s mission and reserving some funds against future risks (€594,618 net capital forecast for the end of 2020).
+
+|=== 
+| Scenario | Baseline (#1) | Optimistic (#2)
+
+.<| Income assumptions 
+.<| Participants pay at a similar level 
+.<| Modifications from Baseline +
+Additional Voting Participants or Supplementary funds €320K/year
+
+| WP expenditure 
+>| €413,000 
+>| €660,000
+
+| 2020 reserve
+>| €520,752 
+>| €594,618
+
+|===
+
+=== Planned expenditure
+
+In addition to salary and operating costs (including support for GBIF Governance mechanisms), funding is reserved in the Work Programme 2020 for the following activities:
+
+Baseline 2020 Work Programme budget for non-salary items:
+
+==== Priority Area 1
+
+* Following the recommendations of the community-based Documentation Editorial Panel, continue to create new documentation supporting participation in GBIF, based on late 2019 review and prioritization framework (€30,000).
+* Develop joint training resources combining GBIF data mobilization and DNA barcoding, support for pilot workshop with Barcode of Life Data Systems (BOLD), Convention on Biological Diversity (CBD) and GBIF (€20,000).
+* Consolidate online e-learning platform with training resources, to make the data mobilization, data use for decision making and nodes training modules fully functional as self-instruction modules, using external contracts for some components as necessary; develop a strategy to meet future demand for on-site, moderated and self-instructed training. Work will involve collaboration with key partners: nodes, the pool of trainers and mentors, Nodes Steering Group and numerous international partner projects (€20,000).
+* Support for 2020 Regional Nodes Meetings (€60,000). The Secretariat will investigate possible synergies with BID phase 2 regional meetings, if funding is forthcoming, as well as with a BIFA workshop in Asia.
+* Support further development of the Living Atlases community (€30,000).
+* Support the alliance for biodiversity knowledge by working with steering committee on a governance structure and prioritizing the alliance efforts. Expand communication effort through conferences and the ambassador network (€10,000).
+* Launch a new 2020 call for proposals under the Capacity Enhancement Support Programme (€80,000).
+
+==== Priority Area 2
+* Maintain and update processes for constructing the GBIF taxonomic backbone. €108,000 has been allocated in the budget to support GBIF contractor costs.
+
+==== Priority Area 3
+* Carry forward the proposed 2019 activity of data mobilization of vectors and hosts of human diseases to 2020. The Secretariat will establish an expert group (€25,000) to identify priority needs for biodiversity data supporting disease research, critical gaps in availability of such data in GBIF.org, and potential sources of data to fill these gaps.
+
+==== Priority Area 4
+* Explore bidirectional data linking and synchronization with data management systems and publishers to achieve faster and more accurate mutual updates on data improvements and annotations (€10,000).
+
+==== Priority Area 5
+* Contract a study on use of GBIF-mediated data in the academic literature, with the goal of identifying areas of impact, links to research funding sources and networks of researchers. This information will be used to fine-tune GBIF value proposition message and align future Work Programmes to achieve greater impact (€20,000).
+
+==== Other Funds
+* The initial phase of the Biodiversity Information for Development (BID) programme will be completed by the end of 2019; however, the funder—the European Commission Directorate-General for International Cooperation and Development (EU DEVCO) has agreed to continue the programme with new funding of €1.6m from 2020–2023.  This includes approximately €120,000 in funding for work by GBIF Secretariat staff in 2020.
+
+* A fifth call for proposals under the Biodiversity Information Fund for Asia (BIFA) programme will be issued in late 2019 or early 2020, using €131,395 supplementary funds received from the Ministry of Environment, Government of Japan. Subject to agreement by the BIFA Steering Committee, we anticipate that €20,000 of this supplementary funding is to be allocated to Secretariat staff coordination costs during 2020.
+
+* Governance funds: Launch 2020 calls for the Ebbe Nielsen Challenge and Young Researchers Awards (€44,000), considering recommendations from the Science Committee based on the 2019 programmes. The Science Committee is exploring potential external funds for these awards.
+
+* Lastly, the European Commission has funded the SYNTHESYS+ project “to unify European natural science collections, effectively transforming them into an integrated data-driven pan-European research infrastructure”. GBIF is funded for €50,000 in 2020 (as well as €20,000 in 2021 and €20,000 in 2022) to advance joint planning for infrastructure components. 
+
+=== Areas to expand activity
+
+If funding allows, the Secretariat will request that the following items be incorporated into the 2020 budget with approval of the GBIF Executive Committee.
+
+==== Priority area 1
+*	Increase alliance for biodiversity knowledge activity to €20,000, Living Atlases to €40,000 and CESP to €100,000.
+*	Create an additional funding priority area alongside the CESP call for GBIF node regional outreach activities as outlined in the Regional Participation Strategy (€40,000). 
+*	Continue development and implementation of a strategic plan for targeting external funding streams for capacity enhancement projects (€22,000). 
+*	Initiate engagement, data mobilization and capacity enhancement campaign for Arabic speaking regions (€20,000).
+
+==== Priority area 2
+*	Redesign the GBIF Integrated Publishing Toolkit (IPT) to support emerging data standards, explore integrations with quality control routines and to address infrastructural needs (ability to install locally, use a GBIF hosted solution or connect to a third-party repository). If funds allow €50,000 for an external contractor.
+
+==== Priority area 4
+*	Increase bidirectional linking activity to €20,000.
+
+==== Priority area 5
+*	Engage with academic based projects that use or could use better GBIF data in their pipelines and protocols. If funding allows hold a workshop to stimulate use (€25,000).
+*	Hackathon and workshop to align GBIF with post-2020 Biodiversity Framework (€40,000). The event would develop tools from CESP-CHM project to improve links to data from GBIF.
+
+=== Secretariat staffing
+
+Staffing levels will remain the same in 2020 with the  increases in recent years have enabled the Secretariat to maintain an increasing level of service. We currently have 27 staff (three of whom work part-time) and are in the process of recruiting an additional informatics position. In addition to the Director and Deputy Director, the Secretariat is now structured as four teams, as follows:
+
+* Participation and Engagement (seven staff)
+* Data Products (four staff)
+* Informatics (eight staff, one contractor, one additional staff position to be filled)
+* Administration (six staff, plus student support)
+
+All staff work towards accomplishing the goals of the five Priority Areas in the 2017–2021 Strategic Plan, with most staff working towards multiple areas. 
+
+=== Overview of 2020 Work Items
+
+This following is a summary of all 2020 Work Items proposed in the 2020 update of the Implementation Plan below. It is intended to summarize the work items for which approval is sought from the Governing Board at GB26. Accordingly, it does not include the additional commitments made and reported by Participants. 
+
+==== Activity 1a: Focus on people
+* Explore possibilities of providing citation tracking from dataset level to individual level. Provide ability to claim one’s data and promote use; explore building on the example of ‘Bloodhound tracker’ and moving it into core GBIF operations.
+* Clearly communicate and demonstrate the benefits of ORCID use through citation tracking.
+* Pending a decision on continuing the GBIF Community Forum, take steps to improve interactive engagement with the broader GBIF community, considering the views gathered during the 2019 survey.
+
+==== Activity 1b: Strengthen skills
+* Develop joint training resources combining GBIF data mobilization and DNA barcoding, and support pilot workshop with BOLD, CBD and GBIF (€20,000). 
+* Explore opportunities for additional training workshops on data use for decision making.
+* The BioDATA project will continue to train students in Armenia and in Ukraine in 2020, and plans for BioDATA II project are in place to further increase the geographic coverage in Northern and Central Asia and Southern Caucasus.
+* Following the recommendations of the community-based Documentation Editorial Panel, continue to commission new documentation, based on late 2019 review and prioritization framework (€30,000).
+* Consolidate online e-learning platform with training resources, to make the modules on data mobilization, data use for decision making and nodes training fully functional as self-instruction modules. Use external contracts for some components as necessary. Develop a strategy to meet future demand for on-site, moderated and self-instructed training. Work in collaboration with key partners, including GBIF nodes, the pool of volunteer trainers and mentors, Nodes Steering Group and numerous international partner projects (€20,000).
+
+==== Activity 1c: Equip Participant nodes
+* Support for 2020 Regional Nodes Meetings (€60,000). The Secretariat will investigate possible synergies with BID phase 2 regional meetings, as well as with a BIFA workshop in Asia.
+* The Secretariat will continue enhancing guidance documentation for nodes. This guidance will incorporate priorities in data mobilization, gap filling, private-sector engagement and products from CESP projects.
+* The Secretariat will design and implement user interfaces and services necessary to support simple hosted portals. The initial deployment will be of the BID programme portal followed by exploration of country portals and an exemplar virtual natural history collection. Discussions will determine whether such services should be restricted to Voting Participant countries and/or institutions that contribute a fee to create institutional portals.
+* Continue conversations to align codebases and infrastructure with ALA, iDigBio, DiSSCo and other potential partners. The alliance for biodiversity knowledge will be used as a platform for some of these interactions.
+* Support further development of the Living Atlases community (minimum €30,000).
+* Consolidate Biodiversity Open Data Ambassador programme with issuing of digital badges, listing ambassadors on country pages and capturing feedback on promotion of GBIF at events.
+
+==== Activity 1d: Equip data publishers
+* Promote wider editing of the GBIF registry and the shared help desk activities; including node staff initiating and diagnosing dataset crawling / ingestion.
+* Complete implementation (if not finished in 2019) and develop processes to allow open editing of shared vocabularies used in data interpretations of the GBIF ingestion pipelines (e.g. habitat types, occurrence status, etc…).
+* Create system of list management, similar to bulk email, to communicate to a larger section of the GBIF community for compliance and notifications. This includes a twice-yearly mandatory communication with data publishers in compliance with General Data Protection Regulation (GDPR: EU privacy regulations) and explore services for publishers to opt-in to receive push notifications for new citations.
+* Provide comprehensive guidance and support services to lower the technical threshold of data-hosting options. Clearly document the benefits and implications of each option including aspects of operational cost, deployment model (local/cloud/GBIF-provided) and expectation of users. Use of volunteer mentors will be promoted to enhance help desk services.
+
+==== Activity 1e: Expand national participation
+* The GBIF Secretariat will continue to identify funding opportunities for regional engagement, including inviting observers to regional node meetings. If budget allows, it will create a specific funding priority area alongside the 2020 CESP call for GBIF regional outreach activities, as outlined in regional participation strategies developed across the network.
+* The Secretariat will develop and implement engagement, data-mobilization and capacity-enhancement plans for greater participation in all global regions, with an emphasis on the underrepresented areas. This effort will be aided by capacity enhancement workshops, including through a second phase of BID and other supplementary funding that becomes available.
+* The internationalization of GBIF.org user interface, content and guidance materials will continue. Assuming the 2019 commitment for six UN languages is complete, this work will focus on maintenance and updates and will allow the addition of more languages on demand, and translating a wider set of content and materials, funded through both specific projects and volunteer efforts.
+* Engagement, data mobilization and capacity enhancement campaign for Arabic-speaking region (€20,000, if funds allow).
+
+==== Activity 1f: Plan implementation
+* Convene SYNTHESYS+ workshops and integrate outcomes with relevant Work Programme activities.
+* Continue implementation and refinement of the standardized annual information requests from Participant nodes and display up to date content on revised country pages of GBIF.org.
+* Lead some and participate in all alliance for biodiversity knowledge virtual workshops that will be defined in key areas to increased alignment of GBIF with other networks and infrastructures. 
+* Manage and improve the virtual conferences infrastructure used by the alliance for biodiversity knowledge. Work with steering committee on a governance structure and prioritizing the alliance efforts. Expand communication effort through conferences and the ambassador network (minimum €10,000). Provide technical, communication and administrative support for the alliance.
+
+==== Activity 1g: Coordinate resources
+* Launch a 2020 call for proposals under a renewed CESP (minimum €80,000). If funding allows, this will be supplemented by a special category for regional outreach activities that target increased data mobilization in non-GBIF countries as recommended by Nodes Steering Group ((see Activity 1e).
+* Based on a successful negotiation with EU DEVCO, the European Commission funder of BID, the Secretariat will continue with a BID call for proposals that responds to feedback received from community consultations, three regional closing meetings and the BID phase 1 closing meeting.
+* Implement a fifth call for proposals (approximately €110,000) under the Biodiversity Information Fund for Asia (BIFA), reflecting priorities agreed by Asian nodes.
+* Continue collaboration with the BioDATA (Norway > Eurasia) and Russia support (Finland > Russia) supplementary funding programs.
+* Develop and implement strategic plan for targeting external funding streams for capacity enhancement projects. This will be based on 2019 external consultation and using the results of BID Phase 1 closing meetings. If budget allows an additional (€22,000) will be allocated to this effort. The strategy will work with all GBIF regions to target potential funding streams that support additional capacity enhancement for data mobilization and use, building on the BID and BIFA models.
+* Make refinements to the newly selected grant management system, FLUXX, to streamline project calls, assessment, selection, implementation, budgeting and reporting, to ensure it meets the needs of the community.
+* Launch 2020 calls for the Ebbe Nielsen Challenge and Young Researchers Awards (€44,000), considering recommendations from the Science Committee based on the 2019 programmes. Explore the possibility of soliciting additional donor/sponsor co-funding.
+* Begin Secretariat planning to establish a workflow using digital documentation to develop the 2021 work programme and 2022–2026 strategic plan. This planning will address the recommendations of the 2019 20-year review.
+
+==== Activity 2a: Modernize data standards
+* Modernizing data standards is a continuous Work Programme activity for a global infrastructure like GBIF. During 2020 we will focus on advancing and refining data models for Collections, Taxonomic Treatments, Sampling Events, Organisms, Specimens, Organisms, Citations and the linkages between them.
+* Provide a set of data-exchange profiles for sharing data within GBIF that conforms with a unified information model that includes both existing and new standards as well as the necessary controlled vocabularies.
+* Redesign the GBIF Integrated Publishing Toolkit (IPT) to support these profiles and to address infrastructure needs, such as the ability to support local installations or GBIF-hosted solution. If funds allow, €50,000 for an external contractor.
+* Provide documentation for the data model and for the associated services offered through GBIF.org. 
+* Review and redesign GBIF data management system to accommodate the unified information model as part of data ingestion, quality control and processing where necessary.
+* Continue technical discussions with other data aggregators to seek closer alignment in practice and, as far as possible, implementation of aggregation and indexing processes.
+* Demonstrate improvements of information in GBIF.org and hosted national portals in specimen-level information, links to material citations, and links between specimens and sequence data from sources such as BOLD.
+* Explore approaches for adding a phylogenetic/evolutionary dimension to the GBIF taxonomic backbone. Pilot phylogenetic browsing capabilities of occurrence data.
+* Open discussion with GB participants to provide project funders with an overview of the resulting value relating to their investment (e.g. data mobilization, publications).
+* In collaboration with international partners, explore the desirability and scope of “catalogue services” that are targeted specifically at physical specimen collections. Examples could include displaying duplicate or derived specimens across collections, type information, citations in taxonomic treatments and trait data.
+* Explore options for displaying occurrence data from long-term sampling sites, piloting with projects like BIOSCAN 2 and/or Norwegian ecological datasets.
+
+==== Activity 2b: Deliver names infrastructure
+* Maintain and update processes for constructing the GBIF taxonomic backbone, including monitoring the content and helping to prioritize editorial effort. €108,000 has been allocated in the budget to support GBIF costs. This work is in collaboration with the Catalogue of Life.
+* Implement a process enabling key checklists to be used in filtering occurrence data, such as Red Listed species and invasive alien species.
+* Consult with relevant regulatory agencies, such as the European Environment Agency (EEA), for guidance on which legislative checklists should be incorporated to increase the relevance of COL+ to governments. 
+* Explore feasibility of supporting national taxonomies for exploring GBIF occurrence data to better enable national level reporting.
+* Develop and pilot a process that allows qualified users to collaborate and edit sectors that contribute to the GBIF backbone taxonomy, aimed at reducing the delays before such edits appear on occurrence records from months to days.
+
+==== Activity 2c: Catalogue collections
+* Based on community consultation, build mechanism to synchronize Global Registry of Scientific Collections (GRSciColl) with other catalogues.
+* Improve linkages between collections, institutions and occurrences (or specimen) objects indexed by GBIF.
+* Develop the user interfaces and services necessary to support a collection catalogue system.
+* Work with the community to ensure the content is fit for use, and promote community editing of the registered content.
+
+==== Activity 3a: Identify priority gaps
+* Continue work on items initiated in late 2019, with an emphasis on developing actionable guidance for data publishers and nodes, integration of user needs into prioritization for data mobilization, and data search analysis.
+* Continue to improve visualizations of GBIF-mediated data that identify gaps by engaging in interactive community consultations. This work is a candidate for curated discussion through the alliance for biodiversity knowledge prior to implementation on GBIF.org. 
+
+==== Activity 3b: Expand data streams
+* Enhance the data exchange standards for sampling-event data, collaborating with partners that generate data to provide sources for filling current gaps. This work aims to establish partnerships with long-term monitoring communities. 
+* Improve linkages between records originating from museums and BOLD in order to link information that is currently treated as two occurrences.
+* Carrying over the proposed 2019 work item, mobilize data on vectors and hosts of human diseases. Establish an expert group (€25,000) to identify priority needs for biodiversity data supporting disease research, critical gaps in availability of such data in GBIF.org, and potential sources of data to fill these gaps. The campaign will use this analysis to engage directly with relevant data holders, support data publication through GBIF and inform data mobilization priorities for use by nodes, publishers and funders (see Activity 3a).
+* Continue linking and integration of sequence-based data streams.
+
+==== Activity 3c: Engage data holders
+* Continue work with DiSSCo project team to maximize opportunities for mobilizing collections data from European institutions, including in countries not yet participating in GBIF.
+* Work with iNaturalist, iDigBio and nodes community to maximize opportunities for public engagement in GBIF data mobilization.
+* Develop private-sector data mobilization guidance and training. Promote revised guidance on mobilizing EIA data and run training programme for private sector consultants at IAIA conference in Spain 2020, and incorporate guidance from CESP project in nodes guidance package.
+
+==== Activity 3d: Rescue datasets
+* Continue to implement workflow for prioritizing and drawing upon potential data sources reported through the ‘dataset catcher’ tool, including involvement of nodes, mentors and crowdsourced solutions.
+* Roll out a workflow for ‘Suggest a dataset’ processing.
+
+==== Activity 3e: Liaise with journals
+* Work with journals to make it easier for article authors to deposit supplementary data in formats suitable for GBIF publication.
+* Establish model guidelines for data deposition and citation and develop compliance criteria for distribution to publishers. Build on recent developments of COPDESS and Research Data Alliance with GBIF-specific guidance. Develop additional communication materials to describe the benefits of DOI-citation best practices and work with journals on implementation. 
+
+==== Activity 4a: Ensure data persistence
+* Continue revision and documentation of flagging routines used in GBIF data ingestion pipelines.
+
+==== Activity 4b: Assess data quality
+* Review, consolidate and update existing documentation for data publishers. In particular, provide clear guidance on minimum requirements for published data.
+* Develop metrics to track the completeness of core data elements and the degree to which supplied content is appropriate.
+* Supply clear indicator measures for the completeness and usability of data as part of GBIF.org dataset pages, based on examples such as the GEOLabel data branding model.
+* Extend data-quality assessment to include aspects only detectable above the level of individual records.
+* Assess the patchiness of indexed data (geographical clustering, misleading accuracy or precision of coordinates), including evaluation of the apparent causes of data patchiness and include measures of data patchiness in the data index, at both dataset and record level in the data index.
+* Ensure that users of data are able to identify datasets or records that do not fulfil their criteria for geo-accuracy, whether they are accessing data through facets in the GBIF.org, via the API or in downloads.
+
+==== Activity 4c: Enable data curation
+* Continue to explore the use of the GBIF data index to support stable persistent resolvable identifiers for all specimens and occurrence records.
+* Explore bidirectional data linking and synchronization with data management systems and publishers to achieve faster and more accurate mutual updates on data improvements and annotations (minimum €10,000).
+
+==== Activity 5a: Engage academia
+* Conduct survey on how GBIF informatics is incorporated into relevant graduate and undergraduate curricula to identify gaps and opportunities and key entry points. Use survey findings to prepare a campaign that could roll out relevant resources through GBIF nodes in 2021.
+* Engage with academic-based projects that use or could use better GBIF data in their pipelines and protocols. If funding allows, hold a workshop to stimulate use (€25,000).
+
+==== Activity 5b: Document needs
+* Explore the creation of lightweight, customized website landing pages to address thematic interests on GBIF.org. The pages will increase flexibility to include curated, more informative clustered information, ensuring that users have access to both broad search results and prioritized views of data and information.
+* Continue to implement recommendations of past expert user groups. In particular, build on the incorporation of GRIIS checklists to support richer, more targeted information on invasive and alien species, e.g. by highlighting documented occurrences with a relevant IAS status by country. Explore best options to identify and alert users of new occurrences of potential invasive species. In addition, review and address the most 

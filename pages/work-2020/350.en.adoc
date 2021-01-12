@@ -1,0 +1,91 @@
+=== Activity 1f: Plan implementation
+
+==== Tasks
+[lowerroman]
+. Develop better integration between nodes activities and Governing Board processes
+. Expand regional meetings to serve as GBIF community Implementation Planning conferences and opportunities to develop fundable programmes of work
+. Increase alignment between GBIF work programmes and activities of each GBIF Organizational Participant and Affiliate
+. Explore increased alignment and joint organization of workshops with other networks such as TDWG, SPNHC, GEO BON, RDA, etc.
+
+==== 2019 Progress
+
+GBIF leads work package five of the European initiative SYNTHESYS+ project, which includes running three workshops. The focus of these workshops, defined by the global community, is to be specified in Q3 2019, but is anticipated to include activities around collection cataloguing, richer specimen models and tracking of citations of specimens, collections and the individuals, all of which are also priorities for GBIFS (see also activity 1a).
+
+The Secretariat has been involved at many organization levels (Steering Committee, Programming committee) of the Biodiversity_Next conference held in conjunction with GB26. Secretariat staff are involved in over 20 talks and organizing several sessions that relate directly to the Work Programme. Involvement has begun with a similar meeting scheduled to take place in September 2020 in Virginia, USA.
+
+The Secretariat is developing standardized annual information requests based on the GBIF Strategic Plan and Implementation Plan structure aimed at capturing relevant updates and work plans from Participant nodes. The work is intended to improve the visibility of the GBIF Participants, and especially of the nodes, on GBIF.org and to better reflect the network as a whole, particularly with regard to the active contributions toward work programme implementation. 
+
+The _alliance_ for biodiversity knowledge was established as an outcome of the 2018 GBIC2 conference hosted by GBIF in Copenhagen. The Secretariat has reconstituted the GBIC2 steering committee as the steering committee for the _alliance_. In conjunction with external stakeholders, the Secretariat is developing a virtual workshop infrastructure and will be hosting the first of a series of virtual workshops under this infrastructure later in 2019. The Secretariat is also driving efforts to develop and disseminate _alliance_ communication materials and to build expertise networks for managing virtual workshops and networking models.
+
+===== 2019 Participant contributions
+
+* *Argentina*: Coordination, as a regional representative, in the reports from each node for the joint regional report.
+
+* *Australia*: Analysis of GBIF pipelines was undertaken, and project plans for further work with GBIF's code base have been made. 
+
+* *Benin*: We advanced in data mobilization and data uses, we encouraged institutions to register on GBIF site so as to become more visible.
+
+* *Canada*: CBIF participated in the North American Nodes Meeting where discussions of ways to better coordinate regional, country and continental activities with GBIF plans took place. We currently also contribute to plan implementation through supporting the efforts of the HOD for SPNHC and TDWG (Dr. Macklin). Dr. Macklin is also the current Chair of TDWG and is working with GBIF to advance mutual goals in standards development and biodiversity informatics. We also contribute as a member of the Steering Committee (via TDWG) for Biodiversity_Next 2019, a critical forum for discussion of the goals of GBIF and the _alliance_.
+
+* *Canadensys*: Our team has helped in the translation of the documentation for the _alliance_.
+
+* *France*: Co-organization with Norway of the EU nodes meeting in Oslo. Election of the new EU representative and Deputy.
+
+* *iDigBio*: iDigBio hosted the regional meeting of participant nodes in North America in association with the 2019 Digital Data in Biodiversity Research Conference.
+
+* *Naturalis Biodiversity Center*: A meeting was held between the DiSSCo coordination office and GBIF Secretariat to discuss coordination of implementation activities. Naturalis provided D2.3 Design of a collection digitization dashboard in ICEDIG which provides input for further development of GRSciCol hosted by GBIF. 
+
+* *Netherlands*: NLBIF has adopted the DiSSCo-NL NTF lead and as such integrates GBIF and national DiSSCo activities.
+
+* *Norway*: GBIF Norway funded, hosted and organized the 2019 European GBIF Nodes meeting in Oslo in May 2019 (see also Activity 1c and 1e). GBIF Norway and the GBIF Norway network partners serve on GBIF committees as elected vice-chair for the GBIF Science committee and as vice-chair for the European GBIF Nodes committee.
+
+* *South Africa*: Strategic engagements/meetings between SANBI-GBIF Node Manager and South African Head of Delegation will continue in order to evolve the South African Node planning, and Africa portfolio of work and to elaborate the Science Diplomacy role SANBI-GBIF can play. Phase 2 (of national data platform) commenced in October 2018 (24 months), which looks at the implementation phase of the NBIS.
+
+* *Spain*: The GBIF.ES web page hosts activity reports from European Nodes that can be useful for other reporting activities Nodes. We have been trying to coordinate efforts on how to integrate EU Nodes services in the EOSC.  We have communicated the progress done by GBIF in developing a global _alliance_ for biodiversity knowledge in our national context. 
+
+* *Sweden*: GBIF-Sweden has participated in regional meetings, and at conferences adding to the implementation of prescribed GBIF activities. By providing the 1st vice chair of the Nodes Steering Group, GBIF-Sweden contributes to leading the work of connecting interested world-wide.
+
+==== 2020 Work items
+
+*	Convene SYNTHESYS+ workshops and integrate outcomes with relevant Work Programme activities.
+*	Continue implementation and refinement of the standardized annual information requests from Participant nodes and display up to date content on revised country pages of GBIF.org.
+*	Lead some and participate in all _alliance_ for biodiversity knowledge virtual workshops that will be defined in key areas to increased alignment of GBIF with other networks and infrastructures. 
+*	Manage and improve the virtual conferences infrastructure used by the _alliance_ for biodiversity knowledge. Work with steering committee on a governance structure and prioritizing the _alliance_ efforts. Expand communication effort through conferences and the ambassador network (minimum €10,000). Provide technical, communication and administrative support for the _alliance_.
+
+===== 2020 Participant plans
+
+* *Argentina*: Continue contributing to national, regional and global activities.
+
+* *Australia*: Review GBIF's data pipelines work and data registry as part of  an Atlas infrastructure review and refresh. Aim to align with GBIF where possible.
+
+* *Benin*: Capacity building, data mobilization, data use.
+
+* *Canada*: CBIF will continue to build on the progress made in 2019. We will also contribute through membership on the Steering Committee (via TDWG) for the Biodiversity Summit 2020 in Washington DC, a critical forum for discussion of the goals of GBIF and the _alliance_.
+
+* *Canadensys*: We will continue to help and be involved in the _alliance_ as much as we can.
+
+* *iDigBio*: iDigBio plans to continue attending, supporting, and/or hosting regional meetings in North America. iDigBio also plans to continue offering the annual Digital Data Conference as a venue for the regional meetings.
+
+* *Naturalis Biodiversity Center*: DiSSCo is coordinating with GBIF, iDigBio and IGSN to establish a global solution for Digital Specimen identifiers and other infrastructures. In SYNTHESYS+ ELViS development it will be investigated whether linkages can be achieved between ELViS and GBIF collection data (specimen datasets and collection metadata).Naturalis would like to share its developments using AI in species identification and work on using environmental DNA for biomonitoring with the GBIF community.
+
+* *Netherlands*: Continue work programme.
+
+* *Norway*: GBIF Norway contributes staff resources to the DiSSCo National Task Force (NTF) representing Norway in the DiSSCo Prepare process. GBIF Norway maintain liaison with international organization in the agrobiodiversity community to promote and actively support the harmonization with GBIF provided and solutions endorsed standards (see also Activity 2a, 3c and 5b).
+
+* *South Africa*: Further engagements with SANBI-GBIF Node Manager and HoD to evolve the Node planning and Africa portfolio.
+
+* *Spain*: Collaboration with EU Nodes and EOSC to explore best ways to integrate Node’s services in the EOSC.
+
+* *Sweden*: GBIF-Sweden will continue to take part in leading and contributing to the development of interconnections at national and international levels (GBIC 2 follow-up etc. incl. participation in SYNTHESYS+). 
+
+* *United States*: USGS will continue to be involved in and contribute to advancing and contributing to the ideas around the GBIC2 workshop sharing implementation and infrastructure suggestions as they pertain to the US and the various global communities of practice.
+
+* *Zimbabwe*: Develop and finalize a five year strategic plan and 2020 action plan.
+
+==== Rationale
+
+Implementing this plan hinges on effective coordination with the plans of individual GBIF national and organizational Participants. GBIF must also ensure that node activities are well recognized and integrated with other biodiversity research and informatics initiatives at national, regional and organizational levels.
+
+==== Approach
+
+To make national-scale implementation more central across the GBIF network, the Secretariat will consult with the Governing Board on models for unifying aspects of the work of the Nodes Committee into Governing Board meetings. The Secretariat also seeks funds to increase the scope of nodes meetings to include work to develop proposals for fundable activities aligned with this Implementation Plan, particularly by addressing regional priorities. The GBIF Secretariat will also engage organizational Participants to develop specific memoranda of cooperation in key areas and to identify and support alignments with this Implementation Plan and opportunities for joint organization of meetings and workshops.

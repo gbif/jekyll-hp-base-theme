@@ -1,0 +1,20 @@
+.pageNavbar
+  user-select: none
+  background: #fcfcfd
+  position: sticky
+  top: 0
+  overflow: auto
+  max-height: 100vh
+  flex: 0 0 280px
+  padding: 24px 12px
+  .menu-list
+    font-size: 13px
+    margin-right: 0
+    a
+      padding-right: 0
+      &.active
+        background: #00000011
+  .menu-list .menu-list
+    display: none
+    &.is-expanded
+      display: block

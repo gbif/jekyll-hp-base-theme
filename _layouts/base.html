@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{% if page.klass %}{{ page.klass }}{% endif %}">
+    {% include navbar.html %}
+
+    <main>
+
+      <div>
+          
+        {{ content | replace: '<table', '<table class="table"' }}
+
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

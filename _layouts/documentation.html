@@ -1,0 +1,25 @@
+---
+layout: base
+description: Default template for documentation
+structure:
+  - type: markdown
+---
+
+<div class="documentation" style="display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-height: 555px;
+    overflow-wrap: anywhere;">
+  <aside id="pageNavbar" class="pageNavbar menu">
+    {% for group in site.data.pagenav.guides %}
+      {% if group.grouptitle %}
+        <p class="menu-label">{{ group.grouptitle }}</p>
+      {% endif %}
+      {% include navlist.html tree=group.content %}
+    {% endfor %}
+  </aside>
+  <div>
+    {% assign structure = page.structure | default: layout.structure %}
+    {% include structure.html structure=structure %}
+  </div>
+</div>

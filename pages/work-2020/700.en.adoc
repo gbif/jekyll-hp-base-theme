@@ -1,0 +1,91 @@
+== Priority 5: Deliver Relevant Data
+
+=== Activity 5a: Engage academia
+
+==== Tasks
+[lowerroman]
+. Promote biodiversity informatics curriculum, support training of the users
+. Publicize GBIF as data tool via university libraries and faculties
+. Develop online collaboration through GBIF.org helpdesk to assist and support data users
+. Represent GBIF at the relevant science fora, esp. at the frontier directions such as ecology and molecular research
+
+==== 2019 Progress
+
+The BioDATA project focused on  developing skills in biodiversity data management and data publishing. Undergraduate and postgraduate students from Tajikistan, Belarus, Ukraine, and Armenia have an opportunity to take part in the intensive courses, gain practical skills and familiarize themselves with the Global Biodiversity Information Facility (GBIF), international data standards (Darwin Core), software on data improvement, data publishing with the Integrated Publishing Toolkit (IPT), and preparation of data papers. The project is run by the University of Oslo and GBIF Norway exceeding expectations, with more than 8 mentors and 40 students trained on the GBIF publishing and data skills in two events that took place in Belarus and in Tajikistan. The project will continue to train students in Armenia and in Ukraine in 2020, and plans for BioDATA II project are in place to further increase the geographic coverage in Northern and Central Asia and Southern Caucasus.
+
+In Russia, Altay State University, supported by a GBIFS letter, received competitive funding to integrate GBIF and data education in regular biology training for the BSc and MSc programme, with 70 students expected to take part each year. As ASU is already a holder of a similar grant, implementation delayed until 2020, and links to TDWG curriculum group are encouraged.
+
+===== 2019 Participant contributions
+
+* *Argentina*: Publicize GBIF as data tool via university libraries and faculties: this year the NM is going to participate in Argentine days of botanica and in the annual meeting of Argentine palaeontology, promoting the publication and reuse of the data present in GBIF and in the national portal.
+
+* *Australia*: The ALA added some enhancements to Spatial Portal to allow for the exporting of species level trait information from ALA into the EcoCloud platform. The ALA has also commenced initial work on the Collaborative Species Distribution Modelling (CSDM) project which is a collaboration with EcoCloud that will results in functionalities with integration with EcoCloud.
+
+* *Benin*: A functional Regional Master Program in Biodiversity Informatics opened its doors in October 2017 in Benin and students from many African countries are receiving in-depth capacity training to mobilize and use data to address the biodiversity conservation and sustainable uses in the context f climate and global changes.
+
+* *Canadensys*: We actively inform our users and data holders on how to use data from GBIF, and we use the GBIF Science Review to promote data-use and give examples. Most participants to our CESP workshops were coming from academia and are using data from GBIF for their research. Participants are usually becoming advocates to the use of data from GBIF during their classes, explaining to their students how to get and use this type of data.
+
+* *France*: Contributions to modules in Biology and Systematics masters and doctoral modules at MNHN and Sorbonne University.
+
+* *iDigBio*: iDigBio hosted the 2019 Digital Data in Biodiversity Research Conference at Yale University in June 2019. The conference provides a forum for biodiversity researchers to share and examine the uses of digitized data across all biodiversity disciplines, with special emphasis on using the wealth of digitized specimen data being generated worldwide.
+In March 2019, iDigBio hosted the 5th Life Discovery – Doing Science Biology Education Conference held in Gainesville. The theme was “microbiomes to ecosystems: evolution and biodiversity across scale, space, and time” which aligned well with iDigBio’s mission to promote the use of biodiversity data in both research and education. iDigBio maintains public libraries on Google Scholar and Mendeley. Recently, iDigBio used the Mendeley API to create a searchable library, including iDigBio’s tags such as grant number, portal used, etc. iDigBio facilitated guest blogs on its website to highlight data use, data cleaning, and other topics.
+
+* *Japan*: Papers using the data from Japan Node increased.
+
+* *Naturalis Biodiversity Center*: Naturalis and NLBIF are hosting the Biodiversity_Next conference, co-organized with GBIF, TDWG, iDigBio, DiSSCo, LifeWatch and CETAF. At Biodiversity_Next, Naturalis Biodiversity Center and NLBIF are organizing a symposium on digital biodiversity data as frontier for science as part of the Biodiversity Open Data Ambassador programme. 
+As part of a project financed by the Dutch research council (NWO, ALWIN.005), Naturalis together with NLBIF, and other partners conducted a survey and in depth interviews amongst 100 scientists within the Netherlands on the need for biodiversity information infrastructures, particularly on natural science collections, to support all the steps of the research data management cycle. 
+  
+* *Norway*: The Norwegian BioDATA project provide graduate and post-graduate level university training on biodiversity data management and mobilization (see activity 1b). During 2019, BioDATA provided academic training courses in Belarus (February 2019) and in Tajikistan (June 2019). GBIF Norway provides helpdesk services to support Norwegian students and researchers on accessing and using GBIF mediated data together with data from other sources.
+
+* *South Africa*: Further engagement to seek funding and consider the BDI Research Chair appointment, to be conducted with DST/NRF, University Partners and other funders.SANBI-GBIF will looks at mechanisms to operationalize the Centre for Biodiversity Information Management, through added strategic and technical assistance.
+
+* *Sweden*: GBIF-Sweden participates, alongside consortium partners in the Swedish Biodiversity data Infrastructure, in a great number of activities directed towards educational and research institutes.
+
+* *Zimbabwe*: Data access workshop held for academia
+
+
+==== 2020 Work items
+
+*	Conduct survey on how GBIF informatics is incorporated into relevant graduate and undergraduate curricula to identify gaps and opportunities and key entry points. Use survey findings to prepare a campaign that could roll out relevant resources through GBIF nodes in 2021.
+*	Engage with academic-based projects that use or could use better GBIF data in their pipelines and protocols. If funding allows, hold a workshop to stimulate use (€25,000).
+
+===== 2020 Participant plans
+
+* *Argentina*: Keep continue attending scientific meetings to continue promoting the national biological data system and GBIF.
+
+* *Australia*: Further work on CSDM and delivery of components and enhancements to support CSDM.
+
+* *Canadensys*: We will continue to engage academia whenever possible.
+
+* *France*: Participation to master and doctoral modules to be continued.
+
+* *iDigBio*: “iDigBio will host the 2020 Digital Data Conference at Indiana University, Bloomington. iDigBio will continue to facilitate guest blogs on its website. iDigBio is planning a 2020 Biodiversity Summit, which will be a collaborative meeting of the ADBC community, GBIF governing board, TDWG, and the National Museum of Natural History (Smithsonian). The meeting will feature the evolution and accomplishments of specimen-based science and the impact of digitization. This international event will be an excellent opportunity to highlight to a global audience the excellent work that our ADBC community is doing on behalf of U.S. collections.
+
+* *International Centre for Integrated Mountain Development*: Publication of Data Paper / Use of GBIF-mediated biodiversity data – with partners. (Birds diversity in the HKH)  
+
+* *Japan*: Continue to increase numbers of data from Japan.
+
+* *Naturalis Biodiversity Center*: Naturalis will conduct a survey under the RDA-Europe Ambassador programme to identify the current needs of the international biodiversity and geodiversity data community for a discipline-specific group under RDA (currently the Biodiversity Data Integration IG)
+
+* *Netherlands*: NLBIF plans to further promote the use of GBIF data for scientific analyses and introduce the value of GBIF data for biodiversity studies in university curricula. 
+
+* *Norway*: The emerging new Living Norway network (currently pending research infrastructure funding) has established a working group on how to teach open biodiversity science and FAIR data practices at university level in Norway. 
+
+* *South Africa*: Work will continue to appoint a BDI Research Chair. SANBI-GBIF is engaging the Department of Science and Innovation, previous Department of Science and Technology, to support a Priority Research Chair. 
+
+* *Spain*: Continue engaging academia. Make an inventory of masters and university degrees that promote GBIF data in classrooms.
+
+* *Sweden*: GBIF-Sweden participates, alongside consortium partners in the Swedish Biodiversity data Infrastructure, in a great number of activities directed towards educational and research institutes.
+
+* *Switzerland*: Promote GBIF data use and data sharing at Swiss universities and research institutions.
+
+* *Zimbabwe*: Data access and use workshop to be held by March 2020.
+
+
+==== Rationale
+
+The most significant user community for GBIF is academic researchers. Even policy-related uses of GBIF often derive from the work of such individuals. It is accordingly important for GBIF to understand the needs of researchers and academic societies and to communicate clearly regarding the tools and services GBIF can deliver. Communication should include information and support materials for students and early-career researchers, on both publication and use of data, including citation, use tracking and data papers. University faculties and libraries may be important channels for this information. In addition, GBIF needs to engage more closely with taxonomic societies and other academic bodies which could be key collaborators in curating and improving data. Achieving such an outcome depends on understanding how GBIF can become a more central tool for their work, so that work on digital knowledge directly benefits those who contribute.
+
+==== Approach
+
+GBIF Participants may be well-positioned to lead in engaging with taxonomic societies and other interested research groups, including assuming responsibility to serve as ambassadors for GBIF within particular communities. Particular focus should be given to opportunities to explore models for such communities to assist GBIF with data curation. Few university programs include clear guidance and promotion for open data sharing. GBIF should make use of its own documentation materials and of curriculum materials from throughout the GBIF community to engage with biological science faculties and university libraries to share information on GBIF tools and resources and practices.
