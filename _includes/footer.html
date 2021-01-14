@@ -1,3 +1,5 @@
+{% assign footer = site.data[page.lang].footer | default: site.data.footer %}
+
 <footer class="footer">
   <div>
     {% if page.layout != 'index' and page.lang-ref%}
@@ -23,7 +25,7 @@
   </div>
   <div>
     <div class="footer-groups">
-      {% for col in site.data.footer.columns %}
+      {% for col in footer.columns %}
       <div class="footer-column">
         <p class="footer-column-name">{{ col.name }}</p>
         {% if col.description %}
@@ -75,8 +77,8 @@
       <div>© {{ site.author }}</div>
       {% endif %}
       
-      {% if site.data.footer.license %}
-      <div>{{ site.data.footer.license | markdownify }}</div>
+      {% if footer.license %}
+      <div>{{ footer.license | markdownify }}</div>
       {% endif %}
       
       <div>Powered by <a href="https://www.gbif.org">GBIF</a></div>
