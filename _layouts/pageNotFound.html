@@ -1,0 +1,15 @@
+---
+layout: compose
+preTitle: Error 404
+title: Page not found
+description: We cannot find the page you are looking for
+cta:
+- text: Home
+  isPrimary: true
+  href: /
+structure:
+  - type: textBanner
+---
+
+{% assign structure = page.structure | default: layout.structure %}
+{% include structure.html structure=structure %}

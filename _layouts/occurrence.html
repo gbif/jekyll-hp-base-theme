@@ -9,7 +9,11 @@ description: Default template for occurrence search
   ReactDOM.render(
     React.createElement(
       gbifReactComponents.OccurrenceSearch,
-      { style: { height: 'calc(100vh - 4.25rem)' }, theme: userTheme, config: userConfig }
+      { 
+        style: { height: 'calc(100vh - 4.25rem)' }, 
+        theme: userTheme, 
+        config: userConfig
+      }
     ),
     document.getElementById('root')
   );
