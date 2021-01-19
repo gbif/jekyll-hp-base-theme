@@ -11,7 +11,7 @@ structure:
     min-height: 555px;
     overflow-wrap: anywhere;">
   <aside id="pageNavbar" class="pageNavbar menu">
-    {% for group in site.data.pagenav.guides %}
+    {% for group in site.data.sideNavigation[page.sideNavigation] %}
       {% if group.grouptitle %}
         <p class="menu-label">{{ group.grouptitle }}</p>
       {% endif %}

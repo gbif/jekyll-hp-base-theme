@@ -8,6 +8,7 @@ toc: true
 permalink: /test
 layout: documentation
 tocMaxDepth: 3
+sideNavigation: guides
 ---
 
 = GBIF Work Programme 2020: Annual Update to Implementation Plan 2017–2021
