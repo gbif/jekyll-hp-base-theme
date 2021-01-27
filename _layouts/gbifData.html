@@ -9,7 +9,13 @@ layout: headerOnly
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.12.0/mapbox-gl.min.css" integrity="sha512-KxWh2zhfqjqLf8V6nej7w8PbXiZuqrQq+PA1EE+73+7dpYbMocKIXKPlq50ZaWPDY5iQcyaX3I4xLUuOWBCCug==" crossorigin="anonymous" />
 
+{% if site.gbifApacheInclude.componentsScript %}
+<!--dynamically include version running in environment-->
+{{ site.gbifApacheInclude.componentsScript }}
+{% else %}
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/gbif/gbif-web@master/packages/react-components/dist/lib/gbif-react-components.js"></script>
+{% endif %}
+
 <script type="text/javascript" src="/assets/theme/js/config.js"></script>
 
 {{ content }}
