@@ -1,44 +1,64 @@
 ---
-layout: home
-klass: home
+layout: compose
+klass: compositionBlocks
 title: Compose your own pages
 description: The theme lets you stitch blocks together from the frontmatter. Below is examples of how. See [`pages/compose.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/compose.md) for the raw Markdown of this page.
 background: /assets/img/Haeckel_Siphoneae.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 hasTextShadow: true
 permalink: /compose-your-own-pages
-structure:
-  - type: floating-hero
-  - type: markdown
-  - data: compose.features
-    type: features
-  - data: compose.product
-    type: product
+composistion:
+- type: floatingHero
+  # data: compose.someFile.someProperty # no data provided, instead page data will be used
+- type: pageMarkdown # This will render the markdown in this file
+- type: videoHero
+  data: compose.video # yaml file
+- type: boxHero
+  data: compose.examples.boxExample  # property inside yaml file
+- type: postHeader
+  data: compose.examples.postExample
+- type: features
+  data: compose.features
+- type: latestPosts
+  data: compose.examples.latestPostsExample
+- type: markdown
+  data: compose.markdownBlock
+- type: product
+  data: compose.product
+- type: split
+  data: compose.examples.split1
+- type: split
+  data: compose.examples.split2
+- type: floatingText
+  data: compose.examples.text
 ---
 
-You can compose your own pages by using the `compose` layout and defining a custum structure. E.g.
+# type: pageMarkdown
+You can compose your own pages by using the `compose` layout and defining a custum composistion. E.g.
 
-```
+```yaml
 # use the compose layout for more flexibility
 layout: compose
-# then define your page structure
-structure:
-- type: floating-hero 
-- data: compose.cardExample
-  type: features
-- data: home.bannerExample2
-  type: textBanner
-- data: home.splitExample
-  type: splitBanner
+# then define your page composistion
+composistion:
+- type: floatingHero 
+- type: features
+  data: compose.cardExample
+- type: floatingText
+  data: home.bannerExample2
+- type: split
+  data: home.splitExample
 ```
 
-## The avaiable block types are
-* floating-hero
-* box-hero
-* post-header
+## The available block types are
+* floatingHero
+* videoHero
+* boxHero
+* postHeader
 * features
 * latestPosts
 * markdown
+* pageMarkdown
 * product
 * splitBanner
 * textBanner

@@ -4,6 +4,7 @@
 {% assign description = include.description | default: include.content.description %}
 {% assign cta = include.cta | default: include.content.cta %}
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
+{% assign ratio = include.ratio | default: include.content.ratio | default: 40 %}
 {% assign center = true %}
 {% assign toc = include.toc | default: include.content.toc %}
 
@@ -13,14 +14,17 @@ themeFeedback.push({title: "Missing background", description: "You haven't confi
 </script>
 {% endunless %}
 
-<section class="postHeader {% if toc %} postHeader--withToc{% endif %}">
-  {% include blocks/feature.html 
-  background=background 
-  imageLicense=imageLicense 
-  preTitle=preTitle 
-  title=title 
-  description=description 
-  cta=cta 
-  center=center
-  %}
+<section>
+  <div class="postHeader {% if toc %} postHeader--withToc{% endif %}">
+    {% include blocks/parts/feature.html 
+    background=background 
+    imageLicense=imageLicense 
+    preTitle=preTitle 
+    title=title 
+    description=description 
+    cta=cta 
+    center=center
+    ratio=ratio
+    %}
+  </div>
 </section>

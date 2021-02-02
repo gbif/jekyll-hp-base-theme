@@ -12,12 +12,12 @@ cta:
   - text: Ipsum
     href: /about
 permalink: /la
-structure:
-  - type: floating-hero
+composistion:
+  - type: floatingHero
   - data: home.cardExample
     type: features
   - data: home.bannerExample2
-    type: textBanner
+    type: floatingText
   - data: home.splitExample
-    type: splitBanner
+    type: split
 ---

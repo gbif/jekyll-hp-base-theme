@@ -2,14 +2,14 @@
 layout: base
 description: Template for homepage
 remark: See also page.layout == 'home' in head.html and jumbotron.html
-structure:
-  - type: floating-hero
-  - type: markdown
+composistion:
+  - type: floatingHero
+  - type: pageMarkdown
   - type: latestPosts
 ---
 
-{% assign structure = page.structure | default: layout.structure %}
-{% include structure.html structure=structure %}
+{% assign composistion = page.composistion | default: layout.composistion %}
+{% include composistion.html composistion=composistion %}
 {% comment %}
 {% assign twitter_feed = false %} {% if site.tweets_on_home and
 site.twitter_username %} {% assign twitter_feed = true %} {% endif %}

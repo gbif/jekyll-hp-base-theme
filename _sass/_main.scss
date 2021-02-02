@@ -1,1 +1,9 @@
 @import "theme/_main";
+@import "theme/_syntaxHighlight";
+
+.compositionBlocks {
+  section {
+    border-bottom: 5px solid tomato;
+    // border-top: 5px solid tomato;
+  }
+}

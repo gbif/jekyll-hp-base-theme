@@ -1,10 +1,10 @@
 ---
 layout: base
 description: Default template for posts, with contained width
-structure:
-  - type: post-header
-  - type: markdown
+composistion:
+  - type: postHeader
+  - type: pageMarkdown
 ---
 
-{% assign structure = page.structure | default: layout.structure %}
-{% include structure.html structure=structure %}
+{% assign composistion = page.composistion | default: layout.composistion %}
+{% include composistion.html composistion=composistion %}

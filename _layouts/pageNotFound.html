@@ -7,9 +7,9 @@ cta:
 - text: Home
   isPrimary: true
   href: /
-structure:
-  - type: textBanner
+composistion:
+  - type: floatingText
 ---
 
-{% assign structure = page.structure | default: layout.structure %}
-{% include structure.html structure=structure %}
+{% assign composistion = page.composistion | default: layout.composistion %}
+{% include composistion.html composistion=composistion %}

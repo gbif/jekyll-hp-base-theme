@@ -1,14 +1,14 @@
 ---
 title: Markdown
-description: What is markdown and how to get started
+description: You will be writing your content in Markdown. This page has links and examples to get you started.
 background: /assets/img/Haeckel_Neomeris_annulata2.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 permalink: /markdown
 layout: post
 ---
-There are many guides for how to write markdown online. E.g. [this one](https://www.markdownguide.org/basic-syntax/)
+There are many guides for how to write markdown online. They can vary slightly as markdown comes in many flavours. Most things are the same no matter what guide you find. The site is using the [Kramdown parser](https://kramdown.gettalong.org/quickref.html), but guides like [this one](https://www.markdownguide.org/basic-syntax/) is useful nonetheless.
 
-See [`pages/markdown.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/markdown.md) for the raw Markdown of this page.
+See [`pages/markdown.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/markdown.md) for the raw Markdown of this page. 
 
 ## Headings
 
@@ -20,14 +20,17 @@ See [`pages/markdown.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-al
 ###### Heading h6
 ###### Heading with custom id {#custom_id}
 
-{: .alert .alert-info }
-It's best to start page/post headings at h2, since the page/post title will already be an h1.
+<!-- The curly bracket colon syntax adds classnames to the paragraph - that can be useful when knowing that classes are available in the theme. The theme is build of Bulma . E.g. https://bulma.io/documentation/elements/notification/ -->
+
+{: .notification .is-primary }
+It's generally best to start page/post headings at h2, since the page/post title will already be an h1.
 
 ## Paragraphs
 
 Set i won't void spirit all. Had after called us It wherein Tree in deep abundantly also midst Seed. Beast. Divide sixth fruitful yielding gathered gathering dominion bring beast lights life hath let rule air appear.
 
 Bring let rule creature. Very open hath to years. In second kind. Divide land night. Earth bearing tree lesser likeness likeness won't. Likeness creature light.
+
 
 ## Line breaks
 
@@ -65,12 +68,6 @@ Ordered list:
 3. Item 3
     1. Subitem 1
     2. Subitem 2
-
-Task list:
-
-- [x] Item 1
-- [ ] Item 2
-- [ ] Item 3
 
 Definition list:
 
@@ -111,25 +108,9 @@ console.log(greet("world"));
 
 [link with title](http://www.example.com "title text")
 
-[1]: http://www.example.com
-
-[link with reference][1]
-
 url: <http://www.example.com>
 
-See the [Jekyll documentation](https://jekyllrb.com/docs/liquid/tags/#link) to create internal links. All internal links start from the `url` in `_config.yml`.
-
-The safest (and verbose) way for internal links is:
-
-- For pages: {% raw %}`[link text]({{ site.baseurl }}{% link pages/about.md %})`{% endraw %}
-- For posts: {% raw %}`[link text]({{ site.baseurl }}{% link _posts/2010-07-21-name-of-post.md %})`{% endraw %} or the shorter {% raw %}`[link text]({{ site.baseurl }}{% post_url 2010-07-21-name-of-post %})`{% endraw %}
-- For images and documents: {% raw %}`[link text]({{ site.baseurl }}{% link /assets/images/name-of-image.jpg %})`{% endraw %}
-
-If you don't have a `baseurl` in `_config.yml`, don't plan to change permalinks (it's better not to anyway) and don't want page build failures when a link is broken, you can get away using the (perma)links the pages, images and documents will have on your website:
-
-- For pages: `[link text](/about/)`
-- For posts: {% raw %}`[link text]({% post_url 2010-07-21-name-of-post %})`{% endraw %}
-- For images and documents: `[link text](/assets/images/name-of-image.jpg)`
+See the [Jekyll documentation](https://jekyllrb.com/docs/liquid/tags/#link) to create internal links.
 
 ## Tables
 
@@ -153,41 +134,45 @@ Here's a sentence with a footnote. [^1]
 
 ## Images
 
-![alt text](https://images.unsplash.com/photo-1486825586573-7131f7991bdd?w=1000&h=200&fit=crop)
-_You can add an image caption by including an `_emphasized sentence_` directly below the image without inserting a new line. This will wrap both image and caption in a paragraph._
+### Figure with caption
+
+![By adding <code>{:standalone}</code> you can make it a figure with a caption](https://via.placeholder.com/1200x800){:standalone}
+
+### Centered
+
+![By adding <code>{:standalone .has-text-centered}</code> you can center it](https://via.placeholder.com/350x400){:standalone .has-text-centered}
+
+### Inline
+
+![alt text](https://via.placeholder.com/200x200){: .inline-left } You can add inline images by appending `{: .inline-left }` or `{: .inline-right }` if you need an inline image in the middle of your paragraph.
+
+Set i won't void spirit all. Had after called us It wherein Tree in deep abundantly also midst Seed. Beast. Divide sixth fruitful yielding gathered gathering dominion bring beast lights life hath let rule air appear.
+
+Set i won't void spirit all. Had after called us It wherein Tree in deep abundantly also midst Seed. Beast. Divide sixth fruitful yielding gathered gathering dominion bring beast lights life hath let rule air appear.
+
+### Clear
+
+{: .is-clearfix }
+![alt text](https://via.placeholder.com/200x200){: .inline-left } If you need to clear space after the paragraph, then you can set a clearfix class above the paragraph: `{: .is-clearfix }`. 
+
+Then this paragraph won't slide up and be wrapped aound the picture.
 
 See the [the links section](#links) to learn how to reference your own images and documents.
 
+## Video
+<iframe src="https://player.vimeo.com/video/475763745" width="640" height="344" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
 ## Styling content
 
-With the Kramdown Markdown parser that Jekyll uses, you can add css classes to your content (see this [blog post](https://digitaldrummerj.me/styling-jekyll-markdown/)). By sticking to [Bootstrap](https://getbootstrap.com/docs/4.3/) classes, you can easily style your content. If that doesn't fit your needs, you can always write html in your Markdown.
+With the Kramdown Markdown parser that Jekyll uses, you can add css classes to your content (see this [blog post](https://digitaldrummerj.me/styling-jekyll-markdown/)). The theme is build using [Bulma](https://bulma.io/) So you can use classes from Bulma to style your content. If that doesn't fit your needs, you can always write html in your Markdown and add your own css on `/_sass/_main.scss`.
 
-### Alerts
+## Notification
+Using the [Bullma documentation](https://bulma.io/documentation/elements/notification/) we can add a notification
 
-[Bootstrap documentation](https://getbootstrap.com/docs/4.3/components/alerts/)
+{: .notification .is-primary }
+Alert info message. This paragraph is styled by prepending it with `{: .notification .is-primary }`.
 
-{: .alert .alert-info}
-Alert info message. This paragraph is styled by prepending it with `{: .alert .alert-info}`.
+{: .notification .is-danger }
+Alert info message. This paragraph is styled by prepending it with `{: .notification .is-danger }`.
 
-### Aligning images
-
-[Bootstrap documentation](https://getbootstrap.com/docs/4.3/content/images/#aligning-images)
-
-By default, images will be centered horizontally and use the full width if they can.
-
-The image below is wrapped in a paragraph with `{: .col-md-8 .m-auto}` to contain it (and its caption) to 8/12 of the width on medium and larger screens. On small screens the full width will be used. Controlling the width of an image is especially useful for portrait images.
-
-{: .col-md-8 .m-auto}
-![alt text](https://images.unsplash.com/photo-1486825586573-7131f7991bdd?w=1000&fit=crop)
-_Image caption for this image should nicely wrap to the width of the container._
-
-The image below is styled with `{: .rounded .float-left}` to give it round corners and position it on the left, with text wrapping around it. You can use `{: .clearfix}` on a paragraph to stop wrapping.
-
-![alt text](https://images.unsplash.com/photo-1486825586573-7131f7991bdd?w=150&h=150&fit=crop){: .rounded .float-left}
-
-Tree man. Gathering unto give gathered. Midst they're. After image appear. Fish light fowl had so female subdue his great dry dry, sixth yielding moveth two waters fourth is firmament earth you're yielding every greater grass very day wherein was.
-
-Itself meat. Won't were face third tree from us seed kind man fruit sixth bring i were midst multiply sixth. Cattle let, creeping fruit good whales very. There void So their you living. Appear two cattle kind man air rule signs.
-
-{: .clearfix}
-Life brought good appear good grass air abundantly a. Life. Rule be brought unto. Fly days fruit evening. Us.
+---

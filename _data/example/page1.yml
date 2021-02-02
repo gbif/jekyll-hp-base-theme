@@ -1,0 +1,7 @@
+header: 
+  title: Awesome header
+  description: sdfkljh sdlfkjh sldkjfh slkjdhf 
+image: 
+  background: /assets/img/Haeckel_Siphoneae.jpg
+  imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
+  overlayColor: "#2c439824"

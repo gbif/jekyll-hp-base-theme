@@ -6,8 +6,19 @@
     width: 45rem
     margin: 0 auto
     padding: 1.5rem
+    border: 1px solid #88888822
+    border-bottom: none
+  .feature-img
+    border-bottom: 1px solid #88888822  
   .feature-img:after
-    content: none
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    // good ideas to do this from https://stackoverflow.com/questions/27529374/css-add-color-with-a-data-attribute-attrdata-color-color
+    background-color: currentColor
   .feature-title
     font-size: 2rem
     font-weight: bold

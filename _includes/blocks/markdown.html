@@ -1,28 +1,8 @@
-{% assign toc = page.toc %}
-{% assign mobileToc = page.mobileToc %}
-{% assign html = include.html | default: content %}
+{% assign markdownContent = include.markdownContent | default: include.content.markdownContent %}
+{% assign parsedContent = markdownContent | markdownify %}
 
-{% comment %}
-{% include blocks/prose.html content=html %}
-{% endcomment %}
-
-{% if html %}
-<div class="container">
-  {% if page.toc %}
-  <div class="article article--toc">
-    <div class="columns">
-      <div class="column toc is-one-third {% if page.mobileToc %} toc__keepOnMobile {% else %} toc__removeOnMobile {% endif %}">
-        {% include toc.html html=html %}
-      </div>
-      <div class="column is-two-thirds">
-        {% include blocks/prose.html content=html %}
-      </div>
-    </div>
+<section>
+  <div class="article">
+    {% include blocks/parts/prose.html content=parsedContent %}
   </div>
-  {% else %}
-    <div class="article">
-      {% include blocks/prose.html content=html %}
-    </div>
-  {% endif %}
-</div>
-{% endif %}
+</section>

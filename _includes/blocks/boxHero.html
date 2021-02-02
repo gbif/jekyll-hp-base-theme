@@ -1,13 +1,12 @@
 {% assign parallax = include.parallax | default: include.content.parallax | default: false %}
 {% assign fullHeight = include.fullHeight | default: include.content.fullHeight | default: false %}
-{% assign videos = include.videos | default: include.content.videos %}
+{% assign background = include.background | default: include.content.background %}
 {% assign preTitle = include.preTitle | default: include.content.preTitle %}
 {% assign title = include.title | default: include.content.title | default: "TITLE IS REQUIRED" %}
 {% assign description = include.description | default: include.content.description %}
 {% assign cta = include.cta | default: include.content.cta %}
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
-{% assign hasBlackText = include.hasBlackText | default: include.content.hasBlackText | default: false %}
-{% assign overlayColor = include.overlayColor | default: include.content.overlayColor | default: "#00000055" %}
+{% assign overlayColor = include.overlayColor | default: include.content.overlayColor | default: "transparent" %}
 {% assign hasTextShadow = include.hasTextShadow | default: include.content.hasTextShadow | default: false %}
 {% assign height = include.height | default: include.content.height | default: "100vh" %}
 {% assign floatingNavbar = page.navbar.floating | default: site.algae.navbar.floating | default: false %}
@@ -30,30 +29,12 @@ themeFeedback.push({title: "Missing background", description: "You haven't confi
 {% assign background = background | default: "https://via.placeholder.com/500x300?text=Img%20required" %}
 
 
-<section class="floatingHero
+<section class="boxHero
   {% if parallax %} parallax {% endif %} 
-  {% if hasBlackText %}{% else %} hasWhiteText {% endif %} 
   {% if hasTextShadow %} hasTextShadow {% endif %} 
   {% if fullHeight %} full-height {% else %} not-full-height {% endif %} 
   overlay" 
     style="{% if overlayColor %} color: {{ overlayColor }}; {% endif %} 
     {% if height %} height: auto; min-height: {{ calcHeight }}; {% endif %} ">
-    <div class="feature-img">
-      <video id="heroVideo" preload="auto" autoplay="true" muted loop="" style="left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%; position: absolute; object-fit: cover;">
-        {% for source in videos %}
-        <source src="{{ source }}">
-        {% endfor %}
-      </video>
-      {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}
-      {% if imageLicense %}
-      <div class="feature-img-license">
-        <div class="feature-img-license-c">© </div>
-        <div class="feature-img-license-text">{{ imageLicense | markdownify }}</div>
-      </div>
-      {% endif %}
-    </div>
-  {% include blocks/featureContent.html content=include.content %}
+  {% include blocks/parts/feature.html content=include.content %}
 </section>
-<script>
-    
-</script>

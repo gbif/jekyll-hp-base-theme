@@ -11,9 +11,9 @@ navbar:
   floating: true
   color: "#00000088"
   hasWhiteText: true
-structure:
-  - type: floating-hero
-  - type: markdown
+composistion:
+  - type: floatingHero
+  - type: pageMarkdown
 ---
 
 ## Procris quippe mentior urbes ubi

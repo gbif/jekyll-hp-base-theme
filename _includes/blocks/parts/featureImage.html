@@ -1,9 +1,10 @@
 {% assign background = include.background | default: include.content.background %}
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
 {% assign href = include.href | default: include.content.href %}
+{% assign ratio = include.ratio %}
 
 {% if background %}
-<div class="feature-img" style="background-image: url('{{ background }}')">
+<div class="feature-img" style="background-image: url('{{ background }}'); {% if ratio %}padding-bottom: {{ratio}}%{% endif %}">
   {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}
   {% if imageLicense %}
   <div class="feature-img-license">

@@ -7,10 +7,10 @@
 {% assign center = include.center | default: include.content.center %}
 {% assign categories = include.categories | default: include.content.categories %}
 {% assign href = include.href | default: include.content.href %}
+{% assign ratio = include.ratio %}
 
-{% include blocks/featureImage.html background=background href=href imageLicense=imageLicense %}
-{% include blocks/featureContent.html 
-  preTitle=preTitle 
+<img src="{{background}}" class="media-left" width="128"/>
+{% include blocks/parts/featureContent.html 
   href=href 
   title=title
   description=description 

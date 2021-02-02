@@ -1,15 +1,11 @@
 ---
-title: Post example
+title: Text only
+layout: default
 description: Lorem markdownum spatium limes indefessus neque at orat aestuat
-permalink: /post-example
-background: "https://api.gbif.org/v1/image/unsafe/1400x1400/http:%2F%2Fimages.ctfassets.net%2Fuo17ejk9rkwj%2F5qktTSY8efC9qaOfGvfQAM%2F6f91b3706d34c147a14ca72eeebd8de5%2FAnemonastrum_richardsonii.jpg"
-layout: compose
-structure:
-  - type: post-header
-  - type: markdown
+permalink: /text-only
 ---
 
-## Procris quippe mentior urbes ubi
+# Procris quippe mentior urbes ubi
 
 Lorem markdownum spatium limes indefessus neque *at* orat aestuat, quicquam ne
 flavusque omnibus, virginis socerque sparsos vidimus eundem. Sustinet **ramo

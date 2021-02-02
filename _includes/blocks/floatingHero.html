@@ -38,7 +38,7 @@ themeFeedback.push({title: "Missing background", description: "You haven't confi
   overlay" 
     style="{% if overlayColor %} color: {{ overlayColor }}; {% endif %} 
     {% if height %} height: auto; min-height: {{ calcHeight }}; {% endif %} ">
-  {% include blocks/feature.html content=include.content %}
+  {% include blocks/parts/feature.html content=include.content %}
 </section>
 
 {% comment %}

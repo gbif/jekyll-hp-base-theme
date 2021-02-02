@@ -1,10 +1,9 @@
 ---
 layout: base
-description: Default template for pages and posts, with contained width
-structure:
-  - type: box-hero
-  - type: markdown
+composistion:
+  - type: boxHero
+  - type: pageMarkdown
 ---
 
-{% assign structure = page.structure | default: layout.structure %}
-{% include structure.html structure=structure %}
+{% assign composistion = page.composistion | default: layout.composistion %}
+{% include composistion.html composistion=composistion %}
