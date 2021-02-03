@@ -13,6 +13,10 @@ composition:
   {% endfor %}
 {% endif %}
 
+<script>
+var tocMaxDepth = {{ page.tocMaxDepth | default: 6}};
+</script>
+
 <div class="documentation">
   <aside id="pageNavbar" class="documentation-sidebar pageNavbar menu">
     {% if page.sideNavigation %}

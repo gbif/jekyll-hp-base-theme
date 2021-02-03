@@ -159,7 +159,13 @@ function highlightRightNav(heading) {
   }
 }
 
-const headlines = Array.from(document.querySelectorAll(".article h1[id],.article h2[id],.article h3[id],.article h4[id]"));
+var headlineSelector = '';
+for (var i = 1; i <= tocMaxDepth; i++ ) {
+  headlineSelector += '.article h' + i + '[id]';
+  if (i < tocMaxDepth) headlineSelector += ',';
+}
+
+const headlines = Array.from(document.querySelectorAll(headlineSelector));
 var currentHeading = '';
 function highligtToc() {
   var headingPositions = [];
