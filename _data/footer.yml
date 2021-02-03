@@ -30,4 +30,4 @@ columns:
 # Will be prefixed by "© {{ site.author }}" if defined in _config.yml
 # Will be postfixed by "Powered by GBIF"
 license: >
-  Content on this site is licensed under an [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+  You can add a license here as needed
