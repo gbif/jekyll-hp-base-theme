@@ -5,10 +5,13 @@ layout: documentation
 sideNavigation: sideNavigation.guides
 false: true
 toc: true
-permalink: /layout/documentation
+permalink: /layout/documentation-post-header
+background: /assets/img/Haeckel_Neomeris_annulata2.jpg
+imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
+composition:
+  - type: postHeader
+  - type: pageMarkdown
 ---
-
-# Heading h1
 
 {% include_relative section.md %}
 

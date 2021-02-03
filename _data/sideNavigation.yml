@@ -11,30 +11,12 @@ guides:
     path: /layout/text
   - title: Documentation
     path: /layout/documentation
-  - sectiontitle: Examples
-    section:
-      - title: "Part 1: Getting started"
-        path: /some-unique-url
-      - title: "Part 2: Our Application"
-        path: /some-unique-url
-      - title: "Part 3: Updating our Application"
-        path: /some-unique-url
-      - title: "Part 4: Sharing Our Application"
-        path: /some-unique-url
-      - title: "Part 5: Persiting our DB"
-        path: /some-unique-url
-      - title: "Part 6: Using Bind Mounts"
-        path: /some-unique-url
-      - title: "Part 7: Multi-Container Applications"
-        path: /some-unique-url
-      - title: "Part 8: Using Docker Compose"
-        path: /some-unique-url
-      - title: "Part 9: Image building tips"
-        path: /some-unique-url
-      - title: "Part 10: What next?"
-        path: /some-unique-url
+  - title: Compose
+    path: /layout/compose
 - grouptitle: Some Group name
   content:
+  - title: Documentation example 2
+    path: /layout/documentation-post-header
   - sectiontitle: Level 1a
     section:
     - path: /some-unique-url
@@ -45,20 +27,18 @@ guides:
     section:
     - sectiontitle: Level 2a
       section:
-      - title: Beer
+      - title: Water
         path: /some-unique-url
-      - title: Gin
-        path: /some-unique-url
-      - title: "Deploy to Swarm"
+      - title: Soda
         path: /some-unique-url
     - sectiontitle: Level 2b
       section:
       - path: /some-unique-url
-        title: Apply custom metadata to objects
+        title: Something A
       - path: /some-unique-url
-        title: Prune unused objects
+        title: Something B
       - path: /some-unique-url
-        title: Format command and log output
+        title: Something C
     - sectiontitle: Level 2c
       section:
       - path: /some-unique-url
