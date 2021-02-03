@@ -50,6 +50,11 @@ exclude:
   - package.json
   - jekyll-theme-algae.gemspec
 
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  ext: asciidoc 
+  
 # FRONTMATTER DEFAULTS
 defaults:
   -

@@ -20,6 +20,8 @@ gem "jekyll-remote-theme"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "asciidoctor-diagram", "~> 1.5.4"
+  gem "jekyll-asciidoc"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
 end
