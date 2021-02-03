@@ -52,6 +52,7 @@
 .toc
   @extend .menu
   padding: 24px 12px
+  padding-top: 0
   position: sticky
   top: 0
   overflow: auto
@@ -60,8 +61,13 @@
     border-left: 3px solid transparent
     &.active
       border-left: 3px solid deepskyblue
-.toc p
+.toc_header
   @extend .menu-label 
+  position: sticky
+  top: 0
+  background: white
+  padding: 24px 0 1em 0
+  margin-bottom: 0!important
 .toc ul
   @extend .menu-list
   font-size: 13px
