@@ -1,0 +1,67 @@
+guides:
+- grouptitle: Layouts
+  content:
+  - title: Hero
+    path: /layout/hero
+  - title: Page
+    path: /layout/page
+  - title: Post
+    path: /layout/post
+  - title: Text only
+    path: /layout/text
+  - title: Documentation
+    path: /layout/documentation
+  - sectiontitle: Examples
+    section:
+      - title: "Part 1: Getting started"
+        path: /some-unique-url
+      - title: "Part 2: Our Application"
+        path: /some-unique-url
+      - title: "Part 3: Updating our Application"
+        path: /some-unique-url
+      - title: "Part 4: Sharing Our Application"
+        path: /some-unique-url
+      - title: "Part 5: Persiting our DB"
+        path: /some-unique-url
+      - title: "Part 6: Using Bind Mounts"
+        path: /some-unique-url
+      - title: "Part 7: Multi-Container Applications"
+        path: /some-unique-url
+      - title: "Part 8: Using Docker Compose"
+        path: /some-unique-url
+      - title: "Part 9: Image building tips"
+        path: /some-unique-url
+      - title: "Part 10: What next?"
+        path: /some-unique-url
+- grouptitle: Some Group name
+  content:
+  - sectiontitle: Level 1a
+    section:
+    - path: /some-unique-url
+      title: Strawberries
+    - path: /some-unique-url
+      title: Tomatoes
+  - sectiontitle: Level 1b
+    section:
+    - sectiontitle: Level 2a
+      section:
+      - title: Beer
+        path: /some-unique-url
+      - title: Gin
+        path: /some-unique-url
+      - title: "Deploy to Swarm"
+        path: /some-unique-url
+    - sectiontitle: Level 2b
+      section:
+      - path: /some-unique-url
+        title: Apply custom metadata to objects
+      - path: /some-unique-url
+        title: Prune unused objects
+      - path: /some-unique-url
+        title: Format command and log output
+    - sectiontitle: Level 2c
+      section:
+      - path: /some-unique-url
+        title: Level 3a
+      - path: /some-unique-url
+        title: Level 3b

@@ -30,8 +30,55 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// add ajax count
 
+
+
+// control the sidebar pagenav
+document.addEventListener('DOMContentLoaded', () => {
+  // Get the page navigation
+  const $pageNavLists = Array.prototype.slice.call(document.querySelectorAll('#pageNavbar .navbar-link'), 0);
+
+  if ($pageNavLists.length > 0) {
+    // Add a click event on each of them
+    $pageNavLists.forEach($el => {
+      $el.addEventListener('click', () => {
+        // The target is the next element
+        const $target = $el.nextElementSibling;
+        // const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-expanded');
+        $target.classList.toggle('is-expanded');
+        let isActive = $el.classList.contains('is-expanded');
+        $el.setAttribute('aria-expanded', isActive)
+      });
+    });
+  }
+
+  // expand active node
+  const $activeLink = document.querySelector('#pageNavbar .active');
+  expandNavNode($activeLink);
+});
+
+function expandNavNode(node) {
+  if (node) {
+    const $ul = node.parentNode.parentNode;
+    const $navbarLink = $ul.previousElementSibling;
+    if ($navbarLink.classList.contains('navbar-link')) {
+      $navbarLink.classList.add('is-expanded');
+      $ul.classList.add('is-expanded');
+      $navbarLink.setAttribute('aria-expanded', true)
+      $ul.setAttribute('aria-expanded', true)
+      expandNavNode($navbarLink);
+    }
+  }
+}
+
+
+
+
+
+// add ajax count
 // util for getting deep values in json objects by passing a string
 // https://stackoverflow.com/questions/6491463/accessing-nested-javascript-objects-and-arays-by-string-path
 function resolve(path, obj = self, separator = '.') {
@@ -82,6 +129,85 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const tocItems = Array.from(document.querySelectorAll('.toc a'));
+function highlightRightNav(heading) {
+  tocItems.forEach(function (x) {
+    x.classList.remove('active');
+  });
+
+  if (heading) {
+    var activeTocItem = document.querySelector(".toc a[href='#" + heading + "']");
+    if (activeTocItem) {
+      activeTocItem.classList.add("active");
+    }
+  }
+}
+
+const headlines = Array.from(document.querySelectorAll(".article h1[id],.article h2[id],.article h3[id],.article h4[id]"));
+var currentHeading = '';
+function highligtToc() {
+  var headingPositions = [];
+  headlines.forEach(function (x) {
+    headingPositions[x.id] = x.getBoundingClientRect().top;
+  });
+  headingPositions.sort();
+  // the headings have all been grabbed and sorted in order of their scroll
+  // position (from the top of the page). First one is toppermost.
+  for (var key in headingPositions) {
+    if (!headingPositions.hasOwnProperty(key)) {
+      continue;
+    }
+    if (headingPositions[key] > 0 && headingPositions[key] < 300) {
+      if (currentHeading !== key) {
+        // a new heading has scrolled to within 200px of the top of the page.
+        // highlight the right-nav entry and de-highlight the others.
+        highlightRightNav(key);
+        currentHeading = key;
+      }
+      break;
+    }
+  }
+}
+
+// Scroll the given menu item into view. We actually pick the item *above*
+// the current item to give some headroom above
+function scrollToNavItem(selector) {
+  let container = document.querySelector(selector);
+  if (!container) return;
+  let item = container.querySelector('.active');
+  if (item) {
+    item = item.closest('li')
+  }
+  if (item) {
+    document.querySelector(selector).scrollTop = item.offsetTop - 100;
+  }
+}
+
+var hasScrolled;
+document.addEventListener('scroll', function() {
+  if (tocItems.length > 0) highligtToc();
+  if (!hasScrolled) {
+    hasScrolled = true;
+    scrollToNavItem('.toc');
+    scrollToNavItem('#pageNavbar');
+  }
+});
 
 
 {% if jekyll.environment != "production" and site.algae.hideHelper != true %}

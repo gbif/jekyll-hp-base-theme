@@ -39,21 +39,32 @@
 .toc__removeOnMobile
   display: none
 
+.article--toc
+  margin-left: auto
+  margin-right: auto
+  
 +tablet
   .article--toc .columns
     flex-direction: row-reverse
-  .toc 
+  .toc-wrapper
     display: block
-    position: sticky
-    top: 0
 
 .toc
   @extend .menu
-  padding: 12px
+  padding: 24px 12px
+  position: sticky
+  top: 0
+  overflow: auto
+  max-height: 100vh
+  a
+    border-left: 3px solid transparent
+    &.active
+      border-left: 3px solid deepskyblue
 .toc p
   @extend .menu-label 
 .toc ul
   @extend .menu-list
+  font-size: 13px
 
 +until($navbar-breakpoint)
   .navbar-end
