@@ -12,7 +12,7 @@ navbar:
   color: "#00000088"
   hasWhiteText: true
 composistion:
-  - type: floatingHero
+  - type: heroImage
   - type: pageMarkdown
 ---
 

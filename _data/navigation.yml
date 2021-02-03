@@ -6,15 +6,19 @@
   menu: # Dropdown menu (one level deep only)
   - text: Layouts    # Title for block of menu items
   - text: Hero  # Name in the menu
-    href: /layout-hero-page # Where should the link take the user
+    href: /layout/hero # Where should the link take the user
   - text: Page
-    href: /layout-page
+    href: /layout/page
   - text: Post
-    href: /post-example
+    href: /layout/post
   - text: Text
-    href: /text-only
+    href: /layout/text
+  - text: Documentation
+    href: /layout/documentation
+  - text: Video
+    href: /layout/video
   - text: Compose your own pages
-    href: /compose-your-own-pages
+    href: /layout/compose
   - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
   - text: TOC
     href: /toc-example

@@ -15,7 +15,7 @@ cta:
     href: /about
 permalink: /
 composistion:
-  - type: floatingHero
+  - type: heroImage
   - data: home.cardExample
     type: features
   - data: home.bannerExample2

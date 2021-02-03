@@ -1,10 +1,17 @@
 ---
 layout: post
-title: Post without an image
-permalink: /layout-post-without-image
+title: TOC
+description: "You can add a table of content to your page by adding `toc: true` in the front matter"
+background: https://api.gbif.org/v1/image/unsafe/1600x1000/https%3A%2F%2Fhp-base-theme.netlify.app%2Fassets%2Fimg%2FHaeckel_Siphoneae.jpg
+imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur) # OPTIONAL
+toc: true
+mobileToc: false # OPTIONAL - default is false. Should the TOC show on mobile devices (will show above article)
+permalink: toc-example
 ---
 
-## Procris quippe mentior urbes ubi
+# Procris quippe mentior urbes ubi
+
+[See source](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/layout-post-toc.md){:class="button is-primary"}
 
 Lorem markdownum spatium limes indefessus neque *at* orat aestuat, quicquam ne
 flavusque omnibus, virginis socerque sparsos vidimus eundem. Sustinet **ramo

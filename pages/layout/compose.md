@@ -6,14 +6,14 @@ description: The theme lets you stitch blocks together from the frontmatter. Bel
 background: /assets/img/Haeckel_Siphoneae.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 hasTextShadow: true
-permalink: /compose-your-own-pages
+permalink: /layout/compose
 composistion:
-- type: floatingHero
+- type: heroImage
   # data: compose.someFile.someProperty # no data provided, instead page data will be used
 - type: pageMarkdown # This will render the markdown in this file
-- type: videoHero
+- type: heroVideo
   data: compose.video # yaml file
-- type: boxHero
+- type: heroBox
   data: compose.examples.boxExample  # property inside yaml file
 - type: postHeader
   data: compose.examples.postExample
@@ -41,7 +41,7 @@ You can compose your own pages by using the `compose` layout and defining a cust
 layout: compose
 # then define your page composistion
 composistion:
-- type: floatingHero 
+- type: heroImage 
 - type: features
   data: compose.cardExample
 - type: floatingText
@@ -51,9 +51,9 @@ composistion:
 ```
 
 ## The available block types are
-* floatingHero
-* videoHero
-* boxHero
+* heroImage
+* heroVideo
+* heroBox
 * postHeader
 * features
 * latestPosts

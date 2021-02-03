@@ -6,12 +6,12 @@
 <section>
   <div class="container">
     {% if page.toc %}
-    <div class="article article--toc">
+    <div class="article--toc">
       <div class="columns">
-        <div class="column toc is-one-third {% if page.mobileToc %} toc__keepOnMobile {% else %} toc__removeOnMobile {% endif %}">
+        <div class="column toc-wrapper is-one-third {% if page.mobileToc %} toc__keepOnMobile {% else %} toc__removeOnMobile {% endif %}">
           {% include toc.html html=html %}
         </div>
-        <div class="column is-two-thirds">
+        <div class="article column is-two-thirds">
           {% include blocks/parts/prose.html content=html %}
         </div>
       </div>

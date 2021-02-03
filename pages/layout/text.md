@@ -1,8 +1,8 @@
 ---
 title: Text only
 layout: default
+permalink: /layout/text
 description: Lorem markdownum spatium limes indefessus neque at orat aestuat
-permalink: /text-only
 ---
 
 # Procris quippe mentior urbes ubi
