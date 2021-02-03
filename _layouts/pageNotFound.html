@@ -7,9 +7,9 @@ cta:
 - text: Home
   isPrimary: true
   href: /
-composistion:
+composition:
   - type: floatingText
 ---
 
-{% assign composistion = page.composistion | default: layout.composistion %}
-{% include composistion.html composistion=composistion %}
+{% assign composition = page.composition | default: layout.composition %}
+{% include composition.html composition=composition %}

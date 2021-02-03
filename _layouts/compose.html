@@ -4,5 +4,5 @@ description: Template for homepage
 remark: See also page.layout == 'home' in head.html and jumbotron.html
 ---
 
-{% assign composistion = page.composistion | default: layout.composistion %}
-{% include composistion.html composistion=composistion html=content%}
+{% assign composition = page.composition | default: layout.composition %}
+{% include composition.html composition=composition html=content%}

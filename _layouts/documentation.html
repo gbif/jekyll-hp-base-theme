@@ -1,7 +1,7 @@
 ---
 layout: base
 description: Default template for documentation
-composistion:
+composition:
   - type: pageMarkdown
 ---
 
@@ -27,7 +27,7 @@ composistion:
     {% endif %}
   </aside>
   <div class="documentation-content">
-    {% assign composistion = page.composistion | default: layout.composistion %}
-    {% include composistion.html composistion=composistion %}
+    {% assign composition = page.composition | default: layout.composition %}
+    {% include composition.html composition=composition %}
   </div>
 </div>

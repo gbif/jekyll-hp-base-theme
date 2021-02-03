@@ -2,15 +2,15 @@
 layout: base
 description: Template for homepage
 remark: See also page.layout == 'home' in head.html and jumbotron.html
-composistion:
+composition:
   - type: heroImage
   - type: pageMarkdown
   - type: latestPosts
     data: home.latestPosts
 ---
 
-{% assign composistion = page.composistion | default: layout.composistion %}
-{% include composistion.html composistion=composistion %}
+{% assign composition = page.composition | default: layout.composition %}
+{% include composition.html composition=composition %}
 {% comment %}
 {% assign twitter_feed = false %} {% if site.tweets_on_home and
 site.twitter_username %} {% assign twitter_feed = true %} {% endif %}

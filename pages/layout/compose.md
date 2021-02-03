@@ -7,7 +7,7 @@ background: /assets/img/Haeckel_Siphoneae.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 hasTextShadow: true
 permalink: /layout/compose
-composistion:
+composition:
 - type: heroImage
   # data: compose.someFile.someProperty # no data provided, instead page data will be used
 - type: pageMarkdown # This will render the markdown in this file
@@ -34,13 +34,13 @@ composistion:
 ---
 
 # type: pageMarkdown
-You can compose your own pages by using the `compose` layout and defining a custum composistion. E.g.
+You can compose your own pages by using the `compose` layout and defining a custum composition. E.g.
 
 ```yaml
 # use the compose layout for more flexibility
 layout: compose
-# then define your page composistion
-composistion:
+# then define your page composition
+composition:
 - type: heroImage 
 - type: features
   data: compose.cardExample

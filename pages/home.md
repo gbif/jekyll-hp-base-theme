@@ -14,7 +14,7 @@ cta:
   - text: About
     href: /about
 permalink: /
-composistion:
+composition:
   - type: heroImage
   - data: home.cardExample
     type: features

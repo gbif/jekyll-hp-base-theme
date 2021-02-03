@@ -11,7 +11,7 @@ navbar:
   floating: true
   color: "#00000088"
   hasWhiteText: true
-composistion:
+composition:
   - type: heroImage
   - type: pageMarkdown
 ---

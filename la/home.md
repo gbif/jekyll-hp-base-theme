@@ -12,7 +12,7 @@ cta:
   - text: Ipsum
     href: /about
 permalink: /la
-composistion:
+composition:
   - type: heroImage
   - data: home.cardExample
     type: features

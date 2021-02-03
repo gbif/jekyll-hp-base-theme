@@ -1,9 +1,9 @@
 ---
 layout: base
 description: Default template for pages and posts, with contained width
-composistion:
+composition:
   - type: pageMarkdown
 ---
 
-{% assign composistion = page.composistion | default: layout.composistion %}
-{% include composistion.html composistion=composistion %}
+{% assign composition = page.composition | default: layout.composition %}
+{% include composition.html composition=composition %}
