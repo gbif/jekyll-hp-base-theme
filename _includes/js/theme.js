@@ -159,6 +159,7 @@ function highlightRightNav(heading) {
   }
 }
 
+tocMaxDepth = tocMaxDepth || 6;
 var headlineSelector = '';
 for (var i = 1; i <= tocMaxDepth; i++ ) {
   headlineSelector += '.article h' + i + '[id]';

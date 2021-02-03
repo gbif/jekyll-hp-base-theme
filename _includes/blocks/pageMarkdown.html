@@ -2,6 +2,10 @@
 {% assign mobileToc = page.mobileToc %}
 {% assign html = include.html | default: content %}
 
+<script>
+var tocMaxDepth = {{ page.tocMaxDepth | default: 6}};
+</script>
+
 {% if html %}
 <section>
   <div class="container">
