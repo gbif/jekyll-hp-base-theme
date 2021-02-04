@@ -18,41 +18,41 @@
   display: table-cell
   vertical-align: bottom
 
-.heroArticleHeader
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
-  position: relative
-  max-height: calc(100vh - #{$navbar-height})
-  .display-table
-    top: 0
-    bottom: 0
-  img 
-    display: block
-  &.not-full-height
-    img
-      visibility: hidden
-    .display-table
-      position: absolute
-  &.full-height
-    height: calc(100vh - #{$navbar-height})
-  &.parallax
-    background-attachment: fixed
-  &__content
-    text-align: center
-    background: white
-    max-width: 45rem
-    margin: auto
-    padding: 24px 32px
-    h3 > a
-      color: inherit
+// .heroArticleHeader
+//   background-position: center
+//   background-repeat: no-repeat
+//   background-size: cover
+//   position: relative
+//   max-height: calc(100vh - #{$navbar-height})
+//   .display-table
+//     top: 0
+//     bottom: 0
+//   img 
+//     display: block
+//   &.not-full-height
+//     img
+//       visibility: hidden
+//     .display-table
+//       position: absolute
+//   &.full-height
+//     height: calc(100vh - #{$navbar-height})
+//   &.parallax
+//     background-attachment: fixed
+//   &__content
+//     text-align: center
+//     background: white
+//     max-width: 45rem
+//     margin: auto
+//     padding: 24px 32px
+//     h3 > a
+//       color: inherit
 
-+from(700px)
-  .heroArticleHeader
-    img
-      visibility: hidden
-    .display-table
-      position: absolute
+// +from(700px)
+//   .heroArticleHeader
+//     img
+//       visibility: hidden
+//     .display-table
+//       position: absolute
 
 .article
   margin: 2rem auto 4rem auto
