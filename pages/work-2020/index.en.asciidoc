@@ -1,0 +1,75 @@
+---
+title: Asciidoc example
+description: First firmament moved appear days day air made. He whose. Great. It fish cattle created a moveth unto third whales.
+background: https://api.gbif.org/v1/image/unsafe/500x/https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F84%2FHaeckel_Caulerpa_racemosa_%2528uvifera%2529.jpg
+imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
+categories: [asciidoc, Climate, Shared category]
+toc: true
+permalink: /work-programme
+layout: documentation
+sideNavigation: sideNavigation.guides
+tocMaxDepth: 3
+---
+
+= GBIF Work Programme 2020: Annual Update to Implementation Plan 2017–2021
+:numbered:
+:revnumber: 1
+:revdate: {git-metadata-date}
+:title-logo-image: img/logo-gbif.svg
+:icons: font
+:pagenums:
+:license: https://creativecommons.org/licenses/by/4.0
+:xrefstyle: short
+// Use original #_prefix_characters as the document has been published with these.
+:idprefix: _
+:idseparator: _
+
+:sectnums!:
+
+include::100.en.adoc[]
+
+include::200.en.adoc[]
+
+include::300.en.adoc[]
+
+include::310.en.adoc[]
+
+include::320.en.adoc[]
+
+include::330.en.adoc[]
+
+include::340.en.adoc[]
+
+include::350.en.adoc[]
+
+include::360.en.adoc[]
+
+include::400.en.adoc[]
+
+include::410.en.adoc[]
+
+include::420.en.adoc[]
+
+include::500.en.adoc[]
+
+include::510.en.adoc[]
+
+include::520.en.adoc[]
+
+include::530.en.adoc[]
+
+include::540.en.adoc[]
+
+include::600.en.adoc[]
+
+include::610.en.adoc[]
+
+include::620.en.adoc[]
+
+include::700.en.adoc[]
+
+include::710.en.adoc[]
+
+include::720.en.adoc[]
+
+include::730.en.adoc[]

@@ -10,8 +10,6 @@ There are many guides for how to write markdown online. They can vary slightly a
 
 See [`pages/markdown.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/markdown.md) for the raw Markdown of this page. 
 
-## Headings
-
 # Heading h1
 ## Heading h2
 ### Heading h3

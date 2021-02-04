@@ -1,19 +1,19 @@
 ---
 title: Documentation
-description: You will be writing your content in Markdown. This page has links and examples to get you started.
+permalink: /examples/docs-post-header # the documentation layout requires you to fill the permalink for it to be highlighted in the side navigation
+description: The file behind this page can be explored at [`pages/examples/docs-post-header.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/examples/docs-post-header.md)
 layout: documentation
 sideNavigation: sideNavigation.guides
-false: true
 toc: true
-permalink: /layout/documentation-post-header
 background: /assets/img/Haeckel_Neomeris_annulata2.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
-composition:
+composition: # you can extend the documentation layout with a custom composition
   - type: postHeader
   - type: pageMarkdown
 ---
 
-{% include_relative section.md %}
+{: .notification .is-primary }
+It is possible to extend layouts with a custom composition. In this case we have added a post header to a documentation layout
 
 Lorem markdownum spatium limes indefessus neque *at* orat aestuat, quicquam ne
 flavusque omnibus, virginis socerque sparsos vidimus eundem. Sustinet **ramo

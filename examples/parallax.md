@@ -1,22 +1,20 @@
 ---
-layout: page
-permalink: /layout/page
-title: "layout: Page"
-description: The file behind this page can be explored at [`pages/layout/page.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/layout/page.md)
+layout: heroImage
+title: "parallax: true"
+description: The file behind this page can be explored at [`pages/examples/parallax.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/examples/parallax.md)
 background: https://api.gbif.org/v1/image/unsafe/1600x1000/https%3A%2F%2Fhp-base-theme.netlify.app%2Fassets%2Fimg%2FHaeckel_Siphoneae.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur) # OPTIONAL
-# hasBlackText: false   # OPTIONAL - default is black. Depending on your background image is can be useful to change text color
-# hasTextShadow: false  # OPTIONAL - default is black. Sometimes it is neccessary to add a shadow to the text to give contrast
-# overlayColor: "#ff000055" # OPTIONAL: The default transparent. Example value: #00000055
-# height: 100vh         # OPTIONAL- It is possible to control the height of the image. 100vh means that it should take up full Viewport Height (vh)
-# parallax: true # OPTION - default is false
-# toc: true # OPTIONAL - default is false. Should the page have a Table of Contents
-# mobileToc: true # OPTIONAL - default is false. Should the TOC show on mobile devices (will show above article)
+parallax: true # OPTION - default is false
+toc: true # OPTIONAL - default is false. Should the page have a Table of Contents
+height: 75vh
 cta: # OPTIONAL list of buttons
 - text: Optional Call To Action
   href: /link-to-somewhere
   isPrimary: true # OPTIONAL
 ---
+
+{: .notification }
+The background image keeps position on scroll. Mobile browsers rarely support this and will instead show a scrolling background
 
 ## After creepeth 
 After creepeth said dominion a in greater you'll of that. Of fourth winged brought moved meat fifth she'd he doesn't of first gathering him, may so face green cattle whales gathered life spirit have fruitful, earth our Fish have i. Fruit. Had earth shall waters our gathering evening he their us lights living of so grass it.

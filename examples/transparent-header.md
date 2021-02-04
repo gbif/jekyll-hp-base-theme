@@ -1,7 +1,6 @@
 ---
 title: Floating hero
 description: Lorem markdownum spatium limes indefessus neque at orat aestuat
-permalink: /transparent-header
 background: "https://api.gbif.org/v1/image/unsafe/1400x1400/http:%2F%2Fimages.ctfassets.net%2Fuo17ejk9rkwj%2F5qktTSY8efC9qaOfGvfQAM%2F6f91b3706d34c147a14ca72eeebd8de5%2FAnemonastrum_richardsonii.jpg"
 hasBlackText: false
 hasTextShadow: false

@@ -1,14 +1,15 @@
 ---
-title: Documentation
-description: You will be writing your content in Markdown. This page has links and examples to get you started.
 layout: documentation
+permalink: /layout/documentation # the documentation layout requires you to fill the permalink for it to be highlighted in the side navigation
+title: "layout: documentation"
+description: The file behind this page can be explored at [`pages/layout/documentation.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/layout/documentation.md)
 sideNavigation: sideNavigation.guides
-false: true
 toc: true
-permalink: /layout/documentation
 ---
 
-# Heading h1
+# layout: documentation
+
+The file behind this page can be explored at [`pages/layout/documentation.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/layout/documentation.md)
 
 {% include_relative section.md %}
 

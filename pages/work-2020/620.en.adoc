@@ -1,0 +1,61 @@
+=== Activity 4c: Enable data curation
+
+==== Tasks
+[lowerroman]
+. Develop network-wide approach to handling and processing annotations and feedback
+. Enhance IPT to offer dataset-level peer review and commentary mechanisms and record-level annotations
+. Develop mechanism and tools within GBIF.org for sharing cleaned and annotated datasets based on GBIF downloads (“reference datasets”)
+. Develop GBIF data workbench tool (within GBIF.org and possibly also as standalone) for cleaning and filtering network data (e.g. in red list assessments)
+. Develop strategy and support mechanisms for expert communities to curate sections of GBIF data
+
+==== 2019 Progress
+
+A pilot handle-based server was deployed demonstrating GBIF infrastructure is capable to participate in a handle network and issue record identifiers.
+
+===== 2019 Participant contributions
+
+* *Canadensys*: We have started using UUIDs for new collections.
+
+* *Colombia*: Data curation in more than 1 million of occurrences published through GBIF Colombia using work routines with Google Refine.
+
+* *Germany*: In cooperation with CETAF member institutions: semantic enrichment of linked open (specimen) data published via CETAF IDs (see https://doi.org/10.1038/546033d). 
+The Botanical Node continues to support the AnnoSys system for structured annotation of individual specimens, which is accessible via 13 biodiversity data portals.
+
+* *iDigBio*: iDigBio continues to refine its GitHub workflow for maintaining its collections catalogue.
+
+* *Mexico*: Tools for data cleaning and assessment taxonomic and geographic data.
+
+* *Spain*: We released new version of Elysia, software application to manage natural history collections developed by GBIF.ES, with new features and improvements such us as a more direct process to export collection’s data from Elysia to the Darwin Core standard. Elysia is also available in English.
+
+==== 2020 Work items
+
+*	Continue to explore the use of the GBIF data index to support stable persistent resolvable identifiers for all specimens and occurrence records.
+*	Explore bidirectional data linking and synchronization with data management systems and publishers to achieve faster and more accurate mutual updates on data improvements and annotations (minimum €10,000).
+
+===== 2020 Participant plans
+
+* *Argentina*: Develop strategy and support mechanisms for expert communities to curate sections of GBIF data
+
+* *Canada*: Implementation of data annotation and attribution services in the DINA  Collection Management System currently under development.
+
+* *Canadensys*: We will continue to use UUIDs or other identifier using GBIF's recommendations.
+
+* *Germany*: Further promotion of CETAF Identifiers and semantic enrichment activities. Continued support and promotion of AnnoSys. 
+
+* *iDigBio*: iDigBio will be continuing to streamline its collections catalogue and data mobilization workflows.
+
+* *International Centre for Integrated Mountain Development*: Enhancing data quality of Herbarium Specimens and museum collections- regional training for HKH member countries. ** Need to explore possible collaborations with Chinese Academy of Science and other Asian Node member countries.
+
+* *Naturalis Biodiversity Center*: Naturalis will lead on ELViS development that will enable data curation in collections for loans, visits and digitization on demand in DiSSCo.
+
+* *Norway*: GBIF Norway aims to maintain, and further improve, a machine-readable persistent identifier (PID) resolver for as many entities as we have resources to cover within the Norwegian data streams to GBIF. Dependent of continued stable funding, we aim to provide machine actionable data annotation services from this service (see also activity 2a, 3b and 4b).
+
+* *Spain*: Promoting the use of Elysia out of our national borders. 
+
+==== Rationale
+
+In a global network, curation of the shared data pool is increasingly becoming a joint responsibility of aggregators, publishers, experts and data users. The goal is to integrate corrections, improvements, additional information and analysis results in a timely manner, with better visibility to all network participants and data users. Expanding the existing knowledge base requires improved communication channels and workflows for collaboration between all actors, tools to capture and rapidly display new or improved information, commentary and data, and not least tools, credit systems and support to engage expert activities.
+
+==== Approach
+
+The main task is to provide tools and mechanisms that make it easy for users and experts to contribute knowledge to the available pool of data. Building on existing data filtering and data improvement workflows in the community, GBIF tools and mechanisms are to support the identification of relevant data, their cleaning and preparation for specific purposes, and the sharing of the results of such processes with the wider community. Input collected through existing feedback mechanisms  is to be raised to a visibility level that supports and drives the usefulness of the published data.

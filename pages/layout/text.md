@@ -1,11 +1,13 @@
 ---
-title: Text only
 layout: default
+title: "layout: default"
 permalink: /layout/text
 description: Lorem markdownum spatium limes indefessus neque at orat aestuat
 ---
 
-# Procris quippe mentior urbes ubi
+# layout: default
+
+The file behind this page can be explored at [`pages/layout/text.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/layout/text.md)
 
 Lorem markdownum spatium limes indefessus neque *at* orat aestuat, quicquam ne
 flavusque omnibus, virginis socerque sparsos vidimus eundem. Sustinet **ramo

@@ -1,0 +1,53 @@
+
+markdown:
+  markdownContent: |
+    ## layout: compose
+    The various block types used for composing custom layouts can also crop images.
+page: 
+  title: "layout: page"
+  background: https://via.placeholder.com/1600x1000?text=This+image+will+be+cropped
+hero: 
+  title: "layout: hero"
+  description: |
+    The background image will be cropped to fit the container. The height is set to `height: 50vh`
+  height: 50vh
+  background: https://via.placeholder.com/1600x800?text=This+image+will+be+cropped
+post: 
+  title: "layout: post"
+  description: default ratio is 40/100
+  background: https://via.placeholder.com/1600x1000?text=This+image+ratio+is+locked
+postRatio: 
+  title: "layout: post"
+  description: ratio can be set explicitly. In this case to 20/100
+  background: https://via.placeholder.com/1600x320?text=This+image+ratio+is+locked
+  ratio: 20
+features:
+  title: "type: features"
+  description: "The cards below will wrap on smaller devices and the image might be cropped to fit"
+  features:
+    - title: Abundantly light years # required
+      description: Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
+      background: https://via.placeholder.com/300x800
+    - title: Abundantly light years # required
+      description: Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
+      background: https://via.placeholder.com/800x300
+    - title: Abundantly light years # required
+      description: Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
+      background: https://via.placeholder.com/500x500
+product:
+  align: right
+  title: "type: product"
+  description: |      # required
+    Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is.
+  background: https://via.placeholder.com/500x800?text=This+image+ratio+is+locked
+split:
+  reverse: true
+  title: "type: split"
+  description: |      # required
+    Forth beginning form dry thing. Form seed void likeness darkness light. Can't created third upon spirit fruitful hath likeness their. Replenish saw female night they're you blessed all greater cattle, grass god fifth you're. Above wherein replenish face multiply male every. Own hath lights under creeping.
+  background: https://via.placeholder.com/1600x800?text=This+image+will+be+cropped
+  href: /about
+  cta:
+  - text: Some
+    isPrimary: true
+  - text: thing

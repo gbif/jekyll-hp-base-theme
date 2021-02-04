@@ -1,0 +1,46 @@
+== Priority 4: Improve Data Quality
+
+=== Activity 4a: Ensure data persistence
+
+==== Tasks
+. Identify and verify datasets within GBIF network without current owners
+. Publish reference instances of these datasets within hosted IPTs
+. Develop processes and mechanisms for adoption of orphaned datasets by suitable agencies or experts
+
+==== 2019 Progress
+
+The exploration of necessary steps to achieve CoreTrustSeal data repository certification is starting in Q4 2019. This includes the data management services within GBIF.org, but also seeks to identify a set of trusted repositories for publishing datasets within the GBIF network. 
+
+Documentation for all stages in the GBIF data ingestion process to start Q3/Q4 2019, following deployment of the informatics infrastructure upgrade (pipelines project).
+
+===== 2019 Participant contributions
+
+* *Biodiversity Heritage Library*: Make progress on adding BHL Europe data to BHL. Minimal progress has been made.  Developed a plan for a rapid ingest of BHL Europe materials.
+
+* *iDigBio*: iDigBio partnered with the Society of Herbarium Curators to conduct a Strategic Planning for Herbaria short course. The goal was to produce a strategic plan for each represented herbarium, including vision, mission, stakeholders, strategies, goals, objectives, evaluation, and sustainability, among other things. iDigBio has been working with the community on alternative data storage solutions, such as CyVerse.
+
+* *Mexico*: In process, mentoring and collaboration with UNIBIO-Instituto de Biología UNAM publisher for reactivate data publish and rescue orphaned datasets.
+
+* *Norway*: GBIF Norway contributed to best practices guidelines and implementation of specimen-level DOIs in collaboration with the UN Food and Agriculture Organization in coordination with the GBIFS (see also activity 3a, 4b, and 5b).
+
+==== 2020 Work items
+
+* Continue revision and documentation of flagging routines used in GBIF data ingestion pipelines. 
+
+===== 2020 Participant plans
+
+* *Biodiversity Heritage Library*: Implement the plan for rapid ingest of BHL Europe materials.
+
+* *Canadensys*: We will follow the recommendations from GBIF in order to ensure data persistence. 
+
+* *iDigBio*: iDigBio is working to improve its data mobilization efforts and workflows, including moving towards IPT as the preferred publishing mechanism. iDigBio will continue to work with the community on alternative data storage solutions and strategies.
+
+* *Naturalis Biodiversity Center*: Persistent identifiers for specimen related data will be implemented in ELViS.
+
+==== Rationale
+
+There exists a significant portion of data available through GBIF.org that is not actively curated by a data host. In some cases, there are no resources or desire to make further edits to the datasets. These datasets are effectively orphaned and the GBIF.org version of the dataset is often the last remaining version available on the internet. As GBIF develops mechanisms to provide feedback to data publishers and support curation of datasets, we need to consider that these orphaned datasets will not be updated with corrections or migrated to adhere to modern data standards.
+
+==== Approach
+
+The task is to ensure that all datasets have a primary version available on the internet which acts as the source for GBIF.org to index. Orphaned datasets will be identified, extracted from the GBIF.org index and loaded into the most suitable data repository supporting versioning: either run by a GBIF participant or a central cloud installation of an IPT. As issues are identified anyone will be able to volunteer to correct the source data, upload a new version into the data repository, document the changes applied and follow editor guidelines. Once republished GBIF.org will reflect the updated data, and the provenance of changes will be traceable through the repository versioning system. Policies for editors, including attribution and the settlement process for disputes will be documented. This entire activity could be led and implemented by a GBIF Participant.

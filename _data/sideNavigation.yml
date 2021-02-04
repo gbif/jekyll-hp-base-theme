@@ -13,10 +13,18 @@ guides:
     path: /layout/documentation
   - title: Compose
     path: /layout/compose
+- grouptitle: Examples
+  content:
+  - title: Images
+    path: /examples/images
+  - title: Parallax
+    path: /examples/parallax
+  - title: Table of content
+    path: /examples/toc
+  - title: Docs post header
+    path: /examples/docs-post-header
 - grouptitle: Some Group name
   content:
-  - title: Documentation example 2
-    path: /layout/documentation-post-header
   - sectiontitle: Level 1a
     section:
     - path: /some-unique-url

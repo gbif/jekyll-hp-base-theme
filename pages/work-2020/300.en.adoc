@@ -1,0 +1,90 @@
+== Priority 1: Empower Global Network
+
+****
+Ensure that governments, researchers and users are equipped and supported to share, improve and use data through the GBIF network, regardless of geography, language or institutional affiliation.
+****
+
+=== Activity 1a: Focus on people
+
+==== Tasks
+[lowerroman]
+. Develop mechanisms to support and reflect the skills, expertise and experience of individual and organizational contributions to the GBIF network (including revision of identity management system and integration of ORCID identifiers)
+. Consolidate use of digital badges to record skills and contributions
+
+==== 2019 Progress
+
+The Secretariat informatics team has begun investigating citation tracking of individual records, and developing the ability for users to ‘claim’ data they have contributed, to promote use and to demonstrate the value proposition of GBIF. User profile work is scheduled to begin in late 2019 and early discussions have been initiated with GBIF Canada around lessons learned in claiming specimens through https://bloodhound-tracker.net[Bloodhound Tracker] and how to integrate that tool into GBIF.
+
+The Secretariat has been carrying out an evaluation of the https://discourse.gbif.org[GBIF Community Forum] during its first year of operation, to inform a decision on whether to continue maintaining the platform. Preliminary metrics suggest that use of the forum by the community is well below the targets set as benchmarks when the platform was established as a successor to the GBIF Community Site. 336 posts were made over a year with 87 new topics started by non-Secretariat staff. On the other hand, the time spent by Secretariat staff on moderation/curation was not significant.
+
+===== 2019 Participant contributions
+
+* *Andorra*: The Andorran node of GBIF has scarce human resources to provide data to the GBIF. Nevertheless we have made an effort to increase the data amount by the assistance of our collaborator in Andorra. Also we are constantly in contact with the Spanish node team, the Real Jardín Botanico in Madrid, which gives us an appreciated technical assistance.
+
+* *Benin*: One workshop was achieved in May 2019 to train national partners on data mobilization, data uses as well as registration on GBIF site to become more visible on GBIF site. At 5 least NGOs register on GBIF site this year. The master program in biodiversity informatics is doing great with in-depth capacity building of students from Benin and other African countries. It is just unfortunate that we never have the support of GBIF in that innovative and promising program. 
+
+* *Canada*: CBIF contributes to the focus on people via David Shorthouse's development of the Bloodhound application (https://bloodhound-tracker.net/) that enables agents to “Claim the natural history specimens you collected or identified, track their use in new science, and help acknowledge your peers, mentors, and organizations.” We continue to support David's further development of this important tool and consider how to link this to development of community attribution standards and best practices.
+
+* *Canadensys*: We have followed the discussions in GBIF Community forum, but we have not been part of the survey.
+
+* *iDigBio*: In February 2019, iDigBio and the Office of Academic Support (OAS) and Student Support Services (SSS)/TRiO Program at the University of Florida co-organized a free Biology Career Conference and Fair for undergraduate students called iDigTRiO. TRiO is a federally funded grant program to help first generation students, low income students and students with disabilities navigate and succeed in their undergraduate careers and beyond. The event was targeted to SSS and TRiO students but was open to all undergraduates.
+
+* *Japan*: Provided one workshop to show GBIF Japan can now accept fossils, and to enroll people in this area. 
+
+* *Mexico*: Internal process know how extended for people inside publisher CONABIO,  know in another best practices on check list,  train of trainers in checklist.
+
+* *Netherlands*: NLBIF and Naturalis Biodiversity Center host the Biodiversity Next 2019 conference that will bring together a wide audience of biodiversity data, standards, and infrastructure stakeholders.
+
+* *Spain*: Helped testing and participating in the GBIF Community Forum.
+
+* *Sweden*: GBIF-Sweden has followed the development of GBIF's experiences of GDPR adaptation in relation to expanded user profiles and data publication.
+
+* *United States*: US Node Manager joined GBIF Community Forum and contributes to relevant discussions. 
+
+* *Zimbabwe*: In January 2019, GBIF Zimbabwe set up a technical committee composed of people with relevant skills and knowledge required for the effectiveness of the Node. These include, ecologists, entomologists, microbiologists, bioinformaticians, wildlife ecologists, ichthyologists and herpetologists.
+Launched a website for GBIF Zimbabwe and created twitter account.
+
+==== 2020 Work items
+
+* Explore possibilities of providing citation tracking from dataset level to individual level. Provide ability to claim one’s data and promote use; explore building on the example of ‘Bloodhound tracker’ and moving it into core GBIF operations.
+* Clearly communicate and demonstrate the benefits of ORCID use through citation tracking.
+* Pending a decision on continuing the GBIF Community Forum, take steps to improve interactive engagement with the broader GBIF community, considering the views gathered during the 2019 survey.
+
+===== 2020 Participant plans
+
+* *Andorra*: We plan to continue working with Spanish node team to continue improving our National Data Portal of Andorra and also increase the volume of data on biodiversity.
+
+* *Benin*: Capacity building through workshops and in the framework of the master program in biodiversity informatics data mobilization data uses.
+
+* *Canada*: CBIF will continue to collaborate with GBIF to incorporate Bloodhound functionality into the suite of GBIF services.
+
+* *Canadensys*: We will continue to follow and be part of the discussions in the forum. We think that the platform and discussions are really useful.
+
+* *iDigBio*: iDigBio will continue to support the series of workshops aimed at broadening participation in the biological sciences. iDigBio is planning a second annual iDigTRiO Biology Conference and Fair for February 2020.
+
+* *Japan*: Provide one workshop to expand the GBIF-related biodiversity informatics community. 
+
+* *Naturalis Biodiversity Center*: Naturalis plans to implement augmented user profiles based on ORCID in ELViS, to be developed in SYNTHESYS+
+
+
+
+
+* *Spain*: We will spread through our national communication channels the new and expanded user profile at gbif.org when it is ready.
+
+* *Sweden*: GBIF-Sweden will upgrade data provider's agreements where necessary. Staying informed by and participating in discussions via the GBIF Community Forum (and GBIF webinars) will be encouraged within our regional community.
+
+* *United States*: USGS will work with OBIS to provide an updated memorandum of understanding between OBIS and GBIF.  
+
+* *Zimbabwe*: Set up GBIF Zimbabwe community forum by June 2020
+
+==== Rationale
+
+GBIF is the result of work by thousands of people in agencies and institutions worldwide. This network’s long-term sustainability depends on demonstrating the value of such contributions and justifying continued investment of effort.
+
+The GBIF Secretariat can enhance efforts to develop capacity within the network and build an effective distributed help desk system that acknowledges and showcases relevant skills and experience that people across the network possess. Users of GBIF data products would also benefit from showcasing the network’s indispensable human resources and their impact on assessing and improving biodiversity data.
+
+For these reasons, the next round of improvements to GBIF.org should enhance the network’s capacity to serve as a hub for the GBIF community by identifying its active contributors, integrating information on their relevant GBIF activities, and supporting broader knowledge exchange and skill development.
+
+==== Approach
+
+The key task is to enhance GBIF.org to connect and display information on its contributors and other users of the site. This may include contact details (subject to individual control), formal roles (e.g. within participant delegations; in connection to publishing/improving datasets; based on training experience) and online participation in help desk discussions. Whether through the use of existing social or commercial platforms or through custom web application development, GBIF.org should absorb activity currently handled through the separate GBIF community site. GBIF should also build on experience during 2015–2016 in using digital badges to identify skills held by individuals. Such community functions will support the operation of GBIF Task Groups, externally funded projects like BID, and engagement of expert groups to curate GBIF data.

@@ -1,0 +1,104 @@
+=== Activity 1g: Coordinate resources
+
+==== Tasks
+[lowerroman]
+. Secretariat to coordinate participant-led activities aligned with Work Programme (process and models to support participant commitments)
+. Development of concept notes/proposals for supplementary funding at regional or global scales
+. Operate annual Capacity Enhancement Support Programme (CESP) with core funds, aligned with supplementary investments
+. Ensure that BID programme and other supplementary funds align with and reinforce CESP and GBIF community, online resources and infrastructure
+. Align Ebbe Nielsen Challenge and Young Researcher Awards with GBIF priorities
+
+==== 2019 Progress
+
+The initial five-year phase of the BID programme reached its final year with a flurry of activity, closing all of the 63 projects in sub-Saharan Africa, Caribbean and the Pacific supported by the European Union-funded programme. The Secretariat organized closing meetings and training events in all three regions focused on showcasing the achievements of BID, planning regional coordination of future biodiversity data mobilization and use,  highlighting the benefits of GBIF participation and establishing a GBIF Participant Node (see Activity 1b). A review of the impacts of BID in terms of data mobilization and use, capacity enhancement and sustainable outcomes, was commissioned following a competitive call and will be finalized later in 2019. An event to close the first phase of BID is being held in Brussels in late 2019, with the aim of summarizing the programme’s results to the funders and other stakeholders, as well as setting priorities for future biodiversity informatics development using the model of BID to strengthen and expand data availability in all global regions. 
+
+Based on the success of the first phase of BID, the Development and Cooperation Directorate of the European Commission (EU DEVCO, or EuropeAid) expressed interest in extending the programme with additional funding. Details of this extension are nearly complete, but it is expected that GBIF will have flexibility to expand the geographic scope of the programme beyond the three regions targeted in the first phase. The BID event of the first phase of BID will include engagement with other providers of overseas development assistance to explore the potential to supplement the funding from EU DEVCO for future phases of the programme. 
+
+During the April 2019 budget revision, €22,000 was added to hire an external consultant to identify potential funding streams from philanthropic organizations, and to help the Secretariat develop a strategic plan for a funding stream for these programmes. This work commences in late 2019.
+
+The Biodiversity Information Fund for Asia (BIFA), based on supplementary funding provided by the Japanese Ministry of Environment, attracted a strong response in its fourth call for proposals for data mobilization projects. After a thorough two-stage selection process, nine projects were selected for funding. As with the last BIFA call, this year’s call replicated the model developed under BID in providing a training workshop, held in Viet Nam, for all funded projects to acquire basic data publishing skills to support project implementation. 
+
+A further call under the Capacity Enhancement Support Programme (CESP) was launched in 2019, resulting in selection of five projects for funding, managed by nodes in Europe, North America, Africa and Latin America. Each of these projects contribute to activities in the 2020 work programme items:
+
+*	Using the CBD Clearing-House Mechanism to strengthen biodiversity data acquisition and data sharing aims to establish technical links between GBIF national nodes and the network of CBD national Clearing-House Mechanisms (5c. Support biodiversity assessment)
+*	OpenPSD: Engaging the private sector to promote biodiversity data publication and use will establish deeper connections between the participating nodes and private-sector sources of data (3c. Engage data holders)
+*	Data Use for Decision Making Workshop: an Iberoamerican community call replicates and applies training curriculum developed under the BID programme outside the ACP regions (1g. Coordinate resources)
+*	Strengthening Zimbabwe’s GBIF node through mentoring by GBIF Spain follows a mandate to improve mechanisms for engaging new countries (1e. Expand national participation)
+*	Tackling the spatial challenge in the Southern Cone through georeferencing training is applying updated documentation on best practices for georeferencing data (1b. Strengthen skills)
+
+The 2019 calls for GBIF’s annual awards programmes—the Young Researchers Award (YRA) and the Ebbe Nielsen Challenge—are attracting many high-quality entries. The results of the YRA are being announced in late August or early September, while the winners of the Challenge incentive prize are being announced during the GB26 meeting. 
+
+The GBIF Secretariat has invested in Fluxx, a grants management system. The system will help streamline and automate processes in relation to the management of the grant programmes GBIF is involved in. This should save time for all involved and ensure that the processes are made more efficient. The GBIF deployment of Fluxx is currently in the development phase. A small group of Secretariat staff is testing and offering feedback to the Fluxx developers. Once all issues have been addressed, the testing will be opened up to a wider test group before the final sign-off. The process has somewhat longer than expected as the investment of time from the Secretariat side has been much larger than originally anticipated. 
+
+The Secretariat continues to offer support to BID data publishers at the technical and data content level, which improves data consistency and quality control of all data submissions, assuring adherence to the data publishing and quality guidelines. This work supports the external BID impact study. The help desk supports BID ‘cloud’ IPT data hosting options for publishers.
+
+===== 2019 Participant contributions
+
+* *Argentina*: Participation, as a jury, of the evaluations of the IDB and BIFA projects. As well as a jury of the Ebbe Nielsen awards. On the other hand, participation in 2 CESP programs (one as a participant, the other as a coordinator). Trainer at the last BID meeting in Caribbean and at the Global Nodes Meeting.
+
+* *Australia*: ALA hosted a week long workshop/hackathon with developers from GBIF Brazil in Canberra (December 2018) to help them in the development of the Atlas based portal for Brazil.
+
+* *Benin*: We coordinated the implementation of the BID regional and national projects. In the framework of BID Regional project, we coordinated data mobilization and data uses in a consortium of 6 African countries. In the framework of a CESP program with Nigeria, we received and trained in Benin, the GBIF node of Nigeria.
+
+* *Canadensys*: We have participated in the five-year CESP review but we have not applied for funding during the 2019 call. The CESP program is a great incentive to promote projects between different nodes. 
+
+* *Consortium of European Taxonomic Facilities*: CETAF is a driving force behind the European DiSSCo Initiative, which aims at creating a Europe-wide research infrastructure to mobilize, unify and deliver bio- and geo-diversity information. The CETAF Secretariat is actively participating in several projects related to the implementation of DiSSCo, inter alia SYNTHESYS+ and MOBILISE.
+
+* *Germany*: Several German GBIF Node institutions actively participate in projects contributing to the European DiSSCo Initiative, that aims at creating a Europe-wide research infrastructure to mobilize, unify and deliver bio- and geo-diversity information. 
+Strong engagement also in CETAF, GGBN and BioCASe.
+
+* *Netherlands*: Evaluated CESP 2019 call.
+
+* *South Africa*: Further engagement with regards to funding allocation will continue. The Africa Coordination Mechanism (ACM) 5 year strategy is seen as a catalytic investment. Sustainability will be built into the 1st phase, so there will be less concern about what happens subsequently, as this would have been built into the model. The ACM Business Case and Regional Engagement Strategy is a model that could be adopted in other regions of the world. In the 1st three years, through the ACM, GBIF-Africa, through SANBI-GBIF will explore the need and feasibility of developing a bigger platform that can provide for a strengthening of a community of practice for all African biodiversity informatics initiatives, to enhance and make more efficient use of the data. This will be done through leveraging additional regional and global partnerships and initiatives. Data mobilization funding through FBIP large and small grants ± €645,000 will continue in 2019. 4. ABC Prize money to be awarded in 2019.
+
+* *Sweden*: Contribution by staff participation in-kind at meetings, conference sessions, workshops etc. 
+
+* *Zimbabwe*: Applied and obtained CESP funding for GBIF Zimbabwe in collaboration with GBIF Spain.
+
+
+==== 2020 Work items
+
+*	Launch a 2020 call for proposals under a renewed CESP (minimum €80,000). If funding allows, this will be supplemented by a special category for regional outreach activities that target increased data mobilization in non-GBIF countries as recommended by Nodes Steering Group ((see Activity 1e).
+*	The Secretariat will continue with a BID call for proposals that responds to feedback received from community consultations, three regional closing meetings and the BID phase 1 closing meeting.
+*	Implement a fifth call for proposals (approximately €110,000) under the Biodiversity Information Fund for Asia (BIFA), reflecting priorities agreed by Asian nodes.
+*	Continue collaboration with the BioDATA (Norway > Eurasia) and Russia support (Finland > Russia) supplementary funding programs.
+*	Develop and implement strategic plan for targeting external funding streams for capacity enhancement projects. This will be based on 2019 external consultation and using the results of BID Phase 1 closing meetings. If budget allows an additional (€22,000) will be allocated to this effort. The strategy will work with all GBIF regions to target potential funding streams that support additional capacity enhancement for data mobilization and use, building on the BID and BIFA models.
+*	Make refinements to the newly selected grant management system, FLUXX, to streamline project calls, assessment, selection, implementation, budgeting and reporting, to ensure it meets the needs of the community.
+*	Launch 2020 calls for the Ebbe Nielsen Challenge and Young Researchers Awards (€44,000), considering recommendations from the Science Committee based on the 2019 programmes. Explore the possibility of soliciting additional donor/sponsor co-funding.
+*	Begin Secretariat planning to establish a workflow using digital documentation to develop the 2021 work programme and 2022–2026 strategic plan. This planning will address the recommendations of the 2019 20-year review.
+
+===== 2020 Participant plans
+
+* *Argentina*: Participation in 2 CESP programs (one as participant, one as coordinator), coordinating national co-financing for CESP, coordinated from Argentina.
+
+* *Belgium*: Help establishment of a second phase of BID in collaboration with the European Union
+
+* *Benin*: Continue to exert the mentorship among partners
+
+* *Canadensys*: We will not lead a proposal for a CESP grant in 2020, but, depending on the needs, we could act as mentor in another proposal. We are also opened to act as mentor for a project in the BID program, but we do not have a project in mind currently.
+
+* *Consortium of European Taxonomic Facilities*: Participation in DiSSCo-related projects continues.
+
+* *Germany*: Participation in DiSSCo-related projects, CETAF, GGBN and BioCASe continues.
+
+* *iDigBio*: iDigBio will continue its integration and coordination efforts with GBIF, ALA, and DiSSCo.
+
+* *Norway*: The GBIF CESP OpenPSD project developed by the GBIF Nodes from Spain, Portugal, Norway, Colombia, and France will engage and document best practices for mobilizing biodiversity data from the private sector (see also Activity 1d, 3b and 3c).
+All of the Nordic and Baltic GBIF nodes contribute to the Nordic-Baltic collaboration on e-infrastructures for Biodiversity Informatics (DeepDive2 project proposal) funded by the Nordic e-Infrastructure Collaboration (NeIC) of the Nordic Research Council (NordForsk) (see also Activity 2a, 2b, 3b, 4a, 4b and 4c).
+
+* *South Africa*: Develop funding strategies to support the Africa Coordinating Mechanism Business Case.  Continued data mobilization funding through FBIP large and small grants of ± €645,000 will continue in 2020. The ABC2 project has been approved by the JRS and will be initiated in 2019 and continue into 2020.  
+
+* *Spain*: GBIF Spain will be involved in 3 CESP projects that will take place from June 2019 to June 2020. We will coordinate the OpenPSD CESP project to mobilize data from private sector. We will be available to help in the second phase of BID programme if this takes place.
+
+* *Sweden*: GBIF-Sweden will continue to contribute by offering opportunities for its staff members to participate in coordinated activities aimed at expand the scale and scope of GBIF.
+
+* *Zimbabwe*: Implementation of CESP project.
+
+
+==== Rationale
+
+Among its other roles, the GBIF Secretariat coordinates efforts to expand the scale and scope of GBIF activity beyond the levels achievable using only annual core Participant contributions. GBIF Participants commit to establish and operate nodes which serve as significant centres for GBIF activity. Some nodes have sufficient resources to contribute skills and developments which advance GBIF’s work, while others may require external support to become fully active. A limited amount of funding has been allocated each year under the GBIF work programme to support capacity enhancement for GBIF nodes. GBIF or individual Participants may also secure supplementary funds to contribute to particular areas of GBIF work. Improved coordination of these various resources will assist GBIF to advance more rapidly at all scales.
+
+==== Approach
+
+This Implementation Plan itself provides a framework for organizing information on Participant and supplementary fund resources to complement GBIF’s core funding. The GBIF Secretariat seeks information from all Participants on planned activities and commitments which may help to advance the work of other Participants or GBIF globally – examples may include funding for workshops; committed resources to develop tools, standards or best practices; mentoring actions; etc. These will be recorded as part of the overall GBIF Work Programme and updates will be presented in the GBIF annual report. A shared Implementation Plan also offers the opportunity for GBIF (either the Secretariat or Participants) to develop concept notes to seek supplementary funding to target currently unfunded or underfunded areas. The annual Capacity Enhancement Support Programme budget includes only limited funds, but existing supplementary funds (in particular BID and BIFA) align with these funds and leverage CESP tools and processes. Future supplementary funds should follow a similar model.

@@ -1,0 +1,47 @@
+=== Activity 5d: Assess impact
+
+==== Tasks
+[lowerroman]
+. Develop sustainable approach to literature tracking
+. Automate detection and reporting of use of GBIF DOIs
+. Provide mechanisms to report and track uses of data and grey literature
+. Develop a valuation for the services delivered by the GBIF network
+
+==== 2019 Progress
+
+It has now been 20 years since the OECD Megascience Forum recommended the establishment of a Global Biodiversity Information Facility and a systematic review of GBIF had not been undertaken since 2005. A contractor, CODATA, which led the first review of GBIF, was hired after GB25 to review GBIF’s operation, services, governance and place within the broader landscape of biodiversity-related organizations. The review is near completion and will be presented to the GB26 in October.
+
+==== 2019 Participant contributions
+
+* *Canadensys*: Anne Bruneau and Carole Sinou have been interviewed for the external review of GBIF.Did something really important.
+
+* *Colombia*: Use of GBIF API to incorporate in the  monthly reports citation of datasets by publishers. Example June: https://datastudio.google.com/u/0/reporting/1yqaSRnp8ANAjZ488CAg1Zlv_sAYQGPiS/page/Ge2V.
+
+* *iDigBio*: iDigBio conducts an annual survey of its internal team as well as the collections community, broader scientific community, partners, stakeholders, and others interested in the national digitization effort. The survey is conducted to help track progress toward goals, identify community needs, solicit community feedback, and measure the impact of iDigBio’s activities. iDigBio tracks data use in literature and publishes graphs on its website showing publications resulting from ADBC funding.
+
+* *South Africa*: The efforts to reinforce the data-science-policy value chain through the ABC projects and the Foundational Biodiversity Information Programme of SANBI, will continue into 2019.
+
+* *Spain*: The Spanish Atlas has added DOI support for occurrence data downloads. It also downloads a file with providers that must be cited.
+
+* *Sweden*: At the national level GBIF-Sweden continuously evaluates impact.
+
+==== 2020 Work items
+
+*	Implement recommendations of the 20-year review and use it as a basis for the development of the next five-year strategic plan for the period 2022–2026.
+*	Contract out study of use of GBIF-mediated data in the academic literature with a goal to identify areas of impact, links to research funding sources and networks of researchers. This information will be used to fine-tune GBIF value proposition message and align Work Programme to further impact (€20,000). 
+
+==== 2020 Participant plans
+
+* *iDigBio*: iDigBio will continue to conduct its annual community survey. iDigBio will continue to track and publish data use statistics.
+
+* *South Africa*: The efforts to reinforce the data-science-policy value chain through the ABC projects and the Foundational Biodiversity Information Programme of SANBI, will continue into 2019.
+
+* *Sweden*: At the national level GBIF-Sweden continuously evaluates impact.
+
+==== Rationale
+
+GBIF Participants require clear evidence of the benefits arising from investments in national- scale content mobilization and from GBIF global activity. At present, the main source of evidence presented derives from monitoring of published literature to identify uses of GBIF within research. This activity has been reported through annual GBIF Science Reviews and clearly demonstrates growing use of GBIF in research. Monitoring the literature in this way is time-consuming, and becomes more so as the relevant literature increases. A sustainable approach is required for future monitoring of this kind. GBIF now issues and promotes Digital Object Identifiers for data downloads and expects that these can be used both to simplify discovery and to improve the detail offered to Participants and data publishers on some uses of data. Participants also require more information on non-research uses of GBIF infrastructure, particularly in various kinds of government or industry assessments. A broader review of costs and benefits arising from GBIF investment would be valuable for Participants arguing continued engagement within GBIF and other countries considering Participation.
+
+==== Approach
+
+The GBIF Secretariat will lead a consultation with Participants on the level of detail desired from literature tracking and possible approaches to maintain this as a shared task across the network. GBIF.org will be enhanced to present known uses of GBIF DOIs and to ensure that data publishers receive information on such uses. Within the BID programme, GBIF is already seeking reports from funded projects on non-research applications of data. A general model is required to enable Participants easily to contribute examples of such uses and for these to be integrated into GBIF’s overall reporting on usage. Several countries have requested information on known costs and benefits from GBIF investment. The Secretariat wishes to identify one or more Participants interested in leading case study investigations to value GBIF benefits at national scale and to assist with developing general recommendations for a suitable way for GBIF to track and report this value.

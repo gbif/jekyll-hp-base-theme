@@ -1,0 +1,8 @@
+https://docs.gbif.org/documentation-guidelines/[image:https://docs.gbif.org/documentation-guidelines/gbif-document-shield.svg[GBIF Document]]
+https://builds.gbif.org/job/doc-2020-work-programme/lastBuild/console[image:https://builds.gbif.org/job/doc-2020-work-programme/badge/icon[Build status]]
+
+= GBIF Implementation Plan 2017–2021 and Annual Work Programme 2020
+
+Repository for the source for the document https://docs.gbif.org/2020-work-programme/en/[GBIF Implementation Plan 2017–2021 and Annual Work Programme 2020].
+
+Outputs can be designed as needed, but generated HTML and PDF outputs are based on the compilation parameters defined in the file [[index.en.adoc]] in this repository.

@@ -1,0 +1,127 @@
+=== Activity 1b: Strengthen skills
+
+==== Tasks
+[lowerroman]
+. Develop collaborative help desk capability – including discussion groups, support materials and FAQs
+. Articulate training and capacity enhancement activities around a single, global curriculum for GBIF
+. Deliver explainer texts and videos to support self-directed instruction and learning
+
+==== 2019 Progress
+
+The Secretariat continues to improve current and develop new training materials as well as standardized arrangements for setting up training workshops based on re-usable curricula in key skills related to GBIF participation. This work is accomplished in close collaboration with trainers and mentors from the GBIF community, who contribute their time and expertise at little or no cost to GBIF’s core budget. The capacity enhancement programmes (e.g. BID, BIFA and CESP and GBIF involvement in other externally-led projects) are major motivating factors for the Secretariat to improve materials and support a growing community of practice.
+
+Two ways to measure the value of this investment in generating training materials are, first, the increased number of volunteer mentors and trainers across the network, which now stands at 93 in total, with 58 involved in the BID programme. Second, these programmes have sparked a sharp increase in both the number of data publishers and the amount of data from countries and regions not previously engaged in biodiversity data sharing, with the BID programme adding 90 new publishers from sub-Saharan Africa, the Caribbean and the Pacific. Together, with organizations in these regions that previously shared data, the new publishers introduced through the BID programme have added nearly 1.3 million occurrence records, filling critical knowledge gaps by increasing in the percentage of data for a country being published within that country and adding records for 1,194 species listed as threatened in the IUCN Red List.
+
+Multiple training events involving the Secretariat and community mentors and trainers occurred or are planned in 2019, including the following:
+
+* ‘Train the mentors’ event to support data mobilization training within the BioDATA project covering Eastern Europe, the Caucasus and Central Asia (Belarus, February)
+* Training course on data skills within the BioDATA project (Tajikistan, June)
+* Training sessions on establishing a GBIF Participant Node, including a focus on the benefits of GBIF participation, at the BID regional meetings in the Caribbean (Trinidad and Tobago, June), Pacific (Fiji, August) and Africa (Cameroon, September)
+* Capacity enhancement workshop on data mobilization for projects selected under the Biodiversity Information Fund for Asia (BIFA), as well as for GBIF nodes in Asia (Viet Nam, July)
+& Training on development of GBIF Participant Nodes, offered to all node managers as part of the GB26 series of meetings (Netherlands, October)
+* Capacity enhancement workshop on data use for decision making for participants in GIZ-funded project to improve biodiversity information management in southeast Europe (Bosnia and Herzegovina, November/December to be confirmed)
+* The BioDATA project focused on developing skills in biodiversity data management and data publishing for undergraduate and postgraduate students from Tajikistan, Belarus, Ukraine, and Armenia. The project is run by the University of Oslo and GBIF Norway and exceeded expectations, with more than 8 mentors and 40 students trained on the GBIF publishing and data skills in two events that took place in Belarus and in Tajikistan.
+
+As well as these training events directly involving the Secretariat, a large number of replicated workshops based on the same materials have been carried out in association with various funded projects as well as node activities. For example, BID participants have already replicated the data mobilization and data use workshops 66 times, extending the impact of the BID programme to nearly 1,500 new students within the corresponding regions.
+
+The Secretariat has continued to update training materials for data mobilization, decision making, for use in on-site training and in development of online modules. For the data use curriculum, GBIFS has been working with IUCN to refine guidance on the use of species occurrence data in species Red List assessments. This is one of the areas of collaboration included in a Memorandum of Cooperation between IUCN and GBIF Secretariat, finalized and signed in July 2019.
+
+The Secretariat has established a community-based Documentation Editorial Panel, aimed at prioritizing, developing and updating a core set of electronic guidance documents to support participation in the GBIF community. The panel includes membership from four global regions, and it will have held three meetings by August 2019. A consortium led by the VertNet team is producing an initial package of new and updated documentation in 2019, namely:
+
+* Basic Guide to Using OpenRefine (in Spanish)
+* Quick Guide to Georeferencing
+* Best Practices in Georeferencing
+* Georeferencing calculator
+* Best Practices for Generalizing Sensitive Species Occurrence Data
+
+===== 2019 Participant contributions
+
+* *Argentina*: Participation as mentor and trainer (national, regional and global), workshops with the Environment Secretariat for training.
+
+* *Australia*: The Atlas co-coordinated the CESP Paris workshop (March 2019) with GBIF France and GBIF Spain which provided training for the GBIF node staff on spatial components of the Atlas including the Spatial Portal. The Atlas developed training materials to support this workshop that can be used for future events. 
+
+* *Belgium*: Completed set of explainer texts in multiple languages: French and Dutch translations.
+
+* *Benin*: One workshop was achieved in May 2019 to train national partners on data mobilization, data uses as well as registration on GBIF site to become more visible on GBIF site. At 5 least NGOs register on GBIF site this year. The master program in biodiversity informatics is doing great in in-depth capacity building of students from Benin and other African countries.
+
+* *Canadensys*: Canadensys, in partnership with iDigBio and GBIF Spain, and partially funded by the CESP program, has developed a series of workshops in Canada in order to strengthen the stakeholders knowledge about data mobilization, data cleaning and data-use. These workshops have been focused on the region, but  the documentation developed can be easily adapted and reused outside North America. The documentation is available in both English and French.
+
+* *Colombia*: Biodiversity Data Publication Training Workshop: This workshop provided information and training for publishing biodiversity data through SiB Colombia and GBIF online platforms. The workshop took place on November 30, 2019 at Corporación Autónoma Regional del Risaralda, Quindío. The objective of the workshop was to support GBIF-Colombia’s partners (particularly environmental authorities and ONG) achieving greater visibility at the national and international level publishing biodiversity data.
+A total of 15 participants attended the workshop. Through the workshop aims, participants were informed on the recent activities of GBIF Colombia and the importance of biodiversity data publishing. Participants were invited to keep supporting GBIF-Colombia in its ongoing and future activities. https://sibcolombia.net/taller-sirap/ Biodiversity Data Publication Training Workshop: This workshop provided information and training for publishing biodiversity data through SiB Colombia and GBIF online platforms. The workshop took place on April 24–26, 2019 at Universidad Industrial de Santander, Bucaramanga. The objective of the workshop was to support GBIF-Colombia’s partners (particularly biological collections) achieving greater visibility at the national and international level publishing biodiversity data. A total of 23 participants attended the workshop. Through the workshop aims, participants were informed on the recent activities of GBIF Colombia and the importance of biodiversity data publishing. Participants were invited to keep supporting GBIF-Colombia in its ongoing and future activities. https://sibcolombia.net/taller-uis-2019/.
+
+* *France*: GBIF France supplied trainers and mentors for workshops organized by GBIF during 2019 under BID and BIFA for capacity enhancement in data publishing and use. Togo and France : Implementation of a capacity enhancement project to increase the online presence of GBIF Togo. Designing a dedicated, dynamic online site, devoted to biodiversity and news from Togo, based on ALA tools.
+
+* *iDigBio*: iDigBio partnered with Environmental Data Initiative (EDI), Earth Science Information Partners (ESIP), DataONE, GBIF, NEON and Arctic Data Center on a Data Help Desk at the 2019 meeting of the Ecological Society of America. The goal was to engage participants one-on-one about their questions, comments and concerns about using these data in their discipline and area of research. iDigBio has developed a strong relationship with The Carpentries. iDigBio staff participate in Carpentries workshops throughout the year. iDigBio also has several staff members trained as Carpentries instructors.
+
+* *Japan*: Provided two workshop for data carpentry and GBIF/S-Net website use.
+
+* *Mexico*: Development website snib.mx for accessing and download occurrences data  and national list of species with distribution in Mexico. Preparation tutorials for use geoportal.conabio.gob.mx it is a geographical portal with thematic maps and occurrences maps.
+In process, collaboration CESP2018_011 “Increasing capacities to develop National Species Checklists in the Latin America and the Caribbean Region”  with the publish “Aves de México” and “Helmintos parásitos de vertebrados” national list of Mexican species.
+
+* *Naturalis Biodiversity Center*: Naturalis contributed to training and capacity enhancement activities using GBIF training materials in the COST Action MOBILISE.
+
+* *Netherlands*: NLBIF has motivated data providers to take more responsibility for their data and manage their data on the NLBIF IPT or start hosting their own IPT.
+
+* *Norway*: BioDATA is a three-year project (2018–2021) managed by GBIF Norway in collaboration with the Norwegian Research School in Biosystematics (ForBio) and the GBIF Secretariat, that is funded by the Norwegian Agency for International Cooperation and Quality Enhancement in Higher Education (DIKU). BioDATA build biodiversity data management skills across the former Soviet Union region and includes partners, students, and training events in Belarus, Tajikistan, Armenia, Ukraine and Norway (see also Activity 1e). BioDATA is reusing GBIF BID training materials and have completed the translation of the training curriculum to Russian together with the GBIF.ru team. A light-weight Raspberry Pi IPT server was developed for BioDATA training purposes at venues with unstable and low bandwidth Internet connections (See also activity 1e and 3b).
+
+* *South Africa*: SANBI-GBIF is recruiting a Biodiversity Informatics Support Officer to support training and engagement portfolio of work. This will support national and regional efforts and tie into GBIF helpdesk requirements as needed.
+
+* *Spain*: The e-learning platform of GBIF.ES has been used to host training modules for BIF and BIFA programmes, as well as for other capacity programmes within the network such as Biodiversity Data Management Skills for Students (BioDATA) and Biodiversity Information Management and Reporting (BIMR), reaching communities in Eurasia and South-East Europe respectively. GBIF Argentina has also used our e-learning platform to offer a course on biodiversity data quality and publication. We trained staff from Secretariat in using the Spanish e-learning platform. GBIF Spain is organizing an online workshop on R open to be run in November 2019 addressed to the national and international community. GBIF Spain co-coordinated with ALA and GBIF France the Living Atlas International Workshop that took place in Paris (March 2019) and used our informatics infrastructure to test the exercises.
+
+* *Sweden*: Representatives from GBIF-Sweden has participated in BID activities as Trainers and mentors (South Africa, Russia, Trinidad/Fiji/Cameroon, the Netherlands (GB26).
+
+* *United States*: Contributed to Marine Biodiversity Observation Network Pole to Pole workshop to train Central and South American country representatives in aligning data to Darwin Core and sharing via IPT.
+
+* *Zimbabwe*: Trained stakeholders (data holders and data users) on GBIF data access – January 2019.
+
+==== 2020 Work items
+
+* Develop joint training resources combining GBIF data mobilization and DNA barcoding, and support pilot workshop with BOLD, CBD and GBIF (€20,000).
+* Explore opportunities for additional training workshops on data use for decision making.
+* The BioDATA project will continue to train students in Armenia and in Ukraine in 2020, and plans for BioDATA II project are in place to further increase the geographic coverage in Northern and Central Asia and Southern Caucasus.
+* Following the recommendations of the community-based Documentation Editorial Panel, continue to commission new documentation, based on late 2019 review and prioritization framework (€30,000).
+* Consolidate online e-learning platform with training resources, to make the modules on data mobilization, data use for decision making and nodes training fully functional as self-instruction modules. Use external contracts for some components as necessary. Develop a strategy to meet future demand for on-site, moderated and self-instructed training. Work in collaboration with key partners, including GBIF nodes, the pool of volunteer trainers and mentors, Nodes Steering Group and numerous international partner projects (€20,000).
+
+===== 2020 Participant plans
+
+* *Australia*: Attendance and involvement in future workshops and efforts to improve documentation.
+
+* *Argentina*: Participation as mentor and trainer (national, regional and global), (start to) publish the National Biodiversity Inventory of the Environment Secretariat on the ALA Portal of Argentina.
+
+* *Belgium*: Complete set of explainer texts in multiple languages: French and Dutch translations.
+
+* *Benin*: “Capacity building through workshops and in the framework of the master program in biodiversity informatics Data mobilization Data uses.
+
+* *Canadensys*: Canadensys will continue to work on developing the documentation about data-cleaning, publication and data-use. This documentation will be published on our community page (https://community.canadensys.net/) but will be available to reuse for other institutions or nodes. This documentation will probably be published as short blog post on specific topics.
+
+* *France*: GBIF France will continue support for capacity enhancement activities and  workshops. 
+
+* *iDigBio*: iDigBio will continue its collaboration and relationship with The Carpentries. iDigBio has several workshops, webinars, symposia, and other events planned.
+
+* *Japan*: Provide two workshop for data carpentry and more use cases to be collected.
+
+* *Naturalis Biodiversity Center*: Further training and capacity enhancement activities will be organized through the COST Action MOBILISE.
+
+* *Norway*: BioDATA will during 2020 organize data mobilization training events in Armenia (April 2020) and in Ukraine (October 2020).
+
+* *South Africa*: SANBI-GBIF will continue to conduct training workshops and develop communities of practice in identified biodiversity informatics areas.
+
+* *Spain*: We will replicate the Data Use For Decision Making workshop for the Iberoamerican community in coordination with other nodes from the region. We will continue to provide support for GBIF coordinated training through our e-learning platform, as well as for other members of the network (e.g. GBIF South Africa). We will work together with the Secretariat to expand the functionalities of the GBIF.ES e-learning platform. We will attend and support future workshops and efforts to improve documentation around the Living Atlases platform.
+
+* *Sweden*: Experiences gained from the above will be integrated in educational and outreach activities nationally and elsewhere. Participation in the development of biodiversity informatics training curricula will continue.
+
+* *United States*: USGS will continue to participate as a teacher in workshops and meetings to advance data curation skills globally and across domains.
+
+* *Zimbabwe*: Data mobilization workshop in January 2020 Data access workshop in March 2020.
+
+==== Rationale
+
+The strengthening of personal skills through international collaboration has been one of the great successes of the GBIF global network. During this implementation period, GBIF must build on this past experience (including the support mechanisms developed for the BID programme) to reinforce efficient training and capacity enhancement across the network.
+
+Central to this is the development of a collaborative help desk capability and the alignment of relevant aspects of national training initiatives with a global curriculum to facilitate direct reuse of resources.
+
+==== Approach
+
+To strengthen key skills, GBIF needs to develop and maintain a comprehensive set of clear reference information and training materials that support all GBIF audiences. Since 2016, the Secretariat has been upgrading documentation to deliver this comprehensive resource, first via concise explanatory text materials (including numerous translations by network members into French, Portuguese, Spanish, Chinese, Japanese and Russian). Some of these text materials will be supported by short videos that present key functional and operational aspects of GBIF. The aim is to deliver a structured set of short, clear, current and complete documents that enable GBIF stakeholders to gain an understanding of relevant aspects of GBIF’s work quickly, including formal Participation, establishing a national or thematic node, planning digitization, mobilizing data, discovering and using data, citing data, among others. This work complements significant activity among Participants to produce information and training materials relevant to particular audiences.
+
+GBIF will organize all these materials to form a curriculum that builds and supports the skills and activities identified in GBIF’s self-assessment tools for nodes and data holders. A core set of these resources should provide new stakeholders with an effective introduction to GBIF’s structure, roles, approaches and solutions. Other more technical resources will provide the additional detail needed by those working in specific areas like digitization, data publishing and use of GBIF-mediated data. The Secretariat will coordinate ongoing maintenance and updates to this curriculum with contributions and translations from the network.

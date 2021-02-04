@@ -1,0 +1,99 @@
+=== Activity 1d: Equip data publishers
+
+==== Tasks
+[lowerroman]
+. Promote and support capacity self-assessment for data holders
+. Promote publication of collection metadata
+. Simplify data publication pathways (spreadsheet-level publishing)
+. Manage IPT feature upgrades
+. Operate hosted IPT infrastructure
+. Consolidate NSG-led endorsement process
+. Develop online collaboration through GBIF.org helpdesk to assist and mentor data publishers
+. Provide clear online reporting of the use of data for data publishers
+. Promote data management plans as key tool for data publishers (Added 2018)
+
+==== 2019 Progress
+
+The Integrated Publishing Toolkit (IPT) is being maintained to deal with bug fixes, translations etc., and version 2.4 was released in 2019. Review of requirements for a revised IPT is on hold until there is greater clarity on how broad a data model for GBIF should be (see Activity 2a). With a new model in place, GBIF will design appropriate tools to map and publish data. The cloud-based IPT infrastructure maintained by the Secretariat continues to provide a fall-back solution for publishers unable to host their own installation or to find a third-party hosting option. As of June 2019, this option was being used by nine publishers associated with the BID programme and one publisher associated with the BIFA programme, sharing a total of 100 datasets. Cloud-hosted IPTs are expected to become more widely used in the coming months, especially with the use of volunteer mentors to provide help desk support for users of this option.
+
+===== 2019 Participant contributions
+
+* *Andorra*: Increase biodiversity data amount related with Andorra.
+
+* *Argentina*: Argentina has a collection catalogue (and institutions) since 2003. We keep updating it.
+
+* *Australia*: The Atlas worked with the collections to identify the trait data available in existing database held in data managements systems by natural history collections. In addition, the Atlas engaged with members of the research community in Australia to discuss use of traits.
+
+* *Belgium*: Hosted IPT installations for two African nodes.
+
+* *Benin*: Capacity building is achieved to data publishers during our workshops in achieving data format, data cleaning, and data publishing as well. They are also assisted and encouraged to register on GBIF site. When they are ready to publish their data, they are intensively assisted by members of GBIF Benin to have data in adequate format, and cleaned before publishing.
+
+* *France*: GBIF France offers data hosting and maintains IPT instances for 14 southern countries. 
+
+* *Germany*: Mobilizing biodiversity data: By mid of 2019 more than 47 million occurrences within 35,000 datasets covering 252 countries and areas have been made available by 40 publishers from Germany. By end of 2019 occurrence data, especially for the vascular plants for Bavaria (“Flora von Bayern Initiative”) will be significantly extended and the dataset for German fungi will be updated. German GBIF-Nodes continue to develop the DCOLL initiative with the aim of digitizing all German natural history collections (large-scale funding approval pending) and collaborate in the corresponding European Initiative (DiSSCo). 
+Continuous support for Data providers using the BioCASe software for data publishing in GBIF, Europeana, GGBN, and other special interest networks. Implementation of further routines for data quality control are implemented in the Diversity Workbench software suite and in JACQ.
+
+* *iDigBio*: As of the end of May 2019, iDigBio had approximately 71 datasets in various stages of mobilization. As part of our data mobilization efforts, iDigBio staff periodically provide IPT help, support, and training to data publishers. iDigBio partnered with Environmental Data Initiative (EDI), Earth Science Information Partners (ESIP), DataONE, GBIF, NEON and Arctic Data Center on a Data Help Desk at the 2019 meeting of the Ecological Society of America. The goal was to engage participants one-on-one about their questions, comments and concerns about using these data in their discipline and area of research.
+
+* *Japan*: New IPT server established, and started to provide data to GBIF. Tools to convert/check data from Excel to DwC provided.
+
+* *Mexico*: Increase number of occurrences through Mexican node at least 500,000 records  planned for the last quarter.
+In progress publish two national checklist “Aves de México” and “Helmintos parásitos de vertebrados” with approximately 2,000 valid species.
+
+* *Naturalis Biodiversity Center*: Naturalis has discussed with GBIF Secretariat to provide an IPT through DiSSCo for serving collection data from countries in Europe participating in DiSSCo that have no GBIF node yet.
+
+* *Netherlands*: Through several workshops NLBIF has engaged with most of the Dutch Natural history museums and explained the ease of DwC and the possibility publication in the Biodiversity Data Journal. In the second half of 2019 this will have follow up and expected contributions of data to GBIF. Furthermore, NLBIF supports and promotes data publishers in hosting their own IPTs. And NLBIF is supporting data publishers to add multimedia files to their GBIF records.
+
+* *Norway*: GBIF Norway provides a helpdesk for data publishers in Norway, and will continue to host datasets for selected data publishers outside of Norway upon request – including data hosting requests from BioDATA partners. 
+GBIF Sweden assisted GBIF Norway with the assessment of proposals and selection of data publishing co-funding grants for mobilizing Norwegian biodiversity data in GBIF. 
+
+* *South Africa*: Strategic engagements/meetings between SANBI-GBIF Node Manager and South African Head of Delegation will continue in order to evolve the South African Node planning, and Africa portfolio of work and to elaborate the Science Diplomacy role SANBI-GBIF can play. Phase 2 (of national data platform) commenced in October 2018 (24 months), which looks at the implementation phase of the NBIS.
+
+* *Spain*: We are using our IPT installation in test mode to help other Nodes and providers in the data publication process.
+
+* *Sweden*: GBIF-Sweden hosts IPT installations of successively more data providers nationally.
+
+* *United States*: Worked directly with new data publishers to align their data to Darwin Core and share it via IPT and provide support and guidance on the use and implementation of the IPT, data preparation, and Darwin Core implementation as needed/requested.
+
+==== 2020 Work items
+
+*	Promote wider editing of the GBIF registry and the shared help desk activities; including node staff initiating and diagnosing dataset crawling / ingestion.
+*	Complete implementation (if not finished in 2019) and develop processes to allow open editing of shared vocabularies used in data interpretations of the GBIF ingestion pipelines (e.g. habitat types, occurrence status, etc…).
+*	Create system of list management, similar to bulk email, to communicate to a larger section of the GBIF community for compliance and notifications. This includes a twice-yearly mandatory communication with data publishers in compliance with General Data Protection Regulation (GDPR: EU privacy regulations) and explore services for publishers to opt-in to receive push notifications for new citations.
+*	Provide comprehensive guidance and support services to lower the technical threshold of data-hosting options. Clearly document the benefits and implications of each option including aspects of operational cost, deployment model (local/cloud/GBIF-provided) and expectation of users. Use of volunteer mentors will be promoted to enhance help desk services.
+
+===== 2020 Participant plans
+
+* *Andorra*: We plan to keep working of gather biodiversity data of Andorra as much as possible. Another goal will be make to know GBIF in Andorra and so increase the number of entities interested in publishing their data in the GBIF portal.
+
+* *Argentina*: Argentina has a collection catalogue (and institutions) since 2003. We keep updating it. Try to reduce the number of IPT to centralize all the data sets in one IPT.
+
+* *Australia*: Develop a community of practice in the management of trait information. Develop a roadmap for trait mobilization activities.
+
+* *Belgium*: Host IPT installations.
+
+* *Benin*: Capacity building in data mobilization and data uses.
+
+* *Canadensys*: If needed, our team can help as mentor or as tester for the cloud-hosted IPT.
+
+* *France*: GBIF France will continue to support data hosting and publishing services for southern countries.
+
+* *Germany*: Independent of the success of the DCOLL Initiative, German GBIF Nodes will continue to support digitization efforts in collections and publications of observation datasets. Expected are significantly increased numbers in occurrence data of vascular plants, further digitization of German collections, fully referenced diatom data from the of the German Barcode of Life Initiative and further improvements in the JACQ (Virtual herbaria) and Diversity Workbench software. Continuing BioCASe Helpdesk. Implementation of ABCD 3.0 in BioCASe and beyond.
+
+* *iDigBio*: iDigBio is currently in a sustainability planning process. As part of these efforts, iDigBio will evaluate data holder capacity self assessment as a method of improving our ongoing data mobilization processes.
+
+* *Netherlands* NLBIF will continue the 2019 activities.
+
+* *South Africa*: SANBI-GBIF hosts an IPT which supports both national and regional data publishing.  This includes helpdesk support.
+
+* *Spain*: GBIF Spain will continue to offer online support to data publishers also outside Spain in using IPT. We will assist GBIF Zimbabwe to configure and maintain its own IPT.
+
+* *Sweden*: GBIF-Sweden will continue to offer services and support for data publishers covering all kinds of data. We expect progress also within the field of molecular data publication.
+
+==== Rationale
+
+Data publishers are an essential component of the GBIF network as they share their content through the common infrastructure. More than 800 data publishers actively distribute datasets through GBIF.org, and their ranks increase steadily. Publishers from different parts of the world often face unique challenges, though common themes emerge. These problems range from lack of data publishing experience or skills, lack of equipment, language barriers, difficulties in managing data hosting facilities, and the inability to publish high-quality data or curate data into the future. The Integrated Publishing Toolkit (IPT) requires ongoing improvements and enhancements, including the establishment of hosted instances that reduce the technical burden on data publishers.
+
+==== Approach
+
+Following the model of the self-assessment tool for node managers, the Secretariat has developed a self-assessment tool for data publishers as part of the support for the BID programme, which will guide the work with collection managers and other data holders to assess and prioritize areas for capacity enhancement or investment. The Secretariat already operates instances of the IPT that data publishers lacking their own infrastructure may use, and Participants are encouraged to deploy instances of the IPT or other GBIF-compatible data publishing software to support data holding institutions. Planned enhancements to the IPT will simplify publishing pathways using spreadsheet templates as an alternative for the less advanced data publishers. GBIF will improve reporting to data publishers on both quality aspects of their data and uses of data documented through download DOI citations.
