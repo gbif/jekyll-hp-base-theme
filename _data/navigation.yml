@@ -2,9 +2,8 @@
 
 - text: Markdown
   href: /markdown
-- text: Page composition
+- text: Layouts
   menu: # Dropdown menu (one level deep only)
-  - text: Layouts    # Title for block of menu items
   - text: Hero  # Name in the menu
     href: /layout/hero # Where should the link take the user
   - text: Page
@@ -19,9 +18,6 @@
     href: /layout/video
   - text: Compose your own pages
     href: /layout/compose
-  - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
-  - text: TOC
-    href: /toc-example
 - text: Data
   href: /data/
 - text: News
