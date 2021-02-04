@@ -1,4 +1,3 @@
-{% assign parallax = include.parallax | default: include.content.parallax | default: false %}
 {% assign fullHeight = include.fullHeight | default: include.content.fullHeight | default: false %}
 {% assign videos = include.videos | default: include.content.videos %}
 {% assign preTitle = include.preTitle | default: include.content.preTitle %}
@@ -31,7 +30,6 @@ themeFeedback.push({title: "Missing video", description: 'You haven\'t configure
 
 
 <section class="floatingHero
-  {% if parallax %} parallax {% endif %} 
   {% if hasBlackText %}{% else %} hasWhiteText {% endif %} 
   {% if hasTextShadow %} hasTextShadow {% endif %} 
   {% if fullHeight %} full-height {% else %} not-full-height {% endif %} 
