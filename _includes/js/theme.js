@@ -169,6 +169,7 @@ for (var i = 1; i <= tocMaxDepth; i++ ) {
 const headlines = Array.from(document.querySelectorAll(headlineSelector));
 var currentHeading = '';
 function highligtToc() {
+  if (tocItems.length <= 0) return;
   var headingPositions = [];
   headlines.forEach(function (x) {
     headingPositions[x.id] = x.getBoundingClientRect().top;
@@ -207,8 +208,9 @@ function scrollToNavItem(selector) {
 }
 
 var hasScrolled;
+highligtToc();
 document.addEventListener('scroll', function() {
-  if (tocItems.length > 0) highligtToc();
+  highligtToc();
   if (!hasScrolled) {
     hasScrolled = true;
     scrollToNavItem('.toc');
