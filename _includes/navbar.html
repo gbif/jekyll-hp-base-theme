@@ -16,12 +16,6 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
 </script>
 {% endunless %}
 
-{% unless site.algae.logo or jekyll.environment == "production" %}
-<script>
-themeFeedback.push({title: "Missing logo", description: "You haven't configured a site logo. The site name will be used instead. To add a logo you need to add <code>site.algae.logo</code> to <code>_config.yml</code>."})
-</script>
-{% endunless %}
-
 <nav class="navbar 
   {% if floating %} navbar--floating{% endif %} 
   {% if hasWhiteText %} navbar--hasWhiteText{% endif %} 
