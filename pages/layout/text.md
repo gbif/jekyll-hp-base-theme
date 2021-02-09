@@ -9,6 +9,15 @@ description: Lorem markdownum spatium limes indefessus neque at orat aestuat
 
 The file behind this page can be explored at [`pages/layout/text.md`](https://github.com/gbif/jekyll-hp-base-theme/blob/master/pages/layout/text.md)
 
+```yml
+---
+layout: default
+title: "layout: default"
+permalink: /layout/text
+description: Lorem markdownum spatium limes indefessus neque at orat aestuat
+---
+```
+
 Lorem markdownum spatium limes indefessus neque *at* orat aestuat, quicquam ne
 flavusque omnibus, virginis socerque sparsos vidimus eundem. Sustinet **ramo
 pontum ut** avus quamquam de trabes vestemque cruorem tremor.

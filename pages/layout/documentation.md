@@ -9,6 +9,17 @@ toc: true
 
 # layout: documentation
 
+```yml
+---
+layout: documentation
+permalink: /layout/documentation # the documentation layout requires you to fill the permalink for it to be highlighted in the side navigation
+title: "layout: documentation"
+description: The file behind this page can be explored at [`pages/layout/documentation.md`](https://github.com/gbif/jekyll-hp-base-theme/blob/master/pages/layout/documentation.md)
+sideNavigation: sideNavigation.guides
+toc: true
+---
+```
+
 The file behind this page can be explored at [`pages/layout/documentation.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/layout/documentation.md)
 
 {% include_relative section.md %}

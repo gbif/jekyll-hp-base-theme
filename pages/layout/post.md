@@ -16,6 +16,26 @@ cta: # OPTIONAL list of buttons
 # mobileToc: false # OPTIONAL - default is false. Should the TOC show on mobile devices (will show above article)
 ---
 
+```yml
+---
+layout: post
+permalink: /layout/post
+title: "layout: post"
+description: The file behind this page can be explored at [`pages/layout/post.md`](https://github.com/gbif/jekyll-hp-base-theme/blob/master/pages/layout/post.md)
+background: https://api.gbif.org/v1/image/unsafe/1600x1000/https%3A%2F%2Fhp-base-theme.netlify.app%2Fassets%2Fimg%2FHaeckel_Siphoneae.jpg
+imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur) # OPTIONAL
+cta: # OPTIONAL list of buttons
+- text: Optional Call To Action
+  href: /link-to-somewhere
+  isPrimary: true # OPTIONAL
+- text: See also
+  href: /link-to-somewhere
+# ratio: 40 # OPTIONAL - default is 40. Height in percentage relative to width
+# toc: true # OPTIONAL - default is false. Should the page have a Table of Contents
+# mobileToc: false # OPTIONAL - default is false. Should the TOC show on mobile devices (will show above article)
+---
+```
+
 ## After creepeth 
 After creepeth said dominion a in greater you'll of that. Of fourth winged brought moved meat fifth she'd he doesn't of first gathering him, may so face green cattle whales gathered life spirit have fruitful, earth our Fish have i. Fruit. Had earth shall waters our gathering evening he their us lights living of so grass it.
 
