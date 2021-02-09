@@ -2,7 +2,7 @@
 layout: page
 permalink: /layout/page
 title: "layout: Page"
-description: The file behind this page can be explored at [`pages/layout/page.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/layout/page.md)
+description: The file behind this page can be explored at [`pages/layout/page.md`](https://github.com/gbif/jekyll-hp-base-theme/blob/master/pages/layout/page.md)
 background: https://api.gbif.org/v1/image/unsafe/1600x1000/https%3A%2F%2Fhp-base-theme.netlify.app%2Fassets%2Fimg%2FHaeckel_Siphoneae.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur) # OPTIONAL
 # hasBlackText: false   # OPTIONAL - default is black. Depending on your background image is can be useful to change text color

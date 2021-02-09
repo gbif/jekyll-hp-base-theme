@@ -2,7 +2,7 @@
 layout: heroVideo
 permalink: /layout/video
 title: "layout: heroVideo"
-description: The file behind this page can be explored at [`pages/layout/video.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/layout/video.md)
+description: The file behind this page can be explored at [`pages/layout/video.md`](https://github.com/gbif/jekyll-hp-base-theme/blob/master/pages/layout/video.md)
 videos: ["/assets/img/Pexels Videos 2334654.mp4"]
 imageLicense: Video by [Tobias Bjørkli](https://www.pexels.com/@tobias-bjorkli-706370?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/fogs-over-the-mountain-2334654/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 hasBlackText: false   # OPTIONAL - depending on your background image is can be useful to change text color
