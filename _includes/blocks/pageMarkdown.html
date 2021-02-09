@@ -3,7 +3,7 @@
 {% assign html = include.html | default: content %}
 
 <script>
-var tocMaxDepth = {{ page.tocMaxDepth | default: 6}};
+document.gbifTocMaxDepth = {{ page.tocMaxDepth | default: 6}};
 </script>
 
 {% if html %}

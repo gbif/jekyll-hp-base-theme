@@ -145,7 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const tocItems = Array.from(document.querySelectorAll('.toc a'));
 function highlightRightNav(heading) {
   tocItems.forEach(function (x) {
     x.classList.remove('active');
@@ -159,15 +158,23 @@ function highlightRightNav(heading) {
   }
 }
 
-tocMaxDepth = tocMaxDepth || 6;
-var headlineSelector = '';
-for (var i = 1; i <= tocMaxDepth; i++ ) {
-  headlineSelector += '.article h' + i + '[id]';
-  if (i < tocMaxDepth) headlineSelector += ',';
+let headlines = [];
+let currentHeading = '';
+let tocMaxDepth = 6;
+const tocItems = Array.from(document.querySelectorAll('.toc a'));
+if (tocItems.length > 0) {
+  tocMaxDepth = document.gbifTocMaxDepth || tocMaxDepth;
+  var headlineSelector = '';
+  for (var i = 1; i <= tocMaxDepth; i++ ) {
+    headlineSelector += '.article h' + i + '[id]';
+    if (i < tocMaxDepth) headlineSelector += ',';
+  }
+
+  headlines = Array.from(document.querySelectorAll(headlineSelector));
+  currentHeading = '';
 }
 
-const headlines = Array.from(document.querySelectorAll(headlineSelector));
-var currentHeading = '';
+
 function highligtToc() {
   if (tocItems.length <= 0) return;
   var headingPositions = [];
