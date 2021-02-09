@@ -14,13 +14,21 @@
   {% endif %}
 
   {% if page.layout == 'home' %}
-    <title>{{ site.title }}</title>
+    <title>{{ site.title | escape }}</title>
   {% else %}
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
   {% endif %}
   
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.author }}">
+  {% if page.description %}
+  <meta name="description" content="{{ page.description | escape }}">
+  {% else %}
+  <meta name="description" content="{{ site.description | escape }}">
+  {% endif %}
+
+  {% if site.author %}
+  <meta name="author" content="{{ site.author | escape }}">
+  {% endif %}
+
 
   <!-- Language versions -->
   {% if page.layout != 'index' and page.lang-ref %}
