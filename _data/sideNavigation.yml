@@ -23,6 +23,10 @@ guides:
     path: /examples/toc
   - title: Docs post header
     path: /examples/docs-post-header
+  - sectiontitle: Compositions
+    section:
+    - title: Hero overlays
+      path: /examples/background-overlay
 - grouptitle: Some Group name
   content:
   - sectiontitle: Level 1a
