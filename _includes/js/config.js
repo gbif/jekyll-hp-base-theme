@@ -9,4 +9,21 @@ if (primaryColor) {
   }});
 }
 
-var siteConfig = {};
+// var siteConfig = {};
+var siteConfig = {
+  rootPredicate: {
+    "type": "and",
+    "predicates": [
+   		{
+        "type":"equals",
+        "key": "countryCode",
+        "value": "DK"
+      },
+      {
+        "type": "equals",
+        "key": "notIssues",
+        "value": "COUNTRY_COORDINATE_MISMATCH"
+      }
+    ]
+  }
+};
