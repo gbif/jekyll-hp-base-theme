@@ -4,8 +4,31 @@
 {% assign ratio = include.ratio %}
 
 {% if background %}
-<div class="feature-img" style="background-image: url('{{ background }}'); {% if ratio %}padding-bottom: {{ratio}}%{% endif %}">
+<div class="feature-img" style="{% if ratio %}padding-bottom: {{ratio}}%{% endif %}">
   {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}
+  {%- if jekyll.environment == "production" -%}
+  <picture>
+      <source type="image/webp"
+              srcset="https://api.gbif.org/v1/image/unsafe/fit-in/2000x/filters:format(webp)/{{ background | absolute_url | url_encode }} 2000w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/1600x/filters:format(webp)/{{ background | absolute_url | url_encode }} 1600w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/1200x/filters:format(webp)/{{ background | absolute_url | url_encode }} 1200w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/1000x/filters:format(webp)/{{ background | absolute_url | url_encode }} 1000w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/1000x/filters:format(webp)/{{ background | absolute_url | url_encode }} 1000w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/800x/filters:format(webp)/{{  background | absolute_url | url_encode }} 800w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/500x/filters:format(webp)/{{  background | absolute_url | url_encode }} 500w">
+    <img  src="{{ background | absolute_url}}" 
+          srcset="https://api.gbif.org/v1/image/unsafe/fit-in/2000x/{{ background | absolute_url | url_encode }} 2000w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/1600x/{{ background | absolute_url | url_encode }} 1600w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/1200x/{{ background | absolute_url | url_encode }} 1200w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/1000x/{{ background | absolute_url | url_encode }} 1000w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/1000x/{{ background | absolute_url | url_encode }} 1000w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/800x/{{  background | absolute_url | url_encode }} 800w, 
+                  https://api.gbif.org/v1/image/unsafe/fit-in/500x/{{  background | absolute_url | url_encode }} 500w"
+                  />
+  </picture>
+  {%- else -%}
+  <img  src="{{ background | absolute_url}}" />
+  {%- endif -%}
   {% if imageLicense %}
   <div class="feature-img-license">
      <div class="feature-img-license-c">© </div>

@@ -49,6 +49,10 @@ exclude:
   - package.json
   - jekyll-theme-algae.gemspec
 
+thumbor:
+  url: "https://api.gbif.org/v1/image"
+  key: "nonsense"
+
 asciidoctor:
   base_dir: :docdir
   safe: unsafe
