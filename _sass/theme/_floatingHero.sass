@@ -1,11 +1,13 @@
 .floatingHero
   position: relative
   height: auto
-  min-height: calc(100vh - #{$navbar-height})
+  // min-height: calc(100vh - #{$navbar-height})
+  min-height: calc(100vh - var(--navbar-height))
   display: flex
   flex-direction: column
   justify-content: center
   text-align: center
+  padding: 50px 0
   &.parallax .feature-img
     background-attachment: fixed
   .feature-img
