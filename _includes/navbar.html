@@ -23,14 +23,14 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
   {% if color %}style="background-color: {{ color }}"{% endif %}
   role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="{{ '/' | append: homeLang | relative_url }}">
+    <a class="navbar-item navbar-logo" href="{{ '/' | append: homeLang | relative_url }}">
       {% if site.algae.logo %}
-        <img src="{{ site.algae.logo | relative_url }}" height="28" />
+        <img class="navbar-logo_img" src="{{ site.algae.logo | relative_url }}" height="28" />
       {% if site.title and site.algae.logoAndTitle %}
-        <span class="navbar_logo-text">{{ site.title }}</span>
+        <span class="navbar-logo_text">{{ site.title }}</span>
       {% endif %}
       {% else %}
-        <span class="navbar-item navbar_logo-text">{{ site.title }}</span>
+        <span class="navbar-item navbar-logo_text">{{ site.title }}</span>
       {% endif %}
     </a>
 
