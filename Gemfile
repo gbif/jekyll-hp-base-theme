@@ -24,9 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-asciidoc"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
-  gem "ruby-thumbor"
-  gem "yaml"
-  gem "jekyll-thumbor", git: "https://github.com/MortenHofft/jekyll-thumbor", ref: '70a4068' # https://bundler.io/guides/git.html
+  gem "jekyll-thumbor", git: "https://github.com/MortenHofft/jekyll-thumbor"#, ref: 'f430d42' # https://bundler.io/guides/git.html
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
