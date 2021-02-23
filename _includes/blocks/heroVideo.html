@@ -37,7 +37,7 @@ themeFeedback.push({title: "Missing video", description: 'You haven\'t configure
     style="{% if overlayColor %} color: {{ overlayColor }}; {% endif %} 
     {% if height %} height: auto; min-height: {{ calcHeight }}; {% endif %} ">
     <div class="feature-img">
-      <video id="heroVideo" preload="auto" autoplay="true" muted loop="" style="left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%; position: absolute; object-fit: cover;">
+      <video id="heroVideo" preload="auto" autoplay="true" muted loop="">
         {% for source in videos %}
         <source src="{{ source }}">
         {% endfor %}
