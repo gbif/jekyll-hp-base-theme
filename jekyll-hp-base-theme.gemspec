@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "gbif-jekyll-theme-algae"
+  spec.name          = "jekyll-hp-base-theme"
   spec.version       = "0.1.0"
   spec.authors       = ["GBIF Secretariat"]
   spec.email         = ["informatics@gbif.org"]
 
   spec.summary       = "Jekyll theme for research project websites"
-  spec.homepage      = "https://github.com/gbif/jekyll-theme-algae"
+  spec.homepage      = "https://github.com/gbif/jekyll-hp-base-theme"
   spec.license       = "Apache License 2.0"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
