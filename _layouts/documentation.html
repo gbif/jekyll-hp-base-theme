@@ -13,7 +13,19 @@ composition:
   {% endfor %}
 {% endif %}
 
-<div class="documentation">
+<div class="documentation" id="documentation">
+  <a
+    role="button"
+    id="sidebarBurger"
+    class="sidebar-burger navbar-burger burger menu-toggle"
+    aria-label="menu"
+    aria-expanded="false"
+    data-target="documentation"
+  >
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
   <aside id="pageNavbar" class="documentation-sidebar pageNavbar menu">
     {% if page.sideNavigation %}
       {% for group in pageNavigationContent %}

@@ -19,6 +19,31 @@
     &.is-expanded
       display: block
 
+.sidebar-burger 
+  display: none
+
+@media screen and (max-width: $tablet)
+  .documentation.is-active
+    display: block
+    .pageNavbar
+      display: block
+      z-index: 10
+      border: 1px solid #ddd
+      box-shadow: 0 0 500px 1000px #00000055
+  .pageNavbar
+    display: none
+  .sidebar-burger
+    display: block
+    position: fixed
+    right: 0
+    width: 2rem
+    top: 5rem
+    z-index: 10
+    width: 2.25rem
+    height: 2.25rem
+    box-shadow: 0 0 3px 2px #88888840
+    margin: 1rem
+    background: white
 .documentation
   display: flex
   flex-direction: row
@@ -27,3 +52,4 @@
   overflow-wrap: anywhere
   &-content
     width: 100%
+

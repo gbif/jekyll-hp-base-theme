@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.menu-toggle'), 0);
 
   // Check if there are any navbar burgers
   // Copied verbatim, but why check when it is a foreach loop. Does some browsers return null instead of empty array?
@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   }
-
 });
 
 
