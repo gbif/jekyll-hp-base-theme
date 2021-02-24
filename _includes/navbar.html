@@ -56,14 +56,19 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
       {% for item in navigation %}
         {% if item.menu %}
         <div class="navbar-top-item navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link"> {{ item.text }} </a>
-
+          <a
+              class="navbar-top-item navbar-item {% if item.href == page.url %} active{% endif %}"
+              {% if item.href %} href="{{ item.href | relative_url }}"{% endif %}
+            >
+            {{ item.text }}
+          </a>
+          
           <div class="navbar-dropdown">
             {% for subitem in item.menu %}
               {% if subitem.href %}
                 <a
                   href="{{ subitem.href | relative_url }}"
-                  class="navbar-item {% if subitem.href == page.url %} active{% endif %}"
+                  class="navbar-item {% if subitem.href == page.url %}active{% endif %}"
                 >
                   {{ subitem.text }}
                 </a>
@@ -77,7 +82,7 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
         </div>
         {% else %}
           <a
-            class="navbar-top-item navbar-item"
+            class="navbar-top-item navbar-item {% if item.href == page.url %}active{% endif %}"
             href="{{ item.href | relative_url }}"
           >
           {{ item.text }}
