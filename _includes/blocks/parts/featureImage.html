@@ -2,32 +2,44 @@
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
 {% assign href = include.href | default: include.content.href %}
 {% assign ratio = include.ratio %}
+{% assign useBackgroundImage = include.useBackgroundImage %}
 
 {% if background %}
-<div class="feature-img" style="{% if ratio %}padding-bottom: {{ratio}}%{% endif %}">
+<div class="feature-img" style="{% if useBackgroundImage %}background-image: url('{{ background }}'); {% endif %}{% if ratio %}padding-bottom: {{ratio}}%{% endif %}">
   {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}
-  {%- if site.thumbor -%}
-  <picture>
-      <source type="image/webp"
-              srcset="{% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 2000 %} 2000w, 
-                      {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1600 %} 1600w, 
-                      {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1200 %} 1200w, 
-                      {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1000 %} 1000w, 
-                      {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 800 %} 800w, 
-                      {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 500 %} 500w"
-                      >
-    <img  src="{{ background | absolute_url}}" 
-          srcset="{% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 2000 %} 2000w, 
-                  {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1600 %} 1600w, 
-                  {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1200 %} 1200w, 
-                  {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1000 %} 1000w, 
-                  {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 800 %} 800w, 
-                  {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 500 %} 500w"
-                  />
-  </picture>
-  {%- else -%}
-  <img  src="{{ background | absolute_url}}" />
-  {%- endif -%}
+
+  {% if useBackgroundImage != true %}
+    {% if site.thumbor %}
+    <picture>
+        <source type="image/webp"
+                srcset="{% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 2000 %} 2000w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1600 %} 1600w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1200 %} 1200w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1000 %} 1000w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 800 %} 800w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 500 %} 500w,
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 10 %} 10w"
+                {% if include.sizes %}
+                sizes="{{ include.sizes }}"
+                {% endif %}
+                        >
+      <img  src="{{ background | absolute_url}}" 
+            srcset="{% thumbor {{background | absolute_url}}, fit_in, width: 2000 %} 2000w, 
+                    {% thumbor {{background | absolute_url}}, fit_in, width: 1600 %} 1600w, 
+                    {% thumbor {{background | absolute_url}}, fit_in, width: 1200 %} 1200w, 
+                    {% thumbor {{background | absolute_url}}, fit_in, width: 1000 %} 1000w, 
+                    {% thumbor {{background | absolute_url}}, fit_in, width: 800 %} 800w, 
+                    {% thumbor {{background | absolute_url}}, fit_in, width: 500 %} 500w,
+                    {% thumbor {{background | absolute_url}}, fit_in, width: 10 %} 10w"
+            {% if include.sizes %}
+            sizes="{{ include.sizes }}"
+            {% endif %}
+                    />
+    </picture>
+    {% else %}
+    <img  src="{{ background | absolute_url}}" />
+    {% endif %}
+  {% endif %}
   {% if imageLicense %}
   <div class="feature-img-license">
      <div class="feature-img-license-c">© </div>
