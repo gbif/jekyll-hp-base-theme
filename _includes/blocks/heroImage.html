@@ -12,6 +12,8 @@
 {% assign height = include.height | default: include.content.height | default: "100vh" %}
 {% assign floatingNavbar = page.navbar.floating | default: site.algae.navbar.floating | default: false %}
 
+{% assign useBackgroundImage = parallax %}
+
 
 {%- capture calcHeight -%}
   {% if floatingNavbar %}
@@ -38,7 +40,7 @@ themeFeedback.push({title: "Missing background", description: "You haven't confi
   overlay" 
     style="{% if overlayColor %} color: {{ overlayColor }}; {% endif %} 
     {% if height %} height: auto; min-height: {{ calcHeight }}; {% endif %} ">
-  {% include blocks/parts/feature.html content=include.content %}
+  {% include blocks/parts/feature.html content=include.content useBackgroundImage=useBackgroundImage %}
 </section>
 
 {% comment %}
