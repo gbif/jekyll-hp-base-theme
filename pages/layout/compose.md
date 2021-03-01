@@ -21,6 +21,8 @@ composition:
   data: compose.features
 - type: latestPosts
   data: compose.examples.latestPostsExample
+- type: blank
+  data: compose.examples.blank
 - type: markdown
   data: compose.markdownBlock
 - type: product
