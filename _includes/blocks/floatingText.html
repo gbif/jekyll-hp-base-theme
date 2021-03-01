@@ -18,5 +18,5 @@
   {% if fullHeight %} full-height {% else %} not-full-height {% endif %} 
   overlay" 
     style="{% if overlayColor %} color: {{ overlayColor }}; {% endif %}">
-  {% include blocks/parts/feature.html content=include.content %}
+  {% include blocks/parts/feature.html content=include.content useBackgroundImage=true %}
 </section>
