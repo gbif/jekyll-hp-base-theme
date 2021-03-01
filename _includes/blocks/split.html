@@ -1,3 +1,4 @@
+{% assign sizes = "(min-width: 1000px) 50vw, 1px" %}
 <section class="splitBanner {% if include.content.reverse %}splitBanner--reverse{% endif %}">
-  {% include blocks/parts/feature.html content=include.content %}
+  {% include blocks/parts/feature.html content=include.content sizes=sizes %}
 </section>
