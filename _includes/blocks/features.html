@@ -1,3 +1,4 @@
+{% assign sizes = "(max-width: 500px) 100vw, 360px" %}
 <section class="features">
   {% if include.content.title or include.content.description %}
   <div class="features-intro">
@@ -7,7 +8,7 @@
   <div class="feature-cards has-{{include.content.features.size}}-elements">
     {% for feature in include.content.features %}
     <article class="feature">
-      {% include blocks/parts/feature.html content=feature %}
+      {% include blocks/parts/feature.html content=feature sizes=sizes %}
     </article>
     {% endfor %}
   </div>
