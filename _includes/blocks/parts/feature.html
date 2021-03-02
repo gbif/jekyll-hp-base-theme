@@ -2,13 +2,17 @@
 {% assign title = include.title | default: include.content.title %}
 {% assign description = include.description | default: include.content.description %}
 {% assign background = include.background | default: include.content.background %}
-{% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
 {% assign cta = include.cta | default: include.content.cta %}
 {% assign center = include.center | default: include.content.center %}
 {% assign categories = include.categories | default: include.content.categories %}
 {% assign href = include.href | default: include.content.href %}
 {% assign ratio = include.ratio %}
 {% assign useBackgroundImage = include.useBackgroundImage | default: false %}
+
+{% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
+{% if include.imageLicense == false %}
+  {% assign imageLicense = include.imageLicense %}
+{% endif %}
 
 {% include blocks/parts/featureImage.html background=background href=href imageLicense=imageLicense ratio=ratio useBackgroundImage=useBackgroundImage sizes=include.sizes%}
 {% include blocks/parts/featureContent.html 
