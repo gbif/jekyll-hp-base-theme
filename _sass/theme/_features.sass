@@ -39,17 +39,22 @@ $card-double-size: ($card-width * 2 + $card-gap * 2)
     opacity: 1
     .feature-img-license-text
       display: block
+    .feature-img-license-c
+      display: none
   a
     color: inherit
     text-decoration: underline
   .feature-img-license-c
-    background: rgba(0,0,0,.5)
+    color: rgba(0,0,0,.5)
+    .icon
+      width: 1rem
+      height: 1rem
   .feature-img-license-text
     display: none
     background: rgba(0,0,0,.5)
+    padding: 3px
   >div
     line-height: 1em
-    padding: 3px
 .feature-content
   @extend .content
   &--centered
