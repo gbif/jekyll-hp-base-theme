@@ -14,6 +14,7 @@ cta: # OPTIONAL list of buttons
 # ratio: 40 # OPTIONAL - default is 40. Height in percentage relative to width
 # toc: true # OPTIONAL - default is false. Should the page have a Table of Contents
 # mobileToc: false # OPTIONAL - default is false. Should the TOC show on mobile devices (will show above article)
+# thumbnail: /assets/images/some-image.jpg # to have more control over how posts appear in cards, then you can overwrite the image using the thumbnail property
 ---
 
 ```yml
@@ -33,6 +34,7 @@ cta: # OPTIONAL list of buttons
 # ratio: 40 # OPTIONAL - default is 40. Height in percentage relative to width
 # toc: true # OPTIONAL - default is false. Should the page have a Table of Contents
 # mobileToc: false # OPTIONAL - default is false. Should the TOC show on mobile devices (will show above article)
+# thumbnail: /assets/images/some-image.jpg # to have more control over how posts appear in cards, then you can overwrite the image using the thumbnail property
 ---
 ```
 

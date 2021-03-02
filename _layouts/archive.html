@@ -13,10 +13,11 @@ remarks: See also page.layout == 'archive' in footer.html
   <div class="feature-cards has-{{ posts.size }}-elements">
     {% for post in posts %}
       <article class="feature" data-categories="{% for category in post.categories %}{{ category | strip }}|{% endfor %}">
-      {% assign description = post.excerpt | strip_html | truncatewords: 20  %}
-      {% assign date = post.date | date: "%B %d, %Y"  %}
-      {% assign href = post.url | relative_url  %}
-        {% include blocks/parts/feature.html content=post description=description preTitle=date href=href %}
+        {% assign description = post.excerpt | strip_html | truncatewords: 20  %}
+        {% assign date = post.date | date: "%B %d, %Y"  %}
+        {% assign href = post.url | relative_url  %}
+        {% assign background = post.thumbnail | default: post.background %}
+        {% include blocks/parts/feature.html content=post description=description preTitle=date href=href background=background %}
       </article>
     {% endfor %}
   </div>
