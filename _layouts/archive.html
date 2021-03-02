@@ -17,7 +17,7 @@ remarks: See also page.layout == 'archive' in footer.html
         {% assign date = post.date | date: "%B %d, %Y"  %}
         {% assign href = post.url | relative_url  %}
         {% assign background = post.thumbnail | default: post.background %}
-        {% include blocks/parts/feature.html content=post description=description preTitle=date href=href background=background %}
+        {% include blocks/parts/feature.html content=post description=description preTitle=date href=href background=background imageLicense=false %}
       </article>
     {% endfor %}
   </div>
