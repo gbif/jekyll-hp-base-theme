@@ -6,8 +6,6 @@
 
 {% if background %}
 <div class="feature-img" style="{% if useBackgroundImage %}background-image: url('{{ background }}'); {% endif %}{% if ratio %}padding-bottom: {{ratio}}%{% endif %}">
-  {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}
-
   {% if useBackgroundImage != true %}
     {% if site.thumbor %}
     <picture>
@@ -40,6 +38,7 @@
     <img  src="{{ background | absolute_url}}" />
     {% endif %}
   {% endif %}
+  {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}
   {% if imageLicense %}
   <div class="feature-img-license">
      <div class="feature-img-license-c">© </div>
