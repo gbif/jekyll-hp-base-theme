@@ -1,6 +1,6 @@
-# GBIF hosted portal theme
+# GBIF Hosted Portal Theme
 
-A jekyll theme for hosted websites - under development
+A Jekyll theme for hosted websites – under development: https://hp-theme.gbif-staging.org/
 
 # install and start
 See https://jekyllrb.com/ for details on using Jekyll
