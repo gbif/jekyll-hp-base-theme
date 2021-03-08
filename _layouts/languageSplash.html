@@ -3,7 +3,7 @@
 {% assign title = include.title | default: page.title %}
 {% assign description = include.description | default: page.description %}
 {% assign background = include.background | default: page.background %}
-{% assign darken = include.darken | default: page.darken %}
+{% assign whiteText = include.whiteText | default: page.whiteText %}
 
 {% assign first4 = background | slice: 0, 4 %}
 {% assign firstLetter = background | slice: 0 %}
@@ -14,7 +14,7 @@
 
 <html>
   {% include head.html %}
-  <body class="language-splash {% if darken %}language-splash--darken{% endif %}"
+  <body class="language-splash {% if whiteText %}language-splash--darken{% endif %}"
     {% if background %}
     style="background-image: {% if isImage %}
         url('{{ background }}')
@@ -24,7 +24,7 @@
     {% endif %}
   >
     <main class="content">
-      <div class="feature-content">
+      <div class="feature-content box">
         {{ content }}
         <div class="m-t-2">
         {% include languageSelector.html %}

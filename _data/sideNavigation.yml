@@ -1,4 +1,8 @@
 guides:
+- grouptitle: Configuration
+  content:
+  - title: Translations
+    path: /translations
 - grouptitle: Layouts
   content:
   - title: Hero
