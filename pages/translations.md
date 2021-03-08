@@ -11,7 +11,7 @@ toc: true
 ## Configure which languages your site supports
 To have a multilingual site you first need to create a file with the languages that you plan to support. The file should be `_data/languages.yml` and contain your variation of
 ```yml
-en: # lanugage code as it will appear in the URL
+en: # language code as it will appear in the URL
   label: English # a label is required
   icon:  # the icon is optional – this one does not have one. It could be a flag emoji, e.g. 🇬🇧
 da:
