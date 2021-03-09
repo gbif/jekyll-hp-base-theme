@@ -33,6 +33,7 @@ themeFeedback.push({title: "Missing background", description: "You haven't confi
 
 
 <section class="floatingHero
+  {% if include.content.klass %} {{ include.content.klass }} {% endif %}
   {% if parallax %} parallax {% endif %} 
   {% if hasBlackText %}{% else %} hasWhiteText {% endif %} 
   {% if hasTextShadow %} hasTextShadow {% endif %} 

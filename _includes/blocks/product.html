@@ -1,4 +1,5 @@
 <section class="product 
+  {% if include.content.klass %} {{ include.content.klass }} {% endif %}
   {% if include.content.reverse %}product--reverse{% endif %}
   {% if include.content.align %}product--align-{{include.content.align}} {% endif %}
   ">

@@ -30,6 +30,7 @@ themeFeedback.push({title: "Missing video", description: 'You haven\'t configure
 
 
 <section class="floatingHero
+  {% if include.content.klass %} {{ include.content.klass }} {% endif %}
   {% if hasBlackText %}{% else %} hasWhiteText {% endif %} 
   {% if hasTextShadow %} hasTextShadow {% endif %} 
   {% if fullHeight %} full-height {% else %} not-full-height {% endif %} 
