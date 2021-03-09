@@ -3,6 +3,8 @@ guides:
   content:
   - title: Translations
     path: /translations
+  - title: Favicon
+    path: /favicon
 - grouptitle: Layouts
   content:
   - title: Hero
