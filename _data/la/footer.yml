@@ -1,0 +1,24 @@
+# Footer content is organized in columns, with the first one reserved for social icons (defined in _config.yml).
+# You can also add a small print license statement at the bottom.
+
+# Columns (the more you add, the narrower they will be)
+columns:
+  - name: Latin partners
+    links:
+    - text: Latin name
+      href: http://example.com
+      new_window: true
+
+  - name: Codus
+    description: | # E.g. funding acknowledgement. Can be Markdown
+      This project is open source. See [`_data/footer.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/footer.yml) to customize the footer.
+    links:
+  
+  - name: Contactumus
+    description: | # E.g. funding acknowledgement. Can be Markdown
+      Social icons links defined in [`_config.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_config.yml)
+      * Street name
+      * 1234 postal code
+      * Country
+    links:
+    connectIcons: true
