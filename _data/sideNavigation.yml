@@ -1,6 +1,8 @@
 guides:
 - grouptitle: Configuration
   content:
+  - title: Intro
+    path: /documentation-intro
   - title: Translations
     path: /translations
   - title: Favicon
@@ -11,6 +13,14 @@ guides:
     path: /navigation
   - title: Footer
     path: /footer
+  - title: Markdown
+    path: /markdown
+  - title: Custom styling
+    path: /styling
+  - title: Data scope
+    path: /data-scope
+  - title: Debugging
+    path: /debugging
 - grouptitle: Layouts
   content:
   - title: Hero

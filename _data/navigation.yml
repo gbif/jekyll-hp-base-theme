@@ -1,7 +1,7 @@
 # Links listed below will be included in your site's navbar (navigation at the top)
 
-- text: Markdown
-  href: /markdown
+- text: Documentation
+  href: /documentation-intro
 - text: Layouts
   menu: # Dropdown menu (one level deep only)
   - text: Hero  # Name in the menu
@@ -18,8 +18,6 @@
     href: /layout/video
   - text: Compose your own pages
     href: /layout/compose
-- text: Styling
-  href: /styling
 - text: Data
   href: /data
 - text: News

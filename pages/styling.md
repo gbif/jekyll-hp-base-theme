@@ -1,11 +1,15 @@
 ---
-title: Styling
-description: How to customize the look and feel
+title: Custom styling
+description: How to customize the your website
 background: /assets/img/Haeckel_Neomeris_annulata2.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 permalink: /styling
-layout: post
+layout: documentation
 toc: true
+sideNavigation: sideNavigation.guides
+composition: # you can extend the documentation layout with a custom composition
+  - type: postHeader
+  - type: pageMarkdown
 ---
 
 You can add custom styles and overwrites as much as you desire. On this page you can see how. 

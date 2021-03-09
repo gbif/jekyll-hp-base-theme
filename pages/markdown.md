@@ -4,8 +4,10 @@ description: You will be writing your content in Markdown. This page has links a
 background: /assets/img/Haeckel_Neomeris_annulata2.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 permalink: /markdown
-layout: post
+layout: documentation
+sideNavigation: sideNavigation.guides
 ---
+# Markdown
 There are many guides for how to write markdown online. They can vary slightly as markdown comes in many flavours. Most things are the same no matter what guide you find. The site is using the [Kramdown parser](https://kramdown.gettalong.org/quickref.html), but guides like [this one](https://www.markdownguide.org/basic-syntax/) is useful nonetheless.
 
 See [`pages/markdown.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/markdown.md) for the raw Markdown of this page. 
@@ -21,7 +23,7 @@ See [`pages/markdown.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-al
 <!-- The curly bracket colon syntax adds classnames to the paragraph - that can be useful when knowing that classes are available in the theme. The theme is build of Bulma . E.g. https://bulma.io/documentation/elements/notification/ -->
 
 {: .notification .is-primary }
-It's generally best to start page/post headings at h2, since the page/post title will already be an h1.
+It's generally best to start page/post headings at h2, since the page/post title will likely already be an `<h1>` provided by the layout
 
 ## Paragraphs
 
