@@ -9,16 +9,6 @@ toc: true
 # Translations
 This page explains how to configure your site to support multiple translations.
 
-## How to translate content
-Content on the hosted portals can be slit in 2 parts:
-
-**The data exploration widgets**
-The data widgets will use [Crowdin](https://crowdin.com/) for translations. The issue to implement this is [hosted-portals/issues/60](https://github.com/gbif/hosted-portals/issues/60). If you need the data exploration components translated, then you should watch/join that project and help translate it.
-
-**Everything else**
-All the content that lives in your project: the menus + the prose pages. How you translate the content is up to you. Just using Github is perfectly okay. If you want to be fancy, then there are tools so help. Such as [Crowdin](https://crowdin.com/) which is what we use for GBIF.org.
-
-
 ## Configure which languages your site supports
 To have a multilingual site you first need to create a file with the languages that you plan to support. The file should be `_data/languages.yml` and contain your variation of
 ```yml
@@ -93,4 +83,11 @@ algae:
   rootLang: en # if you have a multilingual site with a default language, then you should add define the default language here. The value should be the same that you use for the `lang` attribute on your pages and in your `_data/languages.yml`.
 ```
 
+## How to translate content
+Content on the hosted portals can be slit in 2 parts:
 
+### The data exploration widgets
+The data widgets will use [Crowdin](https://crowdin.com/) for translations. The issue to implement this is [hosted-portals/issues/60](https://github.com/gbif/hosted-portals/issues/60). If you need the data exploration components translated, then you should watch/join that project and help translate it.
+
+### Everything else
+All the content that lives in your project: the menus + the prose pages. How you translate the content is up to you. Just using Github is perfectly okay. If you want to be fancy, then there are tools so help. Such as [Crowdin](https://crowdin.com/) which is what we use for GBIF.org.
