@@ -49,6 +49,8 @@ guides:
     section:
     - title: Hero overlays
       path: /examples/background-overlay
+  - title: Custom dataset page
+    path: /example/dataset?key=bf3db7c9-5e5d-4fd0-bd5b-94539eaf9598
 - grouptitle: Some Group name
   content:
   - sectiontitle: Level 1a
