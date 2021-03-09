@@ -27,3 +27,17 @@ The content of top navigation bar is managed in `/_data/navigation.yml` for your
 
 
 If you need more levels of navigation, then you need to be creative. You can use the documentation layout or you can use the feature blocks as a landing page to direct users to sub sections.
+
+## Caveat
+From the [Bulma documentation](https://bulma.io/documentation/components/navbar/)
+
+{: .notification .is-warning }
+The navbar brand is always visible: on both touch devices < 1024px and desktop >= 1024px . As a result, it is recommended to only use a few navbar items to avoid overflowing horizontally on small devices.
+
+That means that if a user provides many top level menu items, then they will not be visible in some browser sizes. So you should test that the breakpoint (the point where the menu switches to a mobile layout) is not too late in your case. If so, then you can either:
+* Change the breakpoint by setting `$navbar-breakpoint: 1200px;` (example value of 1200 pixels) in `/_sass/_main.scss` before importing the theme styles (`@import "theme/_main";`).
+* Rethink your menu structure to have less top level items.
+
+
+
+
