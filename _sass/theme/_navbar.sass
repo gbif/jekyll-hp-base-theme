@@ -10,7 +10,12 @@
 
 @media screen and (max-width: $navbar-breakpoint)
   .navbar
-    background: $navbar-background-color!important
+    // background: $navbar-background-color!important
+    &--hasWhiteText
+      .navbar-logo_text
+        color: white
+      .navbar-burger
+        color: white
 
 @media screen and (min-width: $navbar-breakpoint)
   .navbar
