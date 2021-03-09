@@ -9,6 +9,8 @@ guides:
     path: /dynamic-values
   - title: Navigation
     path: /navigation
+  - title: Footer
+    path: /footer
 - grouptitle: Layouts
   content:
   - title: Hero

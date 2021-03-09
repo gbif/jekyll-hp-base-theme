@@ -25,9 +25,3 @@ columns:
       * Country
     links:
     connectIcons: true
-
-# Small print license statement to add at the bottom of the footer. Can be Markdown
-# Will be prefixed by "© {{ site.author }}" if defined in _config.yml
-# Will be postfixed by "Powered by GBIF"
-license: >
-  You can add a license here as needed
