@@ -6,7 +6,9 @@ guides:
   - title: Favicon
     path: /favicon
   - title: Dynamic values
-    path: dynamic-values
+    path: /dynamic-values
+  - title: Navigation
+    path: /navigation
 - grouptitle: Layouts
   content:
   - title: Hero
