@@ -69,4 +69,21 @@ blank:
         <p>See <a href="https://github.com/gbif/jekyll-theme-algae/blob/master/_data/compose/examples.yml"><code class="language-plaintext highlighter-rouge">_data/compose/markdownBlock.yml</code></a> for the content structure.</p>
       </div>
     </div>
+stats:
+  klass: my-custom-identifier-for-styling
+  title: "type: stats"
+  description: |      # required
+    See [`_data/compose/examples.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/compose/examples.yml#L72) for the content structure.
+  features:
+      # Hard coded value
+    - title: 123
+      description: Viscera mercibus
+      background: /assets/img/icons/validity.png
+      href: /about
+    - title: 567
+      description: Infamataeque priori
+      background: /assets/img/icons/music.png
+    - title: 456,678
+      description: Cruorem tremor
+      background: /assets/img/icons/variability.png
     

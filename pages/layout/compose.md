@@ -23,6 +23,8 @@ composition:
   data: compose.examples.latestPostsExample
 - type: blank
   data: compose.examples.blank
+- type: stats
+  data: compose.examples.stats
 - type: markdown
   data: compose.markdownBlock
 - type: product
