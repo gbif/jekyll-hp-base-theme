@@ -11,10 +11,7 @@ composition:
     What is this?
   </summary>
   <p>
-    This is an example of how one can add custom pages that load data from anywhere. In this case a dataset from the <a href="https://www.gbif.org/developer/summary">GBIF API</a>. We will be happy to help with using the APIs, but what frameworks, design etc is really up to your developers and beyond the scope of the hosted portals.
-  </p>
-  <p>
-    Doing this requires development capacity. Also in terms of maintanence. You should consider carefully and if you decide to progress, then you probably want to build your own instead of doing it within the hosted portals.
+    This is an example of how one can add custom pages that load data from anywhere. In this case a dataset from the <a href="https://www.gbif.org/developer/summary">GBIF API</a>. We will be happy to help with using the APIs.
   </p>
   <p>
     This example is a response to <a href="https://github.com/gbif/hosted-portals/issues/31">/gbif/hosted-portals/issues/31</a>.
