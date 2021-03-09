@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (typeof value === 'number') {
             text = value.toLocaleString(currentLocale);
           }
-          const newContent = document.createTextNode(text);
+          // const newContent = document.createTextNode(text);
           // $el.innerHTML = '';
           // $el.appendChild(newContent);
           $el.textContent = text;

@@ -5,6 +5,8 @@ guides:
     path: /translations
   - title: Favicon
     path: /favicon
+  - title: Dynamic values
+    path: dynamic-values
 - grouptitle: Layouts
   content:
   - title: Hero
