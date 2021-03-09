@@ -8,13 +8,14 @@
 {% assign href = include.href | default: include.content.href %}
 {% assign ratio = include.ratio %}
 {% assign useBackgroundImage = include.useBackgroundImage | default: false %}
+{% assign ignoreThumbor = include.ignoreThumbor | default: false %}
 
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
 {% if include.imageLicense == false %}
   {% assign imageLicense = include.imageLicense %}
 {% endif %}
 
-{% include blocks/parts/featureImage.html background=background href=href imageLicense=imageLicense ratio=ratio useBackgroundImage=useBackgroundImage sizes=include.sizes%}
+{% include blocks/parts/featureImage.html background=background href=href imageLicense=imageLicense ratio=ratio useBackgroundImage=useBackgroundImage sizes=include.sizes ignoreThumbor=ignoreThumbor %}
 {% include blocks/parts/featureContent.html 
   preTitle=preTitle 
   href=href 

@@ -7,7 +7,7 @@
 {% if background %}
 <div class="feature-img" style="{% if useBackgroundImage %}background-image: url('{{ background }}'); {% endif %}{% if ratio %}padding-bottom: {{ratio}}%{% endif %}">
   {% if useBackgroundImage != true %}
-    {% if site.thumbor %}
+    {% if site.thumbor and include.ignoreThumbor != true %}
     <picture>
         <source type="image/webp"
                 srcset="{% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 2000 %} 2000w, 
@@ -35,7 +35,7 @@
                     />
     </picture>
     {% else %}
-    <img  src="{{ background | absolute_url}}" />
+    <img src="{{ background | absolute_url}}" />
     {% endif %}
   {% endif %}
   {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}

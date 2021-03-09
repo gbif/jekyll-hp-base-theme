@@ -10,7 +10,7 @@
   <div class="statistics-cards has-{{include.content.stats.size}}-elements">
     {% for feature in include.content.features %}
     <div class="statistic">
-      {% include blocks/parts/feature.html content=feature sizes=sizes %}
+      {% include blocks/parts/feature.html content=feature sizes=sizes ignoreThumbor=true %}
     </div>
     {% endfor %}
   </div>
