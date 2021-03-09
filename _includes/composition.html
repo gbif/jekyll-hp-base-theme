@@ -8,6 +8,8 @@
       {% for entry in entries %}
         {% assign dataContent = dataContent[entry] %}
       {% endfor %}
+    {% elsif dataBlock.inlineData %}
+      {% assign dataContent = dataBlock.inlineData %}
     {% else %}
       {% assign dataContent = page %}
     {% endif %}
