@@ -16,10 +16,15 @@ cta:
 permalink: /
 composition:
   - type: heroImage
+  - data: home.stats
+    type: stats
+  - data: home.splitExample
+    type: split
   - data: home.cardExample
     type: features
   - data: home.bannerExample2
     type: floatingText
-  - data: home.splitExample
-    type: split
 ---
+
+<iframe src="https://player.vimeo.com/video/473377963" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/473377963">Share biodiversity data through GBIF - an invitation to the private sector</a> from <a href="https://vimeo.com/gbif">GBIF</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

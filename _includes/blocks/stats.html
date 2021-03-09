@@ -1,0 +1,17 @@
+{% assign sizes = "(max-width: 500px) 100vw, 360px" %}
+<section  class="statistics {% if include.content.klass %} {{ include.content.klass }} {% endif %}" 
+          style="{% if include.content.background %} background: {{ include.content.background }}; {% endif %}
+                  {% if include.content.color %} color: {{ include.content.color }}; {% endif %}">
+  {% if include.content.title or include.content.description %}
+  <div class="statistics-intro">
+    {% include blocks/parts/feature.html content=include.content %}
+  </div>
+  {% endif %}
+  <div class="statistics-cards has-{{include.content.stats.size}}-elements">
+    {% for feature in include.content.features %}
+    <div class="statistic">
+      {% include blocks/parts/feature.html content=feature sizes=sizes %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
