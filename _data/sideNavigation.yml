@@ -7,20 +7,24 @@ guides:
     path: /translations
   - title: Favicon
     path: /favicon
-  - title: Dynamic values
-    path: /dynamic-values
   - title: Navigation
     path: /navigation
   - title: Footer
     path: /footer
-  - title: Markdown
-    path: /markdown
   - title: Custom styling
     path: /styling
   - title: Data scope
     path: /data-scope
   - title: Debugging
     path: /debugging
+- grouptitle: Creating content
+  content:
+  - title: Markdown
+    path: /markdown
+  - title: Dynamic values
+    path: /dynamic-values
+  - title: Video
+    path: /video
 - grouptitle: Layouts
   content:
   - title: Hero
@@ -51,33 +55,3 @@ guides:
       path: /examples/background-overlay
   - title: Custom dataset page
     path: /example/dataset?key=bf3db7c9-5e5d-4fd0-bd5b-94539eaf9598
-- grouptitle: Some Group name
-  content:
-  - sectiontitle: Level 1a
-    section:
-    - path: /some-unique-url
-      title: Strawberries
-    - path: /some-unique-url
-      title: Tomatoes
-  - sectiontitle: Level 1b
-    section:
-    - sectiontitle: Level 2a
-      section:
-      - title: Water
-        path: /some-unique-url
-      - title: Soda
-        path: /some-unique-url
-    - sectiontitle: Level 2b
-      section:
-      - path: /some-unique-url
-        title: Something A
-      - path: /some-unique-url
-        title: Something B
-      - path: /some-unique-url
-        title: Something C
-    - sectiontitle: Level 2c
-      section:
-      - path: /some-unique-url
-        title: Level 3a
-      - path: /some-unique-url
-        title: Level 3b
