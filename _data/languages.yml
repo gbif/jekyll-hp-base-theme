@@ -3,3 +3,4 @@ en:
   icon:  # optional
 la:
   label: Latin
+  archive_permalink: /la/archive/
