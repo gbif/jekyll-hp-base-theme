@@ -83,6 +83,47 @@ algae:
   rootLang: en # if you have a multilingual site with a default language, then you should add define the default language here. The value should be the same that you use for the `lang` attribute on your pages and in your `_data/languages.yml`.
 ```
 
+## Where is the post archive
+In `_config.yml` there is a field called `archive_permalink` that is used to specify where your list of post items are located. We use that for linking when someone clicks a category tag on a post.
+
+```yml
+# in _config.yml you can set the default which will be used if nothing else is specified
+algae:
+  archive_permalink: /posts/  
+```
+
+But those can vary per language. So if you are running a multilingual site, then you need to provide it per language. You do so in the `_data/languages.yml` file.
+
+```yml
+# english will using the default from `/_config.yml` so we do not need to set it.
+en:
+  label: English
+la:
+  label: Latin
+  archive_permalink: /la/postus-latinicus/
+```
+
+## Default link to translated posts
+As with all files you can configure what url they should have using the [`permalink`](https://jekyllrb.com/docs/permalinks/). But it can be useful to configure it for entire folders. For posts you can do like this:
+
+```yml
+defaults: 
+  - # first a default for the entire _posts folder
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: "/post/:year/:slug/"   # Use /post/yyyy/{filename}/ as permalink for all posts
+      layout: "post"
+  - # then an overwrite for the folder with latin news posts
+    scope:
+      path: "_posts/la" # the default applies to this folder
+      type: "posts" # and only for items of type post
+    values:
+      permalink: "la/postus-latinicus/:year/:slug/"   # Use /la/postus-latinicus/yyyy/{filename}/ as permalink for all posts in the _posts/la folder
+      layout: "post" # and it should always use the post layout unless something else is specified.
+```
+
 ## How to translate content
 Content on the hosted portals can be slit in 2 parts:
 
