@@ -26,31 +26,31 @@ NOTE: 2020 work programme approved by the GBIF Governing Board in Leiden, 21 Oct
 
 This document serves both as the 2020 revision of the <<rationale>> test <<_gbif_implementation_plan_2017_2021>> and also as the GBIF Annual Work Programme 2020. Both elements are based upon the https://www.gbif.org/strategic-plan[GBIF Strategic Plan 2017–2021].
 
-include::test.100.ad[]
+// include::test.100.ad[]
 
-[ditaa,memory,png]
-....
+// [ditaa,memory,png]
+// ....
 
-      +--------+
-   0  |        |  <- start
-      +--------+
-   1  |        |  <- q  scans from start to end
-      +--------+
-      :  ..... |
-      +--------+
-      |        |  <- end
-      +--------+  <-+
-      |        |    |
-      +--------+    | rest of the
-      :  ..... |    | allocated memory
-      +--------+    |
-  n   |        |    |
-      +--------+  <-+
-....
+//       +--------+
+//    0  |        |  <- start
+//       +--------+
+//    1  |        |  <- q  scans from start to end
+//       +--------+
+//       :  ..... |
+//       +--------+
+//       |        |  <- end
+//       +--------+  <-+
+//       |        |    |
+//       +--------+    | rest of the
+//       :  ..... |    | allocated memory
+//       +--------+    |
+//   n   |        |    |
+//       +--------+  <-+
+// ....
 
 The relationship between these documents is represented by the following graphic.
 
-image::img/annual-flowchart.png[]
+image::work-2020/img/annual-flowchart.png[]
 
 The https://www.gbif.org/strategic-plan[Strategic Plan] (agreed in 2015 at GB22) established five priorities for GBIF’s work.
 
