@@ -17,6 +17,8 @@ guides:
     path: /data-scope
   - title: Debugging
     path: /debugging
+  - title: Page not found
+    path: /page-not-found
 - grouptitle: Creating content
   content:
   - title: Markdown
