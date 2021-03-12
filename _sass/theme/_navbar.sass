@@ -54,12 +54,18 @@
   margin-left: auto
   margin-right: auto
   
-+tablet
-  .article--toc .columns
++desktop
+  .article--toc > div
+    display: flex
     flex-direction: row-reverse
     flex-wrap: wrap
   .toc-wrapper
     display: block
+    flex: none
+    width: 33.3333%
+  .article
+    flex: none
+    width: 66.6666%
 
 .toc
   @extend .menu
