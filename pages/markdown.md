@@ -126,6 +126,33 @@ Right aligned | Center aligned
 Row 1 col 1 | Row 1 col 2
 Row 2 col 1 | Row 2 col 2
 
+### Table overflow
+Tables have a tendency to grow large and hence overflow on smaller screens.
+
+<div class="overflow-auto" style="white-space: nowrap;" markdown="block">
+
+| Tables        | Are           | Cool  | Tables        | Are           | Cool  | Tables        | Are           | Cool  | Tables        | Are           | Cool  
+| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:
+| col 3 is      | right-aligned | $1600 | col 3 is      | right-aligned | $1600 | col 3 is      | right-aligned | $1600 | col 3 is      | right-aligned | $1600 
+| col 2 is      | centered      |   $12 | col 2 is      | centered      |   $12 | col 2 is      | centered      |   $12 | col 2 is      | centered      |   $12 
+| zebra stripes | are neat      |    $1 | zebra stripes | are neat      |    $1 | zebra stripes | are neat      |    $1 | zebra stripes | are neat      |    $1 
+
+</div>
+
+```md
+<div class="overflow-auto" style="white-space: nowrap;" markdown="block">
+
+| Tables        | Are           | Cool  | Tables        | Are           | Cool  | Tables        | Are           | Cool  | Tables        | Are           | Cool  
+| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:
+| col 3 is      | right-aligned | $1600 | col 3 is      | right-aligned | $1600 | col 3 is      | right-aligned | $1600 | col 3 is      | right-aligned | $1600 
+| col 2 is      | centered      |   $12 | col 2 is      | centered      |   $12 | col 2 is      | centered      |   $12 | col 2 is      | centered      |   $12 
+| zebra stripes | are neat      |    $1 | zebra stripes | are neat      |    $1 | zebra stripes | are neat      |    $1 | zebra stripes | are neat      |    $1 
+
+</div>
+```
+
+You might want to add some additional styling to your table, such as `white-space: nowrap;` but that depends on the usecase. See [styling section](/styling) for more on custom styles.
+
 ## Footnotes
 
 Here's a sentence with a footnote. [^1]
