@@ -54,4 +54,8 @@
   <!-- favicon - to set a favicon add favicon.ico to your root folder -->
   <!-- to add more favicon types, then add /_include/favicon.html to your project -->
   {% include favicon.html %}
+
+  {% if page.head %}
+    {{ page.head }}
+  {% endif %}
 </head>
