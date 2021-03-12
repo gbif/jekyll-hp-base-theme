@@ -1,0 +1,12 @@
+[appendix]
+== Methods and tools web sites: sources of additional assistance
+
+* https://www.gbif.org/publishing-data[Getting started: overview of data publishing in the GBIF network^]
+*	https://github.com/gbif/ipt/wiki/howToPublish#instructions[GBIF IPT Manual: How to publish biodiversity data through GBIF.org]
+[How to publish biodiversity data through GBIF.org^]
+*	https://www.gbif.org/dataset-classes[GBIF types of datasets^], including spreadsheet templates
+*	https://www.gbif.org/data-quality-requirements[GBIF data quality Requirements^]
+*	https://doi.org/10.15468/doc-5jp4-5g10[Current Best Practices for Generalizing Sensitive Species Occurrence Data^]
+*	https://dwc.tdwg.org/terms/[Darwin Core Quick Reference Guide^]
+*	http://www.dublincore.org/documents/usageguide/elements/[Ecological Metadata Language Guide^]
+*	https://www.gbif.org/the-gbif-network[GBIF Participants^]

@@ -1,0 +1,18 @@
+[[benefits]]
+== Benefits of sharing biodiversity data 
+
+Companies responsible for ordering or conducting EIAs can accrue both operational and reputational benefits by sharing biodiversity data through GBIF and similar open access data platforms. Specifically, publishing primary biodiversity data from EIAs:
+
+* Provides long-term cost savings and improved understanding of natural heritage of project areas by leveraging existing biodiversity information from earlier data collection efforts
+*	Shares biological data methodically and consistently using standardized formats and conditions, aligning with best practices to improve data management, documentation and retention in large and small projects
+*	Reduces field survey effort through improved targeting of species and a better understanding of species ranges
+*	Through cumulative impacts of shared data, increases data coverage for sensitive ecosystems, habitats and sites to help detect and avoid species of conservation concern, migratory and ephemeral species in early project stages
+*	Offers companies low-cost leadership opportunities that significantly reduce costs and increase impact
+*	Increases transparency, accountability and disclosure of assessments to I&APs, including regulators and citizens
+*	Provides social licence to operate and a positive profile within the environmental and conservation community
+*	Fills data gaps in under-sampled regions of the world
+*	Enhances the evidence base available for reuse in decision-making and research applications related to biodiversity
+* Enables tracking of the reuse of data in research and policy applications through data citations, thus returning reputational credit to companies and consultants
+* Contributes to evidence needed to attain international targets, including SDGs, related to conservation, climate change, invasive species, food security, human health, and zoonotic disease management
+
+These benefits are obtained at minimal additional cost to the process of biodiversity surveys and monitoring for EIAs, as data can be collected and prepared from the outset in formats suitable for sharing with global, national, subnational and thematic biodiversity data aggregators and repositories. Initial investments in training staff from project sponsors and consultancies in biodiversity data skills will ensure consistent, efficient data collection and management, improve overall data quality, and thus maximize the reputational benefits.

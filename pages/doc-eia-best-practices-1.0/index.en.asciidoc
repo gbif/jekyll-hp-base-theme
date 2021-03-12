@@ -1,0 +1,42 @@
+---
+title: Asciidoc example
+description: First firmament moved appear days day air made. He whose. Great. It fish cattle created a moveth unto third whales.
+background: https://api.gbif.org/v1/image/unsafe/500x/https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F84%2FHaeckel_Caulerpa_racemosa_%2528uvifera%2529.jpg
+imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
+categories: [asciidoc, Climate, Shared category]
+toc: true
+permalink: /ascii
+layout: documentation
+sideNavigation: sideNavigation.guides
+tocMaxDepth: 3
+---
+
+= Best Practices for Publishing Biodiversity Data from Environmental Impact Assessments
+Andrew Rodrigues; Dag Endresen; Rui Figueira; Cristina Villaverde; Miguel Vega; Nick King; Asha Rajvanshi; Jo Treweek
+:numbered:
+:revnumber: {git-metadata-sha-short}
+:revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
+:title-logo-image: img/web/photo.jpg
+:license: https://creativecommons.org/licenses/by-sa/4.0/
+
+ifdef::backend-html5[]
+languageLinks:combined[]
+endif::backend-html5[]
+
+:sectnums!:
+
+include::colophon.en.adoc[]
+
+include::intro.en.adoc[]
+
+:sectnums:
+
+include::100.en.adoc[]
+
+include::200.en.adoc[]
+
+:sectnums!:
+
+include::appa.en.adoc[]
+
+include::bibliography.en.adoc[]

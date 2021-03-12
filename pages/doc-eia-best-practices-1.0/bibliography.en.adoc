@@ -1,0 +1,10 @@
+[bibliography]
+== References and further reading
+
+- Cadman M, Chavan V, King N, Willoughby S, Rajvanshi A, Mathur V, Roberts R & Hirsch T (2011). Publishing EIA-Related Primary Biodiversity Data: GBIF-IAIA Best Practice Guide. IAIA Special Publication Series No. 7. https://www.iaia.org/uploads/pdf/sp7.pdf
+- Chapman AD (2005) Principles of Data Quality. Version 1.0. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc.jrgg-a190
+- Chapman AD (2020) Current Best Practices for Generalizing Sensitive Species Occurrence Data. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-5jp4-5g10.
+- King N, Rajvanshi A, Willoughby S, Roberts R, Mathur VB, Cadman M & Chavan V (2012) Improving access to biodiversity data for, and from, EIAs – a data publishing framework built to global standards. Impact Assessment and Project Appraisal 30(3): 148-156. https://doi.org/10.1080/14615517.2012.705068. 
+- [[rajvanshi]] Rajvanshi A, Mathur V & Iftikhar UA (2007). Best-practice guidance for biodiversity inclusive impact assessment: a manual for practitioners and reviewers in South East Asia. CBBIA-IAIA Guidance Series. Rapid City, N.D., USA: International Association for Impact Assessment.
+
+<<<
