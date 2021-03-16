@@ -5,6 +5,7 @@
 {% assign useBackgroundImage = include.useBackgroundImage %}
 
 {% if background %}
+{% assign background = background | liquify  %}
 <div class="feature-img" style="{% if useBackgroundImage %}background-image: url('{{ background }}'); {% endif %}{% if ratio %}padding-bottom: {{ratio}}%{% endif %}">
   {% if useBackgroundImage != true %}
     {% if site.thumbor and include.ignoreThumbor != true %}
@@ -42,7 +43,7 @@
   {% if imageLicense %}
   <div class="feature-img-license">
      <div class="feature-img-license-c"><span class="icon"><i class="fa fa-info-circle"></i></span> </div>
-     <div class="feature-img-license-text">{{ imageLicense | markdownify }}</div>
+     <div class="feature-img-license-text">{{ imageLicense | liquify | markdownify }}</div>
   </div>
   {% endif %}
 </div>
