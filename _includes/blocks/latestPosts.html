@@ -24,9 +24,9 @@ themeFeedback.push({title: "Number of latest posts", description: "You haven't c
       <article class="feature" data-categories="{% for category in post.categories %}{{ category | strip }}|{% endfor %}">
         {% assign description = post.excerpt | strip_html | truncatewords: 20  %}
         {% assign background = post.thumbnail | default: post.background %}
-        {% assign date = post.date | date: "%B %d, %Y"  %}
+        {% assign preTitle = post.preTitle | strip_html | truncatewords: 10  %}
         {% assign url = post.url | relative_url  %}
-        {% include blocks/parts/feature.html content=post description=description preTitle=date href=url sizes=sizes imageLicense=false background=background %}
+        {% include blocks/parts/feature.html content=post description=description preTitle=preTitle href=url sizes=sizes imageLicense=false background=background %}
       </article>
     {% endfor %}
   </div>

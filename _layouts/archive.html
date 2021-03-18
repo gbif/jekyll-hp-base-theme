@@ -14,10 +14,10 @@ remarks: See also page.layout == 'archive' in footer.html
     {% for post in posts %}
       <article class="feature" data-categories="{% for category in post.categories %}{{ category | strip }}|{% endfor %}">
         {% assign description = post.excerpt | strip_html | truncatewords: 20  %}
-        {% assign date = post.date | date: "%B %d, %Y"  %}
+        {% assign preTitle = post.preTitle | strip_html | truncatewords: 10  %}
         {% assign href = post.url | relative_url  %}
         {% assign background = post.thumbnail | default: post.background %}
-        {% include blocks/parts/feature.html content=post description=description preTitle=date href=href background=background imageLicense=false %}
+        {% include blocks/parts/feature.html content=post description=description preTitle=preTitle href=href background=background imageLicense=false %}
       </article>
     {% endfor %}
   </div>
