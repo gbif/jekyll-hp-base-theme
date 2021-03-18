@@ -1,6 +1,6 @@
 <aside class="toc">
   <div class="toc_header">
-    On this page
+    {{ site.data.translations.tocTitle[page.lang] | default: "On this page"}}
   </div>
   <div class="toc_list">
     {% include tocGenerator.html html=include.html h_max=page.tocMaxDepth %}
