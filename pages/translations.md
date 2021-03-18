@@ -38,6 +38,21 @@ defaults:
       lang: da
 ```
 
+## Add translations of labels
+For individual labels that is used by the theme (or by you if you use Liquid) we have a translation file. You can see the latest option in the [theme source](https://github.com/gbif/jekyll-hp-base-theme/blob/master/_data/translations.yml). At time of writing they are:
+
+```yml
+relatedPosts: # name of the label
+  en: "Related Posts" # text of the label in the various translations your site supports
+  da: "Relaterede artikler"
+differentLanguage:
+  en: "Read this page in a different language"
+  da: "Læs denne side på et andet sprog"
+tocTitle:
+  en: "On this page"
+  da: "På denne side"
+```
+
 ## Link equivalents using `lang-ref`
 Your content should link to its translated equivalent. But Jekyll does not know how to link your pages. You need to add a `lang-ref` to the front matter of all pages. The `lang-ref` attribute is an identifier that translated pages share. So a Danish and English "about page" will both add `lang-ref: about` to their front matter (the value isn't important, as long as they are the same). All pages that have the same `lang-ref` will be considered different versions of the same content. E.g.
 
