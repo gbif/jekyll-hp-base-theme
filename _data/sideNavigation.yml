@@ -13,8 +13,8 @@ guides:
     path: /footer
   - title: Custom styling
     path: /styling
-  - title: Data scope
-    path: /data-scope
+  - title: Data configuration
+    path: /data-exploration-config
   - title: Debugging
     path: /debugging
   - title: Page not found
