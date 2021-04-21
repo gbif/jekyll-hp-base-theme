@@ -1,7 +1,7 @@
 ---
 title: Documentation
 permalink: /examples/docs-post-header # the documentation layout requires you to fill the permalink for it to be highlighted in the side navigation
-description: The file behind this page can be explored at [`pages/examples/docs-post-header.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/examples/docs-post-header.md)
+description: The file behind this page can be explored at [`/examples/docs-post-header.md`](https://github.com/gbif/jekyll-hp-base-theme/blob/master/examples/docs-post-header.md)
 layout: documentation
 sideNavigation: sideNavigation.guides
 toc: true
