@@ -21,6 +21,11 @@ If you look at the commit history of your project (e.g. `https://github.com/gbif
 ## Check the build server
 You can also see if your project deployed properly by going to the build server and [locate your project](https://builds.gbif.org/view/Hosted%20Portals/) and select it. Once you have done that the sidebar will show you the build history. A red dot next to the latest build indicates that it failed.
 
+![First find you project, then locate the broken build](../assets/img/debug_1.png){:standalone}
+
+![Check the logs and try to find some, hopefully, informative error. In this case it was a missing closing quote in the yaml frontmatter.](../assets/img/debug_2.png){:standalone}
+
+
 ## The project builds fine, but the site is not as I expected
 These errors are more tricky to find, but again it can be a good idea to look at your latest changes in the commit history. So far we have seen these issues:
 * Invalid file name. If you are expecting a webpage, then your file should probably end with with `.md`.
