@@ -37,15 +37,15 @@ var siteConfig = {
 ## Occurrence filters
 Which filters should be available and which should be visible per default.
 
-### Blacklist
-You can disable individual filters using a blacklist. To do so you need to know what they are called. To know the options you need to consult [the list of possible filters](https://github.com/gbif/gbif-web/blob/master/packages/react-components/src/search/OccurrenceSearch/config/filterConf.js).
+### Excluded filters
+You can disable individual filters by providing a list. To do so you need to know what they are called. To know the options you need to consult [the list of possible filters](https://github.com/gbif/gbif-web/blob/master/packages/react-components/src/search/OccurrenceSearch/config/filterConf.js).
 
 Configuration found in `/_includes/js/config.js`
 
 ```
 var siteConfig = {
   // along with whatever other properties you have. E.g. your 'rootPredicate'
-  blacklistedFilters: ['datasetKey'], // useful if your site is scoped by a single dataset
+  excludedFilters: ['datasetKey'], // useful if your site is scoped by a single dataset
 };
 ```
 
