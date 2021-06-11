@@ -38,7 +38,7 @@
     {% endif %}
     {% if posts.size > 1 %}
       {% for post in posts %}
-    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ site.base-url }}{{ post.url }}" />
+    <link rel="alternate" hreflang="{{ site.data.languages[post.lang].languageCode | default: post.lang }}" href="{{ site.base-url }}{{ post.url }}" />
       {% endfor %}
     {% endif %}
   {% endif %}

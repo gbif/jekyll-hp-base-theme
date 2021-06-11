@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+{% assign languageCode = site.data.languages[page.lang].languageCode | default: page.lang | default: site.algae.rootLang %}
+<html lang="{{languageCode}}">
 
   {% include themeHead.html %}
 

@@ -17,6 +17,7 @@ en: # language code as it will appear in the URL
   icon:  # the icon is optional – this one does not have one. It could be a flag emoji, e.g. 🇬🇧
 da:
   label: Dansk
+  languageCode: dan # This code will be used when setting the hreflang and website lang. If not defined the code definde in _config will be used. what code to use? https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#attr-hreflang
 ```
 
 ## Label your pages with their language
