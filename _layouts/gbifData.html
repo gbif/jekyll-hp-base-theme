@@ -1,7 +1,27 @@
 ---
-layout: headerOnly
+layout: base
 ---
-
+<style>
+  .gbif-occurrenceSearchLayout, .__reakit-portal {
+    line-height: 1em;
+  }
+  .arrow > svg {
+    vertical-align: inherit;
+  }
+  body > main {
+    padding-bottom: 0;
+    background: #f1f5f8;
+  }
+  body > footer {
+    display: none;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  h4 {
+    font-size: 14px;
+  }
+</style>
 <div id="root"></div>
 <!--react and gbif component-->
 <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
