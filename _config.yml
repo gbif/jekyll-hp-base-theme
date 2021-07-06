@@ -15,9 +15,16 @@ github_username: gbif                   # Social icon in footer
 
 # THEME SETTINGS (ALL OPTIONAL)
 
-tweets_on_home: true                    # Show Twitter feed of twitter_username on homepage
+tweets_on_home: true                      # Show Twitter feed of twitter_username on homepage
+
+# The text for the terms can be changed by adding translations for 'terms', 'acceptTerms' and 'rejectTerms' in `/_data/translations.yml`.
+siteMeasurements:
+  enable: false # When enabled there will be a popup asking the user for their consent. If they accept then the function "attachMeasurements" will be called. You can overwrite this function by adding a file `/_includes/js/measure.js` and replace the function.
+  GA_ID: "G-1FTDHGKVH0" # Your Google analytics ID. Sometimes they start with UA-XXXXX-X other times with G-XXXXXXXX depending on how you set it up
+  termsVersion: "2021-07-06" # A version number for your terms. If you change this, then the users will see the popup again asking them to confirm/reject anew.
 
 algae:
+  includeTermsNotification: true
   rootLang: en
   # logo: /assets/img/tecala_logo.png     # Logo in navbar, will be displayed with 28px height
   logoAndTitle: false

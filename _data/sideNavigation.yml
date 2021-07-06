@@ -19,6 +19,8 @@ guides:
     path: /debugging
   - title: Page not found
     path: /page-not-found
+  - title: Measurements (GA)
+    path: /measurements
 - grouptitle: Creating content
   content:
   - title: Markdown

@@ -223,6 +223,10 @@ document.addEventListener('scroll', function() {
     scrollToNavItem('#pageNavbar');
   }
 });
+{% if site.siteMeasurements.enable %}
+  {% include js/measure.js %}
+  {% include js/terms.js %}
+{% endif %}
 
 
 {% if jekyll.environment != "production" and site.algae.hideHelper != true %}

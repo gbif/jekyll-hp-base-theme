@@ -7,3 +7,10 @@ differentLanguage:
 tocTitle:
   en: "On this page"
   da: "På denne side"
+terms:
+  en: |
+    We use cookies on our website. Some are technically necessary, others help us improve your user experience. You can decline non-essential cookies by selecting “Reject”. Please see our [Privacy Policy](https://www.gbif.org/terms/privacy-policy) for further information about our privacy practices and use of cookies.
+acceptTerms:
+  en: 'Accept'
+rejectTerms:
+  en: 'Reject'

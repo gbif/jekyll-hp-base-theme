@@ -1,0 +1,13 @@
+{% assign termsText = site.data.translations['terms'][page.lang] | default: "We use cookies on our website. Some are technically necessary, others help us improve your user experience. You can decline non-essential cookies by selecting “Reject”. Please see our [Privacy Policy](/privacy) for further information about our privacy practices and use of cookies." %}
+
+<div class="terms-notice is-hidden" id="termsNotice">
+  {{ termsText | markdownify }}
+  <div style="margin-top: 8px">
+    <button class="button is-primary" onclick="gbif_acceptCookies();">
+      {{ site.data.translations['acceptTerms'][page.lang] | default: "Accept"}}
+    </button>
+    <button class="button is-error" onclick="gbif_rejectCookies();">
+      {{ site.data.translations['rejectTerms'][page.lang] | default: "Reject"}}
+    </button>
+  </div>
+</div>
