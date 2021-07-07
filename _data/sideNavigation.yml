@@ -21,6 +21,8 @@ guides:
     path: /page-not-found
   - title: Measurements (GA)
     path: /measurements
+  - title: Privacy policy template
+    path: /privacy-policy-template
 - grouptitle: Creating content
   content:
   - title: Markdown

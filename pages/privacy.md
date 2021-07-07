@@ -1,5 +1,5 @@
 ---
-title: Privacy
+title: Privacy policy
 description: Privacy policy
 permalink: /privacy
 layout: standardPrivacy
@@ -13,3 +13,5 @@ privacy:
   contactEmail: info@gbif.org
   helpdeskEmail: helpdesk@gbif.org
 ```
+
+See also https://hp-base-theme.gbif-staging.org/privacy-policy-template

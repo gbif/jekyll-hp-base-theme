@@ -51,7 +51,7 @@ rejectTerms:
 ```
 
 ## Add a page with your privacy policy
-You need to provide a page with your privacy policy. We have prepared one you can use that will cover if all you do is using Google Analytics. See [https://github.com/gbif/hosted-portals/issues/16](https://github.com/gbif/hosted-portals/issues/16)
+You need to provide a page with your privacy policy. We have prepared one you can use that should suffice if all you do is using Google Analytics. See [Privacy Policy template](/privacy-policy-template) for more details on usage and conditions.
 
 ## Overwrite the default tracking scripts
 When the user accept the terms then a function is called that attach the measurement scripts.
