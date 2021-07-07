@@ -1,4 +1,6 @@
 
+// this funtion is adapted from https://developers.google.com/gtagjs/devguide/snippet#google-analytics
+// the only difference is that insert the script on command.
 function attachMeasurements() {
   console.log('Terms accepted');
 
