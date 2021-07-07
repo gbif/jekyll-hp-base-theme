@@ -10,7 +10,12 @@ toc: true
 
 > If you are comfortable using Jekyll, then you can simple add it as you see fit. Remember to get the website users consent.
 
-To make it easier we have added a simple way to add Google Analytics. You can configure this to use another analytics provider if you wish to. Start by adding below to your `_config.yml` file.
+To make it easier we have added a simple way to add Google Analytics. You can configure this to use another analytics provider if you wish to.
+
+Google analytics is being used on this site if the user accept the privacy terms. If you have already accepted or rejected the privacy terms, then you no longer see the popup. To see it again you need to remove the stored preference for this site.
+<div>
+  <button class="button is-primary" onclick="localStorage.removeItem('GBIF_terms'); location.reload()">See popup again</button>
+</div>
 
 ## Create a Google Analytics ID
 You need to go to [https://analytics.google.com/](https://analytics.google.com/) and create an analytics property.
