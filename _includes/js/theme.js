@@ -223,6 +223,12 @@ document.addEventListener('scroll', function() {
     scrollToNavItem('#pageNavbar');
   }
 });
+
+function resetPrivacySettings() {
+  localStorage.removeItem('GBIF_terms');
+  location.reload()
+}
+
 {% if site.siteMeasurements.enable %}
   {% include js/measure.js %}
   {% include js/terms.js %}

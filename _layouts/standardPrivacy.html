@@ -1,0 +1,18 @@
+---
+title: Privacy policy
+layout: base
+description: Privacy policy
+---
+
+{% capture my_include %}{% include privacyTemplate.md %}{% endcapture %}
+{% capture prose %}{{ my_include | markdownify }}{% endcapture %}
+
+<section>
+  <div class="article">
+    <div class="content">
+      {{ prose | replace: '<table', '<table class="table"' }}
+    </div>
+  </div>
+</section>
+
+
