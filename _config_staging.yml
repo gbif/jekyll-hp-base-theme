@@ -1,0 +1,4 @@
+url: "https://hp-base-theme.gbif-staging.org" # the base hostname & protocol for your site, e.g. http://example.com
+
+siteMeasurements:
+  enable: false
