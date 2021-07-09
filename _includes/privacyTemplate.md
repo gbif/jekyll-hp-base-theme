@@ -9,7 +9,7 @@
 
 {{ site.privacy.name }} operates a website at {{ site.privacy.domain }} and a Help Desk at [{{ site.privacy.helpdeskEmail }}](mailto:{{ site.privacy.helpdeskEmail }}). It is {{ site.privacy.name }}’s policy to respect your privacy regarding any information we may collect while operating these sites and services. If you have questions about deleting or correcting any personal data you find on our website please contact our support team.
 
-Controller in the meaning of Art. 4 No. 7 EU General Data Protection Regulation (GDPR) is:
+The controller in the meaning of Art. 4 No. 7 EU General Data Protection Regulation (GDPR) is:
 
 {{ site.privacy.name }}, [{{ site.privacy.contactEmail }}](mailto:{{ site.privacy.contactEmail }})
 
@@ -18,7 +18,7 @@ Controller in the meaning of Art. 4 No. 7 EU General Data Protection Regulation 
 
 Just by merely using this website for information purposes, {{ site.privacy.name }}, like most site operators, collects personal data of the sort that web browsers and servers typically make available, such as the IP address, the browser type, language preference, referring site, and the date and time of each visitor request. {{ site.privacy.name }}’s purpose in collecting this information is to enable operation of the website and monitor and prevent abusive use of the website.
 
-Legal basis for the processing of these data is our legitimate interest to offer you to visit our site cf. Art. 6 No. 1 lit. f GDPR.
+The legal basis for the processing of these data is our legitimate interest to offer you to visit our site cf. Art. 6 No. 1 lit. f GDPR.
 
 These data will not be combined with other data sources. After use for the above purposes, the data are erased by {{ site.privacy.name }} after 30 days.
 
@@ -45,7 +45,7 @@ The legal basis for the use of technically necessary cookies is Art. 6 No. 1 lit
 
 If you have given your consent, we may also use cookies to collect information about how you use our website. We use the information for analytics and to help us improve the website and its design so that it is more interesting for users. We use Google Analytics for this purpose. Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our website. At our instruction Google will use this information to analyse your use of the website and compile reports about website activity.
 
-The legal basis for the collection of information for analytic purposes is your consent cf. Art. 6 No. 1 lit. a GDPR.
+The legal basis for the collection of information for analytical purposes is your consent cf. Art. 6 No. 1 lit. a GDPR.
 
 You may at any time withdraw your consent by clicking <a href="" role="button" onclick="resetPrivacySettings()">here</a>.
 
@@ -54,9 +54,9 @@ You may at any time withdraw your consent by clicking <a href="" role="button" o
 
 You can also prevent the storage of cookies with a corresponding setting in your browser software. If you prevent the storage of cookies, we wish to point out that you may not be able to fully use this website. You can also delete cookies which have been set in your browser. Please visit the website of your browser provider to find information on blocking and deleting cookies.
 
-You can also prevent the collection of the data produced by the cookie that relates to your use of the website (incl. your IP address) with regard to Google as well as the processing of these data by Google by downloading and installing the browser add-on available at the following link: [https://tools.google.com/dlpage/gaoptout](https://tools.google.com/dlpage/gaoptout).
+You can also prevent the collection of the data produced by the cookie that relates to your use of the website (including your IP address) with regard to Google as well as the processing of these data by Google by downloading and installing the browser add-on available at the following link: [https://tools.google.com/dlpage/gaoptout](https://tools.google.com/dlpage/gaoptout).
 
-The lifetime of cookies may vary. We use session cookies which are deleted at the end of a session when you close your browser. We also use persistent cookies which will remain on your device until the expiry of a predefined validity period or until you choose to delete it yourself.
+The lifetime of cookies may vary. We use session cookies which are deleted at the end of a session when you close your browser. We also use persistent cookies which will remain on your device until the expiry of a predefined validity period or until you choose to delete them yourself.
 
 
 #### 4.3 Detailed information on the cookies and similar technologies used on this website
@@ -73,14 +73,14 @@ The lifetime of cookies may vary. We use session cookies which are deleted at th
 
 If you send a message to our [Help Desk](mailto:{{ site.privacy.helpdeskEmail }}) a “ticket” along with your email may be logged in our ticketing system. {{ site.privacy.name }} will keep details provided during a support conversation private. From time to time {{ site.privacy.name }} may add your email to an appropriate mailing list for additional information. Individuals may remove themselves from mailings by following the unsubscribe link provided in every {{ site.privacy.name }} email.
 
-Legal basis for processing personal data for Help Desk purposes is our legitimate interest to respond to your requests cf. Art. 6 No. 1 lit. f GDPR.
+The legal basis for processing personal data for Help Desk purposes is our legitimate interest to respond to your requests cf. Art. 6 No. 1 lit. f GDPR.
 
 
 ### 6. Aggregated Statistics
 
-{{ site.privacy.name }} may, with the visitor’s prior consent, collect statistics about the behaviour of visitors to its website. For instance, {{ site.privacy.name }} may monitor the most popular pages, support articles, and blog posts on the sites. {{ site.privacy.name }} may display this information publicly or provide it to others. However, {{ site.privacy.name }} does not disclose personal data other than described in the Protection of Information section below.
+{{ site.privacy.name }} may, with the visitor’s prior consent, collect statistics about the behaviour of visitors to its website. For instance, {{ site.privacy.name }} may monitor the most popular pages, support articles, and blog posts on the site. {{ site.privacy.name }} may display this information publicly or provide it to others. However, {{ site.privacy.name }} does not disclose personal data other than described in the Protection of Information section below.
 
-Legal basis for processing personal data for statistic purpose is your consent cf. Art. 6 No. 1 lit. a GDPR.
+The legal basis for processing personal data for statistical purposes is your consent cf. Art. 6 No. 1 lit. a GDPR.
 
 
 ### 7. Disclosure and transfer of your data
@@ -89,9 +89,9 @@ Legal basis for processing personal data for statistic purpose is your consent c
 
 {{ site.privacy.name }} will not rent or sell personal data to anyone. Other than to its employees, contractors and affiliated organizations, as described above, {{ site.privacy.name }} discloses personal data only in response to a court order or other governmental request, or when {{ site.privacy.name }} believes in good faith that disclosure is reasonably necessary to protect the property or rights of {{ site.privacy.name }}, third parties or the public at large.
 
-To allow for transfer of data to Google in the US {{ site.privacy.name }} and Google has entered into Standard Contractual Clauses approved by the European Commission which give personal data essentially equivalent protection as it has in Europe.
+To allow for transfer of data to Google in the US, {{ site.privacy.name }} and Google have entered into Standard Contractual Clauses approved by the European Commission which give personal data essentially equivalent protection as it has in Europe.
 
-{{ site.privacy.name }} uses GBIF Global Biodiversity Information Facility as a data processor for the purposes of technical hosting of the website.
+{{ site.privacy.name }} uses the Global Biodiversity Information Facility (GBIF) as a data processor for the purposes of technical hosting of the website.
 
 Data processors may not use personal data for other purposes than to fulfil the agreement with us and are under a duty of confidentiality with regard to such data. We have entered into written data processor agreements with all data processors that process personal data on our behalf.
 
