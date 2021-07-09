@@ -47,7 +47,7 @@ If you have given your consent, we may also use cookies to collect information a
 
 The legal basis for the collection of information for analytic purposes is your consent cf. Art. 6 No. 1 lit. a GDPR. 
 
-You may at any time withdraw your consent by clicking [here].
+You may at any time withdraw your consent by clicking <a href="" role="button" onclick="resetPrivacySettings()">here</a>.
 
 
 #### 4.2 How to block and delete cookies
