@@ -5,7 +5,7 @@
 **_This policy informs of our use of cookies and similar technologies and how and for what purposes we collect and process your personal information when you visit {{ site.privacy.name }}._**
 
 
-### 1. Website and services
+## 1. Website and services
 
 {{ site.privacy.name }} operates a website at {{ site.privacy.domain }} and a Help Desk at [{{ site.privacy.helpdeskEmail }}](mailto:{{ site.privacy.helpdeskEmail }}). It is {{ site.privacy.name }}’s policy to respect your privacy regarding any information we may collect while operating these sites and services. If you have questions about deleting or correcting any personal data you find on our website please contact our support team.
 
@@ -14,7 +14,7 @@ The controller in the meaning of Art. 4 No. 7 EU General Data Protection Regulat
 {{ site.privacy.name }}, [{{ site.privacy.contactEmail }}](mailto:{{ site.privacy.contactEmail }})
 
 
-### 2. Site Visitors
+## 2. Site Visitors
 
 Just by merely using this website for information purposes, {{ site.privacy.name }}, like most site operators, collects personal data of the sort that web browsers and servers typically make available, such as the IP address, the browser type, language preference, referring site, and the date and time of each visitor request. {{ site.privacy.name }}’s purpose in collecting this information is to enable operation of the website and monitor and prevent abusive use of the website.
 
@@ -23,7 +23,7 @@ The legal basis for the processing of these data is our legitimate interest to o
 These data will not be combined with other data sources. After use for the above purposes, the data are erased by {{ site.privacy.name }} after 30 days.
 
 
-### 3. General Treatment of Personally-Identifying Information
+## 3. General Treatment of Personally-Identifying Information
 
 Certain visitors to {{ site.privacy.name }}’s sites can choose to interact with {{ site.privacy.name }} in ways that require {{ site.privacy.name }} to gather personal data. The amount and type of information that {{ site.privacy.name }} gathers depends on the nature of the interaction.
 
@@ -32,10 +32,10 @@ For example, we ask visitors who send a message to our Help Desk, requesting ass
 For more information, please read the following sections on data processing, in which further details are provided.
 
 
-### 4. Cookies and similar technologies
+## 4. Cookies and similar technologies
 
 
-#### 4.1 Purposes and legal basis
+### 4.1 Purposes and legal basis
 
 When you use our website, cookies are stored on your computer. Cookies are small text data files which are stored on your hard drive and attributed to the browser you are using and with which the place which sets the cookie (in this case, us) receives certain information. Cookies cannot execute any programs or transfer viruses to your computer. They serve the purpose of making the internet offering in general more user friendly and effective.
 
@@ -51,7 +51,7 @@ The legal basis for the collection of information for analytical purposes is you
 You may at any time change your consent by clicking <a href="" role="button" onclick="resetPrivacySettings()">here</a>.
 {% endif %}
 
-#### 4.2 How to block and delete cookies and similar technologies
+### 4.2 How to block and delete cookies and similar technologies
 
 You can also prevent the storage of cookies with a corresponding setting in your browser software. If you prevent the storage of cookies, we wish to point out that you may not be able to fully use this website. You can also delete cookies which have been set in your browser. Please visit the website of your browser provider to find information on blocking and deleting cookies.
 
@@ -62,7 +62,7 @@ You can also prevent the collection of the data produced by the cookie that rela
 The lifetime of cookies may vary. We use session cookies which are deleted at the end of a session when you close your browser. We also use persistent cookies which will remain on your device until the expiry of a predefined validity period or until you choose to delete them yourself.
 
 
-#### 4.3 Detailed information on the cookies and similar technologies used on this website
+### 4.3 Detailed information on the cookies and similar technologies used on this website
 
 
 | Name                    | Set by                  | Function              | Expiry                                                   |
@@ -72,21 +72,21 @@ The lifetime of cookies may vary. We use session cookies which are deleted at th
 {% if site.siteMeasurements.enable %}| Google Analytics        | Google Ireland Ltd      | Statistics            | 13 months                                                |{% endif %}
 
 
-### 5. Using {{ site.privacy.name }}’s Help Desk
+## 5. Using {{ site.privacy.name }}’s Help Desk
 
 If you send a message to our [Help Desk](mailto:{{ site.privacy.helpdeskEmail }}) a “ticket” along with your email may be logged in our ticketing system. {{ site.privacy.name }} will keep details provided during a support conversation private. From time to time {{ site.privacy.name }} may add your email to an appropriate mailing list for additional information. Individuals may remove themselves from mailings by following the unsubscribe link provided in every {{ site.privacy.name }} email.
 
 The legal basis for processing personal data for Help Desk purposes is our legitimate interest to respond to your requests cf. Art. 6 No. 1 lit. f GDPR.
 
 {% if site.siteMeasurements.enable %}
-### 6. Aggregated Statistics
+## 6. Aggregated Statistics
 
 {{ site.privacy.name }} may, with the visitor’s prior consent, collect statistics about the behaviour of visitors to its website. For instance, {{ site.privacy.name }} may monitor the most popular pages, support articles, and blog posts on the site. {{ site.privacy.name }} may display this information publicly or provide it to others. However, {{ site.privacy.name }} does not disclose personal data other than described in the Protection of Information section below.
 
 The legal basis for processing personal data for statistical purposes is your consent cf. Art. 6 No. 1 lit. a GDPR.
 
 {% endif %}
-### {% if site.siteMeasurements.enable %}7{% else %}6{% endif %}. Disclosure and transfer of your data
+## {% if site.siteMeasurements.enable %}7{% else %}6{% endif %}. Disclosure and transfer of your data
 
 {{ site.privacy.name }} discloses personal data only to those of its employees, contractors and affiliated organizations i) that need to know that information in order to process it on {{ site.privacy.name }}’s behalf or to provide services available at {{ site.privacy.name }}’s websites, and ii) have agreed to comply with current privacy regulations.
 
@@ -99,12 +99,12 @@ To allow for transfer of data to Google in the US, {{ site.privacy.name }} and G
 Data processors may not use personal data for other purposes than to fulfil the agreement with us and are under a duty of confidentiality with regard to such data. We have entered into written data processor agreements with all data processors that process personal data on our behalf.
 
 
-### {% if site.siteMeasurements.enable %}8{% else %}7{% endif %}. Retention
+## {% if site.siteMeasurements.enable %}8{% else %}7{% endif %}. Retention
 
 We will only retain your personal data for as long as reasonably necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, regulatory, tax, accounting or reporting requirements. We may retain your personal data for a longer period in the event of a complaint or if we reasonably believe there is a prospect of litigation in respect to our relationship with you.
 
 
-### {% if site.siteMeasurements.enable %}9{% else %}8{% endif %}. Your rights
+## {% if site.siteMeasurements.enable %}9{% else %}8{% endif %}. Your rights
 
 According to the GDPR, you are entitled to the following rights against {{ site.privacy.name }} as a data subject:
 
@@ -127,6 +127,6 @@ If you wish to exercise any of these rights, please send us an email at: [{{ sit
 In addition, you are entitled to lodge a complaint regarding the handling of your personal data with a supervisory authority.
 
 
-### {% if site.siteMeasurements.enable %}10{% else %}9{% endif %}. Privacy Policy Changes
+## {% if site.siteMeasurements.enable %}10{% else %}9{% endif %}. Privacy Policy Changes
 
 The {{ site.privacy.name }} Privacy Policy goes into effect as of 9 July 2021. Although most changes are likely to be minor, {{ site.privacy.name }} may change its Privacy Policy from time to time, and at {{ site.privacy.name }}’s sole discretion. {{ site.privacy.name }} encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.
