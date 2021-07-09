@@ -11,4 +11,5 @@ Your users need to know how their personal data is being handled. There are logs
 To make it simple we have added a layout called `standardPrivacy`. 
 
 {: .notification .is-primary }
-The privacy template it not ready for usage yet and it will always be your responsibility that it is correct.
+GBIF provide a privacy policy as a template for you, and you need to complete a few configuration parameters.
+Please be aware that while we provide this template, and believe it to be reasonable, it is your responsibility - the service agreement (yet to be shared) will indicate this. You can overwrite the template similar to any other file in your portal.
