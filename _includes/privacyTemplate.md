@@ -2,12 +2,12 @@
 
 # Cookie and Privacy Policy
 
-**This policy informs of our use of cookies and similar technologies and how and for what purposes we collect and process your personal information when you visit {{ site.privacy.name }}**.
+**_This policy informs of our use of cookies and similar technologies and how and for what purposes we collect and process your personal information when you visit {{ site.privacy.name }}._**
 
 
 ### 1. Website and services
 
-{{ site.privacy.name }} operates a website at {{ site.privacy.domain }} and a Help Desk at {{ site.privacy.helpdeskEmail }}. It is {{ site.privacy.name }}’s policy to respect your privacy regarding any information we may collect while operating these sites and services. If you have questions about deleting or correcting any personal data you find on our website please contact our support team.
+{{ site.privacy.name }} operates a website at {{ site.privacy.domain }} and a Help Desk at [{{ site.privacy.helpdeskEmail }}](mailto:{{ site.privacy.helpdeskEmail }}). It is {{ site.privacy.name }}’s policy to respect your privacy regarding any information we may collect while operating these sites and services. If you have questions about deleting or correcting any personal data you find on our website please contact our support team.
 
 Controller in the meaning of Art. 4 No. 7 EU General Data Protection Regulation (GDPR) is:
 
@@ -121,7 +121,7 @@ Right to object (Art. 21 GDPR): You have the right to object, on grounds relatin
 
 Right to withdraw consent: You have the right to withdraw a consent you have given to us for a specific processing activity at any time.
 
-If you wish to exercise any of these rights, please send us an email at: {{ site.privacy.contactEmail }}
+If you wish to exercise any of these rights, please send us an email at: [{{ site.privacy.contactEmail }}](mailto:{{ site.privacy.contactEmail }})
 
 In addition, you are entitled to lodge a complaint regarding the handling of your personal data with a supervisory authority.
 
