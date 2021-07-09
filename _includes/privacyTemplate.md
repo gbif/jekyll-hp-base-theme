@@ -63,16 +63,18 @@ The lifetime of cookies may vary. We use session cookies which are deleted at th
 
 
 <table>
-  <tr>
-   <td>Name
-   </td>
-   <td>Set by
-   </td>
-   <td>Function
-   </td>
-   <td>Expiry
-   </td>
-  </tr>
+  <thead>
+    <tr>
+     <th>Name
+     </th>
+     <th>Set by
+     </th>
+     <th>Function
+     </th>
+     <th>Expiry
+     </th>
+    </tr>
+  </thead>
   <tr>
    <td>Technically necessary
    </td>
