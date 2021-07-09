@@ -2,7 +2,7 @@
 
 # Cookie and Privacy Policy
 
-**_This policy informs of our use of cookies and similar technologies and how and for what purposes we collect and process your personal information when you visit {{ site.privacy.name }}website_**.
+**_This policy informs of our use of cookies and similar technologies and how and for what purposes we collect and process your personal information when you visit {{ site.privacy.name }}**.
 
 
 ### 1. Website and services
