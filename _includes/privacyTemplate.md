@@ -50,16 +50,16 @@ The legal basis for the collection of information for analytic purposes is your 
 You may at any time withdraw your consent by clicking <a href="" role="button" onclick="resetPrivacySettings()">here</a>.
 
 
-#### 4.2 How to block and delete cookies
+#### 4.2 How to block and delete cookies and similar technologies
 
 You can also prevent the storage of cookies with a corresponding setting in your browser software. If you prevent the storage of cookies, we wish to point out that you may not be able to fully use this website. You can also delete cookies which have been set in your browser. Please visit the website of your browser provider to find information on blocking and deleting cookies.
 
-You can also prevent the collection of the data produced by the cookie that relates to your use of the website (incl. your IP address) with regard to Google as well as the processing of these data by Google by downloading and installing the browser-Add-on available at the following link: [https://tools.google.com/dlpage/gaoptout](https://tools.google.com/dlpage/gaoptout). Alternatively, to the browser add-on, especially for browsers on mobile devices, you can prevent the collection of your data by clicking on the following link: Opt-Out Cookie. The opt-out cookie is only valid in this browser and only for our website and is stored on your device. If you delete the cookies in this browser, you will have to set the opt-out cookie again. To prevent Google Analytics from collecting data across multiple devices, you must opt-out on all devices.
+You can also prevent the collection of the data produced by the cookie that relates to your use of the website (incl. your IP address) with regard to Google as well as the processing of these data by Google by downloading and installing the browser add-on available at the following link: [https://tools.google.com/dlpage/gaoptout](https://tools.google.com/dlpage/gaoptout).
 
 The lifetime of cookies may vary. We use session cookies which are deleted at the end of a session when you close your browser. We also use persistent cookies which will remain on your device until the expiry of a predefined validity period or until you choose to delete it yourself.
 
 
-#### 4.3 Detailed information on the cookies used on this website
+#### 4.3 Detailed information on the cookies and similar technologies used on this website
 
 
 | Name                    | Set by                  | Function              | Expiry                                                   |
@@ -105,21 +105,19 @@ We will only retain your personal data for as long as reasonably necessary to fu
 
 According to the GDPR, you are entitled to the following rights against {{ site.privacy.name }} as a data subject:
 
-Right of access (Art. 15 GDPR): you have the right to receive information on the information we are processing on you and for what purposes etc. You also have the right to request a copy of your personal data.
+* Right of access (Art. 15 GDPR): You have the right to receive information on the information we are processing on you and for what purposes etc. You also have the right to request a copy of your personal data.
 
-Right to rectification (Art. 16 GDPR)
+* Right to rectification (Art. 16 GDPR): You have the right to have incorrect personal data corrected.
 
-You have the right to have incorrect personal data corrected.
+* Right to erasure (Art. 17 GDPR): In addition, you have the right to demand that your personal data is deleted if further processing is no longer necessary, if processing is unlawful or if you have withdrawn your consent.
 
-Right to erasure (Art. 17 GDPR): In addition, you have the right to demand that your personal data is deleted if further processing is no longer necessary, if processing is unlawful or if you have withdrawn your consent.
+* Right to restriction of processing (Art. 18 GDPR): Under certain circumstances you have the right to have the processing of your personal data restricted, i.e. to prevent further processing for the time being.
 
-Right to restriction of processing (Art. 18 GDPR): Under certain circumstances you have the right to have the processing of your personal data restricted, i.e. to prevent further processing for the time being.
+* Right to data portability (Art. 20 GDPR): You may have the right to receive your personal data in a machine-readable format in order to forward it or have it forwarded to another controller.
 
-Right to data portability (Art. 20 GDPR): you may have the right to receive your personal data in a machine-readable format in order to forward it or have it forwarded to another controller.
+* Right to object (Art. 21 GDPR): You have the right to object, on grounds relating to your particular situation, to the processing of your personal data that is based on our legitimate interests.
 
-Right to object (Art. 21 GDPR): You have the right to object, on grounds relating to your particular situation, to the processing of your personal data that is based on our legitimate interests.
-
-Right to withdraw consent: You have the right to withdraw a consent you have given to us for a specific processing activity at any time.
+* Right to withdraw consent: You have the right to withdraw a consent you have given to us for a specific processing activity at any time.
 
 If you wish to exercise any of these rights, please send us an email at: [{{ site.privacy.contactEmail }}](mailto:{{ site.privacy.contactEmail }})
 
