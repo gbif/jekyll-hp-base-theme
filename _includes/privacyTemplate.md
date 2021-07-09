@@ -2,7 +2,7 @@
 
 # Cookie and Privacy Policy
 
-**_This policy informs of our use of cookies and similar technologies and how and for what purposes we collect and process your personal information when you visit {{ site.privacy.name }}**.
+**This policy informs of our use of cookies and similar technologies and how and for what purposes we collect and process your personal information when you visit {{ site.privacy.name }}**.
 
 
 ### 1. Website and services
@@ -32,7 +32,7 @@ For example, we ask visitors who send a message to our Help Desk, requesting ass
 For more information, please read the following sections on data processing, in which further details are provided.
 
 
-### 4. Cookies
+### 4. Cookies and similar technologies
 
 
 #### 4.1 Purposes and legal basis
@@ -43,9 +43,9 @@ We use so-called technically necessary cookies on our website. Technically neces
 
 The legal basis for the use of technically necessary cookies is Art. 6 No. 1 lit. f GDPR.
 
-If you have given your consent, we may also use cookies to collect information about how you use our website. We use the information for analytics and to help us improve the website and its design so that it is more interesting for users. We use Google Analytics for this purpose. Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our website. At our instruction Google will use this information to analyze your use of the website and compile reports about website activity.
+If you have given your consent, we may also use cookies to collect information about how you use our website. We use the information for analytics and to help us improve the website and its design so that it is more interesting for users. We use Google Analytics for this purpose. Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our website. At our instruction Google will use this information to analyse your use of the website and compile reports about website activity.
 
-The legal basis for the collection of information for analytic purposes is your consent cf. Art. 6 No. 1 lit. a GDPR. 
+The legal basis for the collection of information for analytic purposes is your consent cf. Art. 6 No. 1 lit. a GDPR.
 
 You may at any time withdraw your consent by clicking <a href="" role="button" onclick="resetPrivacySettings()">here</a>.
 
@@ -62,65 +62,25 @@ The lifetime of cookies may vary. We use session cookies which are deleted at th
 #### 4.3 Detailed information on the cookies used on this website
 
 
-<table>
-  <thead>
-    <tr>
-     <th>Name
-     </th>
-     <th>Set by
-     </th>
-     <th>Function
-     </th>
-     <th>Expiry
-     </th>
-    </tr>
-  </thead>
-  <tr>
-   <td>Technically necessary
-   </td>
-   <td>{{ site.privacy.name }}
-   </td>
-   <td>Technically Necessary
-   </td>
-   <td>Session cookies are deleted when you close your browser. 
-   </td>
-  </tr>
-  <tr>
-   <td>Consent Cookie
-   </td>
-   <td>{{ site.privacy.name }}
-   </td>
-   <td>Technically Necessary
-   </td>
-   <td>1 year
-   </td>
-  </tr>
-  <tr>
-   <td>Google Analytics
-   </td>
-   <td>Google Ireland Ltd
-   </td>
-   <td>Statistics
-   </td>
-   <td>13 months
-   </td>
-  </tr>
-</table>
-
+| Name                    | Set by                  | Function              | Expiry                                                   |
+| ----------------------- | ----------------------- | --------------------- | -------------------------------------------------------- |
+| Technically necessary   | {{ site.privacy.name }} | Technically Necessary | Session cookies are deleted when you close your browser. |
+| Consent (local storage) | {{ site.privacy.name }} | Technically Necessary | Removed on demand                                        |
+| Google Analytics        | Google Ireland Ltd      | Statistics            | 13 months                                                |
 
 
 ### 5. Using {{ site.privacy.name }}’s Help Desk
 
 If you send a message to our [Help Desk](mailto:{{ site.privacy.helpdeskEmail }}) a “ticket” along with your email may be logged in our ticketing system. {{ site.privacy.name }} will keep details provided during a support conversation private. From time to time {{ site.privacy.name }} may add your email to an appropriate mailing list for additional information. Individuals may remove themselves from mailings by following the unsubscribe link provided in every {{ site.privacy.name }} email.
 
-Legal basis for processing personal data for Help Desk purposes is our legitimate interest to respond to your requests cf. Art. 6 No. 1 lit. f GPDR.
+Legal basis for processing personal data for Help Desk purposes is our legitimate interest to respond to your requests cf. Art. 6 No. 1 lit. f GDPR.
 
 
 ### 6. Aggregated Statistics
 
-{{ site.privacy.name }} may, with the visitors´ prior consent, collect statistics about the behavior of visitors to its website. For instance, {{ site.privacy.name }} may monitor the most popular pages, support articles, and blog posts on the sites. {{ site.privacy.name }} may display this information publicly or provide it to others. However, {{ site.privacy.name }} does not disclose personal data other than described in the Protection of Information section below.
+{{ site.privacy.name }} may, with the visitor’s prior consent, collect statistics about the behaviour of visitors to its website. For instance, {{ site.privacy.name }} may monitor the most popular pages, support articles, and blog posts on the sites. {{ site.privacy.name }} may display this information publicly or provide it to others. However, {{ site.privacy.name }} does not disclose personal data other than described in the Protection of Information section below.
 
-Legal basis for processing personal data for statistic purpose is your consent cf. Art. 6 No. 1 lit. a GPDR.
+Legal basis for processing personal data for statistic purpose is your consent cf. Art. 6 No. 1 lit. a GDPR.
 
 
 ### 7. Disclosure and transfer of your data
@@ -129,9 +89,9 @@ Legal basis for processing personal data for statistic purpose is your consent c
 
 {{ site.privacy.name }} will not rent or sell personal data to anyone. Other than to its employees, contractors and affiliated organizations, as described above, {{ site.privacy.name }} discloses personal data only in response to a court order or other governmental request, or when {{ site.privacy.name }} believes in good faith that disclosure is reasonably necessary to protect the property or rights of {{ site.privacy.name }}, third parties or the public at large.
 
-To allow for transfer of data to Google in the US {{ site.privacy.name }} and Google has entered into Standard Contractual Clauses approved by the European Commission which give personal data essentially equivalent protection as it has in Europe. 
+To allow for transfer of data to Google in the US {{ site.privacy.name }} and Google has entered into Standard Contractual Clauses approved by the European Commission which give personal data essentially equivalent protection as it has in Europe.
 
-{{ site.privacy.name }} uses GBIF Global Biodiversity Information Facility as a data processor for the purposes of technical hosting of the website. 
+{{ site.privacy.name }} uses GBIF Global Biodiversity Information Facility as a data processor for the purposes of technical hosting of the website.
 
 Data processors may not use personal data for other purposes than to fulfil the agreement with us and are under a duty of confidentiality with regard to such data. We have entered into written data processor agreements with all data processors that process personal data on our behalf.
 
@@ -149,7 +109,7 @@ Right of access (Art. 15 GDPR): you have the right to receive information on the
 
 Right to rectification (Art. 16 GDPR)
 
-You have the right to have incorrect personal data corrected. 
+You have the right to have incorrect personal data corrected.
 
 Right to erasure (Art. 17 GDPR): In addition, you have the right to demand that your personal data is deleted if further processing is no longer necessary, if processing is unlawful or if you have withdrawn your consent.
 
@@ -159,7 +119,7 @@ Right to data portability (Art. 20 GDPR): you may have the right to receive your
 
 Right to object (Art. 21 GDPR): You have the right to object, on grounds relating to your particular situation, to the processing of your personal data that is based on our legitimate interests.
 
-Right to withdraw consent: You have the right to withdraw a consent you have given to us for a specific processing activity at any time. 
+Right to withdraw consent: You have the right to withdraw a consent you have given to us for a specific processing activity at any time.
 
 If you wish to exercise any of these rights, please send us an email at: {{ site.privacy.contactEmail }}
 
@@ -168,4 +128,4 @@ In addition, you are entitled to lodge a complaint regarding the handling of you
 
 ### 10. Privacy Policy Changes
 
-The {{ site.privacy.name }} Privacy Policy goes into effect as of July 9, 2021. Although most changes are likely to be minor, {{ site.privacy.name }} may change its Privacy Policy from time to time, and at {{ site.privacy.name }}’s sole discretion. {{ site.privacy.name }} encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.
+The {{ site.privacy.name }} Privacy Policy goes into effect as of 9 July 2021. Although most changes are likely to be minor, {{ site.privacy.name }} may change its Privacy Policy from time to time, and at {{ site.privacy.name }}’s sole discretion. {{ site.privacy.name }} encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.
