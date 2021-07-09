@@ -92,6 +92,12 @@
       {% endfor %}
     </div>
 
+    {% if footer.other %}
+    <div class="footer-footer">
+      {{ footer.other | markdownify }}
+    </div>
+    {% endif %}
+
     <!--div class="footer-footer">
       <div>Powered by <a href="https://www.gbif.org">GBIF</a></div>
     </div-->
