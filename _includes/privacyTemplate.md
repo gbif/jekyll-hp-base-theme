@@ -92,8 +92,10 @@ The legal basis for processing personal data for statistical purposes is your co
 
 {{ site.privacy.name }} will not rent or sell personal data to anyone. Other than to its employees, contractors and affiliated organizations, as described above, {{ site.privacy.name }} discloses personal data only in response to a court order or other governmental request, or when {{ site.privacy.name }} believes in good faith that disclosure is reasonably necessary to protect the property or rights of {{ site.privacy.name }}, third parties or the public at large.
 
+{% if site.siteMeasurements.enable %}
 To allow for transfer of data to Google in the US, {{ site.privacy.name }} and Google have entered into Standard Contractual Clauses approved by the European Commission which give personal data essentially equivalent protection as it has in Europe.
 
+{% endif %}
 {{ site.privacy.name }} uses the Global Biodiversity Information Facility (GBIF) as a data processor for the purposes of technical hosting of the website.
 
 Data processors may not use personal data for other purposes than to fulfil the agreement with us and are under a duty of confidentiality with regard to such data. We have entered into written data processor agreements with all data processors that process personal data on our behalf.
