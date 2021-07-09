@@ -131,8 +131,7 @@ To allow for transfer of data to Google in the US {{ site.privacy.name }} and Go
 
 {{ site.privacy.name }} uses GBIF Global Biodiversity Information Facility as a data processor for the purposes of technical hosting of the website. 
 
-
-### Data processors may not use personal data for other purposes than to fulfil the agreement with us and are under a duty of confidentiality with regard to such data. We have entered into written data processor agreements with all data processors that process personal data on our behalf.
+Data processors may not use personal data for other purposes than to fulfil the agreement with us and are under a duty of confidentiality with regard to such data. We have entered into written data processor agreements with all data processors that process personal data on our behalf.
 
 
 ### 8. Retention
