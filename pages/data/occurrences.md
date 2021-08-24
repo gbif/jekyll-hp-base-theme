@@ -1,6 +1,6 @@
 ---
-title: Data
+title: Occurrences
 description: We publish open data
-permalink: /data/
+permalink: /occurrence
 layout: occurrence
 ---

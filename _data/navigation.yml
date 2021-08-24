@@ -19,6 +19,14 @@
   - text: Compose your own pages
     href: /layout/compose
 - text: Data
-  href: /data
+  menu: # Dropdown menu (one level deep only)
+  - text: Occurrences  # Name in the menu
+    href: /occurrence
+  - text: Datasets
+    href: /dataset
+  - text: Publishers
+    href: /publisher
+  - text: Literaure
+    href: /literature
 - text: News
   href: /posts
