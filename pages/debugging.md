@@ -11,7 +11,7 @@ sideNavigation: sideNavigation.guides
 
 > Debuggin the process of identifying and removing errors from computer hardware or software.
 
-Every now and then you will make a change and it won't show on the website. Or worse the site might even be broken. Then you need to debug the issue. For the most part it will probably be a mistake in your YAML. Remember that YAML cares about spaces in the beginning of lines.
+Every now and then you will make a change and it won't show on the website. Or worse the site might even be broken. Then you need to debug the issue. For the most part it will probably be a mistake in your YAML. Remember that YAML cares about spaces in the beginning of lines. There exists [online YAML validators](https://jsonformatter.org/yaml-validator). It might be worth pasting your text into one of those.
 
 ## Look at the latest changes
 If you look at the commit history of your project (e.g. `https://github.com/gbif/hp-legume/commits/master`), you can see what have changed and also what commit broke the build. Commits (changes) that build successfully will have a little green tick, and failed builds will have a red cross.  You can then select the commit that caused the failure and see what was changed.
