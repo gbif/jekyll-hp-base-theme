@@ -1,7 +1,9 @@
 en:
   label: English
   icon:  # optional
-  languageCode: en-DK # This code will be used when setting the hreflang and website lang. If not defined the url code will be used. what code to use? https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#attr-hreflang
+  # languageCode: en-DK # This code will be used when setting the hreflang and website lang. If not defined the url code will be used. what code to use? https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#attr-hreflang
+  widgetLocale: en # de-ch
 la:
   label: Latin
   archive_permalink: /la/archive/
+  widgetLocale: en-ZZ

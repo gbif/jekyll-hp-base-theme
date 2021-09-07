@@ -3,8 +3,11 @@ layout: gbifData
 description: Default template for occurrence search
 ---
 
+{% assign languageCode = site.data.languages[page.lang].widgetLocale | default: site.data.languages[page.lang].languageCode | default: page.lang | default: site.algae.rootLang | default: 'en' %}
+
 <div id="root"></div>
 <script>
+  const widgetLocale = '{{ languageCode }}';
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : undefined;
   ReactDOM.render(
@@ -13,7 +16,11 @@ description: Default template for occurrence search
       { 
         style: { height: 'calc(100vh - 4.25rem)' }, 
         theme: userTheme, 
-        config: userConfig
+        config: userConfig,
+        locale: widgetLocale,
+        // messages: {
+        //   'filter.taxonKey.name': 'test'
+        // }
       }
     ),
     document.getElementById('root')
