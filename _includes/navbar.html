@@ -107,7 +107,10 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
               <div class="navbar-dropdown is-right">
                 {% for post in posts %}
                 <a class="navbar-item" href="{{ site.base-url }}{{ post.url }}">
-                  {{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}
+                  {% if site.data.languages[post.lang].icon %}
+                  <img src="{{ site.data.languages[post.lang].icon }}" style="margin-right: 6px; height:1em;" />
+                  {% endif %}
+                  {{ site.data.languages[post.lang].label }}
                 </a>
                 {% endfor %}
               </div>
