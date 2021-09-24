@@ -6,7 +6,6 @@ description: The file behind this page can be explored at [`pages/layout/documen
 sideNavigation: sideNavigation.guides
 toc: true
 ---
-# Translations
 This page explains how to configure your site to support multiple translations.
 
 ## Configure which languages your site supports
@@ -144,7 +143,17 @@ defaults:
 Content on the hosted portals can be slit in 2 parts:
 
 ### The data exploration widgets
-The data widgets will use [Crowdin](https://crowdin.com/) for translations. The issue to implement this is [hosted-portals/issues/60](https://github.com/gbif/hosted-portals/issues/60). If you need the data exploration components translated, then you should watch/join that project and help translate it.
+
+We use [Crowdin](https://crowdin.com/) for translations. The specific project is [https://crowdin.com/project/gbif-portal](https://crowdin.com/project/gbif-portal)
+
+That project handles both translations for [GBIF.org](https://www.gbif.org/) as well as the hosted portals. If you are only intersted in translating the hosted portal UI, then you should focus on the folder `gbif-web`.
+
+You need to join the project as a translator first via the Crowdin platform. The secretariat will then recieve a mail and we will send you an invite.
+
+{: .notification .is-primary}
+It is worth highlighting, that since the interface is still undergoing development, some translations are bound to be discarded later on (if we change the UI to not include it). And more content to translate will appear continously.
+
+[Create an issue](https://github.com/gbif/hosted-portals/issues/new) if you need to add another language to Crowdin or you aren't sure how to get the data widgets translated.
 
 ### Everything else
 All the content that lives in your project: the menus + the prose pages. How you translate the content is up to you. Just using Github is perfectly okay. If you want to be fancy, then there are tools so help. Such as [Crowdin](https://crowdin.com/) which is what we use for GBIF.org.
