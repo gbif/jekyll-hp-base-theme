@@ -2,7 +2,7 @@ en:
   label: English
   # icon: /assets/img/american_samoa_flag.svg
   # languageCode: en-DK # This code will be used when setting the hreflang and website lang. If not defined the url code will be used. what code to use? https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#attr-hreflang
-  widgetLocale: en # de-ch
+  widgetLocale: en
 la:
   label: Latin
   archive_permalink: /la/archive/
