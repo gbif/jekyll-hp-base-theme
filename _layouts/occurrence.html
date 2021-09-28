@@ -2,21 +2,21 @@
 layout: gbifData
 description: Default template for occurrence search
 ---
-
 {% assign languageCode = site.data.languages[page.lang].widgetLocale | default: site.data.languages[page.lang].languageCode | default: page.lang | default: site.algae.rootLang | default: 'en' %}
 
 <div id="root"></div>
 <script>
-  const widgetLocale = '{{ languageCode }}';
+  var widgetLocale = '{{ languageCode }}';
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : undefined;
+  var occurrenceConfig = userConfig.occurrence ? userConfig.occurrence : userConfig;
   ReactDOM.render(
     React.createElement(
       gbifReactComponents.OccurrenceSearch,
       { 
         style: { height: 'calc(100vh - 4.25rem)' }, 
         theme: userTheme, 
-        config: userConfig,
+        config: occurrenceConfig,
         locale: widgetLocale,
         // messages: {
         //   'filter.taxonKey.name': 'test'
@@ -29,7 +29,7 @@ description: Default template for occurrence search
   if (typeof userTheme === 'undefined') {
     console.warn('No theme defined - using default styling');
   }
-  if (typeof userConfig === 'undefined') {
+  if (typeof occurrenceConfig === 'undefined') {
     console.warn('No config provided - all data will be shown');
   }
 </script>
