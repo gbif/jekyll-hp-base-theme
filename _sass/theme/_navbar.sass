@@ -7,6 +7,10 @@
 
 .navbar
   box-shadow: 0px 2px 8px rgba(0,0,0, .1)
+  &--floating
+    position: absolute
+    width: 100%
+    box-shadow: none
 
 @media screen and (max-width: $navbar-breakpoint)
   .navbar
@@ -25,9 +29,6 @@
     //   flex-shrink: 1 // added to handle menu bars with many items 
     // .navbar-start
     //   overflow: auto // added to handle menu bars with many items 
-    &--floating
-      position: absolute
-      width: 100%
     &--hasWhiteText
       .navbar-logo_text
         color: white
