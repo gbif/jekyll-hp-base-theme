@@ -32,7 +32,7 @@ siteMeasurements:
 
 algae:
   rootLang: en
-  # logo: /assets/img/tecala_logo.png     # Logo in navbar, will be displayed with 28px height
+  # logo: /assets/img/tecala_logo.png     # Logo in navbar, will be displayed with 28px height. It i spossible to have a logo per language. If so it needs to be added in the _data/languages.yml file under each language
   logoAndTitle: false
   hideHelper: false
   archive_permalink: /posts/             # Permalink of page using archive.html layout, required when using post categories

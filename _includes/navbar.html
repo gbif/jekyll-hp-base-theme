@@ -6,6 +6,8 @@
 {% assign color = navbar.color %}
 {% assign hasWhiteText = navbar.hasWhiteText | default: false %}
 
+{% assign logo = site.data.languages[page.lang].logo | default: site.algae.logo %}
+
 {%- capture homeLang -%}
   {%- if site.algae.rootLang != page.lang -%}{{ page.lang }}{%- endif -%}
 {%- endcapture -%}
@@ -25,8 +27,8 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
   <div class="navbar-content">
     <div class="navbar-brand">
       <a class="navbar-item navbar-logo" href="{{ '/' | append: homeLang | relative_url }}">
-        {% if site.algae.logo %}
-          <img class="navbar-logo_img" src="{{ site.algae.logo | relative_url }}" height="28" />
+        {% if logo %}
+          <img class="navbar-logo_img" src="{{ logo | relative_url }}" height="28" />
         {% if site.title and site.algae.logoAndTitle %}
           <span class="navbar-logo_text">{{ site.title }}</span>
         {% endif %}
