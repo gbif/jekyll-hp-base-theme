@@ -35,6 +35,8 @@ composition:
   data: compose.examples.split2
 - type: floatingText
   data: compose.examples.text
+- type: media
+  data: compose.media
 ---
 
 # type: pageMarkdown

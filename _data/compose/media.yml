@@ -1,0 +1,17 @@
+title: "type: media"
+description: |
+  See [`_data/compose/media.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/compose/media.yml) for the content structure.
+features:
+  - preTitle: PDF  # optional
+    title: Abundantly light years # required
+    description: |      # required
+      Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
+    # img required
+    background: https://upload.wikimedia.org/wikipedia/commons/9/92/Haeckel_Caulerpa_racemosa.JPG
+    href: /about
+  - preTitle: Power Point  # optional
+    title: Fly moving land
+    href: /about
+    description: |      # required
+      Light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+    background: https://upload.wikimedia.org/wikipedia/commons/8/84/Haeckel_Caulerpa_racemosa_%28uvifera%29.jpg
