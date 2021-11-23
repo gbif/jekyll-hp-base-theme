@@ -66,7 +66,7 @@ blank:
       <h1 class="my-headline">A blank slate - do as you like here</h1>
       <div style="text-align: center; padding: 24px">
         <h2>type: blank</h2>
-        <p>See <a href="https://github.com/gbif/jekyll-theme-algae/blob/master/_data/compose/examples.yml"><code class="language-plaintext highlighter-rouge">_data/compose/markdownBlock.yml</code></a> for the content structure.</p>
+        <p>See <a href="https://github.com/gbif/jekyll-theme-algae/blob/master/_data/compose/examples.yml#L49"><code class="language-plaintext highlighter-rouge">_data/compose/markdownBlock.yml</code></a> for the content structure.</p>
       </div>
     </div>
 stats:
