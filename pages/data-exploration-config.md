@@ -57,3 +57,13 @@ var siteConfig = {
   highlightedFilters: ['collectionCode', 'taxonKey'],
 };
 ```
+
+### Default columns in occurrence table
+It is possible to control which columns are shown. 
+```
+var siteConfig = {
+  // along with whatever other properties you have. E.g. your 'rootPredicate'
+  defaultTableColumns: ['features', 'country', 'coordinates', 'year', 'basisOfRecord', 'dataset', 'publisher', 'catalogNumber', 'recordedBy', 'identifiedBy'] // the first column will always be scientificName, that cannot be changed
+};
+```
+The currently available column names can be seen in the [code](https://github.com/gbif/gbif-web/blob/master/packages/react-components/src/search/OccurrenceSearch/config/tableConfig.js#L18) as the property `name`.
