@@ -2,7 +2,11 @@
 layout: gbifData
 description: Default template for occurrence search
 ---
+{% assign languageCode = site.data.languages[page.lang].widgetLocale | default: site.data.languages[page.lang].languageCode | default: page.lang | default: site.algae.rootLang | default: 'en' %}
 
+{{ content }}
+
+<div id="root"></div>
 <script>
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : undefined;
