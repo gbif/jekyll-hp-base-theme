@@ -9,5 +9,6 @@ if (primaryColor) {
   }});
 }
 
-var siteConfig = {};
-var routeConfig = {};
+var siteConfig = {
+  // routeConfig: {}
+};

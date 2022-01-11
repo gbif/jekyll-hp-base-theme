@@ -9,16 +9,18 @@ description: Default template for occurrence search
 <div id="root"></div>
 <script>
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
-  var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : undefined;
-  var siteRouteConfig = typeof routeConfig !== 'undefined' ? routeConfig : undefined;
+  var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
+  var routeConfig = userConfig.routeConfig;
+  var collectionConfig = userConfig.collection;
+
   ReactDOM.render(
     React.createElement(
       gbifReactComponents.CollectionSearch,
       { 
         style: { height: 'calc(100vh - 4.25rem)' }, 
         theme: userTheme, 
-        config: userConfig,
-        routeContext: siteRouteConfig,
+        config: collectionConfig,
+        routeContext: routeConfig,
         defaultBaseName: '/'
       }
     ),
