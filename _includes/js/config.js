@@ -10,6 +10,4 @@ if (primaryColor) {
 }
 
 var siteConfig = {};
-var routeConfig = {
-  
-};
+var routeConfig = {};

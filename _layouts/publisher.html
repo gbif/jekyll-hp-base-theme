@@ -12,6 +12,8 @@ description: Default template for occurrence search
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : undefined;
   var publisherConfig = userConfig.publisher;
+  var siteRouteConfig = typeof routeConfig !== 'undefined' ? routeConfig : undefined;
+
   ReactDOM.render(
     React.createElement(
       gbifReactComponents.PublisherSearch,
@@ -20,7 +22,7 @@ description: Default template for occurrence search
         theme: userTheme, 
         config: publisherConfig,
         locale: widgetLocale,
-        routeContext: routeConfig,
+        routeContext: siteRouteConfig,
       }
     ),
     document.getElementById('root')
