@@ -7,7 +7,7 @@ background: /assets/img/Haeckel_Siphoneae.jpg
 lang-ref: home
 cta:
   - text: Lorem
-    href: /occurrence
+    href: /la/occurrence/search
     isPrimary: true
   - text: Ipsum
     href: /about

@@ -9,7 +9,7 @@ lang-ref: home
 hasTextShadow: true
 cta:
   - text: Explore
-    href: /occurrence
+    href: /occurrence/search
     isPrimary: true
   - text: About
     href: /about
