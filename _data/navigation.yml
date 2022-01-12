@@ -21,12 +21,12 @@
 - text: Data
   menu: # Dropdown menu (one level deep only)
   - text: Occurrences  # Name in the menu
-    href: /occurrence
+    href: /occurrence/search
   - text: Datasets
-    href: /dataset
+    href: /dataset/search
   - text: Publishers
-    href: /publisher
+    href: /publisher/search
   - text: Literaure
-    href: /literature
+    href: /literature/search
 - text: News
   href: /posts

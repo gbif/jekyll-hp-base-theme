@@ -11,8 +11,9 @@ description: Default template for occurrence search
   var widgetLocale = '{{ languageCode }}';
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
-  var routeConfig = userConfig.routeConfig;
-  var occurrenceConfig = userConfig.occurrence ? userConfig.occurrence : userConfig;
+  var routeConfig = userConfig.routeConfig || {};
+  routeConfig.basename = basename;
+  var occurrenceConfig = userConfig.occurrence;// ? userConfig.occurrence : userConfig;
 
   ReactDOM.render(
     React.createElement(
@@ -24,6 +25,7 @@ description: Default template for occurrence search
         locale: widgetLocale,
         routeContext: routeConfig,
         pageLayout: true,
+        // defaultBaseName: '/da/'
         // messages: {
         //   'filter.taxonKey.name': 'test'
         // }

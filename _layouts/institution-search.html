@@ -8,10 +8,12 @@ description: Default template for occurrence search
 
 <div id="root"></div>
 <script>
+  var widgetLocale = '{{ languageCode }}';
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
-  var routeConfig = userConfig.routeConfig;
-  var instConfig = userConfig.instConfig;
+  var routeConfig = userConfig.routeConfig || {};
+  routeConfig.basename = basename;
+  var instConfig = userConfig.institution;
 
   ReactDOM.render(
     React.createElement(

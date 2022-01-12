@@ -1,7 +1,7 @@
 ---
 title: Data
 description: We publish open data
-permalink: /collection/search
+permalink: /la/collection/search
 layout: collection-search
 lang-ref: collection
 ---

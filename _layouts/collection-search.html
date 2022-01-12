@@ -8,9 +8,11 @@ description: Default template for occurrence search
 
 <div id="root"></div>
 <script>
+  var widgetLocale = '{{ languageCode }}';
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
-  var routeConfig = userConfig.routeConfig;
+  var routeConfig = userConfig.routeConfig || {};
+  routeConfig.basename = basename;
   var collectionConfig = userConfig.collection;
 
   ReactDOM.render(
@@ -23,7 +25,7 @@ description: Default template for occurrence search
         routeContext: routeConfig,
         pageLayout: true,
         locale: widgetLocale,
-        defaultBaseName: '/'
+        // defaultBaseName: '/sdf/'
       }
     ),
     document.getElementById('root')

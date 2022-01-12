@@ -1,6 +1,6 @@
 ---
 title: Publishers
 description: We publish open data
-permalink: /publisher
+permalink: /publisher/search
 layout: publisher
 ---

@@ -1,7 +1,7 @@
 ---
 title: Literature
 description: We publish open data
-permalink: /literature-dk
+permalink: /dk/literature/search
 layout: literature
 ---
 

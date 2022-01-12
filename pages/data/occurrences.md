@@ -1,7 +1,7 @@
 ---
 title: Occurrences
 description: We publish open data
-permalink: /occurrence
+permalink: /occurrence/search
 lang-ref: occurrence
 layout: occurrence
 ---
