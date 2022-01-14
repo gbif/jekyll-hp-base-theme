@@ -13,7 +13,7 @@ description: Default template for occurrence search
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
   var routeConfig = userConfig.routeConfig || {};
   routeConfig.basename = basename;
-  var occurrenceConfig = userConfig.occurrence;// ? userConfig.occurrence : userConfig;
+  var occurrenceConfig = userConfig.occurrence ? userConfig.occurrence : userConfig;
 
   ReactDOM.render(
     React.createElement(
