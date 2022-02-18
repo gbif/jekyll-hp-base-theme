@@ -3,7 +3,7 @@ title: About
 description: Lorem markdownum spatium limes indefessus neque at orat aestuat
 permalink: /about
 lang-ref: about
-background: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Haeckel_Caulerpa_paspaloides.JPG/1024px-Haeckel_Caulerpa_paspaloides.JPG
+background: /assets/img/Haeckel_Caulerpa_paspaloides.jpeg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 overlayColor: "#00000055"
 parallax: true

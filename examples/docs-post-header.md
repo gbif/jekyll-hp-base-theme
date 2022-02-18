@@ -31,7 +31,7 @@ Quam Erycina et celsoque trabes; torva, nec et alto egens. Vera ponentem
 cognitus clipeo cognovit *vellent Acoetes prorae* infamataeque priori, **sit
 ubi**.
 
-![Kunstformen der Natur (1904) by Ernst Haeckel via <a href="https://commons.wikimedia.org/wiki/Kunstformen_der_Natur">Wikimedia</a>](https://upload.wikimedia.org/wikipedia/commons/8/84/Haeckel_Caulerpa_racemosa_%28uvifera%29.jpg){:standalone}
+![Kunstformen der Natur (1904) by Ernst Haeckel via <a href="https://commons.wikimedia.org/wiki/Kunstformen_der_Natur">Wikimedia</a>](/assets/img/Haeckel_Caulerpa_racemosa_(uvifera).jpeg){:standalone}
 
 ### Turbatque promittat memorque
 

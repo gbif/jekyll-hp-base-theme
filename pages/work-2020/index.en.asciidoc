@@ -1,7 +1,7 @@
 ---
 title: Asciidoc example
 description: First firmament moved appear days day air made. He whose. Great. It fish cattle created a moveth unto third whales.
-background: https://api.gbif.org/v1/image/unsafe/500x/https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F84%2FHaeckel_Caulerpa_racemosa_%2528uvifera%2529.jpg
+background: /assets/img/Haeckel_Caulerpa_racemosa_(uvifera).jpeg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 categories: [asciidoc, Climate, Shared category]
 toc: true

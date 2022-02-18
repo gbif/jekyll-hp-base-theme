@@ -2,7 +2,7 @@
 layout: post
 title: "toc: true"
 description: The file behind this page can be explored at [`pages/examples/toc.md`](https://raw.githubusercontent.com/gbif/jekyll-theme-algae/master/pages/examples/toc.md)
-background: https://api.gbif.org/v1/image/unsafe/1600x1000/https%3A%2F%2Fhp-base-theme.netlify.app%2Fassets%2Fimg%2FHaeckel_Siphoneae.jpg
+background: /assets/img/Haeckel_Siphoneae.jpg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur) # OPTIONAL
 toc: true
 ---

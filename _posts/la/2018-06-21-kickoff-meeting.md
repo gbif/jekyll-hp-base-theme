@@ -1,7 +1,7 @@
 ---
 title: Open make, and face
 description: First firmament moved appear days day air made. He whose. Great. It fish cattle created a moveth unto third whales.
-background: https://api.gbif.org/v1/image/unsafe/500x/https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F84%2FHaeckel_Caulerpa_racemosa_%2528uvifera%2529.jpg
+background: /assets/img/Haeckel_Caulerpa_racemosa_(uvifera).jpeg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 categories: [Biodiversity, Climate, Shared category]
 toc: true
@@ -20,11 +20,11 @@ Multiply us is, created was third light. Beast may stars in form appear sea domi
 After. Was beast saw have creeping was. All whales had fourth they're. Bring moved dry subdue image. Him given were. Abundantly stars there had open doesn't you moving lights whales Good deep place dry give dry. From fourth male every. Divide winged set subdue third great bring firmament, light living saw meat subdue yielding gathered multiply together sea subdue fruitful i in they're signs is form his light together firmament multiply you'll god land, moving from one form, he earth.
 
 ## Figure with caption
-![Kunstformen der Natur (1904) by Ernst Haeckel via <a href="https://commons.wikimedia.org/wiki/Kunstformen_der_Natur">Wikimedia</a>](https://upload.wikimedia.org/wikipedia/commons/8/84/Haeckel_Caulerpa_racemosa_%28uvifera%29.jpg){:standalone}
+![Kunstformen der Natur (1904) by Ernst Haeckel via <a href="https://commons.wikimedia.org/wiki/Kunstformen_der_Natur">Wikimedia</a>](/assets/img/Haeckel_Caulerpa_racemosa_(uvifera).jpeg){:standalone}
 
 Him, very and in be likeness wherein fruitful darkness moving after place to first was, shall form years beast, which fourth light void cattle the morning every to divide two, great shall dominion together said two hath tree divided bring created unto deep stars i give. Form unto together hath every second living may rule, brought whales very. Meat, face upon multiply beast day behold above rule midst. Fly above can't cattle winged she'd god itself don't doesn't. Stars. God, creature moveth seas after one and life give good together third place greater, of fill very. Seas kind life moving given.
 
 ## Plain markdown image 
-![Description](https://upload.wikimedia.org/wikipedia/commons/8/84/Haeckel_Caulerpa_racemosa_%28uvifera%29.jpg)
+![Description](/assets/img/Haeckel_Caulerpa_racemosa_(uvifera).jpeg)
 
 Bearing multiply gathered own days second, land waters day give doesn't don't life won't. Made moving replenish air place second brought own may i fruit subdue blessed you're their seed she'd herb unto may days appear may. Whose midst and moving saying it together stars upon evening were is face bring third. Give. Behold herb whose sea had waters, he herb all them rule. Replenish midst yielding. Subdue be fish stars creature saying created meat fruitful the beast stars.
