@@ -13,6 +13,10 @@
   </script>
   {% endif %}
 
+  {% if page.noindex == true %}
+  <meta name="robots" content="noindex">
+  {% endif %}
+
   {% if page.layout == 'home' %}
     <title>{{ site.title | escape }}</title>
   {% else %}
