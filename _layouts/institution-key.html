@@ -11,18 +11,20 @@ description: Default template for occurrence search
   var widgetLocale = '{{ languageCode }}';
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
-  var routeConfig = userConfig.routeConfig || {};
-  routeConfig.basename = basename;
-  var instConfig = userConfig.instConfig;
+  var routes = userConfig.routes || {};
+  routes.basename = basename;
 
   ReactDOM.render(
     React.createElement(
       gbifReactComponents.Institution,
       { 
         style: { height: 'calc(100vh - 4.25rem)' }, 
-        theme: userTheme, 
-        config: userConfig,
-        routeContext: routeConfig,
+        siteConfig: {
+          ...siteConfig,
+          theme: userTheme, 
+          routes: routes,
+          locale: widgetLocale
+        },
         defaultBaseName: '/'
       }
     ),

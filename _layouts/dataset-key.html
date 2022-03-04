@@ -16,7 +16,7 @@ description: Default template for occurrence search
   
   ReactDOM.render(
     React.createElement(
-      gbifReactComponents.PublisherSearch,
+      gbifReactComponents.Dataset,
       { 
         style: { height: 'calc(100vh - 4.25rem)' }, 
         siteConfig: {
@@ -25,7 +25,7 @@ description: Default template for occurrence search
           routes: routes,
           locale: widgetLocale
         },
-        pageLayout: true,
+        defaultBaseName: '/'
       }
     ),
     document.getElementById('root')
@@ -34,7 +34,7 @@ description: Default template for occurrence search
   if (typeof userTheme === 'undefined') {
     console.warn('No theme defined - using default styling');
   }
-  if (typeof publisherConfig === 'undefined') {
-    console.warn('No publisher config provided - all data will be shown');
+  if (typeof userConfig === 'undefined') {
+    console.warn('No config provided - all data will be shown');
   }
 </script>

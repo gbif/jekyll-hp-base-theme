@@ -10,7 +10,7 @@ if (primaryColor) {
 }
 
 var siteConfig = {
-  routeConfig: {
+  routes: {
   },
   occurrence: {
     availableCatalogues: ['OCCURRENCE', 'DATASET', 'PUBLISHER', 'COLLECTION', 'INSTITUTION', 'LITERATURE']

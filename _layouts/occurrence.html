@@ -11,8 +11,8 @@ description: Default template for occurrence search
   var widgetLocale = '{{ languageCode }}';
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
-  var routeConfig = userConfig.routeConfig || {};
-  routeConfig.basename = basename;
+  var routes = userConfig.routes || {};
+  routes.basename = basename;
   var occurrenceConfig = userConfig.occurrence ? userConfig.occurrence : userConfig;
 
   ReactDOM.render(
@@ -20,15 +20,14 @@ description: Default template for occurrence search
       gbifReactComponents.OccurrenceSearch,
       { 
         style: { height: 'calc(100vh - 4.25rem)' }, 
-        theme: userTheme, 
-        config: occurrenceConfig,
-        locale: widgetLocale,
-        routeContext: routeConfig,
+        siteConfig: {
+          ...siteConfig,
+          occurrence: occurrenceConfig, // as temporary overwrite until the HPs have been updated to the new configuration schema
+          theme: userTheme, 
+          routes: routes,
+          locale: widgetLocale
+        },
         pageLayout: true,
-        // defaultBaseName: '/da/'
-        // messages: {
-        //   'filter.taxonKey.name': 'test'
-        // }
       }
     ),
     document.getElementById('root')

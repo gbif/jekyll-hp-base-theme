@@ -11,20 +11,21 @@ description: Default template for occurrence search
   var widgetLocale = '{{ languageCode }}';
   var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
   var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
-  var routeConfig = userConfig.routeConfig || {};
-  routeConfig.basename = basename;
-  var instConfig = userConfig.institution;
+  var routes = userConfig.routes || {};
+  routes.basename = basename;
 
   ReactDOM.render(
     React.createElement(
       gbifReactComponents.InstitutionSearch,
       { 
         style: { height: 'calc(100vh - 4.25rem)' }, 
-        theme: userTheme, 
-        config: instConfig,
-        locale: widgetLocale,
-        pageLayout: true,
-        routeContext: routeConfig,
+        siteConfig: {
+          ...siteConfig,
+          theme: userTheme, 
+          routes: routes,
+          locale: widgetLocale
+        },
+        pageLayout: true
       }
     ),
     document.getElementById('root')
