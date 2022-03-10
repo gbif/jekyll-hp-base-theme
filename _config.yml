@@ -69,7 +69,9 @@ asciidoctor:
   base_dir: :docdir
   safe: unsafe
   ext: asciidoc 
-  
+
+permalink: pretty
+
 # FRONTMATTER DEFAULTS
 defaults:
   -
