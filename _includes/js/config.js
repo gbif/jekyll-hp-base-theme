@@ -35,7 +35,7 @@ var siteConfig = {
     "mapbox": "pk.eyJ1IjoiZ2JpZiIsImEiOiJja3VmZm50Z3kxcm1vMnBtdnBmeGd5cm9hIn0.M2z2n9QP9fRHZUCw9vbgOA"
   },
   maps: {
-    locale: 'ja',
+    locale: 'en',
     defaultProjection: 'MERCATOR',
     defaultMapStyle: 'NATURAL',
     mapStyles: {
