@@ -33,5 +33,21 @@ var siteConfig = {
   apiKeys: {
     "maptiler": "wFxbBf3Tv2e75QQfYOOW",
     "mapbox": "pk.eyJ1IjoiZ2JpZiIsImEiOiJja3VmZm50Z3kxcm1vMnBtdnBmeGd5cm9hIn0.M2z2n9QP9fRHZUCw9vbgOA"
+  },
+  maps: {
+    locale: 'ja',
+    defaultProjection: 'MERCATOR',
+    defaultMapStyle: 'NATURAL',
+    mapStyles: {
+      ARCTIC: ['NATURAL', 'BRIGHT'],
+      PLATE_CAREE: ['NATURAL', 'BRIGHT', 'DARK'],
+      MERCATOR: ['NATURAL', 'BRIGHT', 'SATELLITE', 'DARK'],
+      ANTARCTIC: ['NATURAL', 'BRIGHT', 'DARK']
+    },
+    styleLookup: {
+      MERCATOR: {
+        NATURAL: 'NATURAL_HILLSHADE_MERCATOR'
+      }
+    }
   }
 };
