@@ -1,6 +1,7 @@
 {% assign background = include.background | default: include.content.background %}
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
 {% assign href = include.href | default: include.content.href %}
+{% assign blankTarget = include.blankTarget | default: include.content.blankTarget | default: false %}
 {% assign ratio = include.ratio %}
 {% assign useBackgroundImage = include.useBackgroundImage %}
 
@@ -39,7 +40,7 @@
     <img src="{{ background | absolute_url}}" />
     {% endif %}
   {% endif %}
-  {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}
+  {% if href %}<a href="{{ href }}" {% if blankTarget %}target="_blank"{% endif %} class="feature-overlay"></a>{% endif %}
   {% if imageLicense %}
   <div class="feature-img-license">
      <div class="feature-img-license-c"><span class="icon"><i class="fa fa-info-circle"></i></span> </div>

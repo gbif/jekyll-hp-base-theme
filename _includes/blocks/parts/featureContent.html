@@ -6,19 +6,20 @@
 {% assign center = include.center | default: include.content.center %}
 {% assign categories = include.categories | default: include.content.categories %}
 {% assign href = include.href | default: include.content.href | default: false %}
+{% assign blankTarget = include.blankTarget | default: include.content.blankTarget | default: false %}
 
 {% if preTitle or title or description or cta %}
 <div class="feature-content {% if center %} feature-content--centered {% endif %}">
   <div class="feature-text">
-    {% if href %}<a href="{{ href }}" class="feature-overlay"></a>{% endif %}
-    {% if preTitle %}
+    {% if href %}<a href="{{ href }}" {% if blankTarget %}target="_blank"{% endif %} class="feature-overlay"></a>{% endif %}
+    {% if preTitle %} 
     <div class="feature-pre-title">{{ preTitle }}</div>
     {% endif %}
-
+    
     {% if title %}
     <h3 class="feature-title">
       {% if href %}
-      <a href="{{ href }}">{{ title }}</a>
+      <a href="{{ href }}" {% if blankTarget %}target="_blank"{% endif %}>{{ title }}</a>
       {% else %}
       {{ title }}
       {% endif %}
@@ -35,7 +36,7 @@
   {% if cta %}
   <div class="feature-cta">
     {% for cta in cta %}
-    <a href="{{ cta.href | relative_url }}" class="button {% if cta.isPrimary %}is-primary{% else %}is-outlined{% endif %}">{{ cta.text }}</a>
+    <a href="{{ cta.href | relative_url }}" {% if cta.blankTarget %}target="_blank"{% endif %} class="button {% if cta.isPrimary %}is-primary{% else %}is-outlined{% endif %}">{{ cta.text }}</a>
     {% endfor %}
   </div>
   {% endif %}

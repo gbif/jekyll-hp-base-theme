@@ -6,6 +6,7 @@
 {% assign center = include.center | default: include.content.center %}
 {% assign categories = include.categories | default: include.content.categories %}
 {% assign href = include.href | default: include.content.href %}
+{% assign blankTarget = include.blankTarget | default: include.content.blankTarget | default: false %}
 {% assign ratio = include.ratio %}
 {% assign useBackgroundImage = include.useBackgroundImage | default: false %}
 {% assign ignoreThumbor = include.ignoreThumbor | default: false %}
@@ -15,10 +16,11 @@
   {% assign imageLicense = include.imageLicense %}
 {% endif %}
 
-{% include blocks/parts/featureImage.html background=background href=href imageLicense=imageLicense ratio=ratio useBackgroundImage=useBackgroundImage sizes=include.sizes ignoreThumbor=ignoreThumbor %}
+{% include blocks/parts/featureImage.html background=background href=href blankTarget=blankTarget imageLicense=imageLicense ratio=ratio useBackgroundImage=useBackgroundImage sizes=include.sizes ignoreThumbor=ignoreThumbor %}
 {% include blocks/parts/featureContent.html 
   preTitle=preTitle 
   href=href 
+  blankTarget=blankTarget 
   title=title
   description=description 
   cta=cta
