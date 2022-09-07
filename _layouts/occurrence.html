@@ -19,7 +19,7 @@ description: Default template for occurrence search
     React.createElement(
       gbifReactComponents.OccurrenceSearch,
       { 
-        style: { height: 'calc(100vh - 4.25rem)' }, 
+        style: { minHeight: 'calc(100vh - 4.25rem)' }, 
         siteConfig: {
           ...siteConfig,
           occurrence: occurrenceConfig, // as temporary overwrite until the HPs have been updated to the new configuration schema
