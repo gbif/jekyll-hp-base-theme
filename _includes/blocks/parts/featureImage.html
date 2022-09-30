@@ -11,14 +11,14 @@
   {% if useBackgroundImage != true %}
     {% if site.thumbor and include.ignoreThumbor != true %}
     <picture>
-        <source type="image/webp"
-                srcset="{% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 2000 %} 2000w, 
-                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1600 %} 1600w, 
-                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1200 %} 1200w, 
-                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 1000 %} 1000w, 
-                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 800 %} 800w, 
-                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 500 %} 500w,
-                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: webp, width: 10 %} 10w"
+        <source type="image/jpeg"
+                srcset="{% thumbor {{background | absolute_url}}, fit_in, format_filter: jpeg, width: 2000 %} 2000w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: jpeg, width: 1600 %} 1600w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: jpeg, width: 1200 %} 1200w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: jpeg, width: 1000 %} 1000w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: jpeg, width: 800 %} 800w, 
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: jpeg, width: 500 %} 500w,
+                        {% thumbor {{background | absolute_url}}, fit_in, format_filter: jpeg, width: 10 %} 10w"
                 {% if include.sizes %}
                 sizes="{{ include.sizes }}"
                 {% endif %}
