@@ -1,5 +1,5 @@
 {% assign markdownContent = include.markdownContent | default: include.content.markdownContent %}
-{% assign parsedContent = markdownContent | markdownify %}
+{% assign parsedContent = markdownContent | liquify | markdownify %}
 
 <section>
   <div class="article">
