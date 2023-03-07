@@ -1,6 +1,6 @@
 {% assign klass = include.klass | default: include.content.klass %}
 {% assign markdownContent = include.markdownContent | default: include.content.markdownContent %}
-{% assign parsedContent = markdownContent | markdownify %}
+{% assign parsedContent = markdownContent | liquify | markdownify %}
 
 <section class="{{klass}}">
     {{ parsedContent }}
