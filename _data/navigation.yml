@@ -28,5 +28,9 @@
     href: /publisher/search
   - text: Literaure
     href: /literature/search
+  - text: Institutions
+    href: /institution/search
+  - text: Collections
+    href: /collection/search
 - text: News
   href: /posts

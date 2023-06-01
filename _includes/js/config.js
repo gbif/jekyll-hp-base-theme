@@ -11,6 +11,28 @@ if (primaryColor) {
 
 var siteConfig = {
   routes: {
+    collectionKey: {
+      route: '/collection/:key',
+      isHref: true,
+      url: ({ key }) => {
+        return `/collection/${key}`;
+      }
+    },
+    collectionSpecimens: {
+      route: '/collection/:key/specimens',
+      url: ({ key }) => `/collection/${key}/specimens`
+    },
+    institutionKey: {
+      route: '/institution/:key',
+      isHref: true,
+      url: ({ key }) => {
+        return `/institution/${key}`;
+      }
+    },
+    institutionSpecimens: {
+      route: '/institution/:key/specimens',
+      url: ({ key }) => `/institution/${key}/specimens`
+    },
   },
   occurrence: {
     availableCatalogues: ['OCCURRENCE', 'DATASET', 'PUBLISHER', 'COLLECTION', 'INSTITUTION', 'LITERATURE']
