@@ -18,6 +18,10 @@ github_username: gbif                   # Social icon in footer
 
 tweets_on_home: false                      # Show Twitter feed of twitter_username on homepage
 
+plausible:
+  enabled: false
+  dataDomain: "hp-base-theme.gbif.org"
+
 # For use by the 'standardPrivacy' layout
 privacy:
   name: GBIF

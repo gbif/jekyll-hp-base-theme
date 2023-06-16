@@ -1,25 +1,44 @@
 ---
 layout: documentation
 permalink: /measurements # the documentation layout requires you to fill the permalink for it to be highlighted in the side navigation
-title: Measurements (e.g. Google Analytics)
-description: How to add Google Analytics
+title: Measurements (e.g. Plausible)
+description: How to add site measurements
 sideNavigation: sideNavigation.guides
 toc: true
 ---
-# Measurements (e.g. Google Analytics)
+# Measurements
 
-> If you are comfortable using Jekyll, then you can simple add it as you see fit. Remember to get the website users consent.
+If you are comfortable using Jekyll, then you can simple add it as you see fit. Remember to get the website users consent if needed.
 
-To make it easier we have added a simple way to add Google Analytics. You can configure this to use another analytics provider if you wish to.
+Adding tracking is for the most part quite simple, especially if your tracking does not require consent.
 
-{% if site.siteMeasurements.enable %}
-Google analytics is being used on this site if the user accept the privacy terms. If you have already accepted or rejected the privacy terms, then you no longer see the popup. To see it again you need to remove the stored preference for this site.
-<div>
-  <button class="button is-primary" onclick="localStorage.removeItem('GBIF_terms'); location.reload()">See popup again</button>
-</div>
-{% endif %}
+## Plausible.io
+You need a [plausible.io](https://plausible.io/) account and register your domain
+Once that is done, all you need to do (as of June 2023) is to add a script to your head tag.
+
+That can be done by creating a file (if it doesn't exist already) `_includes/head.html`. with the content
+
+```
+{% raw %}{% if site.plausible.enabled %}
+  <script defer data-domain="{{ site.plausible.dataDomain }}" src="https://plausible.io/js/script.js"></script>
+{% endif %}{% endraw %}
+```
+
+See more option in the [plausible documentation](https://plausible.io/docs/plausible-script)
+
+And in your configuration files `_config.yml` and `_config_staging.yml`, `_config_uat.yml` you add 
+```yaml
+plausible:
+  enabled: false # in _config.yml it should be true, in other domains you probably do not want tracking
+  dataDomain: "your-domain.org"
+```
+
+It will now check your config per environment. If you have plausible enabled, it will insert the `<script defer ...` part into the `<head>`-tag of all pages so that plausible can meassure visitors.
 
 ## Create a Google Analytics ID
+
+> We no longer recommend using Google Analytics as it is now illegal in Europe unless you modify GA in various ways to make it compliant. There are other more privacy respecting alternatives.
+
 You need to go to [https://analytics.google.com/](https://analytics.google.com/) and create an analytics property.
 
 ## Add configuration

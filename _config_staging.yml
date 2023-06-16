@@ -2,3 +2,7 @@ url: "https://hp-base-theme.gbif-staging.org" # the base hostname & protocol for
 
 siteMeasurements:
   enable: true
+
+plausible:
+  enabled: false
+  domain: hp-base-theme.gbif-staging.org
