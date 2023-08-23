@@ -23,7 +23,7 @@ Your data scope is unlikely to change very often, so we can help configuring it 
 {: .notification .is-info}
 
 ## Occurrence search tabs
-You can configure which tabs to show for occurrence search. This can be useful if e.g. you know that there is no images in your data scope.
+You can configure which tabs to show for occurrence search. This can be useful if e.g. you know that there are no images in your data scope.
 
 Configuration found in `/_includes/js/config.js`
 
@@ -49,7 +49,7 @@ var siteConfig = {
 };
 ```
 
-### Highligted
+### Highlighted
 It is possible to choose which filters to show as a default.
 ```
 var siteConfig = {
@@ -70,7 +70,7 @@ The currently available column names can be seen in the [code](https://github.co
 
 ## Map options
 
-You can configure the available projections and base layers in in `/_includes/js/config.js`.
+You can configure the available projections and base layers in `/_includes/js/config.js`.
 
 ```js
 var siteConfig = {
@@ -114,6 +114,6 @@ var siteConfig = {
 
 `NATURAL_HILLSHADE_MERCATOR` and `SATELLITE_MERCATOR` requires a maptiler API key.
 
-The map type `SATELLITE` is mapped to the style `SATELLITE_MERCATOR` per default. If you want to add hillshading to the default `NATURAL` map type, then you need to wire it to `NATURAL_HILLSHADE_MERCATOR`in the lookup.
+The map type `SATELLITE` is mapped to the style `SATELLITE_MERCATOR` per default. If you want to add hillshading to the default `NATURAL` map type, then you need to wire it to `NATURAL_HILLSHADE_MERCATOR` in the lookup.
 
 This is all a bit tricky, so feel free to [ask](https://github.com/gbif/hosted-portals/issues/new)
