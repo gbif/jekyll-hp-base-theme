@@ -18,9 +18,9 @@
   {% endif %}
 
   {% if page.layout == 'home' %}
-    <title>{{ site.title | escape }}</title>
+    <title>{{ site.title | append: "" | liquify | markdownify | strip_html | escape }}</title>
   {% else %}
-    <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
+    <title>{{ page.title | append: "" | liquify | markdownify | strip_html | escape }} - {{ site.title | append: "" | liquify | markdownify | escape }}</title>
   {% endif %}
   
   {% if page.description %}
