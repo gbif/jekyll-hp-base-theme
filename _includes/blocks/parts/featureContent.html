@@ -1,5 +1,5 @@
 {% assign preTitle = include.preTitle | default: include.content.preTitle %}
-{% assign title = include.title | default: include.content.title %}
+{% assign title = include.title | default: include.content.title | default:"" | append: "" %}
 {% assign description = include.description | default: include.content.description %}
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
 {% assign cta = include.cta | default: include.content.cta %}
@@ -19,9 +19,9 @@
     {% if title %}
     <h3 class="feature-title">
       {% if href %}
-      <a href="{{ href }}" {% if blankTarget %}target="_blank"{% endif %}>{{ title }}</a>
+      <a href="{{ href }}" {% if blankTarget %}target="_blank"{% endif %}>{{ title | append: "" | liquify | markdownify }}</a>
       {% else %}
-      {{ title }}
+      {{ title | append: "" | liquify | markdownify }}
       {% endif %}
     </h3>
     {% endif %}
