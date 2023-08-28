@@ -20,7 +20,7 @@
   {% if page.layout == 'home' %}
     <title>{{ site.title | append: "" | liquify | markdownify | strip_html | escape }}</title>
   {% else %}
-    <title>{{ page.title | append: "" | liquify | markdownify | strip_html | escape }} - {{ site.title | append: "" | liquify | markdownify | escape }}</title>
+    <title>{{ page.title | append: "" | liquify | markdownify | strip_html | escape }} - {{ site.title | append: "" | liquify | markdownify | strip_html | escape }}</title>
   {% endif %}
   
   {% if page.description %}
