@@ -1,5 +1,5 @@
 {% assign sizes = "(max-width: 500px) 100vw, 360px" %}
-<section class="features">
+<section class="features {% if include.content.klass %} {{ include.content.klass }} {% endif %}">
   {% if include.content.title or include.content.description %}
   <div class="features-intro">
     {% include blocks/parts/feature.html content=include.content %}
