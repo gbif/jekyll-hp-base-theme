@@ -12,6 +12,46 @@ if (primaryColor) {
 var siteConfig = {
   routes: {
     enabledRoutes: ['occurrenceSearch', 'institutionKey', 'institutionSearch', 'publisherSearch', 'collectionKey', 'collectionSearch', 'datasetKey', 'datasetSearch', 'literatureSearch'],
+    occurrenceSearch: {
+      isHref: true,
+      url: ({queryString}) => '/occurrence/search?' + queryString,
+      route: '/occurrence/search'
+    },
+    collectionKey: {
+      route: '/collection/:key',
+      isHref: true,
+      url: ({ key }) => {
+        return `/collection/${key}`;
+      }
+    },
+    collectionSpecimens: {
+      route: '/collection/:key/specimens',
+      url: ({ key }) => `/collection/${key}/specimens`
+    },
+    institutionKey: {
+      route: '/institution/:key',
+      isHref: true,
+      url: ({ key }) => {
+        return `/institution/${key}`;
+      }
+    },
+    institutionSpecimens: {
+      route: '/institution/:key/specimens',
+      url: ({ key }) => `/institution/${key}/specimens`
+    },
+    datasetKey: {
+      isHref: true,
+      url: ({ key }) => `/dataset/${key}`,
+      route: '/dataset/:key'
+    },
+    datasetCitations: {
+      route: '/dataset/:key/citations',
+      url: ({ key }) => `/dataset/${key}/citations`
+    },
+    datasetDownload: {
+      route: '/dataset/:key/download',
+      url: ({ key }) => `/dataset/${key}/download`
+    },
   },
   occurrence: {
     availableCatalogues: ['OCCURRENCE', 'DATASET', 'PUBLISHER', 'COLLECTION', 'INSTITUTION', 'LITERATURE']
