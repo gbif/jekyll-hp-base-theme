@@ -1,7 +1,16 @@
 # Links listed below will be included in your site's navbar (navigation at the top)
 
 - text: Documentation
-  href: /documentation-intro
+  menu: 
+  - text: Theme documentation
+    href: /documentation-intro
+  - text: |
+      <span>Jekyll 
+        <span class="icon-text">
+            <i class="fa fa-link"></i>
+        </span>
+      </span>
+    href: https://jekyllrb.com/
 - text: Layouts
   menu: # Dropdown menu (one level deep only)
   - text: Hero  # Name in the menu
