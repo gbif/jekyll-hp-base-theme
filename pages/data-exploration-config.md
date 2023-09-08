@@ -13,11 +13,97 @@ toc: true
 You can configure your data scope in `/_includes/js/config.js`.
 
 Below is an example of a site configured to only show fungi (i.e. taxonKey=5 in the GBIF backbone). Any predicate can be used. The format is defined in the [GBIF developer documentation](https://www.gbif.org/developer/occurrence#predicates). There is a difference though: keys are `camelCase` (as in APIv1 query parameters) instead of `CONSTANT_CASE`.
-```
+
+```js
 var siteConfig = {
-  rootPredicate: { type: 'equals', key: 'taxonKey', value: 5 }
+  version: 2,
+  routes: {
+    enabledRoutes: ['occurrenceSearch', 'collectionSearch', 'collectionKey', 'institutionSearch', 'institutionKey'], // what widgets do you include on your site. If not included we will link to gbif.org (for showing individual datasets for example)
+    occurrenceSearch: { // you can overwrite individual routes. 
+      route: '/specimen/search' // in this case we want the occurrence search to be available on a url that says specimens instead
+    }
+  },
+  availableCatalogues: ['INSTITUTION', 'COLLECTION', 'OCCURRENCE'],
+  occurrence: {
+    excludedFilters: ['occurrenceStatus', 'networkKey', 'hostingOrganizationKey', 'protocol', 'publishingCountryCode', 'institutionCode', 'collectionCode'],
+    highlightedFilters: ['taxonKey', 'verbatimScientificName', 'institutionKey', 'collectionKey', 'catalogNumber', 'recordedBy', 'identifiedBy'],
+    defaultTableColumns: ['features', 'institutionKey', 'collectionKey', 'catalogNumber', 'country', 'year', 'recordedBy', 'identifiedBy'],
+    mapSettings: {
+      lat: 0,
+      lng: 0,
+      zoom: 0
+    },
+    rootPredicate: {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "or",
+          "predicates": [
+            {
+              "type": "isNotNull",
+              "key": "institutionKey"
+            },
+            {
+              "type": "isNotNull",
+              "key": "collectionKey"
+            }
+          ]
+        },
+        {
+          "type": "in",
+          "key": "basisOfRecord",
+          "values": [
+            "PRESERVED_SPECIMEN",
+            "FOSSIL_SPECIMEN",
+            "MATERIAL_SAMPLE",
+            "LIVING_SPECIMEN"
+          ]
+        }
+      ]
+    },
+    occurrenceSearchTabs: ['MAP', 'TABLE', 'GALLERY', 'DATASETS'] // what tabs should be shown
+  },
+  collection: {
+    rootFilter: { // filters on the grscicoll collection v1 API https://www.gbif.org/developer/summary
+      displayOnNHCPortal: true 
+    }
+  },
+  institution: {
+    rootFilter: { // filters on the grscicoll institution v1 API https://www.gbif.org/developer/summary
+      displayOnNHCPortal: true,
+      active: true
+    },
+    mapSettings: {
+      enabled: true, // show a map on institution search?
+      lat: 0, // what is the default position of the map
+      lng: 0,
+      zoom: 1
+    },
+  },
+  dataset: {
+    rootFilter: {type: ['CHECKLIST']}
+  },
+  apiKeys: {
+    maptiler: "GET_YOUR_OWN_TOKEN", // https://github.com/gbif/hosted-portals/issues/229
+    mapbox: "GET_YOUR_OWN__TOKEN"
+  },
+  maps: {
+    locale: 'ja', // we want to show the maps in japanese
+    defaultProjection: 'MERCATOR',
+    defaultMapStyle: 'BRIGHT',
+    mapStyles: {
+      ARCTIC: ['NATURAL', 'BRIGHT'],
+      PLATE_CAREE: ['NATURAL', 'BRIGHT', 'DARK'],
+      MERCATOR: ['NATURAL', 'BRIGHT', 'SATELLITE', 'DARK'],
+      ANTARCTIC: ['NATURAL', 'BRIGHT', 'DARK']
+    }
+  },
+  messages: { // custom overwrites for the translations, e.g. label the occurrence catalog as a specimen catalog to match our data scope of specimens.
+    "catalogues.occurrences": "Specimens"
+  }
 };
 ```
+
 
 Your data scope is unlikely to change very often, so we can help configuring it if you need help.
 {: .notification .is-info}
@@ -30,7 +116,9 @@ Configuration found in `/_includes/js/config.js`
 ```
 var siteConfig = {
   // along with whatever other properties you have. E.g. your 'rootPredicate'
-  occurrenceSearchTabs: ['MAP', 'TABLE'], // possible values are TABLE, MAP, GALLERY, DATASETS
+  occurrence: {
+    occurrenceSearchTabs: ['MAP', 'TABLE'], // possible values are TABLE, MAP, GALLERY, DATASETS
+  }
 };
 ```
 
@@ -45,7 +133,9 @@ Configuration found in `/_includes/js/config.js`
 ```
 var siteConfig = {
   // along with whatever other properties you have. E.g. your 'rootPredicate'
-  excludedFilters: ['datasetKey'], // useful if your site is scoped by a single dataset
+  occurrence: {
+    excludedFilters: ['datasetKey'], // useful if your site is scoped by a single dataset
+  }
 };
 ```
 
@@ -54,7 +144,9 @@ It is possible to choose which filters to show as a default.
 ```
 var siteConfig = {
   // along with whatever other properties you have. E.g. your 'rootPredicate'
-  highlightedFilters: ['collectionCode', 'taxonKey'],
+  occurrence: {
+    highlightedFilters: ['collectionCode', 'taxonKey'],
+  }
 };
 ```
 
@@ -63,7 +155,9 @@ It is possible to control which columns are shown.
 ```
 var siteConfig = {
   // along with whatever other properties you have. E.g. your 'rootPredicate'
-  defaultTableColumns: ['features', 'country', 'coordinates', 'year', 'basisOfRecord', 'dataset', 'publisher', 'catalogNumber', 'recordedBy', 'identifiedBy'] // the first column will always be scientificName, that cannot be changed
+  occurrence: {
+    defaultTableColumns: ['features', 'country', 'coordinates', 'year', 'basisOfRecord', 'dataset', 'publisher', 'catalogNumber', 'recordedBy', 'identifiedBy'] // the first column will always be scientificName, that cannot be changed
+  }
 };
 ```
 The currently available column names can be seen in the [code](https://github.com/gbif/gbif-web/blob/master/packages/react-components/src/search/OccurrenceSearch/config/tableConfig.js#L18) as the property `name`.
