@@ -80,6 +80,25 @@ var siteConfig = {
       zoom: 1
     },
   },
+  literature: {
+    rootFilter: {
+      predicate: {
+        type: 'or', predicates: [
+          {
+            type: 'in',
+            key: 'countriesOfResearcher',
+            values: ['US', 'UM', 'AS', 'FM', 'GU', 'MH', 'MP', 'PR', 'PW', 'VI']
+          },
+          {
+            type: 'in',
+            key: 'countriesOfCoverage',
+            values: ['US', 'UM', 'AS', 'FM', 'GU', 'MH', 'MP', 'PR', 'PW', 'VI']
+          }
+        ]
+      }
+    },
+    highlightedFilters: ['q', 'countriesOfResearcher', 'countriesOfCoverage', 'year']
+  },
   dataset: {
     rootFilter: {type: ['CHECKLIST']}
   },
