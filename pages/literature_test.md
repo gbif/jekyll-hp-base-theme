@@ -14,7 +14,7 @@ permalink: /literature-test
   
   ReactDOM.render(
     React.createElement(
-      gbifReactComponents.LiteratureSearch,
+      gbifReactComponents.App,
       { 
         config: {rootFilter: {countriesOfResearcher: ["US", "CA", "MX", "UM", "PR", "VI", "AS", "GU", "MP"]}}, 
         style: { height: '600px' }
