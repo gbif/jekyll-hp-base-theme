@@ -104,9 +104,26 @@ var siteConfig = {
 };
 ```
 
-
 Your data scope is unlikely to change very often, so we can help configuring it if you need help.
 {: .notification .is-info}
+
+## Adding more than occurrences
+For each type you enable you need a corresponding markdown file. E.g. you want to add `collectionSearch`, then you also need to create a `collection.md` with the content
+```yml
+---
+permalink: /collection/search # This is the important as the url should be the same as the widget is configured to react to
+layout: collection-search # important as the layout is what inserts the widget
+
+# the rest is just the usual Frontmatter
+title: Collection
+description: Explore our collections
+lang-ref: collection
+---
+```
+
+The available layouts are: `collection-search, collection-key, institution-search, institution-key, dataset-search, dataset-key, occurrence, publisher, literature`.
+
+And teh default routes are `collection/search, collection/:key, institution/search, institution:key, dataset/search, dataset/:key, occurrence/search, publisher/search, literature/search`
 
 ## Occurrence search tabs
 You can configure which tabs to show for occurrence search. This can be useful if e.g. you know that there is no images in your data scope.
