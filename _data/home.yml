@@ -1,5 +1,9 @@
 # The home landing page
 
+# Resources cards
+resourcesExample:
+  title: Resources
+
 # Feature cards
 cardExample:
   title: Base filter

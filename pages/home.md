@@ -22,6 +22,8 @@ composition:
     type: split
   - data: home.cardExample
     type: features
+  - data: home.resourcesExample
+    type: resources
   - data: home.bannerExample2
     type: floatingText
 ---

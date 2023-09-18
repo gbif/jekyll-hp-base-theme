@@ -1,0 +1,129 @@
+{% assign sizes = "(max-width: 500px) 100vw, 360px" %}
+<section class="features {% if include.content.klass %} {{ include.content.klass }} {% endif %}">
+    {% if include.content.title or include.content.description %}
+    <div class="features-intro">
+        {% include blocks/parts/feature.html content=include.content %}
+    </div>
+    {% endif %}
+    <div id="resources-container" class="feature-cards has-{{include.content.features.size}}-elements">
+
+    </div>
+</section>
+
+<script>
+    function fetchResources() {
+        var GQL_ENDPOINT = 'http://localhost:4001/graphql';
+
+        var GQL_QUERY = `
+            query ResourceSearch($input: ResourceSearchInput!) {
+              resourceSearch(input: $input) {
+                results {
+                  __typename
+                  ... on News {
+                    title
+                    summary
+                    primaryImage {
+                      file {
+                        url
+                      }
+                      title
+                      description
+                    }
+                  }
+                }
+              }
+            }
+        `;
+
+        var resourceSearchInput = {
+            contentType: 'news',
+            limit: 6,
+            frontpage: true,
+        }
+
+        return fetch(GQL_ENDPOINT, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                query: GQL_QUERY,
+                variables: { input: resourceSearchInput }
+            }),
+        })
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                return data.data.resourceSearch.results;
+            })
+            .catch(function (error) {
+                console.error(error)
+            });
+    }
+
+    function renderResources(root, resources) {
+        resources.forEach(function (resource) {
+            // Create the article container for a single resource
+            var container = document.createElement('article');
+            container.classList.add('feature');
+
+            // Render the feature image and content
+            renderFeatureImage(container, resource);
+            renderFeatureContent(container, resource);
+
+            // Append the article to the root container
+            root.appendChild(container);
+        });
+    }
+
+    function renderFeatureImage(root, resource) {
+        var div = document.createElement('div');
+        div.classList.add('feature-img');
+
+        var img = document.createElement('img');
+        img.src = resource.primaryImage.file.url;
+        img.title = resource.primaryImage.title;
+        img.alt = resource.primaryImage.description;
+        div.appendChild(img);
+
+        var a = document.createElement('a');
+        a.href = '#';
+        a.classList.add('feature-overlay');
+        div.appendChild(a);
+
+        root.appendChild(div);
+    }
+
+    function renderFeatureContent(root, resource) {
+        var container = document.createElement('div');
+        container.classList.add('feature-content');
+
+        var preTitle = document.createElement('div');
+        preTitle.classList.add('feature-pre-title');
+        preTitle.textContent = resource.__typename;
+        container.appendChild(preTitle);
+
+        var title = document.createElement('h3');
+        title.classList.add('feature-title');
+        container.appendChild(title);
+
+        var titleLink = document.createElement('a');
+        titleLink.href = '#'; // TODO : Add link to gbif.org
+        titleLink.target = "_blank";
+        titleLink.textContent = resource.title;
+        title.appendChild(titleLink);
+
+        var description = document.createElement('div');
+        description.classList.add('feature-description');
+        description.textContent = resource.summary;
+        container.appendChild(description);
+
+        root.appendChild(container);
+    }
+
+    fetchResources().then(function (resources) {
+        var root = document.getElementById('resources-container');
+        renderResources(root, resources);
+    })
+</script>
