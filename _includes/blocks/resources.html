@@ -1,51 +1,148 @@
+{% assign id = include.id | default: include.content.id | default: "default" %}
+{% assign title = include.title | default: include.content.title %}
+{% assign description = include.description | default: include.content.description %}
+{% assign graphqlEndpoint = include.graphqlEndpoint | default: include.content.graphqlEndpoint | default: site.graphqlEndpoint | default: "https://graphql.gbif.org/graphql" %}
+{% assign contentTypes = include.contentTypes | default: include.content.contentTypes %}
+{% assign language = include.language | default: include.content.language %}
+{% assign q = include.q | default: include.content.q %}
+{% assign limit = include.limit | default: include.content.limit | 6 %}
+{% assign topics = include.topics | default: include.content.topics %}
+{% assign countriesOfCoverage = include.countriesOfCoverage | default: include.content.countriesOfCoverage %}
+{% assign countriesOfResearcher = include.countriesOfResearcher | default: include.content.countriesOfResearcher %}
 {% assign sizes = "(max-width: 500px) 100vw, 360px" %}
+
 <section class="features {% if include.content.klass %} {{ include.content.klass }} {% endif %}">
-    {% if include.content.title or include.content.description %}
+    {% if title or description %}
     <div class="features-intro">
         {% include blocks/parts/feature.html content=include.content %}
     </div>
     {% endif %}
-    <div id="resources-container" class="feature-cards has-{{include.content.features.size}}-elements">
+    <div id="resources-container-{{id}}" class="feature-cards has-{{include.content.features.size}}-elements">
 
     </div>
 </section>
 
 <script>
-    function fetchResources() {
-        var GQL_ENDPOINT = 'http://localhost:4001/graphql';
+  (function() {
+    // Add values from liquid to javascript
+    var containerId = "resources-container-{{id}}";
+    var graphqlEndpoint = "{{graphqlEndpoint}}";
+    var language = "{{language}}";
+    var q = "{{q}}";
+    var limit = {{limit}};
 
+    var contentTypes = [];
+    {% for contentType in contentTypes %}
+      contentTypes.push("{{contentType}}");
+    {% endfor %}
+    
+    var topics = [];
+    {% for topic in topics %}
+      topics.push("{{topic}}");
+    {% endfor %}
+
+    var countriesOfCoverage = [];
+    {% for country in countriesOfCoverage %}
+      countriesOfCoverage.push("{{country}}");
+    {% endfor %}
+
+    var countriesOfResearcher = [];
+    {% for country in countriesOfResearcher %}
+      countriesOfResearcher.push("{{country}}");
+    {% endfor %}
+
+    console.log({
+        graphqlEndpoint,
+        contentTypes,
+        q,
+        limit,
+        topics,
+        countriesOfCoverage,
+        countriesOfResearcher,
+        language
+    })
+
+    function fetchResources() {
         var GQL_QUERY = `
-            query ResourceSearch($input: ResourceSearchInput!) {
-              resourceSearch(input: $input) {
-                results {
-                  __typename
-                  ... on News {
-                    title
-                    summary
-                    primaryImage {
-                      file {
-                        url
-                      }
-                      title
-                      description
+          query ResourceSearch($input: ResourceSearchInput!) {
+            resourceSearch(input: $input) {
+              results {
+                __typename
+                ... on News {
+                  title
+                  summary
+                  primaryImage {
+                    file {
+                      url
                     }
+                    title
+                    description
                   }
+                }
+                ... on DataUse {
+                  title
+                  summary
+                  primaryImage {
+                    file {
+                      url
+                    }
+                    title
+                    description
+                  }
+                }
+                ... on Event {
+                  title
+                  primaryImage {
+                    file {
+                      url
+                    }
+                    title
+                    description
+                  }
+                  summary
                 }
               }
             }
+          }
         `;
 
-        var resourceSearchInput = {
-            contentType: 'news',
-            limit: 6,
-            frontpage: true,
+        // Construct the search input
+        var resourceSearchInput = {  
+          limit: limit,
+        };
+
+        if (q) {
+            resourceSearchInput.q = q;
         }
 
-        return fetch(GQL_ENDPOINT, {
+        if (contentTypes.length > 0) {
+            resourceSearchInput.contentTypes = contentTypes;
+        }
+
+        if (topics.length > 0) {
+            resourceSearchInput.topics = topics;
+        }
+
+        if (countriesOfCoverage.length > 0) {
+            resourceSearchInput.countriesOfCoverage = countriesOfCoverage;
+        }
+
+        if (countriesOfResearcher.length > 0) {
+            resourceSearchInput.countriesOfResearcher = countriesOfResearcher;
+        }
+
+        // Construct the request headers
+        var requestHeaders = {
+            'Content-Type': 'application/json',
+        };
+
+        if (language) {
+            requestHeaders['language'] = language;
+        }
+
+        return fetch(graphqlEndpoint, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+            headers: requestHeaders,
             body: JSON.stringify({
                 query: GQL_QUERY,
                 variables: { input: resourceSearchInput }
@@ -55,6 +152,11 @@
                 return response.json();
             })
             .then(function (data) {
+                if (Array.isArray(data.errors)) {
+                    console.error(data.errors);
+                    return [];
+                }
+
                 return data.data.resourceSearch.results;
             })
             .catch(function (error) {
@@ -123,7 +225,8 @@
     }
 
     fetchResources().then(function (resources) {
-        var root = document.getElementById('resources-container');
+        var root = document.getElementById(containerId);
         renderResources(root, resources);
-    })
+    });
+  })();
 </script>

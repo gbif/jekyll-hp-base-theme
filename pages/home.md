@@ -22,7 +22,11 @@ composition:
     type: split
   - data: home.cardExample
     type: features
-  - data: home.resourcesExample
+  - data: home.eventsExample
+    type: resources
+  - data: home.dataUseExample
+    type: resources
+  - data: home.newsExample
     type: resources
   - data: home.bannerExample2
     type: floatingText

@@ -1,8 +1,51 @@
 # The home landing page
 
 # Resources cards
-resourcesExample:
-  title: Resources
+# resourcesExample:
+#   title: Stories
+#   graphqlEndpoint: http://localhost:4001/graphql
+#   contentTypes:
+#     - news
+#     - dataUse
+#     - event
+#   # q: Downsizing
+#   limit: 6
+#   topics:
+#     - DATA_MANAGEMENT
+#   countriesOfCoverage:
+#     - AU
+#   # countriesOfResearcher:
+#   #   - AU
+#   #   - US
+#   language: es
+
+eventsExample:
+  id: events
+  title: Events
+  graphqlEndpoint: http://localhost:4001/graphql
+  contentTypes:
+    - event
+  limit: 3
+
+dataUseExample:
+  id: dataUse
+  title: Data use
+  graphqlEndpoint: http://localhost:4001/graphql
+  contentTypes:
+    - dataUse
+  limit: 3
+  countriesOfCoverage:
+    - AU
+
+newsExample:
+  id: news
+  title: News
+  graphqlEndpoint: http://localhost:4001/graphql
+  contentTypes:
+    - news
+  limit: 3
+  countriesOfCoverage:
+    - AU
 
 # Feature cards
 cardExample:
