@@ -1,7 +1,7 @@
 # The home landing page
 
-# Resources cards
-# resourcesExample:
+# stories cards
+# storiesExample:
 #   title: Stories
 #   graphqlEndpoint: http://localhost:4001/graphql
 #   contentTypes:

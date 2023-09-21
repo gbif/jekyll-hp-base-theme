@@ -23,11 +23,11 @@ composition:
   - data: home.cardExample
     type: features
   - data: home.eventsExample
-    type: resources
+    type: stories
   - data: home.dataUseExample
-    type: resources
+    type: stories
   - data: home.newsExample
-    type: resources
+    type: stories
   - data: home.bannerExample2
     type: floatingText
 ---
