@@ -183,12 +183,15 @@
         var div = document.createElement('div');
         div.classList.add('feature-img');
 
-        var img = document.createElement('img');
-        img.src = resource.primaryImage.file.url;
-        img.title = resource.primaryImage.title;
-        img.alt = resource.primaryImage.description;
-        div.appendChild(img);
+        if (resource.primaryImage != null) {
+          var img = document.createElement('img');
+          img.src = resource.primaryImage.file.url;
+          img.title = resource.primaryImage.title;
+          img.alt = resource.primaryImage.description;
+          div.appendChild(img);
+        }
 
+        // TODO: What should the link be?
         var a = document.createElement('a');
         a.href = '#';
         a.classList.add('feature-overlay');
@@ -213,12 +216,12 @@
         var titleLink = document.createElement('a');
         titleLink.href = '#'; // TODO : Add link to gbif.org
         titleLink.target = "_blank";
-        titleLink.textContent = resource.title;
+        titleLink.innerHTML = resource.title;
         title.appendChild(titleLink);
 
         var description = document.createElement('div');
         description.classList.add('feature-description');
-        description.textContent = resource.summary;
+        description.innerHTML = resource.summary;
         container.appendChild(description);
 
         root.appendChild(container);
