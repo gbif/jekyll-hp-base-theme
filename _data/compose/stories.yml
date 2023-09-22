@@ -1,0 +1,48 @@
+id: storiesExample # required
+title: "type: stories" # optional
+description: | # optional
+  This block allows you to display dynamic news, dataUse and events.
+  You can provide the block with options to select the content that is relevant to your.
+
+  Examples:
+    - Highlighting the empact of US biodiversity data in worldwide human health research.
+    - Spotlighting research that impacts the US and is powered by biodiversity data.
+    - Highlighting upcoming events.
+    - Display the latest news in your selected topics.
+
+  You can see all the options for selecting content and the structure of this block in the [`_data/compose/stories.yml`] file.
+graphqlEndpoint: http://localhost:4001/graphql # optional - The default value is the production endpoint. Other values are only used for testing internally in GBIF.
+contentTypes: # required (Must select at least one)
+  - dataUse
+  # - news
+  # - event
+limit: 6 # optional (default: 6)
+countriesOfResearcher: # optional - Filter by country of researcher with any iso country code. This filter will only apply to dataUse content type.
+  - US
+  # Add more countries here to filter by multiple countries. The filter is an OR filter.
+countriesOfCoverage: # optional - Filter by country of coverage with any iso country code. This filter will only apply to dataUse content type.
+  - US
+  # Add more countries here to filter by multiple countries. The filter is an OR filter.
+topics: # optional - Filter by topic with any topic code. This filter is an OR filter. This filter will only apply to dataUse and news content type.
+  - DNA
+  - DATA_PAPER
+  - INFRASTRUCTURE
+  - TAXONOMY
+  - SPECIES_DISTRIBUTIONS
+  - PHYLOGENETICS
+  - MARINE
+  - INVASIVES
+  - HUMAN_HEALTH
+  - FRESHWATER
+  - EVOLUTION
+  - ECOSYSTEM_SERVICES
+  - ECOLOGY
+  - DATA_MANAGEMENT
+  - CONSERVATION
+  - CLIMATE_CHANGE
+  - CITIZEN_SCIENCE
+  - BIOGEOGRAPHY
+  - BIODIVERSITY_SCIENCE
+  - AGRICULTURE
+language: en-GB # optional - Will return content in the specified language. If not specified or a translation is not available, the default language is English. The options are: en-GB, ru, es, ar, fr, pt, zh-Hans, nl, zh-Hant, ja, ko, uk, pl
+ 

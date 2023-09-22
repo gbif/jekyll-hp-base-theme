@@ -37,6 +37,8 @@ composition:
   data: compose.examples.text
 - type: media
   data: compose.media
+- type: stories
+  data: compose.stories
 ---
 
 # type: pageMarkdown
@@ -68,4 +70,5 @@ composition:
 * product
 * splitBanner
 * textBanner
+* stories
 

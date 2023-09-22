@@ -22,11 +22,11 @@ composition:
     type: split
   - data: home.cardExample
     type: features
-  - data: home.eventsExample
+  # - data: home.eventsExample
+  #   type: stories
+  - data: home.storiesCountriesOfCoverageUS
     type: stories
-  - data: home.dataUseExample
-    type: stories
-  - data: home.newsExample
+  - data: home.storiesCountriesOfResearcherUS
     type: stories
   - data: home.bannerExample2
     type: floatingText

@@ -51,17 +51,6 @@
       countriesOfResearcher.push("{{country}}");
     {% endfor %}
 
-    console.log({
-        graphqlEndpoint,
-        contentTypes,
-        q,
-        limit,
-        topics,
-        countriesOfCoverage,
-        countriesOfResearcher,
-        language
-    })
-
     function fetchResources() {
         var GQL_QUERY = `
           query ResourceSearch($input: ResourceSearchInput!) {
@@ -69,6 +58,7 @@
               results {
                 __typename
                 ... on News {
+                  id
                   title
                   summary
                   primaryImage {
@@ -80,6 +70,7 @@
                   }
                 }
                 ... on DataUse {
+                  id
                   title
                   summary
                   primaryImage {
@@ -91,6 +82,7 @@
                   }
                 }
                 ... on Event {
+                  id
                   title
                   primaryImage {
                     file {
@@ -98,6 +90,10 @@
                     }
                     title
                     description
+                  }
+                  primaryLink {
+                    label
+                    url
                   }
                   summary
                 }
@@ -193,7 +189,8 @@
 
         // TODO: What should the link be?
         var a = document.createElement('a');
-        a.href = '#';
+        a.href = createResourceHref(resource);
+        a.target = "_blank";
         a.classList.add('feature-overlay');
         div.appendChild(a);
 
@@ -214,7 +211,7 @@
         container.appendChild(title);
 
         var titleLink = document.createElement('a');
-        titleLink.href = '#'; // TODO : Add link to gbif.org
+        titleLink.href = createResourceHref(resource);
         titleLink.target = "_blank";
         titleLink.innerHTML = resource.title;
         title.appendChild(titleLink);
@@ -225,6 +222,20 @@
         container.appendChild(description);
 
         root.appendChild(container);
+    }
+
+    function createResourceHref(resource) {
+      switch (resource.__typename) {
+        case "DataUse": return "https://www.gbif.org/data-use/" + resource.id;
+        case "News": return "https://www.gbif.org/news/" + resource.id;
+        case "Event": {
+          if (resource.primaryLink != null) {
+            return resource.primaryLink.url;
+          }
+
+          return "https://www.gbif.org/event/" + resource.id;
+        };
+      }
     }
 
     fetchResources().then(function (resources) {
