@@ -1,7 +1,8 @@
 {
   "rewrites": [
-    { "source": "/institution/!(search)", "destination": "/institution/key.html" },
-    { "source": "/collection/!(search)", "destination": "/collection/key.html" },
-    { "source": "/dataset/!(search)", "destination": "/dataset/key.html" }
+    { "source": "/institution/!(search)", "destination": "/institution/_key_.html" },
+    { "source": "/collection/!(search)", "destination": "/collection/_key_.html" },
+    { "source": "/dataset/!(search)", "destination": "/dataset/_key_.html" },
+    { "source": "/publisher/!(search)", "destination": "/publisher/_key_.html" }
   ]
 }
