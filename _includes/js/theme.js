@@ -229,6 +229,22 @@ function resetPrivacySettings() {
   location.reload()
 }
 
+console.log(`%c 
+ ,_,
+(O,O)
+(   )  Enabled by GBIF
+-"-"-
+
+All GBIF mediated data is freely available through our APIs. 
+https://www.gbif.org/developer/summary
+
+All GBIF source code is open source.
+https://github.com/gbif
+
+You can also reach us at
+helpdesk@gbif.org
+`, 'color: green; font-weight: bold;');
+
 {% if site.siteMeasurements.enable %}
   {% include js/measure.js %}
   {% include js/terms.js %}

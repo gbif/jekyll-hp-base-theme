@@ -26,16 +26,15 @@ You can also set defaults in your `_config.yml`. That will spare you from writin
 
 ```yml
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
+      path: "" # an empty string here means all files in the project
     values:
-      lang: en
-  -
-    scope:
-      path: "da"
+      layout: "page" # Example: any page will use the layout "page". 
+      lang: en # And have the default language english
+  - scope:
+      path: "la" # but for anything in the `la` folder we want the language to be latin. 
     values:
-      lang: da
+      lang: la
 ```
 
 ## Add translations of labels
