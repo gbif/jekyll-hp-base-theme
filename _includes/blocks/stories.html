@@ -133,7 +133,7 @@
         };
 
         if (language) {
-            requestHeaders['language'] = language;
+            requestHeaders['locale'] = language;
         }
 
         return fetch(graphqlEndpoint, {
