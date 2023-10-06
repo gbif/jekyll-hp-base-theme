@@ -192,7 +192,8 @@ It is possible to control which columns are shown.
 var siteConfig = {
   // along with whatever other properties you have. E.g. your 'rootPredicate'
   occurrence: {
-    defaultTableColumns: ['features', 'country', 'coordinates', 'year', 'basisOfRecord', 'dataset', 'publisher', 'catalogNumber', 'recordedBy', 'identifiedBy'] // the first column will always be scientificName, that cannot be changed
+    availableTableColumns: ['features', 'country', 'coordinates', 'year', 'basisOfRecord', 'dataset', 'publisher', 'catalogNumber', 'recordedBy', 'identifiedBy'] // all the columns that are available to the user. This array defines the order they appear in. By default all all column are available.
+    defaultTableColumns: ['features', 'basisOfRecord', 'preparations'] // the columns showed by default. The order is not relevant, as it is defined in the list of available coluns. The user can change what columns to show in the UI.
   }
 };
 ```
