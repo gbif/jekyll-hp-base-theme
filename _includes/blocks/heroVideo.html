@@ -29,7 +29,7 @@ themeFeedback.push({title: "Missing video", description: 'You haven\'t configure
 {% assign background = background | default: "https://via.placeholder.com/500x300?text=Img%20required" %}
 
 
-<section class="floatingHero
+<section {% if include.content.id %} id="{{ include.content.id }}" {% endif %} class="floatingHero
   {% if include.content.klass %} {{ include.content.klass }} {% endif %}
   {% if hasBlackText %}{% else %} hasWhiteText {% endif %} 
   {% if hasTextShadow %} hasTextShadow {% endif %} 

@@ -13,7 +13,7 @@ themeFeedback.push({title: "Number of latest posts", description: "You haven't c
 {% assign postLimit = site.algae.latestPostLimit | default: 3 %}
 
 {%- if postLimit > 0 and posts.size > 0 -%}
-<section class="features">
+<section {% if include.content.id %} id="{{ include.content.id }}" {% endif %} class="features">
   {% if include.content.title or include.content.description %}
   <div class="features-intro">
     {% include blocks/parts/feature.html content=include.content %}

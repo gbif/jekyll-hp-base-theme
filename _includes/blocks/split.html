@@ -1,5 +1,5 @@
 {% assign sizes = "(min-width: 1000px) 50vw, 1px" %}
-<section class="splitBanner 
+<section {% if include.content.id %} id="{{ include.content.id }}" {% endif %} class="splitBanner 
   {% if include.content.klass %} {{ include.content.klass }} {% endif %}
   {% if include.content.reverse %}splitBanner--reverse{% endif %}">
   {% include blocks/parts/feature.html content=include.content sizes=sizes %}
