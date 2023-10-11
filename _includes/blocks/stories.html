@@ -72,7 +72,6 @@
                     url
                   }
                   title
-                  description
                 }
               }
               ... on DataUse {
@@ -85,7 +84,6 @@
                     url
                   }
                   title
-                  description
                 }
               }
               ... on Event {
@@ -98,7 +96,6 @@
                     url
                   }
                   title
-                  description
                 }
                 primaryLink {
                   label
@@ -152,14 +149,18 @@
         return;
       }
 
-      resources.forEach(resource => {
-        root.innerHTML += `
+      var html = resources.map(function (resource) {
+        return `
           <article class="feature">
             ${renderFeatureImage(resource)}
             ${renderFeatureContent(resource)}
           </article>
         `;
-      });
+      }).join("");
+
+      console.log(html);
+
+      root.innerHTML = html;
     }
 
     function renderFeatureImage(resource) {
@@ -172,7 +173,6 @@
           <img 
             src="${resource.primaryImage.file.url}" 
             title="${resource.primaryImage.title}" 
-            alt="${resource.primaryImage.description}">
           <a 
             href="${createResourceHref(resource)}" 
             target="_blank" 
