@@ -54,6 +54,9 @@ algae:
     # color: "#00000088"
     # hasWhiteText: true
 
+# CONTENT SETTINGS
+graphqlEndpoint: "https://graphql.gbif.org/graphql" # The endpoint to use for obtaining dynamic data such as the latest news. This can be configured to target different environments for testing.
+
 # BUILD SETTINGS
 markdown: kramdown
 plugins:                                # If you build your site on gh-pages, only use these plugins: https://pages.github.com/versions/

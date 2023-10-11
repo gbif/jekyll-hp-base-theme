@@ -3,6 +3,11 @@ en:
   # icon: /assets/img/american_samoa_flag.svg
   # languageCode: en-DK # This code will be used when setting the hreflang and website lang. If not defined the url code will be used. what code to use? https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#attr-hreflang
   widgetLocale: en
+  # The value of storiesLocale will be used to pick translations when using the stories block. 
+  # If the content is not available in the specified language, the default language will be English.
+  # The options are: en-GB, ru, es, ar, fr, pt, zh-Hans, nl, zh-Hant, ja, ko, uk, pl
+  # Note that most of the content is only available in English.
+  storiesLocale: en-GB
 la:
   label: Latin
   archive_permalink: /la/archive/

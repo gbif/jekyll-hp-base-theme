@@ -1,0 +1,225 @@
+{% assign id = 10 | random_hex %}
+{% assign title = include.title | default: include.content.title %}
+{% assign description = include.description | default: include.content.description %}
+{% assign sizes = "(max-width: 500px) 100vw, 360px" %}
+{% assign filters = include.filters | default: include.content.filters %}
+{% assign graphqlEndpoint = site.graphqlEndpoint | default: "https://graphql.gbif.org/graphql" %}
+{% assign language = site.data.languages[page.lang].storiesLocale | default: "en-GB" %}
+
+{% assign dataUseLabel = site.data.translations['DataUse'][page.lang] | default: "Data Use" %}
+{% assign eventLabel = site.data.translations['Event'][page.lang] | default: "Event" %}
+{% assign literatureLabel = site.data.translations['Literature'][page.lang] | default: "Literature" %}
+{% assign newsLabel = site.data.translations['News'][page.lang] | default: "News" %}
+
+<section class="features {% if include.content.klass %} {{ include.content.klass }} {% endif %}">
+  {% if title or description %}
+  <div class="features-intro">
+    {% include blocks/parts/feature.html content=include.content %}
+  </div>
+  {% endif %}
+  <div id="resources-container-{{id}}" class="feature-cards has-{{include.content.features.size}}-elements">
+
+  </div>
+</section>
+
+<script>
+  (function () {
+    var CONTENT_TYPE_OPTIOS = ["NEWS", "LITERATURE", "DATA_USE", "EVENT"]
+
+    // Extract values from the liquid template
+    var graphqlEndpoint = "{{graphqlEndpoint}}";
+    var language = "{{language}}"
+    var containerId = "resources-container-{{id}}";
+    var filters = {{ filters | jsonify }};
+    var dataUseLabel = "{{dataUseLabel}}";
+    var eventLabel = "{{eventLabel}}";
+    var literatureLabel = "{{literatureLabel}}";
+    var newsLabel = "{{newsLabel}}";
+
+    // Add default values to content type if not set. This is to prevent GraphQL from returning a content type we don't support
+    if (filters.contentType == null) {
+      filters.contentType = CONTENT_TYPE_OPTIOS;
+    }
+
+    // Make sure the content type array provided only contains supported content types
+    filters.contentType = filters.contentType.filter(function (value) {
+      var isSupportedContentType = CONTENT_TYPE_OPTIOS.includes(value);
+      if (!isSupportedContentType) {
+        console.warn("Invalid content type: " + value + " has been provided to the stories block type. Supported values are: " + CONTENT_TYPE_OPTIOS.join(", "));
+      }
+      return isSupportedContentType;
+    });
+
+    function fetchResources() {
+      var GQL_QUERY = `
+        query ResourceSearch($input: ResourceSearchInput!) {
+          resourceSearch(input: $input) {
+            results {
+              __typename
+              ... on Literature {
+                id
+                title
+                excerpt
+                websites
+              }
+              ... on News {
+                id
+                title
+                excerpt
+                gbifHref
+                primaryImage {
+                  file {
+                    url
+                  }
+                  title
+                  description
+                }
+              }
+              ... on DataUse {
+                id
+                title
+                excerpt
+                gbifHref
+                primaryImage {
+                  file {
+                    url
+                  }
+                  title
+                  description
+                }
+              }
+              ... on Event {
+                id
+                title
+                excerpt
+                gbifHref
+                primaryImage {
+                  file {
+                    url
+                  }
+                  title
+                  description
+                }
+                primaryLink {
+                  label
+                  url
+                }
+              }
+            }
+          }
+        }
+      `;
+
+      // Construct the request headers
+      var requestHeaders = {
+        'Content-Type': 'application/json',
+      };
+
+      if (language) {
+        requestHeaders['locale'] = language;
+      }
+
+      return fetch(graphqlEndpoint, {
+        method: 'POST',
+        headers: requestHeaders,
+        body: JSON.stringify({
+          query: GQL_QUERY,
+          variables: { input: filters }
+        }),
+      })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (result) {
+          if (Array.isArray(result.errors)) {
+            console.error(result.errors);
+          }
+
+          if (result.data != null && result.data.resourceSearch != null && Array.isArray(result.data.resourceSearch.results)) {
+            return result.data.resourceSearch.results;
+          }
+
+          return [];
+        })
+        .catch(function (error) {
+          console.error(error)
+        });
+    }
+
+    function renderResources(root, resources) {
+      if (resources.length === 0) {
+        // TODO: Render a message that no resources were found
+        return;
+      }
+
+      resources.forEach(resource => {
+        root.innerHTML += `
+          <article class="feature">
+            ${renderFeatureImage(resource)}
+            ${renderFeatureContent(resource)}
+          </article>
+        `;
+      });
+    }
+
+    function renderFeatureImage(resource) {
+      if (resource.primaryImage == null) {
+        return '';
+      }
+
+      return `
+        <div class="feature-img">
+          <img 
+            src="${resource.primaryImage.file.url}" 
+            title="${resource.primaryImage.title}" 
+            alt="${resource.primaryImage.description}">
+          <a 
+            href="${createResourceHref(resource)}" 
+            target="_blank" 
+            class="feature-overlay">
+          </a>
+        </div>
+      `;
+    }
+
+    function renderFeatureContent(resource) {
+      return `
+        <div class="feature-content">
+          <div class="feature-pre-title">${pickResourceLabel(resource)}</div>
+          <h3 class="feature-title">
+            <a href="${createResourceHref(resource)}" target="_blank">${resource.title}</a>
+          </h3>
+          <div class="feature-description">${resource.excerpt}</div>
+        </div>
+      `;
+    }
+
+    function pickResourceLabel(resource) {
+      switch (resource.__typename) {
+        case "DataUse": return dataUseLabel;
+        case "Event": return eventLabel;
+        case "Literature": return literatureLabel;
+        case "News": return newsLabel;
+      }
+
+      return resource.__typename;
+    }
+
+    function createResourceHref(resource) {
+      if (resource.__typename === "Literature") {
+        return resource.websites[0];
+      }
+
+      if (resource.__typename === "Event" && resource.primaryLink != null) {
+        return resource.primaryLink.url;
+      }
+
+      return resource.gbifHref;
+    }
+
+    fetchResources().then(function (resources) {
+      var root = document.getElementById(containerId);
+      renderResources(root, resources);
+    });
+  })();
+</script>

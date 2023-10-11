@@ -1,5 +1,44 @@
 # The home landing page
 
+# stories cards
+# storiesExample:
+#   title: Stories
+#   description: Stories
+#   contentType:
+#     - NEWS
+#     - DATA_USE
+#     - EVENT
+#   q: Downsizing
+#   limit: 6
+#   topics:
+#     - DATA_MANAGEMENT
+#   countriesOfCoverage:
+#     - AU
+#   # countriesOfResearcher:
+#   #   - AU
+#   #   - US
+#   language: es
+
+storiesCountriesOfCoverageUS:
+  title: Biodiversity Data's US Footprint
+  description: Spotlighting research that impacts the US and is powered by biodiversity data.
+  filters:
+    contentType:
+      - DATA_USE
+    limit: 6
+    countriesOfCoverage:
+      - US
+
+storiesCountriesOfResearcherUS:
+  title: US Researchers' Global Reach
+  description: Tracing the impact of US biodiversity data in worldwide human health research.
+  filters:
+    contentType:
+      - DATA_USE
+    limit: 6
+    countriesOfResearcher:
+      - US
+
 # Feature cards
 cardExample:
   title: Base filter

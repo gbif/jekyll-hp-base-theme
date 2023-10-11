@@ -19,6 +19,7 @@
     "url": "https://github.com/gbif/jekyll-theme-algae/issues"
   },
   "scripts": {
+    "docker:dev": "docker run --rm --volume=\"$PWD:/srv/jekyll\" --volume=\"$PWD/vendor/bundle:/usr/local/bundle\" --env JEKYLL_ENV=development -p 4000:4000 jekyll/jekyll:4.1.0 jekyll serve --config _config.yml,_config_local.yml",
     "copy:bulma": "cp -r node_modules/bulma/* _sass/bulma",
     "copy:font-awesome": "cp node_modules/font-awesome/css/font-awesome.min.css assets/theme/css/font-awesome.min.css && cp -r node_modules/font-awesome/fonts/* assets/theme/fonts",
     "copy:all": "mkdir -p _sass/bulma && mkdir -p assets/theme/css && mkdir -p assets/theme/fonts && mkdir -p assets/theme/js && npm run copy:bulma && npm run copy:font-awesome"
