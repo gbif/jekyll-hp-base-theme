@@ -1,48 +1,72 @@
-id: storiesExample # required
-title: "type: stories" # optional
-description: | # optional
-  This block allows you to display dynamic news, dataUse and events.
-  You can provide the block with options to select the content that is relevant to your.
+# "Stories" Block Configuration Guide
 
-  Examples:
-    - Highlighting the empact of US biodiversity data in worldwide human health research.
-    - Spotlighting research that impacts the US and is powered by biodiversity data.
-    - Highlighting upcoming events.
-    - Display the latest news in your selected topics.
+# Title (Optional)
+title: "type: stories" 
 
-  You can see all the options for selecting content and the structure of this block in the [`_data/compose/stories.yml`] file.
-graphqlEndpoint: http://localhost:4001/graphql # optional - The default value is the production endpoint. Other values are only used for testing internally in GBIF.
-contentTypes: # required (Must select at least one)
-  - dataUse
-  # - news
-  # - event
-limit: 6 # optional (default: 6)
-countriesOfResearcher: # optional - Filter by country of researcher with any iso country code. This filter will only apply to dataUse content type.
-  - US
-  # Add more countries here to filter by multiple countries. The filter is an OR filter.
-countriesOfCoverage: # optional - Filter by country of coverage with any iso country code. This filter will only apply to dataUse content type.
-  - US
-  # Add more countries here to filter by multiple countries. The filter is an OR filter.
-topics: # optional - Filter by topic with any topic code. This filter is an OR filter. This filter will only apply to dataUse and news content type.
-  - DNA
-  - DATA_PAPER
-  - INFRASTRUCTURE
-  - TAXONOMY
-  - SPECIES_DISTRIBUTIONS
-  - PHYLOGENETICS
-  - MARINE
-  - INVASIVES
-  - HUMAN_HEALTH
-  - FRESHWATER
-  - EVOLUTION
-  - ECOSYSTEM_SERVICES
-  - ECOLOGY
-  - DATA_MANAGEMENT
-  - CONSERVATION
-  - CLIMATE_CHANGE
-  - CITIZEN_SCIENCE
-  - BIOGEOGRAPHY
-  - BIODIVERSITY_SCIENCE
-  - AGRICULTURE
-language: en-GB # optional - Will return content in the specified language. If not specified or a translation is not available, the default language is English. The options are: en-GB, ru, es, ar, fr, pt, zh-Hans, nl, zh-Hant, ja, ko, uk, pl
- 
+# Description (Optional)
+description: |
+  The "stories" block is designed to showcase dynamic content such as news, data use, literature, and events. Customize it to highlight relevant content based on your preferences. 
+  
+  **Here are some ways you can use it:**
+  - Spotlight the significance of US biodiversity data in global human health research.
+  - Feature research influenced by biodiversity data and its impact on the US.
+  - Promote upcoming events.
+  - Present the latest news tailored to your chosen topics.
+  
+  **For multilingual sites, remember to:**
+  - Add necessary translations for DataUse, News, Event, and Literature in [`_data/translations.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/translations.yml).
+  - Specify the desired language code for the stories block under `storiesLocale` in [`_data/languages.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/languages.yml).
+
+
+  **To dive deeper into content selection options and the block's structure, refer to the [`_data/compose/examples.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/compose/stories.yml).**
+
+# Filters
+# Use these options to tailor the content displayed in your block.
+filters:
+  # Content Type Filter (Optional)
+  # Define which types of content to display. If unspecified, all types are shown.
+  contentType: 
+    - DATA_USE
+    # Uncomment below to add more content types:
+    # - NEWS
+    # - EVENT
+    # - LITERATURE
+  
+  # Display Limit (Optional)
+  # Set the number of items to showcase. Default is 6.
+  limit: 6 
+
+  # Filter content by researcher's country using ISO country codes. (Optional)
+  countriesOfResearcher: 
+    - US
+    # Add more country codes for filtering (e.g., - GB, - CA, etc.)
+
+  # Filter content by country or coverage using ISO country codes. (Optional)
+  countriesOfCoverage:
+    - US
+    # Add more country codes for filtering.
+
+  # Topic Filters (Optional)
+  # Use these codes to filter content by specific topics.
+  topics:
+    # Uncomment any topics you want to exclude from the block.
+    - DNA
+    - DATA_PAPER
+    - INFRASTRUCTURE
+    - TAXONOMY
+    - SPECIES_DISTRIBUTIONS
+    - PHYLOGENETICS
+    - MARINE
+    - INVASIVES
+    - HUMAN_HEALTH
+    - FRESHWATER
+    - EVOLUTION
+    - ECOSYSTEM_SERVICES
+    - ECOLOGY
+    - DATA_MANAGEMENT
+    - CONSERVATION
+    - CLIMATE_CHANGE
+    - CITIZEN_SCIENCE
+    - BIOGEOGRAPHY
+    - BIODIVERSITY_SCIENCE
+    - AGRICULTURE 

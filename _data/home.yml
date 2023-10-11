@@ -4,10 +4,10 @@
 # storiesExample:
 #   title: Stories
 #   description: Stories
-#   contentTypes:
-#     - news
-#     - dataUse
-#     - event
+#   contentType:
+#     - NEWS
+#     - DATA_USE
+#     - EVENT
 #   q: Downsizing
 #   limit: 6
 #   topics:
@@ -20,35 +20,24 @@
 #   language: es
 
 storiesCountriesOfCoverageUS:
-  id: storiesCountriesOfCoverageUS
   title: Biodiversity Data's US Footprint
   description: Spotlighting research that impacts the US and is powered by biodiversity data.
-  graphqlEndpoint: http://localhost:4001/graphql
-  contentTypes:
-    - dataUse
-  limit: 6
-  countriesOfCoverage:
-    - US
+  filters:
+    contentType:
+      - DATA_USE
+    limit: 6
+    countriesOfCoverage:
+      - US
 
 storiesCountriesOfResearcherUS:
-  id: storiesCountriesOfResearcherUS
   title: US Researchers' Global Reach
   description: Tracing the impact of US biodiversity data in worldwide human health research.
-  graphqlEndpoint: http://localhost:4001/graphql
-  contentTypes:
-    - dataUse
-  limit: 6
-  countriesOfResearcher:
-    - US
-
-# eventsExample:
-#   id: events
-#   title: Global Events
-#   description: Take a look at our upcoming events
-#   graphqlEndpoint: http://localhost:4001/graphql
-#   contentTypes:
-#     - event
-#   limit: 1
+  filters:
+    contentType:
+      - DATA_USE
+    limit: 6
+    countriesOfResearcher:
+      - US
 
 # Feature cards
 cardExample:

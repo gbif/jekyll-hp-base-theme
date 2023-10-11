@@ -1,246 +1,225 @@
-{% assign id = include.id | default: include.content.id | default: "default" %}
+{% assign id = 10 | random_hex %}
 {% assign title = include.title | default: include.content.title %}
 {% assign description = include.description | default: include.content.description %}
-{% assign graphqlEndpoint = include.graphqlEndpoint | default: include.content.graphqlEndpoint | default: site.graphqlEndpoint | default: "https://graphql.gbif.org/graphql" %}
-{% assign contentTypes = include.contentTypes | default: include.content.contentTypes %}
-{% assign language = include.language | default: include.content.language %}
-{% assign q = include.q | default: include.content.q %}
-{% assign limit = include.limit | default: include.content.limit | 6 %}
-{% assign topics = include.topics | default: include.content.topics %}
-{% assign countriesOfCoverage = include.countriesOfCoverage | default: include.content.countriesOfCoverage %}
-{% assign countriesOfResearcher = include.countriesOfResearcher | default: include.content.countriesOfResearcher %}
 {% assign sizes = "(max-width: 500px) 100vw, 360px" %}
+{% assign filters = include.filters | default: include.content.filters %}
+{% assign graphqlEndpoint = site.graphqlEndpoint | default: "https://graphql.gbif.org/graphql" %}
+{% assign language = site.data.languages[page.lang].storiesLocale | default: "en-GB" %}
+
+{% assign dataUseLabel = site.data.translations['DataUse'][page.lang] | default: "Data Use" %}
+{% assign eventLabel = site.data.translations['Event'][page.lang] | default: "Event" %}
+{% assign literatureLabel = site.data.translations['Literature'][page.lang] | default: "Literature" %}
+{% assign newsLabel = site.data.translations['News'][page.lang] | default: "News" %}
 
 <section class="features {% if include.content.klass %} {{ include.content.klass }} {% endif %}">
-    {% if title or description %}
-    <div class="features-intro">
-        {% include blocks/parts/feature.html content=include.content %}
-    </div>
-    {% endif %}
-    <div id="resources-container-{{id}}" class="feature-cards has-{{include.content.features.size}}-elements">
+  {% if title or description %}
+  <div class="features-intro">
+    {% include blocks/parts/feature.html content=include.content %}
+  </div>
+  {% endif %}
+  <div id="resources-container-{{id}}" class="feature-cards has-{{include.content.features.size}}-elements">
 
-    </div>
+  </div>
 </section>
 
 <script>
-  (function() {
-    // Add values from liquid to javascript
-    var containerId = "resources-container-{{id}}";
+  (function () {
+    var CONTENT_TYPE_OPTIOS = ["NEWS", "LITERATURE", "DATA_USE", "EVENT"]
+
+    // Extract values from the liquid template
     var graphqlEndpoint = "{{graphqlEndpoint}}";
-    var language = "{{language}}";
-    var q = "{{q}}";
-    var limit = {{limit}};
+    var language = "{{language}}"
+    var containerId = "resources-container-{{id}}";
+    var filters = {{ filters | jsonify }};
+    var dataUseLabel = "{{dataUseLabel}}";
+    var eventLabel = "{{eventLabel}}";
+    var literatureLabel = "{{literatureLabel}}";
+    var newsLabel = "{{newsLabel}}";
 
-    var contentTypes = [];
-    {% for contentType in contentTypes %}
-      contentTypes.push("{{contentType}}");
-    {% endfor %}
-    
-    var topics = [];
-    {% for topic in topics %}
-      topics.push("{{topic}}");
-    {% endfor %}
+    // Add default values to content type if not set. This is to prevent GraphQL from returning a content type we don't support
+    if (filters.contentType == null) {
+      filters.contentType = CONTENT_TYPE_OPTIOS;
+    }
 
-    var countriesOfCoverage = [];
-    {% for country in countriesOfCoverage %}
-      countriesOfCoverage.push("{{country}}");
-    {% endfor %}
-
-    var countriesOfResearcher = [];
-    {% for country in countriesOfResearcher %}
-      countriesOfResearcher.push("{{country}}");
-    {% endfor %}
+    // Make sure the content type array provided only contains supported content types
+    filters.contentType = filters.contentType.filter(function (value) {
+      var isSupportedContentType = CONTENT_TYPE_OPTIOS.includes(value);
+      if (!isSupportedContentType) {
+        console.warn("Invalid content type: " + value + " has been provided to the stories block type. Supported values are: " + CONTENT_TYPE_OPTIOS.join(", "));
+      }
+      return isSupportedContentType;
+    });
 
     function fetchResources() {
-        var GQL_QUERY = `
-          query ResourceSearch($input: ResourceSearchInput!) {
-            resourceSearch(input: $input) {
-              results {
-                __typename
-                ... on News {
-                  id
-                  title
-                  summary
-                  primaryImage {
-                    file {
-                      url
-                    }
-                    title
-                    description
-                  }
-                }
-                ... on DataUse {
-                  id
-                  title
-                  summary
-                  primaryImage {
-                    file {
-                      url
-                    }
-                    title
-                    description
-                  }
-                }
-                ... on Event {
-                  id
-                  title
-                  primaryImage {
-                    file {
-                      url
-                    }
-                    title
-                    description
-                  }
-                  primaryLink {
-                    label
+      var GQL_QUERY = `
+        query ResourceSearch($input: ResourceSearchInput!) {
+          resourceSearch(input: $input) {
+            results {
+              __typename
+              ... on Literature {
+                id
+                title
+                excerpt
+                websites
+              }
+              ... on News {
+                id
+                title
+                excerpt
+                gbifHref
+                primaryImage {
+                  file {
                     url
                   }
-                  summary
+                  title
+                  description
+                }
+              }
+              ... on DataUse {
+                id
+                title
+                excerpt
+                gbifHref
+                primaryImage {
+                  file {
+                    url
+                  }
+                  title
+                  description
+                }
+              }
+              ... on Event {
+                id
+                title
+                excerpt
+                gbifHref
+                primaryImage {
+                  file {
+                    url
+                  }
+                  title
+                  description
+                }
+                primaryLink {
+                  label
+                  url
                 }
               }
             }
           }
-        `;
-
-        // Construct the search input
-        var resourceSearchInput = {  
-          limit: limit,
-        };
-
-        if (q) {
-            resourceSearchInput.q = q;
         }
+      `;
 
-        if (contentTypes.length > 0) {
-            resourceSearchInput.contentTypes = contentTypes;
-        }
+      // Construct the request headers
+      var requestHeaders = {
+        'Content-Type': 'application/json',
+      };
 
-        if (topics.length > 0) {
-            resourceSearchInput.topics = topics;
-        }
+      if (language) {
+        requestHeaders['locale'] = language;
+      }
 
-        if (countriesOfCoverage.length > 0) {
-            resourceSearchInput.countriesOfCoverage = countriesOfCoverage;
-        }
-
-        if (countriesOfResearcher.length > 0) {
-            resourceSearchInput.countriesOfResearcher = countriesOfResearcher;
-        }
-
-        // Construct the request headers
-        var requestHeaders = {
-            'Content-Type': 'application/json',
-        };
-
-        if (language) {
-            requestHeaders['locale'] = language;
-        }
-
-        return fetch(graphqlEndpoint, {
-            method: 'POST',
-            headers: requestHeaders,
-            body: JSON.stringify({
-                query: GQL_QUERY,
-                variables: { input: resourceSearchInput }
-            }),
+      return fetch(graphqlEndpoint, {
+        method: 'POST',
+        headers: requestHeaders,
+        body: JSON.stringify({
+          query: GQL_QUERY,
+          variables: { input: filters }
+        }),
+      })
+        .then(function (response) {
+          return response.json();
         })
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                if (Array.isArray(data.errors)) {
-                    console.error(data.errors);
-                    return [];
-                }
+        .then(function (result) {
+          if (Array.isArray(result.errors)) {
+            console.error(result.errors);
+          }
 
-                return data.data.resourceSearch.results;
-            })
-            .catch(function (error) {
-                console.error(error)
-            });
-    }
+          if (result.data != null && result.data.resourceSearch != null && Array.isArray(result.data.resourceSearch.results)) {
+            return result.data.resourceSearch.results;
+          }
 
-    function renderResources(root, resources) {
-        resources.forEach(function (resource) {
-            // Create the article container for a single resource
-            var container = document.createElement('article');
-            container.classList.add('feature');
-
-            // Render the feature image and content
-            renderFeatureImage(container, resource);
-            renderFeatureContent(container, resource);
-
-            // Append the article to the root container
-            root.appendChild(container);
+          return [];
+        })
+        .catch(function (error) {
+          console.error(error)
         });
     }
 
-    function renderFeatureImage(root, resource) {
-        var div = document.createElement('div');
-        div.classList.add('feature-img');
+    function renderResources(root, resources) {
+      if (resources.length === 0) {
+        // TODO: Render a message that no resources were found
+        return;
+      }
 
-        if (resource.primaryImage != null) {
-          var img = document.createElement('img');
-          img.src = resource.primaryImage.file.url;
-          img.title = resource.primaryImage.title;
-          img.alt = resource.primaryImage.description;
-          div.appendChild(img);
-        }
-
-        // TODO: What should the link be?
-        var a = document.createElement('a');
-        a.href = createResourceHref(resource);
-        a.target = "_blank";
-        a.classList.add('feature-overlay');
-        div.appendChild(a);
-
-        root.appendChild(div);
+      resources.forEach(resource => {
+        root.innerHTML += `
+          <article class="feature">
+            ${renderFeatureImage(resource)}
+            ${renderFeatureContent(resource)}
+          </article>
+        `;
+      });
     }
 
-    function renderFeatureContent(root, resource) {
-        var container = document.createElement('div');
-        container.classList.add('feature-content');
+    function renderFeatureImage(resource) {
+      if (resource.primaryImage == null) {
+        return '';
+      }
 
-        var preTitle = document.createElement('div');
-        preTitle.classList.add('feature-pre-title');
-        preTitle.textContent = resource.__typename;
-        container.appendChild(preTitle);
+      return `
+        <div class="feature-img">
+          <img 
+            src="${resource.primaryImage.file.url}" 
+            title="${resource.primaryImage.title}" 
+            alt="${resource.primaryImage.description}">
+          <a 
+            href="${createResourceHref(resource)}" 
+            target="_blank" 
+            class="feature-overlay">
+          </a>
+        </div>
+      `;
+    }
 
-        var title = document.createElement('h3');
-        title.classList.add('feature-title');
-        container.appendChild(title);
+    function renderFeatureContent(resource) {
+      return `
+        <div class="feature-content">
+          <div class="feature-pre-title">${pickResourceLabel(resource)}</div>
+          <h3 class="feature-title">
+            <a href="${createResourceHref(resource)}" target="_blank">${resource.title}</a>
+          </h3>
+          <div class="feature-description">${resource.excerpt}</div>
+        </div>
+      `;
+    }
 
-        var titleLink = document.createElement('a');
-        titleLink.href = createResourceHref(resource);
-        titleLink.target = "_blank";
-        titleLink.innerHTML = resource.title;
-        title.appendChild(titleLink);
+    function pickResourceLabel(resource) {
+      switch (resource.__typename) {
+        case "DataUse": return dataUseLabel;
+        case "Event": return eventLabel;
+        case "Literature": return literatureLabel;
+        case "News": return newsLabel;
+      }
 
-        var description = document.createElement('div');
-        description.classList.add('feature-description');
-        description.innerHTML = resource.summary;
-        container.appendChild(description);
-
-        root.appendChild(container);
+      return resource.__typename;
     }
 
     function createResourceHref(resource) {
-      switch (resource.__typename) {
-        case "DataUse": return "https://www.gbif.org/data-use/" + resource.id;
-        case "News": return "https://www.gbif.org/news/" + resource.id;
-        case "Event": {
-          if (resource.primaryLink != null) {
-            return resource.primaryLink.url;
-          }
-
-          return "https://www.gbif.org/event/" + resource.id;
-        };
+      if (resource.__typename === "Literature") {
+        return resource.websites[0];
       }
+
+      if (resource.__typename === "Event" && resource.primaryLink != null) {
+        return resource.primaryLink.url;
+      }
+
+      return resource.gbifHref;
     }
 
     fetchResources().then(function (resources) {
-        var root = document.getElementById(containerId);
-        renderResources(root, resources);
+      var root = document.getElementById(containerId);
+      renderResources(root, resources);
     });
   })();
 </script>
