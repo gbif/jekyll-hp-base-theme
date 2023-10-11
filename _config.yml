@@ -51,11 +51,12 @@ algae:
   navbar:
     # brandBackground: yellow
     # floating: true
-    # color: "#00000088"
+    # color: "#ff0000"
     # hasWhiteText: true
 
 # CONTENT SETTINGS
 graphqlEndpoint: "https://graphql.gbif.org/graphql" # The endpoint to use for obtaining dynamic data such as the latest news. This can be configured to target different environments for testing.
+# testSite: true # will style the header to highlight that this is a test site
 
 # BUILD SETTINGS
 markdown: kramdown

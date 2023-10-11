@@ -24,6 +24,7 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
   " 
   {% if color %}style="background-color: {{ color }}"{% endif %}
   role="navigation" aria-label="main navigation">
+  {% if site.testSite %}<div class="testSiteBanner"></div>{% endif %}
   <div class="navbar-content">
     <div class="navbar-brand">
       <a class="navbar-item navbar-logo" href="{{ '/' | append: homeLang | relative_url }}">
