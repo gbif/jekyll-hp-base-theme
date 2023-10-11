@@ -7,4 +7,4 @@ plausible:
   enabled: false
   domain: hp-base-theme.gbif-staging.org
 
-graphqlEndpoint: "https://graphql.gbif-staging.org/graphql"
+graphqlEndpoint: "https://graphql.gbif-dev.org/graphql"
