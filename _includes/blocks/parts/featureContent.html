@@ -36,7 +36,7 @@
   {% if cta %}
   <div class="feature-cta">
     {% for cta in cta %}
-    <a href="{{ cta.href | relative_url }}" {% if cta.blankTarget %}target="_blank"{% endif %} class="button {% if cta.isPrimary %}is-primary{% else %}is-outlined{% endif %}">{{ cta.text }}</a>
+    <a href="{{ cta.href | relative_url }}" {% if cta.blankTarget %}target="_blank"{% endif %} class="button {% if cta.isPrimary %}is-primary{% else %}is-outlined{% endif %} {% if cta.klass %}{{cta.klass}}{% endif %}">{{ cta.text }}</a>
     {% endfor %}
   </div>
   {% endif %}
