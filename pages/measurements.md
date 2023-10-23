@@ -8,12 +8,12 @@ toc: true
 ---
 # Measurements
 
-If you are comfortable using Jekyll, then you can simple add it as you see fit. Remember to get the website users consent if needed.
+If you are comfortable using Jekyll, then you can simply add it as you see fit. Remember to get the website users' consent if needed.
 
 Adding tracking is for the most part quite simple, especially if your tracking does not require consent.
 
 ## Plausible.io
-You need a [plausible.io](https://plausible.io/) account and register your domain
+You need a [plausible.io](https://plausible.io/) account and register your domain.
 Once that is done, all you need to do (as of June 2023) is to add a script to your head tag.
 
 That can be done by creating a file (if it doesn't exist already) `_includes/head.html`. with the content
@@ -24,7 +24,7 @@ That can be done by creating a file (if it doesn't exist already) `_includes/hea
 {% endif %}{% endraw %}
 ```
 
-See more option in the [plausible documentation](https://plausible.io/docs/plausible-script)
+See more options in the [plausible documentation](https://plausible.io/docs/plausible-script)
 
 And in your configuration files `_config.yml` and `_config_staging.yml`, `_config_uat.yml` you add 
 ```yaml
@@ -33,7 +33,7 @@ plausible:
   dataDomain: "your-domain.org"
 ```
 
-It will now check your config per environment. If you have plausible enabled, it will insert the `<script defer ...` part into the `<head>`-tag of all pages so that plausible can meassure visitors.
+It will now check your config per environment. If you have plausible enabled, it will insert the `<script defer ...` part into the `<head>`-tag of all pages so that plausible can measure visitors.
 
 ## Create a Google Analytics ID
 
@@ -70,10 +70,10 @@ rejectTerms:
 ```
 
 ## Add a page with your privacy policy
-You need to provide a page with your privacy policy. We have prepared one you can use that should suffice if all you do is using Google Analytics. See [Privacy Policy template](/privacy-policy-template) for more details on usage and conditions.
+You need to provide a page with your privacy policy. We have prepared one you can use that should suffice if all you do is use Google Analytics. See [Privacy Policy template](/privacy-policy-template) for more details on usage and conditions.
 
 ## Overwrite the default tracking scripts
-When the user accept the terms then a function is called that attach the measurement scripts.
+When the user accepts the terms then a function is called that attaches the measurement scripts.
 This function is called when the user clicks `accept` and on subsequent pages if the cookie (or rather localStorage variable has been set. The users consent/rejection is stored in local storage as `GBIF_terms`).
 
 If they accept then the function "attachMeasurements" will be called. You can overwrite this function by adding a file `/_includes/js/measure.js` and replace the function.
