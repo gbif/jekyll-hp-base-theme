@@ -1,5 +1,6 @@
 {% assign id = 10 | random_hex %}
 {% assign title = include.title | default: include.content.title %}
+{% assign useSiteLinkWhenPossible = include.useSiteLinkWhenPossible | default: include.content.useSiteLinkWhenPossible | default: false %}
 {% assign description = include.description | default: include.content.description %}
 {% assign sizes = "(max-width: 500px) 100vw, 360px" %}
 {% assign filters = include.filters | default: include.content.filters %}
@@ -35,6 +36,7 @@
     var eventLabel = "{{eventLabel}}";
     var literatureLabel = "{{literatureLabel}}";
     var newsLabel = "{{newsLabel}}";
+    var useSiteLinkWhenPossible = {{useSiteLinkWhenPossible | jsonify}} || false;
 
     // Add default values to content type if not set. This is to prevent GraphQL from returning a content type we don't support
     if (filters.contentType == null) {
@@ -212,6 +214,13 @@
 
       if (resource.__typename === "Event" && resource.primaryLink != null) {
         return resource.primaryLink.url;
+      }
+
+      if (useSiteLinkWhenPossible) {
+        // link to the websites own version of this item if it is a supported type (supported types are Event, DataUse, News)
+        if (['Event', 'DataUse', 'News'].includes(resource.__typename)) {
+          return `/resource/${resource.id}`;
+        }
       }
 
       return resource.gbifHref;

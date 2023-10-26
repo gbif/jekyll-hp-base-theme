@@ -22,6 +22,7 @@
 storiesCountriesOfCoverageUS:
   title: Biodiversity Data's US Footprint
   description: Spotlighting research that impacts the US and is powered by biodiversity data.
+  useSiteLinkWhenPossible: true # requires a resouceKey page to be added on resource/[key] to work
   filters:
     contentType:
       - DATA_USE
