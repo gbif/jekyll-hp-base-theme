@@ -183,11 +183,13 @@
     }
 
     function renderFeatureContent(resource) {
+      const link = createResourceHref(resource);
+      const target = link.startsWith('/') ? '' : 'target="_blank"';
       return `
         <div class="feature-content">
           <div class="feature-pre-title">${pickResourceLabel(resource)}</div>
           <h3 class="feature-title">
-            <a href="${createResourceHref(resource)}" target="_blank">${resource.title}</a>
+            <a href="${link}" target="${target}">${resource.title}</a>
           </h3>
           <div class="feature-description">${resource.excerpt}</div>
         </div>
@@ -217,7 +219,7 @@
       if (useSiteLinkWhenPossible) {
         // link to the websites own version of this item if it is a supported type (supported types are Event, DataUse, News)
         if (['Event', 'DataUse', 'News'].includes(resource.__typename)) {
-          return `/resource/${resource.id}`;
+          return `/resource?key=${encodeURIComponent(resource.id)}`;
         }
       }
 

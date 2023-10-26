@@ -4,7 +4,7 @@ title: GBIF_TITLE
 description: GBIF_SUMMARY
 background: http://_GBIF_IMAGE
 imageLicense: GBIF_IMAGE_LICENSE
-permalink: /resource/_key_
+permalink: /resource
 layout: resource-key
 ignoreThumbor: true
 cta:
@@ -12,8 +12,5 @@ cta:
     href: http://GBIF_CTA_BUTTON_LINK
     isPrimary: true
 noindex: true
-composition:
-  - type: postHeader
-  - type: pageMarkdown
 ---
 GBIF_BODY

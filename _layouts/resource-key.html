@@ -1,6 +1,6 @@
 ---
-# This implementation has grown to be sort of an atrocity. It largely works, but there are many loose ends and the code is a mess. 
-# I'm starting to think that we would be better of using a react components with a configuration to not include too many gbif.org specific links such as tags that link to resource search. The downside with the React approach is that it will look more foreign on the site. 
+# This implementation has grown to be sort of an atrocity. It largely works, but there are many loose ends and the code is a mess.
+# I'm starting to think that we would be better of using a react components with a configuration to not include too many gbif.org specific links such as tags that link to resource search. The downside with the React approach is that it will look more foreign on the site.
 # Alternatively we could rewrite this, possibly with a small templating engine. The benfir of the current approach is that it inherits all styling and html from the theme. So changes to the theme and user style overwrites will be reflected in this page.
 # Notable issues: country codes aren't translated into nice labels. Not all contentTypes are supported. Custom logic that is added later will be lost here (e.g. a component to render a table using the directory). If we stick to a few basic contentypes like news and dataUse, we are probably safe. But it wont scale.
 layout: base
@@ -10,7 +10,8 @@ composition:
   - type: pageMarkdown
 ---
 
-{% assign language = site.data.languages[page.lang].storiesLocale | default: "en-GB" %}
+{% assign language = site.data.languages[page.lang].storiesLocale | default:
+"en-GB" %}
 
 <div class="resourceKey_error resourceKey__hidden" id="resourceKey_error">
   <img src="/assets/theme/img/error.svg" />
@@ -35,7 +36,7 @@ composition:
 <script>
   const contentTypeTranslations = {{ site.data.translations.contentTypes | jsonify }};
   const pageLanguage = "{{page.lang}}" || "en";
-  
+
   function getLastPartOfUrl() {
     // Get the path part of the URL
     const path = window.location.pathname;
@@ -47,7 +48,12 @@ composition:
     const lastSegment = segments.pop();
     return lastSegment;
   }
-  const resourceKey = getLastPartOfUrl();
+  let resourceKey = getLastPartOfUrl();
+  if (resourceKey === 'resource') {
+    // extract the key from search param: key instead
+    const urlParams = new URLSearchParams(window.location.search);
+    resourceKey = urlParams.get('key');
+  }
 
   const QUERY = `
     query{
@@ -221,7 +227,7 @@ composition:
       }
       // if a start date is provided, then add that and if an end date is provided, then add that as well
       if (item.start) {
-        const options = { 
+        const options = {
           timeZone: 'UTC',
           year: 'numeric',
           month: 'long',
@@ -250,6 +256,21 @@ composition:
 
     if (!content) return '';
     return `<div class="notification is-info">${content}</div>`;
+  }
+
+  function showError(resourceKey) {
+    // show error
+    document
+      .getElementById("resourceKey_error")
+      .classList.remove("resourceKey__hidden");
+    // set link to resource on gbif.org in error message
+    let link = document.querySelector(".resourceKey_error a");
+    link.href = `https://gbif.org/resource/${resourceKey}`;
+
+    // hide skeleton
+    document
+      .getElementById("resourceKey_skeletonLoader")
+      .classList.add("resourceKey__hidden");
   }
 
   if (resourceKey) {
@@ -397,7 +418,7 @@ composition:
         // add the body of the resource + citationBlock + list of secondary links and documents if any
         resourceElement.innerHTML = resourceElement.innerHTML.replace(
           "GBIF_BODY",
-          notificationHtml + 
+          notificationHtml +
           contentItem.body +
             citationBlock +
             list
@@ -412,21 +433,11 @@ composition:
       .catch(function (err) {
         // something went wrong. Hide skeleton loader and show error
         console.error(err);
-
-        // show error
-        document
-          .getElementById("resourceKey_error")
-          .classList.remove("resourceKey__hidden");
-        // set link to resource on gbif.org in error message
-        let link = document.querySelector(".resourceKey_error a");
-        link.href = `https://gbif.org/resource/${resourceKey}`;
-
-        // hide skeleton
-        document
-          .getElementById("resourceKey_skeletonLoader")
-          .classList.add("resourceKey__hidden");
+        showError(resourceKey);
       });
   } else {
-    alert("no such dataset found");
+    // something went wrong. Hide skeleton loader and show error
+    console.log('No such resource found');
+    showError(resourceKey);
   }
 </script>
