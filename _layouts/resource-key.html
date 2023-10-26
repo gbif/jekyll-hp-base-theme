@@ -1,0 +1,432 @@
+---
+# This implementation has grown to be sort of an atrocity. It largely works, but there are many loose ends and the code is a mess. 
+# I'm starting to think that we would be better of using a react components with a configuration to not include too many gbif.org specific links such as tags that link to resource search. The downside with the React approach is that it will look more foreign on the site. 
+# Alternatively we could rewrite this, possibly with a small templating engine. The benfir of the current approach is that it inherits all styling and html from the theme. So changes to the theme and user style overwrites will be reflected in this page.
+# Notable issues: country codes aren't translated into nice labels. Not all contentTypes are supported. Custom logic that is added later will be lost here (e.g. a component to render a table using the directory). If we stick to a few basic contentypes like news and dataUse, we are probably safe. But it wont scale.
+layout: base
+description: Default template for resources, with contained width
+composition:
+  - type: postHeader
+  - type: pageMarkdown
+---
+
+{% assign language = site.data.languages[page.lang].storiesLocale | default: "en-GB" %}
+
+<div class="resourceKey_error resourceKey__hidden" id="resourceKey_error">
+  <img src="/assets/theme/img/error.svg" />
+  <p>We couldn't find that resource.</p>
+  <a href="https://gbif.org/resource/RESOURCE_KEY" class="button is-primary"
+    >Try GBIF.org</a
+  >
+</div>
+
+<div id="resourceKey_skeletonLoader" class="skeleton-loader">
+  <h1></h1>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+
+<div id="resourceKey" class="resourceKey resourceKey__hidden">
+  {% assign composition = page.composition | default: layout.composition %} {%
+  include composition.html composition=composition %}
+</div>
+
+<script>
+  const contentTypeTranslations = {{ site.data.translations.contentTypes | jsonify }};
+  const pageLanguage = "{{page.lang}}" || "en";
+  
+  function getLastPartOfUrl() {
+    // Get the path part of the URL
+    const path = window.location.pathname;
+    // Remove any leading and trailing slashes
+    const cleanedPath = path.replace(/^\/|\/$/g, "");
+    // Split the path by '/' to get an array of path segments
+    const segments = cleanedPath.split("/");
+    // Get the last segment
+    const lastSegment = segments.pop();
+    return lastSegment;
+  }
+  const resourceKey = getLastPartOfUrl();
+
+  const QUERY = `
+    query{
+    resourceSearch(input: {id: ["${resourceKey}"]}) {
+      results {
+        __typename
+        ...on News {
+          title
+          summary
+          primaryImage {
+            file {
+              url
+            }
+            description
+            title
+          }
+          createdAt
+          body
+          gbifHref
+          primaryLink {
+            label
+            url
+          }
+          citation
+          secondaryLinks {
+            label
+            url
+          }
+        }
+        ...on DataUse {
+          title
+          summary
+          primaryImage {
+            file {
+              url
+            }
+            description
+            title
+          }
+          createdAt
+          body
+          gbifHref
+          resourceUsed
+          primaryLink {
+            label
+            url
+          }
+          citation
+          secondaryLinks {
+            label
+            url
+          }
+        }
+        ...on Article {
+          title
+          summary
+          primaryImage {
+            file {
+              url
+            }
+            description
+            title
+          }
+          createdAt
+          body
+          gbifHref
+          secondaryLinks {
+            label
+            url
+          }
+          documents {
+            file {
+              url
+              fileName
+              contentType
+            }
+            description
+            title
+          }
+        }
+        ...on Event {
+          title
+          summary
+          venue
+          allDayEvent
+          start
+          end
+          eventLanguage
+          location
+          country
+          primaryImage {
+            file {
+              url
+            }
+            description
+            title
+          }
+          createdAt
+          body
+          gbifHref
+          primaryLink {
+            label
+            url
+          }
+          secondaryLinks {
+            label
+            url
+          }
+          documents {
+            file {
+              url
+              fileName
+              contentType
+            }
+            description
+            title
+          }
+        }
+      }
+    }
+  }
+  `;
+
+  const resourceElement = document.getElementById("resourceKey");
+
+  function mapFileContentTypeToImageName(contentType) {
+    switch (contentType) {
+      case "application/pdf":
+        return "pdf";
+      case "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
+        return "doc";
+      case "application/vnd.openxmlformats-officedocument.presentationml.presentation":
+        return "ppt";
+      default:
+        return "download";
+    }
+  }
+
+  function getListItemHtml(item) {
+    // map a secondary link to a list item with an icon in front of it
+    return `<li>
+      <a href="${item.url}">
+        <img src="/assets/theme/img/fileTypes/link.png">
+        <div><div>${item.label}</div></div>
+      </a>
+    </li>`;
+  }
+
+  function getDocumentItemHtml(item) {
+    // map a document to a list item. icon - title
+    return `<li>
+      <a href="${item.file.url}">
+        <img src="/assets/theme/img/fileTypes/${mapFileContentTypeToImageName(item.file.contentType)}.png">
+        <div><div>${item.title}</div></div>
+      </a>
+    </li>`;
+  }
+
+  function getNotificationHtml(item) {
+    let content;
+    // if item is an event, then add a notification with 3 lines of text: Venue, Country, and date and time interval
+    if (item.__typename === "Event") {
+      content = '';
+      // if a venue is provided, then add it to the content as a div
+      if (item.venue) {
+        content += `<div><strong>Venue</strong>: ${item.venue}</div>`;
+      }
+      // if a country is provided, then add that
+      if (item.country) {
+        content += `<div><strong>Country code</strong>: ${item.country}</div>`;
+      }
+      // if a start date is provided, then add that and if an end date is provided, then add that as well
+      if (item.start) {
+        const options = { 
+          timeZone: 'UTC',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+         };
+         // if not an all day event, then add hour and monites as well to options
+          if (item.allDayEvent === false) {
+            options.hour = 'numeric';
+            options.minute = 'numeric';
+          }
+        const startDate = new Date(item.start).toLocaleDateString(
+          pageLanguage,
+          options
+        );
+        content += `<div><strong>When</strong>: ${startDate}`;
+        if (item.end) {
+          const endDate = new Date(item.end).toLocaleDateString(
+            pageLanguage,
+            options
+          );
+          content += ` - ${endDate} UTC`;
+        }
+        content += `</div>`;
+      }
+    }
+
+    if (!content) return '';
+    return `<div class="notification is-info">${content}</div>`;
+  }
+
+  if (resourceKey) {
+    // search for the resource using graphql. the resourceKey is the id of the resource. Add the page locale as header.
+    fetch(`{{ site.graphqlEndpoint }}?query=${QUERY}`, {
+      headers: {
+        "Content-Type": "application/json",
+        locale: pageLanguage,
+      },
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (jsonResponse) {
+        // now we need to fill in the template. The page is generated using nonsensical placeholders that we need to replace with the actual content.
+        // first pull out the item in case
+        const contentItem = jsonResponse.data.resourceSearch.results[0];
+
+        // if not a supported contentType then throw an error
+        if (!['Event', 'DataUse', 'News', 'Article'].includes(contentItem.__typename)) {
+          throw new Error(`Unsupported contentType: ${contentItem.__typename}`);
+        }
+
+        // if there is no image in the response, then remove it from the resourceElement.
+        if (!contentItem.primaryImage) {
+          resourceElement.querySelector(".feature-img").remove();
+        } else {
+          // if there is no image license in the response, then remove it from the resourceElement.
+          if (
+            !contentItem.primaryImage
+              .description
+          ) {
+            resourceElement.querySelector(".feature-img-license").remove();
+          }
+        }
+
+        // replace GBIF_PRE_TITLE, _GBIF_TITLE_, _GBIF_SUMMARY_, _GBIF_IMAGE_, _GBIF_IMAGE_LICENSE_, _GBIF_BODY_
+
+        if (contentItem.createdAt) {
+          const options = { year: "numeric", month: "long", day: "numeric" };
+          const date = new Date(
+            contentItem.createdAt
+          ).toLocaleDateString(pageLanguage, options);
+          const showDate = contentItem.__typename !== "Event"
+
+          let contentType;
+          try {
+            contentType = contentTypeTranslations[contentItem.__typename][pageLanguage];
+          } catch(err) {
+            console.error('translation for content type not provided');
+            //ignore failure and just do not show the content type
+          }
+          resourceElement.innerHTML = resourceElement.innerHTML.replace(
+            "GBIF_PRE_TITLE",
+            `${contentType ?? ''} ${showDate ? `&#x2022; ${date}` : ''}`
+          );
+        } else {
+          resourceElement.querySelector(".feature-pre-title").remove();
+        }
+
+        resourceElement.innerHTML = resourceElement.innerHTML.replace(
+          "GBIF_TITLE",
+          contentItem.title
+        );
+
+        const resourceUsed = contentItem.resourceUsed ? `<p style="font-weight: bold;">${contentItem.resourceUsed}</p>` : '';
+        if (contentItem.summary) {
+          resourceElement.innerHTML = resourceElement.innerHTML.replace(
+            "GBIF_SUMMARY",
+            contentItem.summary + resourceUsed
+          );
+        }
+        if (
+          !contentItem.summary &&
+          !contentItem.resourceUsed
+        ) {
+          resourceElement.querySelector(".feature-description").remove();
+        }
+
+        if (contentItem.primaryLink) {
+          resourceElement.innerHTML = resourceElement.innerHTML.replace(
+            "GBIF_CTA_BUTTON_TEXT",
+            contentItem.primaryLink.label
+          );
+          resourceElement.innerHTML = resourceElement.innerHTML.replace(
+            "http://GBIF_CTA_BUTTON_LINK",
+            contentItem.primaryLink.url
+          );
+        } else {
+          resourceElement.querySelector(".feature-cta").remove();
+        }
+
+        if (contentItem.primaryImage) {
+          resourceElement.innerHTML = resourceElement.innerHTML.replace(
+            "http://_GBIF_IMAGE",
+            contentItem.primaryImage.file.url
+          );
+          resourceElement.innerHTML = resourceElement.innerHTML.replace(
+            "GBIF_IMAGE_LICENSE",
+            contentItem.primaryImage.description
+          );
+        }
+
+        const citation = contentItem.citation;
+        const citationBlock = citation
+          ? `<blockquote><p>${contentItem.citation}</p></blockquote>`
+          : "";
+
+        // add a hr and a list of secondary links combined with documents
+        let list;
+        if (
+          contentItem.secondaryLinks ||
+          contentItem.documents
+        ) {
+          resourceElement.innerHTML += "<hr />";
+          list = document.createElement("ul");
+          // add a class to the list : inline-document-list
+          list.classList.add("inline-document-list");
+          // add the secondary links to a list
+          if (contentItem.secondaryLinks) {
+            contentItem.secondaryLinks.forEach(
+              (item) => {
+                list.innerHTML += getListItemHtml(item);
+              }
+            );
+          }
+          // then add the documents
+          if (contentItem.documents) {
+            contentItem.documents.forEach(
+              (item) => {
+                list.innerHTML += getDocumentItemHtml(item);
+              }
+            );
+          }
+        }
+        // if there is a list, then generate string with hr tag + list
+        if (list) {
+          list = `<hr />${list.outerHTML}`;
+        } else {
+          list = "";
+        }
+
+        const notificationHtml = getNotificationHtml(contentItem);
+
+        // add the body of the resource + citationBlock + list of secondary links and documents if any
+        resourceElement.innerHTML = resourceElement.innerHTML.replace(
+          "GBIF_BODY",
+          notificationHtml + 
+          contentItem.body +
+            citationBlock +
+            list
+        );
+
+        // remove class resourceKey__hidden from resourceElement and hide skeleton loader
+        resourceElement.classList.remove("resourceKey__hidden");
+        document
+          .getElementById("resourceKey_skeletonLoader")
+          .classList.add("resourceKey__hidden");
+      })
+      .catch(function (err) {
+        // something went wrong. Hide skeleton loader and show error
+        console.error(err);
+
+        // show error
+        document
+          .getElementById("resourceKey_error")
+          .classList.remove("resourceKey__hidden");
+        // set link to resource on gbif.org in error message
+        let link = document.querySelector(".resourceKey_error a");
+        link.href = `https://gbif.org/resource/${resourceKey}`;
+
+        // hide skeleton
+        document
+          .getElementById("resourceKey_skeletonLoader")
+          .classList.add("resourceKey__hidden");
+      });
+  } else {
+    alert("no such dataset found");
+  }
+</script>

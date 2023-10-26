@@ -1,0 +1,102 @@
+.skeleton-loader
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  animation: skeletonLoading 1.5s infinite;
+  text-align: center;
+  height: 80vh;
+  margin-top: 3rem;
+
+.skeleton-loader h1
+  width: 500px;
+  max-width: 80%;
+  height: 3rem;
+  margin: 0 auto 10px auto;
+  background: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 2em;
+
+.skeleton-loader p
+  width: 600px;
+  max-width: 90%;
+  height: 1.2rem;
+  margin: 0 auto;
+  background: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 12px;
+
+
+@keyframes skeletonLoading
+  0%
+    opacity: 0.7;
+  
+  50%
+    opacity: 0.4;
+  
+  100%
+    opacity: 0.7;
+
+.resourceKey__hidden
+  display: none;
+
+
+.resourceKey_error
+  width: 500px;
+  margin: 3rem auto;
+  max-width: 100%;
+  text-align: center;
+
+.resourceKey_error img
+  margin: 0 1rem 1rem 1rem;
+
+.resourceKey_error p
+  margin: 1rem 0;
+
+.gb-button--brand
+  @extend .button
+  @extend .is-primary
+
+ul.inline-document-list
+  list-style: none;
+  padding: 0;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  > li
+    flex: 1 1 auto;
+    width: 40%;
+    min-width: 300px;
+    display: inline-block;
+    box-shadow: 0 2px 5px 3px rgba(0,0,0,.015);
+    border: 1px solid #eee;
+    margin: 10px 10px 20px;
+    font-size: 14px;
+    border-radius: 25px 0 0;
+    > a
+      display: block;
+      position: relative;
+      height: 52px;
+      text-decoration: none;
+      color: inherit
+      img 
+        float: left;
+        height: 52px;
+        width: 40px;
+        border: none;
+      > div
+        padding: 5px;
+        margin-left: 50px;
+        margin-right: 5px;
+        height: 52px;
+        > div 
+          color: inherit
+          display: -webkit-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-line-clamp: 2;
+          max-height: 2.85714285714rem;
+          -webkit-box-orient: vertical;

@@ -7,6 +7,7 @@
 {% assign ratio = include.ratio | default: include.content.ratio | default: 40 %}
 {% assign center = true %}
 {% assign toc = include.toc | default: include.content.toc %}
+{% assign ignoreThumbor = include.ignoreThumbor | | default: include.content.ignoreThumbor | default: false %}
 
 {% unless background or jekyll.environment == "production" %}
 <script>
@@ -25,6 +26,7 @@ themeFeedback.push({title: "Missing background", description: "You haven't confi
     cta=cta 
     center=center
     ratio=ratio
+    ignoreThumbor=ignoreThumbor
     %}
   </div>
 </section>

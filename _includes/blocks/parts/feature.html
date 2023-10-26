@@ -9,7 +9,7 @@
 {% assign blankTarget = include.blankTarget | default: include.content.blankTarget | default: false %}
 {% assign ratio = include.ratio %}
 {% assign useBackgroundImage = include.useBackgroundImage | default: false %}
-{% assign ignoreThumbor = include.ignoreThumbor | default: false %}
+{% assign ignoreThumbor = include.ignoreThumbor | | default: include.content.ignoreThumbor | default: false %}
 
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
 {% if include.imageLicense == false %}
