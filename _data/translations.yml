@@ -16,15 +16,16 @@ rejectTerms:
   en: 'Reject'
 
 # Used by the stories block type
-DataUse:
-  en: 'Data use'
-  da: 'Dataanvendelse'
-News:
-  en: 'News'
-  da: 'Nyhed'
-Event:
-  en: 'Event'
-  da: 'Begivenhed'
-Literature:
-  en: 'Literature'
-  da: 'Litteratur'
+contentTypes:
+  DataUse:
+    en: 'Data use'
+    da: 'Dataanvendelse'
+  News:
+    en: 'News'
+    da: 'Nyhed'
+  Event:
+    en: 'Event'
+    da: 'Begivenhed'
+  Literature:
+    en: 'Literature'
+    da: 'Litteratur'

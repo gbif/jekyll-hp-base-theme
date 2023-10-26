@@ -6,10 +6,10 @@
 {% assign graphqlEndpoint = site.graphqlEndpoint | default: "https://graphql.gbif.org/graphql" %}
 {% assign language = site.data.languages[page.lang].storiesLocale | default: "en-GB" %}
 
-{% assign dataUseLabel = site.data.translations['DataUse'][page.lang] | default: "Data Use" %}
-{% assign eventLabel = site.data.translations['Event'][page.lang] | default: "Event" %}
-{% assign literatureLabel = site.data.translations['Literature'][page.lang] | default: "Literature" %}
-{% assign newsLabel = site.data.translations['News'][page.lang] | default: "News" %}
+{% assign dataUseLabel = site.data.translations.contentTypes['DataUse'][page.lang] | default: "Data Use" %}
+{% assign eventLabel = site.data.translations.contentTypes['Event'][page.lang] | default: "Event" %}
+{% assign literatureLabel = site.data.translations.contentTypes['Literature'][page.lang] | default: "Literature" %}
+{% assign newsLabel = site.data.translations.contentTypes['News'][page.lang] | default: "News" %}
 
 <section class="features {% if include.content.klass %} {{ include.content.klass }} {% endif %}">
   {% if title or description %}
