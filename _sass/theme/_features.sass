@@ -171,13 +171,22 @@ section
 
 +until($desktop)
   .splitBanner
+    flex-direction: row
+    .feature-content
+      padding: 1rem
+    >div
+      flex: 0 1 100%
+    .feature-img
+      flex: 0 1 40%
++until(700px)
+  .splitBanner
     flex-direction: column
     .feature-content
       padding: 1rem
     >div
       flex: 0 0 100%
     .feature-img
-      display: none
+      flex: 0 0 400px
 
 .product
   @extend .splitBanner
