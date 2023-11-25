@@ -17,6 +17,7 @@ Below is an example of a site configured to only show fungi (i.e. taxonKey=5 in 
 ```js
 var siteConfig = {
   version: 2,
+  disableInlineTableFilterButtons: false, // disable option for adding filters by clicking table cells. See https://github.com/gbif/hosted-portals/issues/274
   routes: {
     enabledRoutes: ['occurrenceSearch', 'collectionSearch', 'collectionKey', 'institutionSearch', 'institutionKey'], // what widgets do you include on your site. If not included we will link to gbif.org (for showing individual datasets for example)
     occurrenceSearch: { // you can overwrite individual routes. 
