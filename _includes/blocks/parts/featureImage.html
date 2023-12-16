@@ -1,4 +1,5 @@
 {% assign background = include.background | default: include.content.background %}
+{% assign imageAlt = include.imageAlt | default: include.content.imageAlt %}
 {% assign imageLicense = include.imageLicense | default: include.content.imageLicense %}
 {% assign href = include.href | default: include.content.href %}
 {% assign blankTarget = include.blankTarget | default: include.content.blankTarget | default: false %}
@@ -23,6 +24,7 @@
                 {% endif %}
                         >
       <img  src="{{ background | absolute_url}}" 
+            alt="{{ imageAlt | escape }}"
             srcset="{% thumbor {{background | absolute_url}}, fit_in, width: 2000 %} 2000w, 
                     {% thumbor {{background | absolute_url}}, fit_in, width: 1600 %} 1600w, 
                     {% thumbor {{background | absolute_url}}, fit_in, width: 1200 %} 1200w, 
@@ -36,7 +38,7 @@
                     />
     </picture>
     {% else %}
-    <img src="{{ background | absolute_url}}" />
+    <img src="{{ background | absolute_url}}" alt="{{ imageAlt | escape }}" />
     {% endif %}
   {% endif %}
   {% if href %}<a href="{{ href }}" {% if blankTarget %}target="_blank"{% endif %} class="feature-overlay"></a>{% endif %}
