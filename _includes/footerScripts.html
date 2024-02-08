@@ -1,0 +1,43 @@
+<script>
+  {% assign locale = site.locale | default: 'en' %};
+  var currentLocale = '{{ locale }}';
+</script>
+
+<script src="{{ '/assets/theme/js/script.js' | relative_url }}?v={{ site.time | date:'%s' }}"></script>
+
+{% if page.layout == 'archive' %}
+<script>
+  // On the news archive page we add a very rudimentary search, 
+  // by filtering in the client on categories
+  // 
+  // Filter cards on ?category=value
+  const urlParams = new URLSearchParams(window.location.search);
+    
+  if (urlParams.has("category") && urlParams.get("category") != "") {
+    var category = urlParams.get("category"); // Will return 1st category value + decode URI
+    
+    // filter features
+    var features = document.querySelectorAll('.feature');
+    features.forEach(function(feature){
+      var cardCategories = feature.attributes['data-categories'].value.split('|').map(function(x){return x.trim();});
+      // Hide card if it does not contain the selected category
+      if (!cardCategories.includes(category)) {
+        feature.style.display = 'none';
+      }
+    });
+
+    //show filter in top
+    var filterElement = document.getElementById('archive-filter');
+    if (filterElement) {
+      filterElement.innerHTML = '<div class="tags has-addons">' + 
+        '<a href="{{ site.algae.archive_permalink | relative_url }}" class="tag is-medium">' + category + '</a>' + 
+        '<a href="{{ site.algae.archive_permalink | relative_url }}" class="tag is-medium is-delete"></a>' +
+      '</div>'
+    }
+  }
+</script>
+{% endif %}
+
+{% if page.lastInBody %}
+  {{ page.lastInBody }}
+{% endif %}

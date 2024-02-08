@@ -91,38 +91,7 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
         {% endfor %}
       </div>
 
-      {% if page.lang-ref%}
-        {% assign posts = site.posts | where: "lang-ref", page.lang-ref | sort: 'lang' %}
-        {% if posts.size == 0 %}
-            {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-        {% endif %}
-        {% if posts.size > 1 %}
-
-        <div class="navbar-end">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <div class="buttons language-selector">
-              <a class="button is-light">
-                <span>{{ site.data.languages[page.lang].label }}</span>
-                <span class="icon is-small">
-                  <i class="fa fa-language"></i>
-                </span>
-              </a>
-
-              <div class="navbar-dropdown is-right">
-                {% for post in posts %}
-                <a class="navbar-item" href="{{ site.base-url }}{{ post.url }}">
-                  {% if site.data.languages[post.lang].icon %}
-                  <img src="{{ site.data.languages[post.lang].icon }}" style="margin-right: 6px; height:1em;" />
-                  {% endif %}
-                  {{ site.data.languages[post.lang].label }}
-                </a>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </div>
-        {% endif %}
-      {% endif %}
+      {% include navbarLanguageItem.html %}
       
     </div>
   </div>
