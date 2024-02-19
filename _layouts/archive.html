@@ -12,6 +12,7 @@ remarks: See also page.layout == 'archive' in footer.html
 <div class="features">
   <div class="feature-cards has-{{ posts.size }}-elements">
     {% for post in posts %}
+      {% if post.excludeFromArchive != true %}
       <article class="feature" data-categories="{% for category in post.categories %}{{ category | strip }}|{% endfor %}">
         {% assign description = post.excerpt | strip_html | truncatewords: 20  %}
         {% assign preTitle = post.preTitle | strip_html | truncatewords: 10  %}
@@ -19,6 +20,7 @@ remarks: See also page.layout == 'archive' in footer.html
         {% assign background = post.thumbnail | default: post.background %}
         {% include blocks/parts/feature.html content=post description=description preTitle=preTitle href=href background=background imageLicense=false %}
       </article>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

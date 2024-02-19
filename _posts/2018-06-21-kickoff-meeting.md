@@ -5,6 +5,7 @@ background: /assets/img/Haeckel_Caulerpa_racemosa_(uvifera).jpeg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
 categories: [Biodiversity, Climate, Shared category]
 toc: true
+excludeFromArchive: false # optional value to exclude the post from the news archive
 ---
 
 ## After creepeth 
