@@ -14,6 +14,9 @@ var siteConfig = {
   routes: {
     enabledRoutes: ['occurrenceSearch', 'institutionKey', 'institutionSearch', 'publisherSearch', 'publisherKey', 'collectionKey', 'collectionSearch', 'datasetKey', 'datasetSearch', 'literatureSearch'],
   },
+  occurrence: {
+    occurrenceSearchTabs: ['TABLE', 'MAP', 'GALLERY', 'CLUSTERS', 'DASHBOARD'],
+  },
   institution: {
     mapSettings: {
       enabled: true,
