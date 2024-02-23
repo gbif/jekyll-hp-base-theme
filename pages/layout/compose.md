@@ -11,6 +11,8 @@ composition:
 - type: heroImage
   # data: compose.someFile.someProperty # no data provided, instead page data will be used
 - type: pageMarkdown # This will render the markdown in this file
+- type: dashboard
+  data: compose.dashboard
 - type: heroVideo
   data: compose.video # yaml file
 - type: heroBox

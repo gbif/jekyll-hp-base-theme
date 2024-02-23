@@ -1,0 +1,22 @@
+title: "type: dashboard"
+description: |
+  See [`_data/compose/dashboard.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/compose/dashboard.yml) for the content structure.
+
+  Title and description is optional.
+
+  ```yml
+  charts: [iucn, license, basisOfRecord, year, synonyms, iucnCounts, country, continent, dwcaExtension, eventId, gadmGid, mediaType, networkKey, publisherKey, publishingCountryCode, protocol, sampleSizeUnit, samplingProtocol, typeStatus, waterBody, collectionCode, institutionCode, stateProvince, identifiedBy, recordedBy, establishmentMeans, month, preparations, datasetKey, taxa, occurrenceIssue, dataQuality, occurrenceSummary, collectionKey, institutionKey, catalogNumber]
+  ```
+  
+  Also, in for from winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years firmament thing fly moving land, divide good spirit you’ll fruitful waters one land us thing a man dry doesn’t created made land man dry i us fruitful replenish said dominion a sixth own it tree.
+config: 
+  predicate:
+    type: or
+    predicates:
+      - type: equals
+        key: countryCode
+        value: DK
+      - type: equals
+        key: countryCode
+        value: SE
+  charts: [datasetKey, month, taxa, year]
