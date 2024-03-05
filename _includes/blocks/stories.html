@@ -1,4 +1,5 @@
-{% assign id = 10 | random_hex %}
+{% assign randomId = 10 | random_hex %}
+{% assign id = include.id | default: include.content.id | default: randomId %}
 {% assign title = include.title | default: include.content.title %}
 {% assign useSiteLinkWhenPossible = include.useSiteLinkWhenPossible | default: include.content.useSiteLinkWhenPossible | default: false %}
 {% assign description = include.description | default: include.content.description %}
