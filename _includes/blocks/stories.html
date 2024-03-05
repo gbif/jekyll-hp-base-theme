@@ -1,4 +1,4 @@
-{% assign randomId = 10 | random_hex %}
+{% assign randomId = "now" | date: "%N" %}
 {% assign id = include.id | default: include.content.id | default: randomId %}
 {% assign title = include.title | default: include.content.title %}
 {% assign useSiteLinkWhenPossible = include.useSiteLinkWhenPossible | default: include.content.useSiteLinkWhenPossible | default: false %}
