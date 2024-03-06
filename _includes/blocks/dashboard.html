@@ -18,13 +18,13 @@ themeFeedback.push({title: "Missing predicate for dashboard", description: 'You 
 </script>
 {% endunless %}
 
-<section class="dashboard">
+<section class="dashboard {% if include.content.klass %} {{ include.content.klass }} {% endif %}">
   {% if title or description %}
   <div class="features-intro">
     {% include blocks/parts/feature.html content=include.content %}
   </div>
   {% endif %}
-  <div id="{{ dashboardId }}" class="dashboard-content {% if include.content.klass %} {{ include.content.klass }} {% endif %}">
+  <div id="{{ dashboardId }}" class="dashboard-content">
   </div>
 </section>
 
