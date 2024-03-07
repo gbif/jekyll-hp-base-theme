@@ -1,10 +1,10 @@
-url: "https://hp-base-theme.gbif-staging.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://hp-base-theme.gbif-uat.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 siteMeasurements:
   enable: false
 
 plausible:
   enabled: false
-  domain: hp-base-theme.gbif-staging.org
+  domain: hp-base-theme.gbif-uat.org
 
-graphqlEndpoint: "https://graphql.gbif-staging.org/graphql"
+graphqlEndpoint: "https://graphql.gbif-uat.org/graphql"
