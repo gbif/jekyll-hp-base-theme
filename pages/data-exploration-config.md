@@ -176,7 +176,7 @@ var siteConfig = {
 };
 ```
 
-### Highligted
+### Highlighted
 It is possible to choose which filters to show as a default.
 ```
 var siteConfig = {
