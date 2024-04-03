@@ -143,7 +143,7 @@ lang-ref: collection
 
 The available layouts are: `collection-search, collection-key, institution-search, institution-key, dataset-search, dataset-key, occurrence, publisher, literature`.
 
-And teh default routes are `collection/search, collection/:key, institution/search, institution:key, dataset/search, dataset/:key, occurrence/search, publisher/search, literature/search`
+And the default routes are `collection/search, collection/:key, institution/search, institution:key, dataset/search, dataset/:key, occurrence/search, publisher/search, literature/search`
 
 ## Occurrence search tabs
 You can configure which tabs to show for occurrence search. This can be useful if e.g. you know that there is no images in your data scope.
@@ -176,7 +176,7 @@ var siteConfig = {
 };
 ```
 
-### Highligted
+### Highlighted
 It is possible to choose which filters to show as a default.
 ```
 var siteConfig = {
@@ -194,7 +194,7 @@ var siteConfig = {
   // along with whatever other properties you have. E.g. your 'rootPredicate'
   occurrence: {
     availableTableColumns: ['features', 'country', 'coordinates', 'year', 'basisOfRecord', 'dataset', 'publisher', 'catalogNumber', 'recordedBy', 'identifiedBy'] // all the columns that are available to the user. This array defines the order they appear in. By default all all column are available.
-    defaultTableColumns: ['features', 'basisOfRecord', 'preparations'] // the columns showed by default. The order is not relevant, as it is defined in the list of available coluns. The user can change what columns to show in the UI.
+    defaultTableColumns: ['features', 'basisOfRecord', 'preparations'] // the columns showed by default. The order is not relevant, as it is defined in the list of available columns. The user can change what columns to show in the UI.
   }
 };
 ```
