@@ -59,6 +59,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.1.1/mapbox-gl.min.css" integrity="sha512-j4BKLk7HB2Umio2SKGP4gh1L3jouxJDuBxcWoq4kf1fYIkJyXQUGxs9me8yz2wexxAIHIcQHzn64UfPIG232xQ==" crossorigin="anonymous" />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/openlayers/6.1.1/ol.min.css' />
 
+  {% if site.gbifApacheInclude.componentsStyle %}
+  <!--dynamically include version running in environment-->
+  {{ site.gbifApacheInclude.componentsStyle }}
+  {% else %}
+  <!-- Do nothing for now until we know the location of the new components -->
+  {% endif %}
+
   {% if site.gbifApacheInclude.componentsScript %}
   <!--dynamically include version running in environment-->
   {{ site.gbifApacheInclude.componentsScript }}
