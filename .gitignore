@@ -3,7 +3,6 @@
 .sass-cache
 .jekyll-cache/
 _site
-Gemfile.lock
 
 # npm
 node_modules
@@ -12,4 +11,3 @@ node_modules
 .DS_Store
 
 _config_local.yml
-
