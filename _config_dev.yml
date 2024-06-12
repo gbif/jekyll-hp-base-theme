@@ -8,3 +8,5 @@ plausible:
   domain: hp-base-theme.gbif-staging.org
 
 graphqlEndpoint: "https://graphql.gbif-dev.org/graphql"
+
+useSharedLibrary: true

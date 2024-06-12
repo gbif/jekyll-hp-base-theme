@@ -1,0 +1,56 @@
+<div id="root" class="gbif"></div>
+<script type="module">
+  import { render } from "{{site.gbifApacheInclude.componentsScriptJsModule}}";
+  render(document.getElementById("root"), {
+    gbifEnv: "staging",
+    pages: [
+      {
+        key: "occurrence-search-page",
+      },
+      {
+        key: "occurrence-page",
+      },
+      // Uncomment this object to enable the dataset page. Otherwise it will link to GBIF.org
+      {
+        key: "dataset-page",
+      },
+    ],
+    languages: [
+      {
+        code: "en",
+        label: "English",
+        default: true,
+        textDirection: "ltr",
+      },
+      {
+        code: "da",
+        label: "Dansk",
+        default: false,
+        textDirection: "ltr",
+      },
+      {
+        code: "ar",
+        label: "العربية",
+        default: false,
+        textDirection: "rtl",
+      },
+    ],
+    occurrencePredicate: {
+      type: "and",
+      predicates: [
+        {
+          type: "range",
+          key: "year",
+          value: {
+            gte: "2009",
+            lte: "2012",
+          },
+        },
+      ],
+    },
+    theme: {
+      primary: "#69AA69",
+      borderRadius: 0,
+    },
+  });
+</script>

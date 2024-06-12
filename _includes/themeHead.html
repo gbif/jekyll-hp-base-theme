@@ -59,16 +59,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.1.1/mapbox-gl.min.css" integrity="sha512-j4BKLk7HB2Umio2SKGP4gh1L3jouxJDuBxcWoq4kf1fYIkJyXQUGxs9me8yz2wexxAIHIcQHzn64UfPIG232xQ==" crossorigin="anonymous" />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/openlayers/6.1.1/ol.min.css' />
 
-  {% if site.gbifApacheInclude.componentsScript %}
-  <!--dynamically include version running in environment-->
-  {{ site.gbifApacheInclude.componentsScript }}
+  {% assign useSharedLibrary = page.useSharedLibrary | default: site.useSharedLibrary == false | default: false %}
+  {% if useSharedLibrary %}
+  <link rel='stylesheet' href='{{ site.gbifApacheInclude.componentsScriptCss }}' />
   {% else %}
-  <script type="text/javascript" src="https://react-components.gbif-staging.org/lib/gbif-react-components.js"></script>
+    {% if site.gbifApacheInclude.componentsScript %}
+      <!--dynamically include version running in environment-->
+      <script type="text/javascript" src="{{ site.gbifApacheInclude.componentsScript }}"></script>
+    {% else %}
+      <script type="text/javascript" src="https://react-components.gbif-staging.org/lib/gbif-react-components.js"></script>
+    {% endif %}
   {% endif %}
 
   <script type="text/javascript" src="/assets/theme/js/config.js"></script>
-
-
 
   <!-- CSS -->
   <!-- Bulma is included in main.css -->

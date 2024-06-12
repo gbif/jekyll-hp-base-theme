@@ -6,37 +6,4 @@ description: Default template for occurrence search
 
 {{ content }}
 
-<div id="root"></div>
-<script>
-  var widgetLocale = '{{ languageCode }}';
-  var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
-  var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
-  var routes = userConfig.routes || {};
-  routes.basename = basename;
-  var occurrenceConfig = userConfig.occurrence ? userConfig.occurrence : userConfig;
-
-  ReactDOM.render(
-    React.createElement(
-      gbifReactComponents.App,
-      { 
-        style: { minHeight: 'calc(100vh - 4.25rem)' }, 
-        siteConfig: {
-          ...siteConfig,
-          occurrence: occurrenceConfig, // as temporary overwrite until the HPs have been updated to the new configuration schema
-          theme: userTheme, 
-          routes: routes,
-          locale: widgetLocale
-        },
-        pageLayout: true,
-      }
-    ),
-    document.getElementById('root')
-  );
-
-  if (typeof userTheme === 'undefined') {
-    console.warn('No theme defined - using default styling');
-  }
-  if (typeof occurrenceConfig === 'undefined') {
-    console.warn('No config provided - all data will be shown');
-  }
-</script>
+{% include appWidget.html %}
