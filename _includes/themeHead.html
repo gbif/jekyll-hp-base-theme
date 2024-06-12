@@ -65,7 +65,7 @@
   {% else %}
     {% if site.gbifApacheInclude.componentsScript %}
       <!--dynamically include version running in environment-->
-      <script type="text/javascript" src="{{ site.gbifApacheInclude.componentsScript }}"></script>
+      {{ site.gbifApacheInclude.componentsScript }}
     {% else %}
       <script type="text/javascript" src="https://react-components.gbif-staging.org/lib/gbif-react-components.js"></script>
     {% endif %}
