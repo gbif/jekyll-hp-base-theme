@@ -1,0 +1,9 @@
+---
+layout: gbifData
+description: Default template for occurrence search
+---
+{% assign languageCode = site.data.languages[page.lang].widgetLocale | default: site.data.languages[page.lang].languageCode | default: page.lang | default: site.algae.rootLang | default: 'en' %}
+
+{{ content }}
+
+{% include appWidget.html %}
