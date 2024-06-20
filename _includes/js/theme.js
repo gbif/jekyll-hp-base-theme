@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Redirect to the href of the link
         // but first add the geometry to the URL
-        window.location.href = `${link.href}${link.href.includes('?') ? '&' : '?'}geometry=${encodeURIComponent(WKT)}`;
+        window.location.href = `${link.href}${link.href.includes('?') ? '&' : '?'}geometry=${WKT}`;
       }, function (error) {
         // Handle any errors here
         console.error("Error getting user location:", error);
