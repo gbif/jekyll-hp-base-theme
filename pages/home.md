@@ -13,6 +13,9 @@ cta:
     isPrimary: true
   - text: About
     href: /about
+  - text: Near you
+    href: /occurrence/search/?layout=W1t7ImlkIjoiN2toZmUiLCJwIjp7ImgiOjQ5N30sInRyYW5zbGF0aW9uIjoic2VhcmNoLnRhYnMudGFibGUiLCJyIjp0cnVlLCJ0IjoidGFibGUifSx7ImlkIjoieHV3anIiLCJwIjp7ImgiOjY1M30sInRyYW5zbGF0aW9uIjoic2VhcmNoLnRhYnMuZ2FsbGVyeSIsInIiOnRydWUsInQiOiJnYWxsZXJ5In1dLFt7ImlkIjoiZWJmMm8iLCJwIjp7ImgiOjQ5N30sInRyYW5zbGF0aW9uIjoic2VhcmNoLnRhYnMubWFwIiwiciI6dHJ1ZSwidCI6Im1hcCJ9LHsiaWQiOiJoYjBzNCIsInAiOnt9LCJ0cmFuc2xhdGlvbiI6ImRhc2hib2FyZC50YXhhIiwidCI6InRheGEifV1d&view=DASHBOARD
+    klass: gbifExploreMyAreaLink
 permalink: /
 composition:
   - type: heroImage
