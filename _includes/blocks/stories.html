@@ -200,7 +200,7 @@
     function pickResourceLabel(resource) {
       switch (resource.__typename) {
         case "DataUse": return dataUseLabel;
-        case "Event": return eventLabel;
+        case "MeetingEvent": return eventLabel;
         case "Literature": return literatureLabel;
         case "News": return newsLabel;
       }
@@ -213,13 +213,13 @@
         return resource.websites[0];
       }
 
-      if (resource.__typename === "Event" && resource.primaryLink != null) {
+      if (resource.__typename === "MeetingEvent" && resource.primaryLink != null) {
         return resource.primaryLink.url;
       }
 
       if (useSiteLinkWhenPossible) {
         // link to the websites own version of this item if it is a supported type (supported types are Event, DataUse, News)
-        if (['Event', 'DataUse', 'News'].includes(resource.__typename)) {
+        if (['MeetingEvent', 'DataUse', 'News'].includes(resource.__typename)) {
           return `/resource?key=${encodeURIComponent(resource.id)}`;
         }
       }
