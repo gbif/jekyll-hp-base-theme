@@ -261,11 +261,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Redirect to the href of the link
         // but first add the geometry to the URL
-        window.location.href = `${link.href}${link.href.includes('?') ? '&' : '?'}geometry=${WKT}`;
+        const geometryLink = `${link.href}${link.href.includes('?') ? '&' : '?'}geometry=${WKT}`;
+        console.log("Redirecting to: ", geometryLink);
+        link.classList.remove("is-loading"); // Remove loading class
+        window.location.href = geometryLink;
       }, function (error) {
         // Handle any errors here
         console.error("Error getting user location:", error);
-      }).finally(function() {
         link.classList.remove("is-loading"); // Remove loading class
       });
     } else {
