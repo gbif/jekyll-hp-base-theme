@@ -1,7 +1,7 @@
 ---
 title: About
 description: Lorem markdownum spatium limes indefessus neque at orat aestuat
-permalink: /tmp/test
+permalink: /test
 lang-ref: about
 background: /assets/img/Haeckel_Caulerpa_paspaloides.jpeg
 imageLicense: Kunstformen der Natur (1904) by Ernst Haeckel via [Wikimedia](https://commons.wikimedia.org/wiki/Kunstformen_der_Natur)
