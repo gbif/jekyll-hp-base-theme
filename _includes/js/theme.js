@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Redirect to the href of the link
         // but first add the geometry to the URL
-        const geometryLink = `${link.href}${link.href.includes('?') ? '&' : '?'}geometry=${WKT}`;
+        const geometryLink = `${link.href}${link.href.includes('?') ? '&' : '?'}geometry=${encodeURIComponent(WKT)}`;
         console.log("Redirecting to: ", geometryLink);
         link.classList.remove("is-loading"); // Remove loading class
         window.location.href = geometryLink;
