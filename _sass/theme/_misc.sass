@@ -192,3 +192,23 @@ img.inline-right
     .gbif-dashboardLayout
       padding: 12px
       margin: 0 auto;
+
+.tooltip
+  position: relative
+  border-bottom: 1px dashed #000
+.tooltip:before
+  content: attr(data-tooltip)
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: 100%
+  margin-left: 15px
+  width: 200px
+  padding: 10px
+  border-radius: 10px
+  background: #000
+  color: #fff
+  text-align: center
+  display: none
+.tooltip-visible:before
+  display: block
