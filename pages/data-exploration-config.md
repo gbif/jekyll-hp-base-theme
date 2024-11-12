@@ -249,3 +249,112 @@ var siteConfig = {
 The map type `SATELLITE` is mapped to the style `SATELLITE_MERCATOR` per default. If you want to add hillshading to the default `NATURAL` map type, then you need to wire it to `NATURAL_HILLSHADE_MERCATOR`in the lookup.
 
 This is all a bit tricky, so feel free to [ask](https://github.com/gbif/hosted-portals/issues/new)
+
+# Usage outside of a hosted portal
+The data exploration part of hosted portals is a javascript library. That means that e.g. occurrence search can be embedded on any site - not just hosted portals. But do so with caution, we are still actively developing this and the API can change. For hosted portals we update configurations and dependencies as needed. If you use this elsewhere we cannot do that. If you inform us we strive to inform you of changes. 
+
+> Be aware that this is under active development and likely to change in the future, so please get in touch before using this in production environments.
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://unpkg.com/react@17.0.1/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.production.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.1.1/mapbox-gl.min.css"
+      integrity="sha512-j4BKLk7HB2Umio2SKGP4gh1L3jouxJDuBxcWoq4kf1fYIkJyXQUGxs9me8yz2wexxAIHIcQHzn64UfPIG232xQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/6.1.1/ol.min.css"
+    />
+    <script type="text/javascript" src="https://react-components.gbif.org/lib/gbif-react-components.js?"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      var siteTheme = gbifReactComponents.themeBuilder.extend({
+        baseTheme: "light",
+        extendWith: {
+          primary: '#4787fb',
+          borderRadius: 3,
+        },
+      });
+
+      var siteConfig = {
+        version: 2,
+        routes: {
+          enabledRoutes: [
+            "occurrenceSearch",
+            "institutionKey",
+            "institutionSearch",
+            "publisherSearch",
+            "publisherKey",
+            "collectionKey",
+            "collectionSearch",
+            "datasetKey",
+            "datasetSearch",
+            "literatureSearch",
+          ],
+          occurrenceSearch: { // you can overwrite individual routes. 
+            route: '/' // default is /occurrence/search
+          }
+        },
+        occurrence: {
+          occurrenceSearchTabs: [
+            "TABLE",
+            "MAP",
+            "GALLERY",
+            "CLUSTERS",
+            "DASHBOARD",
+          ],
+        },
+        institution: {
+          mapSettings: {
+            enabled: true,
+            lat: 0,
+            lng: 0,
+            zoom: 1,
+          },
+        },
+        availableCatalogues: [
+          "OCCURRENCE",
+          "DATASET",
+          "PUBLISHER",
+          "COLLECTION",
+          "INSTITUTION",
+          "LITERATURE",
+        ],
+        maps: {
+          locale: "en",
+          defaultProjection: "MERCATOR",
+          defaultMapStyle: "NATURAL",
+          mapStyles: {
+            ARCTIC: ["NATURAL", "BRIGHT"],
+            PLATE_CAREE: ["NATURAL", "BRIGHT", "DARK"],
+            MERCATOR: ["NATURAL", "BRIGHT", "SATELLITE", "DARK"],
+            ANTARCTIC: ["NATURAL", "BRIGHT", "DARK"],
+          }
+        },
+      };
+      ReactDOM.render(
+        React.createElement(gbifReactComponents.App, {
+          style: { minHeight: "calc(100vh - 4.25rem)", height: "auto" },
+          siteConfig: {
+            ...siteConfig,
+            theme: siteTheme,
+            locale: 'en',
+          },
+          pageLayout: true,
+        }),
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
+
+```
