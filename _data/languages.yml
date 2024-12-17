@@ -13,3 +13,8 @@ la:
   archive_permalink: /la/archive/
   widgetLocale: en-ZZ
   # logo: /assets/img/petri-dish_1f9eb.png
+fr:
+  label: French
+  archive_permalink: /la/archive/
+  widgetLocale: fr
+  # logo: /assets/img/petri-dish_1f9eb.png
