@@ -1,11 +1,11 @@
 <div id="root" class="gbif"></div>
 <script type="module">
   import { render, languages } from "{{site.gbifApacheInclude.componentsScriptJsModule}}";
-  
+
   // generate language options
   const widgetLocale = '{{ languageCode }}'; // get locale from jekyll
   const defaultLang = "{{site.algae.rootLang}}" || "en";
-  const languageConfig = {{site.data.languages | jsonify}};
+  const languageConfig = {{site.data.languages | jsonify}} || {en: {code: 'en', label: 'English', default: true}};
   const languageOptions = Object.keys(languageConfig).map(function(key) {
     const currentLang = languageConfig[key];
     const option = {
@@ -16,7 +16,7 @@
     };
     return option;
   });
-  
+
   var primaryColor = themeStyle && themeStyle.colors && themeStyle.colors.primary;
   var isSquared = themeStyle && themeStyle.square;
   // throw new Error('This is a test error');
