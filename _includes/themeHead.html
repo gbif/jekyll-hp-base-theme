@@ -47,6 +47,13 @@
     {% endif %}
   {% endif %}
 
+  <!-- useful variables -->
+  <script>
+    var pageLang = '{{ page.lang }}';
+    var rootLang = '{{ site.algae.rootLang }}';
+    var basename = pageLang === rootLang ? undefined : pageLang;
+    var languageSettings = {{ site.data.languages | jsonify }};
+  </script>
 
   <!-- Widget requirements -->
   <!--react and gbif component-->

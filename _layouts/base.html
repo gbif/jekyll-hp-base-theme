@@ -5,13 +5,6 @@
   {% include themeHead.html %}
 
   <body class="{% if page.klass %}{{ page.klass }}{% endif %}">
-    <!-- useful variables -->
-    <script>
-      var pageLang = '{{ page.lang }}';
-      var rootLang = '{{ site.algae.rootLang }}';
-      var basename = pageLang === rootLang ? undefined : pageLang;
-      var languageSettings = {{ site.data.languages | jsonify }};
-    </script>
     {% include bodyTop.html %}
     {% include navbar.html %}
 
