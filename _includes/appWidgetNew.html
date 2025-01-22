@@ -13,6 +13,7 @@
       label: currentLang.label,
       textDirection: currentLang.textDirection ?? 'ltr',
       default: key === defaultLang,
+      localeCode: currentLang.widgetLocale ?? key,
     };
     return option;
   });
@@ -21,7 +22,6 @@
   var isSquared = themeStyle && themeStyle.square;
   // throw new Error('This is a test error');
   render(document.getElementById("root"), {
-    gbifEnv: "uat",
     languages: languageOptions,
     ...siteConfig,
     theme: {
