@@ -1,0 +1,91 @@
+{% assign randomId = "now" | date: "%N" %}
+{% assign dashboardId = include.id | default: include.content.id | default: randomId %}
+{% assign title = include.title | default: include.content.title %}
+{% assign description = include.description | default: include.content.description %}
+{% assign config = include.config | default: include.content.config %}
+
+{% assign languageCode = site.data.languages[page.lang].widgetLocale | default: site.data.languages[page.lang].languageCode | default: page.lang | default: site.algae.rootLang | default: 'en' %}
+
+{% unless config.charts or jekyll.environment == "production" %}
+<script>
+themeFeedback.push({title: "Missing charts", description: 'You haven\'t configured which charts to show. To do so add <code>config.charts: ["iucn", "month"]</code> in the frontmatter of this page.'})
+</script>
+{% endunless %}
+
+{% unless config.predicate or jekyll.environment == "production" %}
+<script>
+themeFeedback.push({title: "Missing predicate for dashboard", description: 'You haven\'t configured which predicate to filter the data by. To do so add <code>config.predicate: followed by a predicate. It will default to the site root predicate</code> in the frontmatter of this page.'})
+</script>
+{% endunless %}
+
+<section class="dashboard {% if include.content.klass %} {{ include.content.klass }} {% endif %}">
+  {% if title or description %}
+  <div class="features-intro">
+    {% include blocks/parts/feature.html content=include.content %}
+  </div>
+  {% endif %}
+  <div id="{{ dashboardId }}" class="gbif dashboard-content">
+  </div>
+</section>
+
+<script type="module">
+    import { renderDashboard, languages } from "{{site.gbifApacheInclude.componentsScriptJsModule}}";
+
+    // generate language options
+    const widgetLocale = '{{ languageCode }}'; // get locale from jekyll
+    const defaultLang = "{{site.algae.rootLang}}" || "en";
+    const languageConfig = {{site.data.languages | jsonify}} || {en: {code: 'en', label: 'English', default: true}};
+    const languageOptions = Object.keys(languageConfig).map(function(key) {
+      const currentLang = languageConfig[key];
+      const option = {
+        code: key,
+        label: currentLang.label,
+        textDirection: currentLang.textDirection ?? 'ltr',
+        default: key === defaultLang,
+      };
+      return option;
+    });
+
+    // Extract charts
+    const charts = {{config.charts | jsonify }};
+
+    // Extract predicate
+    const rootOccurrencePredicate = 
+      // v2 config
+      siteConfig?.occurrence?.rootPredicate ??
+      // v3 config
+      siteConfig?.occurrenceSearch?.scope;
+
+    const dashboardPredicate = {{config.predicate | jsonify }};
+    const predicate = dashboardPredicate ?? rootOccurrencePredicate;
+
+    var primaryColor = themeStyle && themeStyle.colors && themeStyle.colors.primary;
+    var isSquared = themeStyle && themeStyle.square;
+
+    renderDashboard({
+        rootElement: document.getElementById('{{ dashboardId }}'),
+        config: {
+          gbifEnv: "uat",
+          languages: languageOptions,
+          ...(siteConfig ?? {}),
+          theme: {
+            primary: primaryColor,
+            borderRadius: isSquared? 0 : 3,
+            stickyOffset: "0px",
+            ...(siteConfig?.theme ?? {}),
+          },
+          linkToGbifOrg: true,
+        },
+        locale: languages.find((l) => l.code === widgetLocale),
+        predicate,
+        charts,
+      });
+
+    if (typeof siteConfig?.theme === 'undefined') {
+      console.warn('No theme defined - using default styling');
+    }
+    if (typeof predicate === 'undefined') {
+      console.warn('No predicate provided - all data will be shown');
+    }
+</script>
+
