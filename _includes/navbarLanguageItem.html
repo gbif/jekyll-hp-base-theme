@@ -29,11 +29,12 @@
       </div>
     </div>
   </div>
-    {% if useSharedLibrary %}
+    {% if site.updateTranslationMenuOnWidgetEvents %}
     <script>
+      // notice that this will only work if the site is using the same urls for all languages (with a locale prefix)
       const options = document.querySelectorAll('.js-language-option');
 
-      window.addEventListener('urlChange', e => {
+      window.addEventListener('gbifUrlChange', e => {
         const { url, localizeLink } = e.detail;
         options.forEach(option => {
           const locale = option.getAttribute('data-locale');

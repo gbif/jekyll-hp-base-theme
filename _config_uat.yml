@@ -10,3 +10,4 @@ plausible:
 graphqlEndpoint: "https://graphql.gbif-uat.org/graphql"
 
 useSharedLibrary: true
+updateTranslationMenuOnWidgetEvents: true #notice that this feature requires urls for widgets to be the same across languages (except for a language prefix)
