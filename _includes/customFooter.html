@@ -1,30 +1,15 @@
 {% assign footer = site.data[page.lang].footer | default: site.data.footer %}
 
 <div class="footer">
+  <div class="footer">
   <div>
-    {% if page.layout != 'index' and page.lang-ref%}
-      {% assign posts = site.posts | where: "lang-ref", page.lang-ref | sort: 'lang' %}
-      {% if posts.size == 0 %}
-          {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-      {% endif %}
-      {% if posts.size > 1 %}
-      <div class="lang-options">
-          <em>{{ site.data.translations['differentLanguage'][page.lang] }}:</em>
-          <ul>
-          {% for post in posts %}
+    <div class="footer-contact">
+      <p class="footer-contact-name">CONTACT</p>
+      <ul class="footer-links">
           <li>
-            <a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }}" title="View in {{post.lang}}">
-              <!-- {% if site.data.languages[post.lang].icon %}
-              <img src="{{ site.data.languages[post.lang].icon }}" style="margin-right: 6px; height:1em;" />
-              {% endif %} -->
-              {{ site.data.languages[post.lang].label }}
-            </a>
+            <a href="mailto:maria.mora@itcr.ac.cr">maria.mora@itcr.ac.cr</a>
           </li>
-          {% endfor %}
-          </ul>
-      </div>
-      {% endif %}
-    {% endif %}
+      </ul>
   </div>
   <div>
     <div class="footer-groups">
