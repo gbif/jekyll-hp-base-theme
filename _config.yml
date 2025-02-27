@@ -76,6 +76,7 @@ exclude:
   - package-lock.json
   - package.json
   - jekyll-theme-algae.gemspec
+  - scripts
 
 asciidoctor:
   base_dir: :docdir
