@@ -56,125 +56,127 @@ composition:
   }
 
   const QUERY = `
-    query{
-    resourceSearch(input: {id: ["${resourceKey}"]}) {
-      results {
-        __typename
-        ...on News {
-          title
-          summary
-          primaryImage {
-            file {
-              url
+    {
+      resourceSearch(id: ["${resourceKey}"]) {
+        documents {
+          results {
+            __typename
+            ... on News {
+              title
+              summary
+              primaryImage {
+                file {
+                  url
+                }
+                description
+                title
+              }
+              createdAt
+              body
+              gbifHref
+              primaryLink {
+                label
+                url
+              }
+              citation
+              secondaryLinks {
+                label
+                url
+              }
             }
-            description
-            title
-          }
-          createdAt
-          body
-          gbifHref
-          primaryLink {
-            label
-            url
-          }
-          citation
-          secondaryLinks {
-            label
-            url
-          }
-        }
-        ...on DataUse {
-          title
-          summary
-          primaryImage {
-            file {
-              url
+            ... on DataUse {
+              title
+              summary
+              primaryImage {
+                file {
+                  url
+                }
+                description
+                title
+              }
+              createdAt
+              body
+              gbifHref
+              resourceUsed
+              primaryLink {
+                label
+                url
+              }
+              citation
+              secondaryLinks {
+                label
+                url
+              }
             }
-            description
-            title
-          }
-          createdAt
-          body
-          gbifHref
-          resourceUsed
-          primaryLink {
-            label
-            url
-          }
-          citation
-          secondaryLinks {
-            label
-            url
-          }
-        }
-        ...on Article {
-          title
-          summary
-          primaryImage {
-            file {
-              url
+            ... on Article {
+              title
+              summary
+              primaryImage {
+                file {
+                  url
+                }
+                description
+                title
+              }
+              createdAt
+              body
+              gbifHref
+              secondaryLinks {
+                label
+                url
+              }
+              documents {
+                file {
+                  url
+                  fileName
+                  contentType
+                }
+                description
+                title
+              }
             }
-            description
-            title
-          }
-          createdAt
-          body
-          gbifHref
-          secondaryLinks {
-            label
-            url
-          }
-          documents {
-            file {
-              url
-              fileName
-              contentType
+            ... on MeetingEvent {
+              title
+              summary
+              venue
+              allDayEvent
+              start
+              end
+              eventLanguage
+              location
+              country
+              primaryImage {
+                file {
+                  url
+                }
+                description
+                title
+              }
+              createdAt
+              body
+              gbifHref
+              primaryLink {
+                label
+                url
+              }
+              secondaryLinks {
+                label
+                url
+              }
+              documents {
+                file {
+                  url
+                  fileName
+                  contentType
+                }
+                description
+                title
+              }
             }
-            description
-            title
-          }
-        }
-        ...on MeetingEvent {
-          title
-          summary
-          venue
-          allDayEvent
-          start
-          end
-          eventLanguage
-          location
-          country
-          primaryImage {
-            file {
-              url
-            }
-            description
-            title
-          }
-          createdAt
-          body
-          gbifHref
-          primaryLink {
-            label
-            url
-          }
-          secondaryLinks {
-            label
-            url
-          }
-          documents {
-            file {
-              url
-              fileName
-              contentType
-            }
-            description
-            title
           }
         }
       }
     }
-  }
   `;
 
   const resourceElement = document.getElementById("resourceKey");
@@ -287,7 +289,7 @@ composition:
       .then(function (jsonResponse) {
         // now we need to fill in the template. The page is generated using nonsensical placeholders that we need to replace with the actual content.
         // first pull out the item in case
-        const contentItem = jsonResponse.data.resourceSearch.results[0];
+        const contentItem = jsonResponse.data.resourceSearch.documents.results[0];
 
         // if not a supported contentType then throw an error
         if (!['Event', 'DataUse', 'News', 'Article'].includes(contentItem.__typename)) {

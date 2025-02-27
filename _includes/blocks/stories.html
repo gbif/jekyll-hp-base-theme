@@ -55,59 +55,67 @@
 
     function fetchResources() {
       var GQL_QUERY = `
-        query ResourceSearch($input: ResourceSearchInput!) {
-          resourceSearch(input: $input) {
-            results {
-              __typename
-              ... on Literature {
-                id
-                title
-                excerpt
-                websites
-              }
-              ... on News {
-                id
-                title
-                excerpt
-                gbifHref
-                primaryImage {
-                  file {
-                    url
+          query ResourceSearch($contentType: [ContentType!], $limit: Int, $countriesOfResearcher: [String!], $countriesOfCoverage: [String!], $topics: [String!]) {
+            resourceSearch(
+              contentType: $contentType
+              size: $limit
+              countriesOfResearcher: $countriesOfResearcher
+              countriesOfCoverage: $countriesOfCoverage
+              topics: $topics
+            ) {
+              documents {
+                results {
+                  __typename
+                  ... on Literature {
+                    id
+                    title
+                    excerpt
+                    websites
                   }
-                  title
-                }
-              }
-              ... on DataUse {
-                id
-                title
-                excerpt
-                gbifHref
-                primaryImage {
-                  file {
-                    url
+                  ... on News {
+                    id
+                    title
+                    excerpt
+                    gbifHref
+                    primaryImage {
+                      file {
+                        url
+                      }
+                      title
+                    }
                   }
-                  title
-                }
-              }
-              ... on MeetingEvent {
-                id
-                title
-                excerpt
-                gbifHref
-                primaryImage {
-                  file {
-                    url
+                  ... on DataUse {
+                    id
+                    title
+                    excerpt
+                    gbifHref
+                    primaryImage {
+                      file {
+                        url
+                      }
+                      title
+                    }
                   }
-                  title
-                }
-                primaryLink {
-                  label
-                  url
+                  ... on MeetingEvent {
+                    id
+                    title
+                    excerpt
+                    gbifHref
+                    primaryImage {
+                      file {
+                        url
+                      }
+                      title
+                    }
+                    primaryLink {
+                      label
+                      url
+                    }
+                  }
                 }
               }
             }
           }
-        }
       `;
 
       // Construct the request headers
@@ -124,7 +132,7 @@
         headers: requestHeaders,
         body: JSON.stringify({
           query: GQL_QUERY,
-          variables: { input: filters }
+          variables: filters,
         }),
       })
         .then(function (response) {
@@ -135,8 +143,8 @@
             console.error(result.errors);
           }
 
-          if (result.data != null && result.data.resourceSearch != null && Array.isArray(result.data.resourceSearch.results)) {
-            return result.data.resourceSearch.results;
+          if (result.data != null && result.data.resourceSearch != null && result.data.resourceSearch.documents != null && Array.isArray(result.data.resourceSearch.documents.results)) {
+            return result.data.resourceSearch.documents.results;
           }
 
           return [];
