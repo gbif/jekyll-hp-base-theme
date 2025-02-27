@@ -1,8 +1,13 @@
 export async function getHostedPortalRepositories(octokit) {
+  console.log("Getting all hosted portal repositories...");
+
   const repositories = await getAllGbifRepositories(octokit);
   const hostedPortalRepos = repositories.filter((repo) => {
     return repo.name.startsWith("hp-");
   });
+
+  console.log(`Found ${hostedPortalRepos.length} hosted portal repositories.`);
+
   return hostedPortalRepos;
 }
 

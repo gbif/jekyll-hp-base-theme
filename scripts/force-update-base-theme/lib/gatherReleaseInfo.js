@@ -16,12 +16,6 @@ export async function gatherReleaseInfo() {
     },
     {
       type: "input",
-      name: "commitMessage",
-      message: "Commit message",
-      default: "Trigger base-theme update",
-    },
-    {
-      type: "input",
       name: "description",
       message: "Release description",
       default:

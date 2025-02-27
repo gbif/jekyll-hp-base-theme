@@ -1,5 +1,6 @@
 // Creating a new release with the same commit ref as the latest release will trigger a deployment to production
-export async function triggerProdDeployment(
+// This will also trigger a redeployment of staging (using master)
+export async function triggerDeployment(
   octokit,
   hostedPortalRepo,
   releaseInfo
