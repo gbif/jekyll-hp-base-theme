@@ -18,7 +18,16 @@ export async function triggerDeployment(
       owner,
       repo,
     });
-    latestCommitSha = latestRelease.target_commitish;
+
+    // Get commit SHA from the tag
+    const tagName = latestRelease.tag_name;
+    const { data: tagData } = await octokit.rest.repos.getCommit({
+      owner,
+      repo,
+      ref: tagName,
+    });
+
+    latestCommitSha = tagData.sha;
   } catch (error) {
     if (error.status === 404) {
       console.log(`${repo}: No release found - Skipping production deployment`);
