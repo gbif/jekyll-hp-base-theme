@@ -1,6 +1,6 @@
 {% assign useSharedLibrary = page.useSharedLibrary | default: site.useSharedLibrary | default: false %}
-{% if useSharedLibrary %}
-  {% include appWidgetNew.html %}
-{% else %}
+{% if useOldLibrary %}
   {% include appWidgetOld.html %}
+{% else %}
+  {% include appWidgetNew.html %}
 {% endif %}
