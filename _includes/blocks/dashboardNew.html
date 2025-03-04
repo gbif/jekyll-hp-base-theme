@@ -3,6 +3,7 @@
 {% assign title = include.title | default: include.content.title %}
 {% assign description = include.description | default: include.content.description %}
 {% assign config = include.config | default: include.content.config %}
+{% assign lib = site.gbifApacheInclude.componentsScriptJsModule | default: "https://www-lib.gbif-staging.org/gbif-lib.js" %}
 
 {% assign languageCode = site.data.languages[page.lang].widgetLocale | default: site.data.languages[page.lang].languageCode | default: page.lang | default: site.algae.rootLang | default: 'en' %}
 
@@ -29,7 +30,7 @@ themeFeedback.push({title: "Missing predicate for dashboard", description: 'You 
 </section>
 
 <script type="module">
-    import { renderDashboard, languages } from "{{site.gbifApacheInclude.componentsScriptJsModule}}";
+    import { renderDashboard, languages } from "{{lib}}";
 
     // generate language options
     const widgetLocale = '{{ languageCode }}'; // get locale from jekyll

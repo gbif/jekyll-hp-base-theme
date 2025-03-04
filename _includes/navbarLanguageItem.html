@@ -1,4 +1,3 @@
-{% assign useSharedLibrary = page.useSharedLibrary | default: site.useSharedLibrary | default: false %}
 {% if page.lang-ref%}
   {% assign posts = site.posts | where: "lang-ref", page.lang-ref | sort: 'lang' %}
   {% if posts.size == 0 %}

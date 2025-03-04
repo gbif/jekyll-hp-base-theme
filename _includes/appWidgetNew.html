@@ -1,6 +1,7 @@
+{% assign lib = site.gbifApacheInclude.componentsScriptJsModule | default: "https://www-lib.gbif-staging.org/gbif-lib.js" %}
 <div id="root" class="gbif"></div>
 <script type="module">
-  import { render, languages } from "{{site.gbifApacheInclude.componentsScriptJsModule}}";
+  import { render, languages } from "{{lib}}";
 
   // generate language options
   const widgetLocale = '{{ languageCode }}'; // get locale from jekyll

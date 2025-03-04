@@ -9,4 +9,4 @@ plausible:
 
 graphqlEndpoint: "https://graphql.gbif-dev.org/graphql"
 
-useSharedLibrary: true
+useOldLibrary: true

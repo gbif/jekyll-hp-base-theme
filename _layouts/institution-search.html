@@ -9,39 +9,39 @@ description: Default template for occurrence search
 <div id="root" class="gbif"></div>
 
 
-{% assign useSharedLibrary = page.useSharedLibrary | default: site.useSharedLibrary | default: false %}
-{% if useSharedLibrary %}
-  {% include appWidgetNew.html %}
+{% assign useOldLibrary = page.useOldLibrary | default: site.useOldLibrary | default: false %}
+{% if useOldLibrary %}
+  <script>
+    var widgetLocale = '{{ languageCode }}';
+    var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
+    var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
+    var routes = userConfig.routes || {};
+    routes.basename = basename;
+
+    ReactDOM.render(
+      React.createElement(
+        gbifReactComponents.App,
+        { 
+          style: { height: 'calc(100vh - 4.25rem)' }, 
+          siteConfig: {
+            ...siteConfig,
+            theme: userTheme, 
+            routes: routes,
+            locale: widgetLocale
+          },
+          pageLayout: true
+        }
+      ),
+      document.getElementById('root')
+    );
+
+    if (typeof userTheme === 'undefined') {
+      console.warn('No theme defined - using default styling');
+    }
+    if (typeof userConfig === 'undefined') {
+      console.warn('No config provided - all data will be shown');
+    }
+  </script>
 {% else %}
-<script>
-  var widgetLocale = '{{ languageCode }}';
-  var userTheme = typeof siteTheme !== 'undefined' ? siteTheme : undefined;
-  var userConfig = typeof siteConfig !== 'undefined' ? siteConfig : {};
-  var routes = userConfig.routes || {};
-  routes.basename = basename;
-
-  ReactDOM.render(
-    React.createElement(
-      gbifReactComponents.App,
-      { 
-        style: { height: 'calc(100vh - 4.25rem)' }, 
-        siteConfig: {
-          ...siteConfig,
-          theme: userTheme, 
-          routes: routes,
-          locale: widgetLocale
-        },
-        pageLayout: true
-      }
-    ),
-    document.getElementById('root')
-  );
-
-  if (typeof userTheme === 'undefined') {
-    console.warn('No theme defined - using default styling');
-  }
-  if (typeof userConfig === 'undefined') {
-    console.warn('No config provided - all data will be shown');
-  }
-</script>
+  {% include appWidgetNew.html %}
 {% endif %}
