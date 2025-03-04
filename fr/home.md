@@ -20,4 +20,6 @@ composition:
     type: floatingText
   - data: home.splitExample
     type: split
+  - data: fr.home.stories
+    type: stories
 ---
