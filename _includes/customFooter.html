@@ -128,6 +128,16 @@
             </a>
           </li>
           {% endif %}
+          {% if site.linkedin_url %}
+          <li>
+            <a href="{{ site.linkedin_url }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
           {% if site.email %}
           <li>
             <a href="mailto:{{ site.email }}">

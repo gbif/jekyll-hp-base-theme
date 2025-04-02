@@ -16,6 +16,7 @@ bluesky_username: gbif.org                            # Social icon in footer
 # flickr_username: gbif                             # Social icon in footer
 instagram_username: gbifs                         # Social icon in footer
 mastodon_url: https://biodiversity.social/@gbif   # Social icon in footer
+# linkedin_url: https://www.linkedin.com/company/gbif # Social icon in footer
 
 # THEME SETTINGS (ALL OPTIONAL)
 
