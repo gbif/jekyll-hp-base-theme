@@ -86,6 +86,10 @@
 
   {% include head.html %}
 
+  {% if jekyll.environment == "production" %}
+    {% include analytics.html %}
+  {% endif %}
+
   {% if page.head %}
     {{ page.head }}
   {% endif %}
