@@ -233,6 +233,7 @@ availableColumns = [ //
     "stateProvince",
     "establishmentMeans",
     "sex",
+    "individualCount",
     "lifeStage",
     "iucnRedListCategory"
 ]
