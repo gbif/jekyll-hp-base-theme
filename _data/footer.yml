@@ -21,18 +21,3 @@ columns:
   - name:
     description: |
       <a href="https://www.sica.int/"><img src="/assets/img/logos/ico_SICA.png" width="100"><br/><br/></a>
-  - name:
-    description: |
-      <a href="/"><img src="/assets/img/logos/ico_Redbioma.png" width="100"><br/><br/></a>
-  - name:
-    description: |
-      <a href="https://www.tec.ac.cr/"><img src="/assets/img/logos/ico_TEC.png" width="100"><br/><br/></a>
-  - name:
-    description: |
-      <a href="https://idrc-crdi.ca/es"><img src="/assets/img/logos/ico_IDR-CRDI.png" width="100"><br/><br/></a>
-  - name:
-    description: |
-      <a href="https://sicevaes.csuca.org/"><img src="/assets/img/logos/ico_CSUCA.png" width="80"><br/><br/></a>
-  - name:
-    description: |
-      <a href="https://www.sica.int/ctcap/inicio"><img src="/assets/img/logos/ico_CTCAP.png" width="80"><br/><br/></a>
