@@ -3,27 +3,36 @@
 
 # Columns (the more you add, the narrower they will be)
 columns:
-  - name: Partners
-    links:
-    - text: Name of project partner 1
-      href: http://example.com
-      new_window: true
-    - text: Name of project partner 2
-      href: http://example.com
-      new_window: true
-
-  - name: Code
-    description: | # E.g. funding acknowledgement. Can be Markdown
-      This project is open source. See [`_data/footer.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/footer.yml) to customize the footer.
-    links:
-  
-  - name: Contact
-    description: | # E.g. funding acknowledgement. Can be Markdown
-      Social icons links defined in [`_config.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_config.yml)
-      * Street name
-      * 1234 postal code
-      * Country
-    links:
-    connectIcons: true
-other: |
-  [Privacy policy](/privacy)
+  - name:
+    description: |
+      <a href="/"><img src="/assets/img/logos/ico_Redbioma.png" width="100"><br/><br/></a>
+  - name:
+    description: |
+      <a href="https://www.tec.ac.cr/"><img src="/assets/img/logos/ico_TEC.png" width="100"><br/><br/></a>
+  - name:
+    description: |
+      <a href="https://idrc-crdi.ca/es"><img src="/assets/img/logos/ico_IDR-CRDI.png" width="100"><br/><br/></a>
+  - name:
+    description: |
+      <a href="https://sicevaes.csuca.org/"><img src="/assets/img/logos/ico_CSUCA.png" width="80"><br/><br/></a>
+  - name:
+    description: |
+      <a href="https://www.sica.int/ctcap/inicio"><img src="/assets/img/logos/ico_CTCAP.png" width="80"><br/><br/></a>
+  - name:
+    description: |
+      <a href="https://www.sica.int/"><img src="/assets/img/logos/ico_SICA.png" width="100"><br/><br/></a>
+  - name:
+    description: |
+      <a href="/"><img src="/assets/img/logos/ico_Redbioma.png" width="100"><br/><br/></a>
+  - name:
+    description: |
+      <a href="https://www.tec.ac.cr/"><img src="/assets/img/logos/ico_TEC.png" width="100"><br/><br/></a>
+  - name:
+    description: |
+      <a href="https://idrc-crdi.ca/es"><img src="/assets/img/logos/ico_IDR-CRDI.png" width="100"><br/><br/></a>
+  - name:
+    description: |
+      <a href="https://sicevaes.csuca.org/"><img src="/assets/img/logos/ico_CSUCA.png" width="80"><br/><br/></a>
+  - name:
+    description: |
+      <a href="https://www.sica.int/ctcap/inicio"><img src="/assets/img/logos/ico_CTCAP.png" width="80"><br/><br/></a>
