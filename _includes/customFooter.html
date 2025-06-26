@@ -1,95 +1,102 @@
 {% assign footer = site.data[page.lang].footer | default: site.data.footer %}
 
-<div class="footer">
-  <div class="footer-contact">
-    <p class="footer-contact-name">CONTACT</p>
-    <ul class="footer-links">
-        <li>
-          <a href="mailto:maria.mora@itcr.ac.cr">maria.mora@itcr.ac.cr</a>
-        </li>
-    </ul>
-  </div>
-  <div class="footer-groups">
-    {% for col in footer.columns %}
-      <div class="footer-column">
-        <p class="footer-column-name">{{ col.name }}</p>
-        {% if col.description %}
-          <div class="footer-description">
-            {{ col.description | markdownify }}
-          </div>
-        {% endif %}
-        {% if col.links %}
-          <ul class="footer-links">
-            {% for item in col.links %}
-            <li>
-              <a href="{{ item.href | relative_url}}">{{ item.text }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      
-        {% if col.connectIcons %}
-          <ul class="footer-online-list">
-            {% if site.twitter_username %}
-              <li>
-                <a href="https://twitter.com/{{ site.twitter_username }}">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            {% endif %}
-            {% if site.github_username %}
-              <li>
-                <a href="https://github.com/{{ site.github_username }}">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            {% endif %}
-            {% if site.youtube_username %}
-              <li>
-                <a href="https://www.youtube.com/user/{{ site.youtube_username }}">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            {% endif %}
-            {% if site.facebook_username %}
-              <li>
-                <a href="https://www.facebook.com/{{ site.facebook_username }}">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            {% endif %}
-            {% if site.flickr_username %}
-              <li>
-                <a href="https://www.flickr.com/photos/{{ site.flickr_username }}">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            {% endif %}
-          </ul>
-        {% endif %}
-      </div>
-    {% endfor %}
-  </div>
-  <div>
-    {% if footer.other %}
-    <div class="footer-footer">
-      {{ footer.other | markdownify }}
-    </div>
-    {% endif %}
-  </div>
+<!-- Divider -->
+<hr style="border-top: 2px solid #f3f3f3e8" />
+
+<!-- Footer conctact -->
+<div class="footer-contact">
+  <p class="footer-contact-name">CONTACT</p>
+  <ul class="footer-links">
+      <li>
+        <a href="mailto:maria.mora@itcr.ac.cr">maria.mora@itcr.ac.cr</a>
+      </li>
+  </ul>
 </div>
+
+<!-- Footer groups -->
+<div class="footer-groups">
+  {% for col in footer.columns %}
+    <div class="footer-column">
+      <p class="footer-column-name">{{ col.name }}</p>
+      {% if col.description %}
+        <div class="footer-description">
+          {{ col.description | markdownify }}
+        </div>
+      {% endif %}
+      {% if col.links %}
+        <ul class="footer-links">
+          {% for item in col.links %}
+          <li>
+            <a href="{{ item.href | relative_url}}">{{ item.text }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    
+      {% if col.connectIcons %}
+        <ul class="footer-online-list">
+          {% if site.twitter_username %}
+            <li>
+              <a href="https://twitter.com/{{ site.twitter_username }}">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          {% endif %}
+          {% if site.github_username %}
+            <li>
+              <a href="https://github.com/{{ site.github_username }}">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          {% endif %}
+          {% if site.youtube_username %}
+            <li>
+              <a href="https://www.youtube.com/user/{{ site.youtube_username }}">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          {% endif %}
+          {% if site.facebook_username %}
+            <li>
+              <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          {% endif %}
+          {% if site.flickr_username %}
+            <li>
+              <a href="https://www.flickr.com/photos/{{ site.flickr_username }}">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Footer other -->
+<div>
+  {% if footer.other %}
+  <div class="footer-footer">
+    {{ footer.other | markdownify }}
+  </div>
+  {% endif %}
+</div>
+

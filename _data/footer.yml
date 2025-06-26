@@ -6,7 +6,7 @@ columns:
   # RedBioma
   - name:
     description: |
-      <a href="/"><img src="/assets/img/logos/ico_Redbioma.png" width="100"></a>
+      <a href="/"><img src="/assets/img/logos/ico_Redbioma.png" width="125"></a>
   # GBIF
   - name:
     description: |
@@ -14,27 +14,27 @@ columns:
   # TEC
   - name:
     description: |
-      <a href="https://www.tec.ac.cr/"><img src="/assets/img/logos/ico_TEC.png" width="100"></a>
+      <a href="https://www.tec.ac.cr/"><img src="/assets/img/logos/ico_TEC.png" width="150"></a>
   # Medio ambiente México
   - name:
     description: |
-      <a href="https://www.gob.mx/semarnat"><img src="/assets/img/logos/ico_MedioAmbiente_Mexico.png" width="100"></a>
+      <a href="https://www.gob.mx/semarnat"><img src="/assets/img/logos/ico_MedioAmbiente_Mexico.png" width="200"></a>
   # CONABIO
   - name:
     description: |
-      <a href="https://www.gob.mx/conabio"><img src="/assets/img/logos/ico_Conabio.png" width="100"></a>
+      <a href="https://www.gob.mx/conabio"><img src="/assets/img/logos/ico_Conabio.png" width="150"></a>
   # CONAGEBIO
   - name:
     description: |
-      <a href="https://www.conagebio.go.cr/"><img src="/assets/img/logos/ico_conagebio.png" width="100"></a>
+      <a href="https://www.conagebio.go.cr/"><img src="/assets/img/logos/ico_conagebio.png" width="150"></a>
   # CONAP
   - name:
     description: |
-      <a href="https://conap.gob.gt/"><img src="/assets/img/logos/ico_CONAP.png" width="100"></a>
+      <a href="https://conap.gob.gt/"><img src="/assets/img/logos/ico_CONAP.png" width="80"></a>
   # Museo Entomológico de León Nicaragua (MEL)
   - name:
     description: |
-      <a href="http://www.bio-nica.info/topic/index.html"><img src="/assets/img/logos/ico_MUseoEntLeon-Nicaragua.png" width="100"></a>
+      <a href="http://www.bio-nica.info/topic/index.html"><img src="/assets/img/logos/ico_MUseoEntLeon-Nicaragua.png" width="125"></a>
   # CSUCA
   - name:
     description: |
