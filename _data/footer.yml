@@ -3,21 +3,51 @@
 
 # Columns (the more you add, the narrower they will be)
 columns:
+  # RedBioma
   - name:
     description: |
-      <a href="/"><img src="/assets/img/logos/ico_Redbioma.png" width="100"><br/><br/></a>
+      <a href="/"><img src="/assets/img/logos/ico_Redbioma.png" width="100"></a>
+  # GBIF
   - name:
     description: |
-      <a href="https://www.tec.ac.cr/"><img src="/assets/img/logos/ico_TEC.png" width="100"><br/><br/></a>
+      <a href="https://www.gbif.org/"><img src="/assets/img/logos/ico-GBif.png" width="100"></a>
+  # TEC
   - name:
     description: |
-      <a href="https://idrc-crdi.ca/es"><img src="/assets/img/logos/ico_IDR-CRDI.png" width="100"><br/><br/></a>
+      <a href="https://www.tec.ac.cr/"><img src="/assets/img/logos/ico_TEC.png" width="100"></a>
+  # Medio ambiente México
   - name:
     description: |
-      <a href="https://sicevaes.csuca.org/"><img src="/assets/img/logos/ico_CSUCA.png" width="80"><br/><br/></a>
+      <a href="https://www.gob.mx/semarnat"><img src="/assets/img/logos/ico_MedioAmbiente_Mexico.png" width="100"></a>
+  # CONABIO
   - name:
     description: |
-      <a href="https://www.sica.int/ctcap/inicio"><img src="/assets/img/logos/ico_CTCAP.png" width="80"><br/><br/></a>
+      <a href="https://www.gob.mx/conabio"><img src="/assets/img/logos/ico_Conabio.png" width="100"></a>
+  # CONAGEBIO
   - name:
     description: |
-      <a href="https://www.sica.int/"><img src="/assets/img/logos/ico_SICA.png" width="100"><br/><br/></a>
+      <a href="https://www.conagebio.go.cr/"><img src="/assets/img/logos/ico_conagebio.png" width="100"></a>
+  # CONAP
+  - name:
+    description: |
+      <a href="https://conap.gob.gt/"><img src="/assets/img/logos/ico_CONAP.png" width="100"></a>
+  # Museo Entomológico de León Nicaragua (MEL)
+  - name:
+    description: |
+      <a href="http://www.bio-nica.info/topic/index.html"><img src="/assets/img/logos/ico_MUseoEntLeon-Nicaragua.png" width="100"></a>
+  # CSUCA
+  - name:
+    description: |
+      <a href="https://sicevaes.csuca.org/"><img src="/assets/img/logos/ico_CSUCA.png" width="80"></a>
+  # IDRC
+  - name:
+    description: |
+      <a href="https://idrc-crdi.ca/es"><img src="/assets/img/logos/ico_IDR-CRDI.png" width="100"></a>
+  # CTAP
+  - name:
+    description: |
+      <a href="https://www.sica.int/ctcap/inicio"><img src="/assets/img/logos/ico_CTCAP.png" width="80"></a>
+  # SICA
+  - name:
+    description: |
+      <a href="https://www.sica.int/"><img src="/assets/img/logos/ico_SICA.png" width="100"></a>
