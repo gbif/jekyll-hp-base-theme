@@ -47,6 +47,13 @@
     {% endif %}
   {% endif %}
 
+  <!-- useful variables -->
+  <script>
+    var pageLang = '{{ page.lang }}';
+    var rootLang = '{{ site.algae.rootLang }}';
+    var basename = pageLang === rootLang ? undefined : pageLang;
+    var languageSettings = {{ site.data.languages | jsonify }};
+  </script>
 
   <!-- Widget requirements -->
   <!--react and gbif component-->
@@ -59,10 +66,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.1.1/mapbox-gl.min.css" integrity="sha512-j4BKLk7HB2Umio2SKGP4gh1L3jouxJDuBxcWoq4kf1fYIkJyXQUGxs9me8yz2wexxAIHIcQHzn64UfPIG232xQ==" crossorigin="anonymous" />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/openlayers/6.1.1/ol.min.css' />
 
-  {% assign useSharedLibrary = page.useSharedLibrary | default: site.useSharedLibrary | default: false %}
-  {% if useSharedLibrary %}
+  {% assign useOldLibrary = page.useOldLibrary | default: site.useOldLibrary | default: false %}
+  {% if site.gbifApacheInclude.componentsScriptCss %}
   <link rel='stylesheet' href='{{ site.gbifApacheInclude.componentsScriptCss }}' />
+  {% else %}
+  <link rel='stylesheet' href='https://www-lib.gbif-staging.org/style.css?' />
   {% endif %}
+
   {% if site.gbifApacheInclude.componentsScript %}
     <!--dynamically include version running in environment-->
     {{ site.gbifApacheInclude.componentsScript }}
@@ -76,6 +86,7 @@
   <!-- Bulma is included in main.css -->
   <link rel="stylesheet" href="{{ '/assets/theme/css/main.css' | relative_url }}?v={{ site.time | date:'%s' }}">
   <link rel="stylesheet" href="{{ '/assets/theme/css/font-awesome.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/theme/css/v4-shims.css' | relative_url }}">
 
   <!-- Feeds -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS feed" href="{{ '/feed.xml' | absolute_url }}" >

@@ -1,0 +1,17 @@
+stories:
+  # Title (Optional)
+  # title: Actualités mondiales
+# Description (Optional)
+  # description: |
+   # GBIF France, un acteur clé dans le réseau mondial de la biodiversité, contribue à partager des données essentielles sur notre monde naturel. En collaboration avec d'autres nœuds, il participe aux dernières nouvelles du réseau, faisant progresser notre compréhension des formes de vie diverses de la Terre.
+ # useSiteLinkWhenPossible: true # experimental - use the resource page when possible. See https://github.com/gbif/hp-france/issues/1
+  # Filters
+  # Use these options to tailor the content displayed in your block.
+  filters:
+    contentType: 
+      - DATA_USE
+      - NEWS
+      - EVENT
+    limit: 3
+    locale:
+      - fr

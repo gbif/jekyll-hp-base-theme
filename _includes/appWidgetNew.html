@@ -1,6 +1,7 @@
+{% assign lib = site.gbifApacheInclude.componentsScriptJsModule | default: "https://www-lib.gbif-staging.org/gbif-lib.js" %}
 <div id="root" class="gbif"></div>
 <script type="module">
-  import { render, languages } from "{{site.gbifApacheInclude.componentsScriptJsModule}}";
+  import { render, languages } from "{{lib}}";
 
   // generate language options
   const widgetLocale = '{{ languageCode }}'; // get locale from jekyll
@@ -13,6 +14,7 @@
       label: currentLang.label,
       textDirection: currentLang.textDirection ?? 'ltr',
       default: key === defaultLang,
+      localeCode: currentLang.widgetLocale ?? key,
     };
     return option;
   });
@@ -21,13 +23,13 @@
   var isSquared = themeStyle && themeStyle.square;
   // throw new Error('This is a test error');
   render(document.getElementById("root"), {
-    gbifEnv: "staging",
     languages: languageOptions,
     ...siteConfig,
     theme: {
       primary: primaryColor,
       borderRadius: isSquared? 0 : 3,
       stickyOffset: "0px",
+      ...(siteConfig.theme ?? {}),
     },
     linkToGbifOrg: true,
   });

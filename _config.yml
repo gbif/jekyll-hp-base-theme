@@ -7,12 +7,16 @@ url: "https://hp-base-theme.gbif.org"   # the base hostname & protocol for your 
                                         # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/about/#links
 
 # SOCIAL PROFILES
-email: info@gbif.org                    # Social icon in footer
-twitter_username: gbif                  # Social icon in footer
-github_username: gbif                   # Social icon in footer
-# youtube_username: gbif                  # Social icon in footer
-# facebook_username: gbif                 # Social icon in footer
-# flickr_username: gbif                 # Social icon in footer
+email: info@gbif.org                              # Social icon in footer
+twitter_username: gbif                            # Social icon in footer
+github_username: gbif                             # Social icon in footer
+bluesky_username: gbif.org                            # Social icon in footer
+# youtube_username: gbif                            # Social icon in footer
+# facebook_username: gbif                           # Social icon in footer
+# flickr_username: gbif                             # Social icon in footer
+instagram_username: gbifs                         # Social icon in footer
+mastodon_url: https://biodiversity.social/@gbif   # Social icon in footer
+# linkedin_url: https://www.linkedin.com/company/gbif # Social icon in footer
 
 # THEME SETTINGS (ALL OPTIONAL)
 
@@ -73,6 +77,7 @@ exclude:
   - package-lock.json
   - package.json
   - jekyll-theme-algae.gemspec
+  - scripts
 
 asciidoctor:
   base_dir: :docdir

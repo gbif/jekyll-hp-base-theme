@@ -163,7 +163,9 @@ var siteConfig = {
 Which filters should be available and which should be visible per default.
 
 ### Excluded filters
-You can disable individual filters by providing a list. To do so you need to know what they are called. To know the options you need to consult [the list of possible filters](https://github.com/gbif/gbif-web/blob/master/packages/react-components/src/search/OccurrenceSearch/config/filterConf.js).
+You can disable individual filters by providing a list. To do so you need to know what they are called. To know the options you need to consult [the list of possible filters](https://github.com/gbif/gbif-web/blob/master/packages/gbif-org/src/routes/occurrence/search/filters.tsx#L93). 
+
+`["q", "country", "publishingCountry", "institutionKey", "collectionKey", "datasetKey", "taxonKey", "publishingOrg", "hostingOrganizationKey", "networkKey", "gadmGid", "institutionCode", "collectionCode", "recordNumber", "establishmentMeans", "sex", "lifeStage", "license", "basisOfRecord", "mediaType", "month", "continent", "protocol", "dwcaExtension", "iucnRedListCategory", "typeStatus", "issue", "occurrenceStatus", "projectId", "recordedById", "identifiedById", "occurrenceId", "organismId", "higherGeography", "eventId", "fieldNumber", "isInCluster", "isSequenced", "year", "coordinateUncertaintyInMeters", "depth", "organismQuantity", "relativeOrganismQuantity", "sampleSizeValue", "elevation", "catalogNumber", "preparations", "sampleSizeUnit", "locality", "waterBody", "stateProvince", "datasetId", "samplingProtocol", "verbatimScientificName", "recordedBy", "identifiedBy", "geometry", "eventDate"]`
 
 Configuration found in `/_includes/js/config.js`
 
@@ -198,7 +200,44 @@ var siteConfig = {
   }
 };
 ```
-The currently available column names can be seen in the [code](https://github.com/gbif/gbif-web/blob/master/packages/react-components/src/search/OccurrenceSearch/config/tableConfig.js#L18) as the property `name`.
+The currently available column names can be seen in the [code](https://github.com/gbif/gbif-web/blob/master/packages/gbif-org/src/routes/occurrence/search/views/table/columns.tsx) as the property `id`.
+
+Or by going to the developer tools and inspect the `window.gbif` object using the console. This is somewhat complex to do for someone new. We are happy to help and if many people need this we could add something simpler. This is typically something you do once or at least very rarely.
+
+```js
+availableColumns = [ // 
+    "commonName",
+    "features",
+    "media",
+    "country",
+    "coordinates",
+    "year",
+    "eventDate",
+    "basisOfRecord",
+    "dataset",
+    "publisher",
+    "catalogNumber",
+    "recordedBy",
+    "identifiedBy",
+    "recordNumber",
+    "typeStatus",
+    "preparations",
+    "collectionCode",
+    "specimenTriplet",
+    "institutionCode",
+    "institutionKey",
+    "collectionKey",
+    "locality",
+    "fieldNumber",
+    "higherGeography",
+    "stateProvince",
+    "establishmentMeans",
+    "sex",
+    "individualCount",
+    "lifeStage",
+    "iucnRedListCategory"
+]
+```
 
 ## Map options
 

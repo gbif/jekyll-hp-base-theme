@@ -21,11 +21,11 @@
   "scripts": {
     "docker:dev": "docker run --rm --volume=\"$PWD:/srv/jekyll\" --volume=\"$PWD/vendor/bundle:/usr/local/bundle\" --env JEKYLL_ENV=development -p 4000:4000 jekyll/jekyll:4.1.0 jekyll serve --config _config.yml,_config_local.yml",
     "copy:bulma": "cp -r node_modules/bulma/* _sass/bulma",
-    "copy:font-awesome": "cp node_modules/font-awesome/css/font-awesome.min.css assets/theme/css/font-awesome.min.css && cp -r node_modules/font-awesome/fonts/* assets/theme/fonts",
+    "copy:font-awesome": "cp node_modules/@fortawesome/fontawesome-free/css/all.min.css assets/theme/css/font-awesome.min.css && cp -r node_modules/@fortawesome/fontawesome-free/webfonts/* assets/theme/webfonts && cp -r node_modules/@fortawesome/fontawesome-free/css/v4-shims.css assets/theme/css/v4-shims.css",
     "copy:all": "mkdir -p _sass/bulma && mkdir -p assets/theme/css && mkdir -p assets/theme/fonts && mkdir -p assets/theme/js && npm run copy:bulma && npm run copy:font-awesome"
   },
   "dependencies": {
-    "bulma": "^0.9.0",
-    "font-awesome": "^4.7.0"
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "bulma": "^0.9.0"
   }
 }

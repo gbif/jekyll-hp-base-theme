@@ -17,7 +17,7 @@
 
         <div class="navbar-dropdown is-right">
           {% for post in posts %}
-          <a class="navbar-item" href="{{ site.base-url }}{{ post.url }}">
+          <a class="navbar-item js-language-option" data-locale="{{post.lang}}" href="{{ site.base-url }}{{ post.url }}">
             {% if site.data.languages[post.lang].icon %}
             <img src="{{ site.data.languages[post.lang].icon }}" style="margin-right: 6px; height:1em;" />
             {% endif %}
@@ -28,5 +28,19 @@
       </div>
     </div>
   </div>
+    {% if site.updateTranslationMenuOnWidgetEvents %}
+    <script>
+      // notice that this will only work if the site is using the same urls for all languages (with a locale prefix)
+      const options = document.querySelectorAll('.js-language-option');
+
+      window.addEventListener('gbifUrlChange', e => {
+        const { url, localizeLink } = e.detail;
+        options.forEach(option => {
+          const locale = option.getAttribute('data-locale');
+          option.setAttribute('href', localizeLink(url, locale));
+        })
+      })
+    </script>
+    {% endif %}
   {% endif %}
 {% endif %}

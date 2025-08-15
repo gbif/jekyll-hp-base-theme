@@ -33,6 +33,7 @@
       {% if col.connectIcons %}
         <ul class="footer-online-list">
           {% if site.twitter_username %}
+<<<<<<< HEAD
             <li>
               <a href="https://twitter.com/{{ site.twitter_username }}">
                 <span class="fa-stack fa-lg">
@@ -41,6 +42,16 @@
                 </span>
               </a>
             </li>
+=======
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-x-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+>>>>>>> b5d940c2eb498a50fbdb15926b05a8ab13a15de8
           {% endif %}
           {% if site.github_username %}
             <li>
@@ -72,6 +83,16 @@
               </a>
             </li>
           {% endif %}
+          {% if site.instagram_username %}
+          <li>
+            <a href="https://www.instagram.com/{{ site.instagram_username }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
           {% if site.flickr_username %}
             <li>
               <a href="https://www.flickr.com/photos/{{ site.flickr_username }}">
@@ -81,6 +102,46 @@
                 </span>
               </a>
             </li>
+          {% endif %}
+          {% if site.bluesky_username %}
+          <li>
+            <a href="https://bsky.app/profile/{{ site.bluesky_username }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-bluesky fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.mastodon_url %}
+          <li>
+            <a href="{{ site.mastodon_url }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-mastodon fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.linkedin_url %}
+          <li>
+            <a href="{{ site.linkedin_url }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.email %}
+          <li>
+            <a href="mailto:{{ site.email }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
           {% endif %}
         </ul>
       {% endif %}
@@ -94,6 +155,10 @@
   <div class="footer-footer">
     {{ footer.other | markdownify }}
   </div>
+<<<<<<< HEAD
   {% endif %}
 </div>
 
+=======
+</div>
+>>>>>>> b5d940c2eb498a50fbdb15926b05a8ab13a15de8
