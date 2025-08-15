@@ -38,7 +38,7 @@ columns:
   # CSUCA
   - name:
     description: |
-      <a href="https://sicevaes.csuca.org/"><img src="/assets/img/logos/ico_CSUCA.png" width="80"></a>
+      <a href="https://csuca.org/"><img src="/assets/img/logos/ico_CSUCA.png" width="80"></a>
   # IDRC
   - name:
     description: |
