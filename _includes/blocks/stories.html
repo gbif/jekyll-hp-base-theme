@@ -55,7 +55,7 @@
 
     function fetchResources() {
       var GQL_QUERY = `
-          query ResourceSearch($contentType: [ContentType!], $limit: Int, $countriesOfResearcher: [String!], $countriesOfCoverage: [String!], $topics: [String!], $locale: [String!]) {
+          query ResourceSearch($purposes: [String!], $audiences: [String!], $contentType: [ContentType!], $limit: Int, $countriesOfResearcher: [String!], $countriesOfCoverage: [String!], $topics: [String!], $locale: [String!]) {
             resourceSearch(
               contentType: $contentType
               size: $limit
@@ -63,6 +63,8 @@
               countriesOfCoverage: $countriesOfCoverage
               topics: $topics
               locale: $locale
+              audiences: $audiences
+              purposes: $purposes
             ) {
               documents {
                 results {
