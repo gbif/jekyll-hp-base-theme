@@ -6,7 +6,7 @@
   Theme feedback is comments in the interface about how to best use the theme
   {% endcomment %}
   {% if jekyll.environment != "production" %}
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex, nofollow">
   <script>
     var themeFeedbackEnabled = true;
     var themeFeedback = [];
@@ -14,7 +14,7 @@
   {% endif %}
 
   {% if page.noindex == true %}
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex, nofollow">
   {% endif %}
 
   {% if page.layout == 'home' %}
