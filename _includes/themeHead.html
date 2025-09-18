@@ -13,8 +13,9 @@
   </script>
   {% endif %}
 
-  {% if page.noindex == true %}
-  <meta name="robots" content="noindex, nofollow">
+  {% assign metaRobots = page.metaRobots | default: layout.metaRobots %}
+  {% if metaRobots != "allow" and metaRobots %}
+  <meta name="robots" content="{{ metaRobots | escape }}">
   {% endif %}
 
   {% if page.layout == 'home' %}
