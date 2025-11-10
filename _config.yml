@@ -4,7 +4,7 @@ description: A jekyll theme for GBIFs hosted portals
 url: "https://hp-base-theme.gbif.org"   # the base hostname & protocol for your site, e.g. http://example.com
 # baseurl: "/tecala"                    # Only required if your site is in a subdirectory e.g. https://username.github.io/sitename
                                         # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
-                                        # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/about/#links
+                                        # A baseurl affects internal links, see https://peterdesmet.com/petridish/docs/markdown/#links
 
 # SOCIAL PROFILES
 email: info@gbif.org                              # Social icon in footer
