@@ -1,7 +1,8 @@
 {% assign markdownContent = include.markdownContent | default: include.content.markdownContent %}
 {% assign parsedContent = markdownContent | liquify | markdownify %}
+{% assign klass = include.klass | default: include.content.klass %}
 
-<section>
+<section class="{% if klass %} {{ klass }} {% endif %}">
   <div class="article">
     {% include blocks/parts/prose.html content=parsedContent %}
   </div>

@@ -1,4 +1,6 @@
-<section class="mediaBlock">
+{% assign klass = include.klass | default: include.content.klass %}
+
+<section class="mediaBlock {% if klass %} {{ klass }} {% endif %}">
   {% if include.content.title or include.content.description %}
   <div class="features-intro">
     {% include blocks/parts/feature.html content=include.content %}

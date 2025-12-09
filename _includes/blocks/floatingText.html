@@ -10,8 +10,10 @@
 {% assign hasTextShadow = include.hasTextShadow | default: include.content.hasTextShadow | default: false %}
 {% assign height = include.height | default: include.content.height | default: "100vh" %}
 {% assign hasWhiteText = include.hasWhiteText | default: include.content.hasWhiteText | default: false %}
+{% assign klass = include.klass | default: include.content.klass %}
 
 <section class="textBanner
+  {% if klass %} {{ klass }} {% endif %}
   {% if hasWhiteText %} hasWhiteText {% else %} hasBlackText {% endif %} 
   {% if parallax %} parallax {% endif %} 
   {% if hasTextShadow %} hasTextShadow {% endif %} 

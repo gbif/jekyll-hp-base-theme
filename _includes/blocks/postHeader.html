@@ -8,6 +8,7 @@
 {% assign center = true %}
 {% assign toc = include.toc | default: include.content.toc %}
 {% assign ignoreThumbor = include.ignoreThumbor | | default: include.content.ignoreThumbor | default: false %}
+{% assign klass = include.klass | default: include.content.klass %}
 
 {% unless background or jekyll.environment == "production" %}
 <script>
@@ -15,8 +16,8 @@ themeFeedback.push({title: "Missing background", description: "You haven't confi
 </script>
 {% endunless %}
 
-<section>
-  <div class="postHeader {% if toc %} postHeader--withToc{% endif %}">
+<section class="">
+  <div class="postHeader {% if toc %} postHeader--withToc{% endif %} {% if klass %} {{ klass }} {% endif %}">
     {% include blocks/parts/feature.html 
     background=background 
     imageLicense=imageLicense 

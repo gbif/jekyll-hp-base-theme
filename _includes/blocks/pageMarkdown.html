@@ -1,13 +1,14 @@
 {% assign toc = page.toc %}
 {% assign mobileToc = page.mobileToc %}
 {% assign html = include.html | default: content %}
+{% assign klass = include.klass | default: include.content.klass %}
 
 <script>
 document.gbifTocMaxDepth = {{ page.tocMaxDepth | default: 6}};
 </script>
 
 {% if html %}
-<section>
+<section className="{% if include.content.klass %} {{ include.content.klass }} {% endif %}">
   <div class="container">
     {% if page.toc %}
     <div class="article--toc">

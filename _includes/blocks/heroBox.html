@@ -10,6 +10,7 @@
 {% assign hasTextShadow = include.hasTextShadow | default: include.content.hasTextShadow | default: false %}
 {% assign height = include.height | default: include.content.height | default: "100vh" %}
 {% assign floatingNavbar = page.navbar.floating | default: site.algae.navbar.floating | default: false %}
+{% assign klass = include.klass | default: include.content.klass %}
 
 {% assign useBackgroundImage = parallax %}
 
@@ -35,6 +36,7 @@ themeFeedback.push({title: "Missing background", description: "You haven't confi
   {% if parallax %} parallax {% endif %} 
   {% if hasTextShadow %} hasTextShadow {% endif %} 
   {% if fullHeight %} full-height {% else %} not-full-height {% endif %} 
+  {% if klass %} {{ klass }} {% endif %}
   overlay" 
     style="{% if overlayColor %} color: {{ overlayColor }}; {% endif %} 
     {% if height %} height: auto; min-height: {{ calcHeight }}; {% endif %} ">
