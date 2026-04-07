@@ -89,3 +89,7 @@ $hasThemeFeedback: false !default;
 {% endif %}
 
 @import "_main";
+
+.js-language-trigger:focus-visible {
+  outline: revert;
+}
