@@ -1,6 +1,7 @@
 // control the navbar
 // https://bulma.io/documentation/components/navbar/
 document.addEventListener('DOMContentLoaded', () => {
+  /* --- Add click handler to open and close the burger menu --- */
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.menu-toggle'), 0);
@@ -24,8 +25,89 @@ document.addEventListener('DOMContentLoaded', () => {
         $el.setAttribute('aria-expanded', isActive)
       });
     });
-
   }
+
+  /* --- Add accessibility properties and keyboad navigation to the main menu on desktop  --- */
+  const desktopQuery = window.matchMedia('screen and (min-width: 1024px)');
+
+  let cleanUp = null;
+  function handleChange(isDesktop) {
+    if (typeof cleanUp === 'function') {
+      cleanUp();
+      cleanUp = null;
+    }
+
+    if (isDesktop) {
+      const expandableMenuItems = Array.prototype.slice.call(document.querySelectorAll('.navbar-top-item.navbar-item.has-dropdown'), 0);
+      const removeEventListners = [];
+
+      expandableMenuItems.forEach(item => {
+        item.setAttribute('aria-expanded', false);
+        item.setAttribute('tabindex', '0');
+        item.setAttribute('role', 'button');
+
+        const popover = {
+          open: () => {
+            item.classList.add('is-active');
+            item.setAttribute('aria-expanded', true);
+          },
+          close: () => {
+            item.classList.remove('is-active');
+            item.setAttribute('aria-expanded', false);
+          }
+        }
+
+        item.addEventListener('mouseenter', popover.open);
+        removeEventListners.push(() => item.removeEventListener('mouseenter', popover.open));
+
+        item.addEventListener('mouseleave', popover.close);
+        removeEventListners.push(() => item.removeEventListener('mouseleave', popover.close));
+
+
+        // Open popover when the Expandable Menu Item is focused and tab/space is pressed
+        const onKeyDown = (event) => {
+          if ((event.key === ' ' || event.key === "Enter") && event.target === item) {
+            event.preventDefault();
+            popover.open();
+          }
+          if (event.key === 'Escape' && item.classList.contains('is-active')) {
+            event.preventDefault();
+            popover.close();
+            item.focus();
+          }
+        }
+        item.addEventListener('keydown', onKeyDown);
+        removeEventListners.push(() => item.removeEventListener('keydown', onKeyDown));
+
+        // Close popover when focus leaves the item and its children (e.g. tabbing out)
+        const onFocusOut = (event) => {
+          if (!item.contains(event.relatedTarget)) {
+            popover.close();
+          }
+        }
+        item.addEventListener('focusout', onFocusOut);
+        removeEventListners.push(() => item.removeEventListener('focusout', onFocusOut));
+
+      })
+
+      cleanUp = () => {
+        removeEventListners.forEach(removeEventListener => removeEventListener());
+
+        expandableMenuItems.forEach(item => {
+          item.removeAttribute('aria-expanded');
+          item.removeAttribute('tabindex');
+          item.removeAttribute('role');
+          item.classList.remove('is-active');
+        });
+      }
+    }
+  }
+
+  handleChange(desktopQuery.matches);
+
+  desktopQuery.addEventListener('change', (event) => {
+    handleChange(event.matches);
+  })
 });
 
 
