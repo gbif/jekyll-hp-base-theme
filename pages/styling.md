@@ -46,29 +46,29 @@ Should be safe
 ## Additional variables
 The style is based on the [Bulma css library](https://bulma.io/documentation/). You can change all Bulma variables by overwriting them in `_sass/_main.scss`. 
 
-See https://github.com/gbif/gbif-web/blob/main/packages/gbif-org/src/config/theme/baseThemes.ts for the variables example
+See [https://github.com/gbif/gbif-web/blob/main/packages/gbif-org/src/config/theme/baseThemes.ts](https://github.com/gbif/gbif-web/blob/main/packages/gbif-org/src/config/theme/baseThemes.ts) for the variables example
 ```
 // set custom variables here
 $primary: turquoise;
 
 // theme object that can be passed to the configuration
 {
-  dense: true,
-  primary: '#1393D8',
-  fontSize: '15px',
-  background: '#f1f5f8',
-  paperBackground: '#ffffff',
-  paperBackgroundElevated: '#ffffff',
-  paperBorderColor: '#e5ebed',
-  color: '#162d3d',
-  isDarkTheme: false,
-  fontFamily:
-    '"Helvetica Neue", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica", "Arial", sans-serif',
-  headerFontFamily:
-    '"Helvetica Neue", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica", "Arial", sans-serif',
-  borderRadius: 3,
-  drawerZIndex: 50,
-  stickyOffset: '0px',
+  "theme": {
+    "dense": true,
+    "primary": "#1393D8",
+    "fontSize": "15px",
+    "background": "#f1f5f8",
+    "paperBackground": "#ffffff",
+    "paperBackgroundElevated": "#ffffff",
+    "paperBorderColor": "#e5ebed",
+    "color": "#162d3d",
+    "isDarkTheme": false,
+    "fontFamily": "\"Helvetica Neue\", BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica\", \"Arial\", sans-serif",
+    "headerFontFamily": "\"Helvetica Neue\", BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica\", \"Arial\", sans-serif",
+    "borderRadius": 3,
+    "drawerZIndex": 50,
+    "stickyOffset": "0px"
+  }
 }
 
 // You can add additional styling here
