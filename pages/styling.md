@@ -46,6 +46,7 @@ Should be safe
 ## Additional variables
 The style is based on the [Bulma css library](https://bulma.io/documentation/). You can change all Bulma variables by overwriting them in `_sass/_main.scss`. 
 
+See https://github.com/gbif/gbif-web/blob/main/packages/gbif-org/src/config/theme/baseThemes.ts for the variables example
 ```
 // set custom variables here
 $primary: turquoise;
