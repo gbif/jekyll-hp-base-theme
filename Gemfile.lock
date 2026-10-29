@@ -84,9 +84,12 @@ GEM
       webrick (~> 1.7)
     jekyll-feed (0.18.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-liquify (0.0.2)
-      liquid (>= 2.5, < 5.0)
-      redcarpet (~> 3.1)
+    jekyll-liquify (0.1.0)
+      base64
+      csv
+      liquid
+      logger
+      redcarpet
     jekyll-remote-theme (0.6.2)
       addressable (~> 2.0)
       jekyll (>= 3.5, < 5.0)
@@ -192,7 +195,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.4.1)
   jekyll-feed
-  jekyll-liquify (< 0.0.3)
+  jekyll-liquify (< 0.1.1)
   jekyll-remote-theme
   jekyll-sass-converter (~> 3.0)
   jekyll-sitemap
@@ -237,7 +240,7 @@ CHECKSUMS
   i18n (1.15.2) sha256=00f9eb62412fe593b2a65a97daa75300d37abb8f7202ec748e94b6d46a9dd1b5
   jekyll (4.4.1) sha256=4c1144d857a5b2b80d45b8cf5138289579a9f8136aadfa6dd684b31fe2bc18c1
   jekyll-feed (0.18.0) sha256=8e6829f455b8764a8fa1bbb198d0ebb3525128dacc6ffe9d15f4df7388bc3647
-  jekyll-liquify (0.0.2) sha256=a76558c4ac28ea65cb31430527717d15f6270a995c675d9b013355221134c8b6
+  jekyll-liquify (0.1.0) sha256=4ce99149a9a30c226f9281e4efa71e6b27140795887ee6c9e556a4e12b4ff2c3
   jekyll-remote-theme (0.6.2) sha256=f3c423c38652aaf87ecf5ee08b20812c265e8395d9d6ef91cef7f49033263afa
   jekyll-sass-converter (3.1.0) sha256=83925d84f1d134410c11d0c6643b0093e82e3a3cf127e90757a85294a3862443
   jekyll-seo-tag (2.9.1) sha256=ed5c757a091048b6ef9109f856f84a29beaeb70f531ba5775a5e92129a28093e
