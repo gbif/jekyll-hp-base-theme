@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+# google-protobuf 4.x / sass-embedded / openssl 4.x in the lockfile need Ruby 3.2+ (Bundler 4)
+ruby ">= 3.2"
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:

@@ -14,7 +14,7 @@ In the site repo:
 
 It bumps Jekyll to `~> 4.4.1`, regenerates `Gemfile.lock`, builds the site and runs `bundle-audit`.
 Review the build output, then commit `Gemfile` and `Gemfile.lock`. Sites' CI/Jenkins images need
-Ruby >= 3.0 (3.3 recommended) and Bundler >= 2.4.
+Ruby >= 3.2 (3.3 recommended, see `.ruby-version`) and Bundler >= 2.4.
 
 ## Rolling out to ~100 sites
 1. Merge the theme change and tag a release (e.g. `v1.0.0`).
