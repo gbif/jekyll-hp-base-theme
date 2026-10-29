@@ -1,0 +1,18 @@
+name: Build and audit
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1" # weekly, so new advisories surface even without commits
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - run: bundle exec jekyll build
+      - run: gem install bundler-audit --no-document && bundle-audit check --update
