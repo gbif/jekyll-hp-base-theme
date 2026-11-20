@@ -16,6 +16,11 @@ var siteConfig = {
   occurrenceSearch: {
     tabs: ['table', 'map', 'gallery', 'clusters', 'dashboard', 'download']
   },
+  dataHeader: {
+    // not translated yet, so keep them off
+    enableApiPopup: false,
+    enableInfoPopup: false
+  },
   apiKeys: {
     maptiler: 'wFxbBf3Tv2e75QQfYOOW'
   },

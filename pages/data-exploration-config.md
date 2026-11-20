@@ -1,18 +1,18 @@
 ---
 layout: documentation
 permalink: /data-exploration-config # the documentation layout requires you to fill the permalink for it to be highlighted in the side navigation
-title: data scope
-description: How to configure your data scope
+title: Data configuration
+description: How to configure the data pages of your site
 sideNavigation: sideNavigation.guides
 toc: true
 ---
 # Configuration of data widgets
 
-The data pages of a hosted portal (occurrence search, datasets, collections, species and so on) are a single JavaScript application that GBIF maintains. You configure it with a `siteConfig` object in `/_includes/js/config.js`.
+The data pages of a hosted portal (occurrence search, datasets, collections and so on) are a single JavaScript application that GBIF maintains. You configure it with a `siteConfig` object in `/_includes/js/config.js`.
 
 This page describes **version 3** of that configuration, which is the format the current library uses.
 
-Older configurations (`version: 2`, or no version at all) still work. The library converts them on the fly and logs the result to the browser console as `Converted config to version 3:`. The easiest way to upgrade is to open a page on your site, copy that object from the developer console into `config.js`, and tidy it up using this page. See [Moving from version 2](#moving-from-version-2) for what changed.
+Older configurations (`version: 2`, or no version at all) still work. The library converts them on the fly and logs the result to the browser console as `Converted config to version 3:`. The easiest way to upgrade is to open a page on your site, copy that object from the developer console into `config.js`, and tidy it up using this page. Delete `languages` and `theme` from the copy, as the theme sets those for you, and remove anything that is `undefined`. See [Moving from version 2](#moving-from-version-2) for what changed.
 {: .notification .is-info}
 
 ## A complete example
@@ -94,7 +94,6 @@ var siteConfig = {
   },
 
   maps: {
-    locale: 'ja', // show the base maps in Japanese
     mapStyles: {
       defaultProjection: 'MERCATOR',
       defaultMapStyle: 'BRIGHT',
@@ -121,13 +120,13 @@ Your data scope is unlikely to change very often, so we can help configuring it 
 
 The theme passes a few things to the library on top of your `siteConfig`, so you don't need to set them:
 
-* `languages`: built from `_data/languages.yml`.
+* `languages`: built from `_data/languages.yml`. Don't set `languages` in `siteConfig`, it would replace the theme's.
 * `theme`: the primary colour and corner style from your site styling. You can still add `theme: { ... }` to `siteConfig` to override or extend it.
 * `linkToGbifOrg: true`.
 
 ## Pages
 
-`pages` lists the data pages your site has. Each entry has an `id` and, optionally, a `path`. Paths can contain `:key`, which is replaced with the identifier of the record.
+`pages` lists the data pages your site has. Each entry has an `id` and, optionally, a `path`. Write paths without a leading slash (`specimen/search`, not `/specimen/search`). Paths can contain `:key`, which is replaced with the identifier of the record.
 
 ```js
 var siteConfig = {
@@ -139,7 +138,9 @@ var siteConfig = {
 };
 ```
 
-Pages that are not listed are not part of your site. Links to them, for example a link to a publisher from a dataset page, go to the page on GBIF.org instead. If you leave out `pages` altogether, every page is enabled.
+Pages that are not listed are not part of your site. Links to them, for example a link to a publisher from a dataset page, go to the page on GBIF.org instead. If you leave out `pages` altogether, every page the library has is enabled, including ones that don't belong on a hosted portal, so always list your pages.
+
+Hosted portals support the pages in the table below: occurrences, datasets, publishers, collections, institutions and literature. The library has other pages too (taxa, countries, participants, networks, installations and more), but they are not supported on hosted portals.
 
 | id | default path |
 |----|--------------|
@@ -154,10 +155,6 @@ Pages that are not listed are not part of your site. Links to them, for example 
 | `institutionSearch` | `/institution/search` |
 | `institutionKey` | `/institution/:key` |
 | `literatureSearch` | `/literature/search` |
-| `taxonSearch` | `/taxon/search` |
-| `taxonKey` | `/taxon/:key` |
-| `networkKey` | `/network/:key` |
-| `installationKey` | `/installation/:key` |
 
 ### A Jekyll page for each data page
 
@@ -175,18 +172,20 @@ lang-ref: collection
 ---
 ```
 
-The available layouts are: `occurrence`, `occurrence-key`, `dataset`, `dataset-key`, `publisher`, `publisher-key`, `collection-search`, `collection-key`, `institution-search`, `institution-key`, `literature` and `widget`. They differ only in name, so use the one that fits, or `widget` for page types without a layout of their own (such as taxon pages).
+The available layouts are: `occurrence`, `occurrence-key`, `dataset`, `dataset-key`, `publisher`, `publisher-key`, `collection-search`, `collection-key`, `institution-search`, `institution-key`, `literature` and `widget`. They differ only in name, so use the one that fits, or `widget` for page types without a layout of their own.
 
 Pages that show a single record (`:key` pages) are generated once, with `_key_` in the permalink, for example `permalink: /collection/_key_`. The web server then has to send every `/collection/<some key>` request to that file (see `serve.json` in the theme for how it is done locally). Let us know if you add a new type of key page.
 
 ## Data scope
 
-Each search can be limited with a `scope`. Users cannot search outside it.
+Each search can be limited with a `scope`.
 
 The format depends on the search:
 
 * `occurrenceSearch` and `literatureSearch` take a **predicate**, as described in the [GBIF API documentation](https://techdocs.gbif.org/en/openapi/v1/occurrence#/Searching%20occurrences). Keys are written in `camelCase` (as in the query parameters of the API) rather than `CONSTANT_CASE`, so `basisOfRecord` instead of `BASIS_OF_RECORD`.
-* `datasetSearch`, `publisherSearch`, `collectionSearch`, `institutionSearch` and `taxonSearch` take an object of **query parameters** for the corresponding GBIF API, for example `{ type: 'CHECKLIST' }` for datasets or `{ country: 'DK' }` for publishers.
+* `datasetSearch`, `publisherSearch`, `collectionSearch` and `institutionSearch` take an object of **query parameters** for the corresponding GBIF API, for example `{ type: 'CHECKLIST' }` for datasets or `{ country: 'DK' }` for publishers.
+
+A predicate scope is always applied on top of what the user searches for, so users cannot get outside it. A query parameter scope is not: if a user adds a filter on the same parameter, theirs replaces the scope. Add the parameters in your scope to `excludedFilters` for that search, e.g. `publisherSearch: { scope: { country: 'DK' }, excludedFilters: ['country'] }`.
 
 A site that only shows fungi:
 
@@ -271,32 +270,19 @@ occurrenceSearch: {
 
 The same applies to other taxon based keys in a scope (`acceptedTaxonKey`, `kingdomKey`, `familyKey` and so on) and to `taxonomicIssue` and `iucnRedListCategory`, which are also read from the active taxonomy.
 
-### Taxon pages
-
-If you enable `taxonSearch` and `taxonKey`, they show the taxonomy given by `defaultChecklistKey`. You can point taxon search at a specific checklist and limit it to that checklist:
-
-```js
-taxonSearch: {
-  checklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b',
-  scope: { datasetKey: '7ddf754f-d193-4cc9-b351-99906754a03b' }
-}
-```
-
-Links to a taxon from another checklist go to that taxon on the checklist's dataset page instead (`/dataset/<checklist>/taxon/<key>`).
-
 ## Search options
 
-Each search has its own section in the configuration: `occurrenceSearch`, `datasetSearch`, `publisherSearch`, `collectionSearch`, `institutionSearch`, `literatureSearch` and `taxonSearch`. They all take the same options:
+Each search has its own section in the configuration: `occurrenceSearch`, `datasetSearch`, `publisherSearch`, `collectionSearch`, `institutionSearch` and `literatureSearch`. They take these options:
 
 | option | what it does |
 |--------|--------------|
 | `scope` | the data scope, see [Data scope](#data-scope) |
 | `highlightedFilters` | filters shown by default |
 | `excludedFilters` | filters that are removed |
-| `availableTableColumns` | the columns users can choose from, in the order they are shown |
-| `defaultEnabledTableColumns` | the columns shown by default |
-| `tabs` | the views to offer (only occurrence search has more than one) |
-| `defaultTab` | the view to open first |
+| `availableTableColumns` | the columns users can choose from, in the order they are shown (occurrence and literature search only) |
+| `defaultEnabledTableColumns` | the columns shown by default (occurrence and literature search only) |
+| `tabs` | the views to offer (occurrence search only) |
+| `defaultTab` | the view to open first (occurrence search only) |
 
 Lists replace the defaults rather than add to them. If you set `excludedFilters`, list everything you want excluded.
 
@@ -384,10 +370,11 @@ occurrenceSearch: {
 
 | option | what it does |
 |--------|--------------|
-| `availableCatalogues` | the catalogues in the catalogue menu: `OCCURRENCE`, `DATASET`, `PUBLISHER`, `COLLECTION`, `INSTITUTION`, `TAXON`, `LITERATURE` |
+| `availableCatalogues` | the catalogues in the catalogue menu: `OCCURRENCE`, `DATASET`, `PUBLISHER`, `COLLECTION`, `INSTITUTION`, `LITERATURE`. If you leave it out, all catalogues are shown, so always set it |
 | `disableInlineTableFilterButtons` | `true` removes the buttons for adding a filter by clicking a table cell. See [hosted-portals#274](https://github.com/gbif/hosted-portals/issues/274) |
 | `openDrawerOnTableRowClick` | `true` (default) opens a record in a side panel when clicking a table row; `false` goes to the record's page |
 | `messages` | translations to overwrite, per language code: `{ en: { 'catalogues.occurrences': 'Specimens' }, da: { ... } }` |
+| `dataHeader` | `{ enableApiPopup: false, enableInfoPopup: false }` hides the API and info buttons in the header of the data pages. They are on by default, but not translated yet |
 | `apiKeys` | `{ maptiler: '...' }`, needed for some map styles |
 | `maps` | map projections and styles, see below |
 
@@ -401,7 +388,7 @@ var siteConfig = {
     maptiler: 'you_need_to_register_to_get_your_key'
   },
   maps: {
-    locale: 'en', // language of the GBIF base maps. See https://tile.gbif.org/ui/ for available languages
+    locale: 'en', // passed to addMapStyles as `language`. The GBIF base maps follow the language of the page
     mapStyles: {
       defaultProjection: 'MERCATOR', // the projection shown first
       defaultMapStyle: 'NATURAL', // the style shown first
@@ -459,19 +446,20 @@ The library still reads version 2 configurations, converts them and logs the con
 | `occurrence.occurrenceSearchTabs: ['MAP', 'TABLE']` | `occurrenceSearch.tabs: ['map', 'table', 'download']` (lower case, and `download` is no longer added for you) |
 | `defaultTableColumns` | `defaultEnabledTableColumns` |
 | `maps.defaultProjection`, `maps.defaultMapStyle`, `maps.mapStyles` | `maps.mapStyles.defaultProjection`, `maps.mapStyles.defaultMapStyle`, `maps.mapStyles.options` |
-| `messages: { 'key': 'text' }` | `messages: { en: { 'key': 'text' } }` |
+| `messages: { 'key': 'text' }` (used for every language) | `messages: { en: { 'key': 'text' }, da: { 'key': 'tekst' } }` (one entry per language) |
+| API and info popups in the data header were always off | they are on unless you set `dataHeader: { enableApiPopup: false, enableInfoPopup: false }` |
 | `apiKeys.mapbox` | no longer used |
 | `institution.mapSettings` | no longer used |
 
 Some filter names have changed:
 
-* occurrence search: `occurrenceIssue` is now `issue`, `publishingCountryCode` is `publishingCountry` and `publisherKey` is `publishingOrg`.
+* occurrence search: `occurrenceIssue` is now `issue`, `publishingCountryCode` is `publishingCountry`, `publisherKey` is `publishingOrg` and `coordinateUncertainty` is `coordinateUncertaintyInMeters`. `hasCoordinate` and `hasGeospatialIssue` no longer exist.
 * dataset search: `anyPublisherKey` is `publishingOrg`, `datasetType` is `type`, `publishingCountryCode` is `publishingCountry` and `hostingOrganizationKey` is `hostingOrg`.
 * publisher search: `countrySingle` is `country`.
 * collection search: `institutionKeySingle` is `institutionKey`, `countryGrSciColl` is `country`, `specimensInGbif` is `occurrenceCount`, `collectionContentType` is `contentType`, `taxonKeyGrSciColl` is `taxonKey`, `collectionDescriptorCountry` is `descriptorCountry` and `recordedByFreeText` is `recordedBy`.
 * institution search: `countryGrSciColl` and `countrySingleGrSciColl` are `country`, `institutionType` is `type` and `specimensInGbif` is `occurrenceCount`.
 
-In version 2, having a section such as `dataset: {}` also enabled the page. In version 3 only `pages` decides which pages exist.
+In version 2, having a section such as `dataset: {}` also enabled the page and its catalogue. In version 3 only `pages` decides which pages exist and only `availableCatalogues` which catalogues are shown; leaving either out enables everything. The default map style is now `NATURAL` (it was `BRIGHT`).
 
 ## Usage outside of a hosted portal
 
@@ -482,6 +470,7 @@ The data pages are a JavaScript library, so they can be embedded on other sites 
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://www-lib.gbif.org/style.css" />
   </head>
   <body>
     <div id="root" class="gbif"></div>

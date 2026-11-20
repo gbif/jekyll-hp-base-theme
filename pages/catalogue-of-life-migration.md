@@ -19,6 +19,8 @@ This page explains how to switch your site to Catalogue of Life, and what you ne
 
 The taxonomy is set in the version 3 configuration format, so your `/_includes/js/config.js` must start with `version: 3`. If it says `version: 2`, or has no version, move it to version 3 first. See [Moving from version 2](/data-exploration-config#moving-from-version-2).
 
+Your site must also use the current data library: `useOldLibrary` must not be set to `true` in your `_config.yml` or in any page's front matter. The old library knows nothing about Catalogue of Life.
+
 Updating the config syntax and changing taxonomy are separate steps. It is easiest to do them one at a time: first move to version 3 and check that your site still works, then change the taxonomy.
 {: .notification .is-info}
 
@@ -53,7 +55,7 @@ Once you switch, every taxon key on your site is read as a Catalogue of Life key
 * **Links in your pages and navigation**, such as `/occurrence/search?taxonKey=5` in markdown, `_data/navigation.yml`, home page cards or buttons.
 * **Dashboard blocks** with a `predicate` in the front matter or in `_data`.
 * **Other taxon based keys**, not just `taxonKey`: `acceptedTaxonKey`, `kingdomKey`, `phylumKey`, `classKey`, `orderKey`, `familyKey`, `genusKey` and `speciesKey` all change too.
-* **Dynamic values** that call the GBIF API directly (`data-ajax-url`). These keep using the Backbone unless you add `checklistKey`, so they will still work but may no longer match the numbers on your data pages. To use Catalogue of Life, add `&checklistKey=7ddf754f-d193-4cc9-b351-99906754a03b` and change the taxon keys.
+* **Dynamic values** that call the GBIF API directly (`data-ajax-url`). These keep using the Backbone unless you add `checklistKey`, so they will still work but may no longer match the numbers on your data pages. For occurrence counts, add `&checklistKey=7ddf754f-d193-4cc9-b351-99906754a03b` and change the taxon keys. Calls to `/v1/species/<key>` only know the Backbone, so leave those as they are.
 
 A search through your site's files for `taxonKey`, `Key=` and `"key"` will find most of them.
 
