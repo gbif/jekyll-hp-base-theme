@@ -15,6 +15,8 @@ guides:
     path: /styling
   - title: Data configuration
     path: /data-exploration-config
+  - title: Moving to Catalogue of Life
+    path: /catalogue-of-life-migration
   - title: Debugging
     path: /debugging
   - title: Page not found
