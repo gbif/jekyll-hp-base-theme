@@ -1,0 +1,25 @@
+{%- comment -%}
+  Builds `languageOptions` for the data library from _data/languages.yml.
+  Include it inside a <script type="module"> after importing `languages` from the library.
+
+  Each language starts from the library's own entry for that locale, so it gets the map tile language,
+  date formats, vocabulary locale, gbif.org link prefix and so on. The site's label, default and text
+  direction are put on top. Languages the library doesn't know fall back to English.
+{%- endcomment -%}
+  const defaultLang = "{{site.algae.rootLang}}" || "en";
+  const languageConfig = {{site.data.languages | jsonify}} || {en: {code: 'en', label: 'English', default: true}};
+  const englishOption = languages.find((l) => l.code === 'en');
+  const languageOptions = Object.keys(languageConfig).map(function(key) {
+    const currentLang = languageConfig[key];
+    const localeCode = currentLang.widgetLocale ?? key;
+    const libraryOption = languages.find((l) => l.localeCode === localeCode);
+    const base = libraryOption ?? { ...englishOption };
+    return {
+      ...base,
+      code: key,
+      label: currentLang.label ?? base.label,
+      textDirection: currentLang.textDirection ?? base.textDirection ?? 'ltr',
+      default: key === defaultLang,
+      localeCode: libraryOption ? localeCode : base.localeCode,
+    };
+  });
