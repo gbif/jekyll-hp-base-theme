@@ -11,7 +11,8 @@ var siteConfig = {
     { id: 'collectionSearch' },
     { id: 'datasetKey' },
     { id: 'datasetSearch' },
-    { id: 'literatureSearch' }
+    { id: 'literatureSearch' },
+    { id: 'networkKey' }
   ],
   occurrenceSearch: {
     tabs: ['table', 'map', 'gallery', 'clusters', 'dashboard', 'download']

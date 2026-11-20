@@ -141,7 +141,7 @@ var siteConfig = {
 
 Pages that are not listed are not part of your site. Links to them, for example a link to a publisher from a dataset page, go to the page on GBIF.org instead. If you leave out `pages` altogether, every page the library has is enabled, including ones that don't belong on a hosted portal, so always list your pages.
 
-Hosted portals support the pages in the table below: occurrences, datasets, publishers, collections, institutions and literature. The library has other pages too (taxa, countries, participants, networks, installations and more), but they are not supported on hosted portals.
+Hosted portals support the pages in the table below: occurrences, datasets, publishers, collections, institutions, literature and networks. The library has other pages too (taxa, countries, participants, installations and more), but they are not supported on hosted portals.
 
 | id | default path |
 |----|--------------|
@@ -156,6 +156,7 @@ Hosted portals support the pages in the table below: occurrences, datasets, publ
 | `institutionSearch` | `/institution/search` |
 | `institutionKey` | `/institution/:key` |
 | `literatureSearch` | `/literature/search` |
+| `networkKey` | `/network/:key` |
 
 ### A Jekyll page for each data page
 
