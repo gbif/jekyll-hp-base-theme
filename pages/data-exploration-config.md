@@ -230,6 +230,9 @@ GBIF has two taxonomies that occurrences are matched against:
 
 Every occurrence is interpreted against both, so the names, classification and taxon keys you see on a record depend on which one is active. Unless you configure otherwise, hosted portals use the GBIF Backbone.
 
+If your site already uses the Backbone, read [Moving to Catalogue of Life](/catalogue-of-life-migration) before you switch.
+{: .notification .is-info}
+
 ### Choosing a taxonomy
 
 ```js
