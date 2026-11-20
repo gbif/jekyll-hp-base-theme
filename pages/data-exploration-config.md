@@ -40,7 +40,6 @@ var siteConfig = {
 
   // Which taxonomy to use. See "Taxonomy" further down.
   defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b', // Catalogue of Life
-  availableChecklistKeys: ['7ddf754f-d193-4cc9-b351-99906754a03b'],
 
   disableInlineTableFilterButtons: false, // set to true to remove the option to add filters by clicking table cells
 
@@ -237,23 +236,11 @@ Every occurrence is interpreted against both, so the names, classification and t
 var siteConfig = {
   version: 3,
   // the taxonomy used for names, classifications, taxon filters, charts and your scope
-  defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b',
-
-  // the taxonomies users can switch between. With more than one, a selector appears next to the taxon filter
-  availableChecklistKeys: ['7ddf754f-d193-4cc9-b351-99906754a03b']
+  defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b' // Catalogue of Life
 };
 ```
 
-Use the same key in both if you want a single taxonomy, which is what most sites need. To let users choose, list both:
-
-```js
-availableChecklistKeys: [
-  '7ddf754f-d193-4cc9-b351-99906754a03b', // Catalogue of Life
-  'd7dddbf4-2cf0-4f39-9b2a-bb099caae36c'  // GBIF Backbone
-]
-```
-
-When a user switches taxonomy, any taxon filters they have added are removed, as the keys mean nothing in the other taxonomy.
+Leave `defaultChecklistKey` out to keep the GBIF Backbone.
 
 ### Taxon keys are not interchangeable
 
@@ -274,24 +261,12 @@ occurrenceSearch: {
 
 // after: Catalogue of Life
 defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b',
-availableChecklistKeys: ['7ddf754f-d193-4cc9-b351-99906754a03b'],
 occurrenceSearch: {
   scope: { type: 'equals', key: 'taxonKey', value: 'F' }
 }
 ```
 
 The same applies to other taxon based keys in a scope (`acceptedTaxonKey`, `kingdomKey`, `familyKey` and so on) and to `taxonomicIssue` and `iucnRedListCategory`, which are also read from the active taxonomy.
-
-If you offer both taxonomies, a taxon in the scope is interpreted in whichever taxonomy the user has picked. To pin it to one, add `checklistKey` to that predicate:
-
-```js
-scope: {
-  type: 'equals',
-  key: 'taxonKey',
-  value: 'F',
-  checklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b'
-}
-```
 
 ### Taxon pages
 
