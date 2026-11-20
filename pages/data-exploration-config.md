@@ -40,6 +40,7 @@ var siteConfig = {
 
   // Which taxonomy to use. See "Taxonomy" further down.
   defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b', // Catalogue of Life
+  availableChecklistKeys: ['7ddf754f-d193-4cc9-b351-99906754a03b'],
 
   disableInlineTableFilterButtons: false, // set to true to remove the option to add filters by clicking table cells
 
@@ -193,6 +194,7 @@ A site that only shows fungi:
 var siteConfig = {
   version: 3,
   defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b', // Catalogue of Life
+  availableChecklistKeys: ['7ddf754f-d193-4cc9-b351-99906754a03b'],
   occurrenceSearch: {
     scope: { type: 'equals', key: 'taxonKey', value: 'F' } // Fungi in Catalogue of Life
   }
@@ -237,12 +239,16 @@ If your site already uses the Backbone, read [Moving to Catalogue of Life](/cata
 ```js
 var siteConfig = {
   version: 3,
-  // the taxonomy used for names, classifications, taxon filters, charts and your scope
-  defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b' // Catalogue of Life
+  // the taxonomy used for names, taxon filters, charts and your scope
+  defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b', // Catalogue of Life
+  // the taxonomy shown in the classification on each occurrence page
+  availableChecklistKeys: ['7ddf754f-d193-4cc9-b351-99906754a03b']
 };
 ```
 
-Leave `defaultChecklistKey` out to keep the GBIF Backbone.
+Set both to the same key. Without `availableChecklistKeys`, occurrence pages keep showing the Backbone classification.
+
+Leave both out to keep the GBIF Backbone.
 
 ### Taxon keys are not interchangeable
 
@@ -263,6 +269,7 @@ occurrenceSearch: {
 
 // after: Catalogue of Life
 defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b',
+availableChecklistKeys: ['7ddf754f-d193-4cc9-b351-99906754a03b'],
 occurrenceSearch: {
   scope: { type: 'equals', key: 'taxonKey', value: 'F' }
 }

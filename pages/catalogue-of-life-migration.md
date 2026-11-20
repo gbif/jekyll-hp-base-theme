@@ -26,12 +26,13 @@ Updating the config syntax and changing taxonomy are separate steps. It is easie
 
 ## 2. Set the taxonomy
 
-Add `defaultChecklistKey` to your config:
+Add `defaultChecklistKey` and `availableChecklistKeys` to your config, both set to Catalogue of Life:
 
 ```js
 var siteConfig = {
   version: 3,
   defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b', // Catalogue of Life
+  availableChecklistKeys: ['7ddf754f-d193-4cc9-b351-99906754a03b'], // the classification shown on occurrence pages
   // ...the rest of your config
 };
 ```
@@ -93,6 +94,7 @@ And after:
 var siteConfig = {
   version: 3,
   defaultChecklistKey: '7ddf754f-d193-4cc9-b351-99906754a03b',
+  availableChecklistKeys: ['7ddf754f-d193-4cc9-b351-99906754a03b'],
   occurrenceSearch: {
     scope: { type: 'equals', key: 'taxonKey', value: 'F' } // Fungi in Catalogue of Life
   }
